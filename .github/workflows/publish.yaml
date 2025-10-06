@@ -39,3 +39,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _site  # must match your output-dir in _quarto.yml
+          force_orphan: true   # wipes previous content, creates orphan branch

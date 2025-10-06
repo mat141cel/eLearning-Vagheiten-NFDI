@@ -5,24 +5,24 @@
 # Rollen: https://quarto.org/docs/journals/authors.html#roles
 author: 
   - name:
-      given: Vorname1
-      family: Nachname1
+      given: Mattia
+      family: Celisi
     orcid: 0000-0000-0000-0000
-    email: email@email.de
+    email: mattia.celisi@zaw.uni-heidelberg.de
     affiliation: 
-      - name: Institution1
-        city: Stadt1
-        url: https://example.com
+      - name: Universität Heidelberg
+        city: Heidelberg
+        url: https://www.uni-heidelberg.de
     attributes:
       corresponding: true
     role: "writing – original draft"
   - name:
-      given: Vorname2
-      family: Nachname2
+      given: Susanne
+      family: Boerner
     orcid: 0000-0000-0000-0000
-    email: email@email.de
+    email: susanne.boerner@zaw.uni-heidelberg.de
     affiliation: 
-      - name: Institution2
-        city: Stadt2
-        url: https://example.com
-    role: "writing – review & editing"
+      - name: Universität Heidelberg
+        city: Heidelberg
+        url: https://www.uni-heidelberg.de
+    role: "review & editing"

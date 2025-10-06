@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: _site
+
+metadata-files:
+  - layout.yml
+  - autor_innen.yml
+  - oer_metadata.yml
+
+website:
+  navbar:
+    left:
+      - text: Home
+        href: content/index.qmd
+      - text: Lesson 1
+        href: content/lesson1.qmd
+      - text: Lesson 2
+        href: content/lesson2.qmd

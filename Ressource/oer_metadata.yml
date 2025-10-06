@@ -1,0 +1,31 @@
+# Beschreibende Metadaten
+abstract: "Zusammenfassung"
+abstract-title: "Zusammenfassung"
+description: |
+  Beschreibung
+funding: "gefördert durch die DFG (Projektnummer 501836407)"
+# vgl. https://quarto.org/docs/authoring/front-matter.html#funding
+
+# Erschließung der Inhalte mit Quarto
+# Mit categories und keywords können die Inhalte von Quarto-Dokumenten auf zwei Ebenen erschlossen werden. Übersichtsseiten mit Suchfunktion lassen sich so automatisch mit Quarto erstellen. vgl. https://quarto.org/docs/websites/website-listings.html
+categories: # Kontrolliertes Vokabular. e.g. https://skohub.io/dini-ag-kim/hcrt/heads/master/w3id.org/kim/hcrt/index.html
+  - Kategorie 1
+  - Kategorie 2
+keywords: # Kontrolliertes Vokabular. e.g. TaDiRAH https://vocabs.dariah.eu/tadirah/de/
+  - Stichwort 1
+  - Stichwort 2
+
+# Technische Metadaten
+site-url: https://example.com
+repo-url: https://gitlab.com
+
+# Rechtliche Metadaten
+copyright: "Angabe der Urheber:innen (kann von Autor:innen abweichen bzw. diese Angaben ergänzen)"
+license: CC BY # Optionen für Lizensierungsangaben: https://quarto.org/docs/authoring/front-matter.html#license
+
+# Spezifische Metadaten für den Export in fachliche Metadatenschemata
+# OERSI (vgl. https://oersi.gitlab.io/metadata-form/metadata-generator.html)
+bildungsstufe: https://w3id.org/kim/educationalLevel/level_A
+materialart: https://w3id.org/kim/hcrt/drill_and_practice
+status: Incomplete # Draft, Incomplete, Published
+# Schema für eigene Key-Value-Paare mit Bindestrich: custom-key: "custom-value"

@@ -23,19 +23,8 @@ Design und Layout des Templates ist sehr nüchtern. Anpassungen können über di
 
 vorgenommen werden.
 
-::: callout-tip
-## Hinweis
+![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)
 
-In den Kommentaren in den yml-Dateien sind viele Hinweise für Anpassungen hinterlegt.
-:::
-
-Die in der `LICENSE`-Datei angegbene GPL 3.0-Lizenz betrifft das Template. Diese Lizenz muss für inhaltiche OER-Bausteine ausgewechselt werden (idealerweise CC BY 4.0).
-
-::: callout-tip
-## Hinweis
-
-Im eigenen git-Repository das `LICENSE`-File löschen und die in gitlab/github integrierte Funktion zum Anlegen eines Lizenz-Files nutzen.
-:::
 
 ## Open Educational Resources (OER)
 

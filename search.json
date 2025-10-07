@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "content/index.html",
-    "href": "content/index.html",
-    "title": "Hauptseite der Übung",
-    "section": "",
-    "text": "Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Mit diesen Forschungsdaten umzugehen, erfordert allerdings technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. In den letzten Jahren sind dadurch auch Projekte zur Klassifikation von Münzen mit KI möglich."
-  },
-  {
     "objectID": "content/index.html#motivation",
     "href": "content/index.html#motivation",
     "title": "Hauptseite der Übung",
-    "section": "",
-    "text": "Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Mit diesen Forschungsdaten umzugehen, erfordert allerdings technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. In den letzten Jahren sind dadurch auch Projekte zur Klassifikation von Münzen mit KI möglich."
+    "section": "Motivation",
+    "text": "Motivation\nNutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Mit diesen Forschungsdaten umzugehen, erfordert allerdings technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. In den letzten Jahren sind dadurch auch Projekte zur Klassifikation von Münzen mit KI möglich."
   },
   {
     "objectID": "content/index.html#lernziele",
@@ -53,7 +46,14 @@
     "href": "content/index.html#transferaufgaben-optional",
     "title": "Hauptseite der Übung",
     "section": "Transferaufgaben (optional)",
-    "text": "Transferaufgaben (optional)\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
+    "text": "Transferaufgaben (optional)"
+  },
+  {
+    "objectID": "content/index.html#wofür-steht-die-abkürzung-fair-im-zusammenhang-mit-forschungsdaten",
+    "href": "content/index.html#wofür-steht-die-abkürzung-fair-im-zusammenhang-mit-forschungsdaten",
+    "title": "Hauptseite der Übung",
+    "section": "Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?",
+    "text": "Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?\n\nFormat, Analyze, Integrate, Recap\nFindable, Accessible, Interoperable, Reusable\nForschungsdaten, Ansätze, Informationen, Referenzen\nFachliche Auswertung von Informationen in Rechenzentren\n\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
   },
   {
     "objectID": "content/index.html#lösungen-optional",
@@ -74,7 +74,7 @@
     "href": "content/index.html#nachnutzen",
     "title": "Hauptseite der Übung",
     "section": "Nachnutzen",
-    "text": "Nachnutzen\n\nAlle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.\nUnser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.\n🔗 Dieser Baustein als Website:\n🔗 Quarto-Quellcode dieses Bausteins:"
+    "text": "Nachnutzen\nAlle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.\nUnser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.\n🔗 Dieser Baustein als Website:\n🔗 Quarto-Quellcode dieses Bausteins:"
   },
   {
     "objectID": "content/data_access.html",

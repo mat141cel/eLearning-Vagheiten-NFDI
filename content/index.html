@@ -205,37 +205,69 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="transferaufgaben-optional" class="level2">
 <h2 class="anchored" data-anchor-id="transferaufgaben-optional">Transferaufgaben (optional)</h2>
-<div id="quiz">
+</section>
+<section id="interactive-quiz" class="level1">
+<h1>Interactive Quiz</h1>
+<div id="quiz1">
 
 </div>
-<script src="assets/js/quiz.js"></script>
+<!-- Load JS for this page only -->
+<script src="../assets/js/quiz.js"></script>
 <script>
-// define the quiz data for this page
-window["quiz_data"] = [
+// Define quiz data for this page
+window["quiz1_data"] = [
   {
-    question: "Wofür steht die Abkürzung "FAIR" im Zusammenhang mit Forschungsdaten?",
+    question: "Wofür steht die Abkürzung 'FAIR' im Zusammenhang mit Forschungsdaten?",
     choices: [
-      { text: "Format, Analyze, Integrate, Recap ", feedback: "❌ Too low!" },
-      { text: "Findable, Accessible, Interoperable, Reusable", feedback: "✅ Correct!" },
-      { text: "Forschungsdaten, Ansätze, Informationen, Referenzen", feedback: "❌ Too high!" }
-      { text: "Fachliche Auswertung von Informationen in Rechenzentren", feedback: "❌ Too high!" }
+      { text: "Format, Analyze, Integrate, Recap", feedback: "❌ Falsch!" },
+      { text: "Findable, Accessible, Interoperable, Reusable", feedback: "✅ Richtig!" },
+      { text: "Forschungsdaten, Ansätze, Informationen, Referenzen", feedback: "❌ Falsch!" },
+      { text: "Fachliche Auswertung von Informationen in Rechenzentren", feedback: "❌ Falsch!" }
     ]
   },
   {
-    question: "7 × 6 = ?",
+    question: "Eine Forschungsarbeit erhält einen DOI (Digital Object Identifier). Welches FAIR-Kriterium ist erfüllt?",
     choices: [
-      { text: "36", feedback: "❌ Too low!" },
-      { text: "42", feedback: "✅ Correct!" },
-      { text: "48", feedback: "❌ Too high!" }
+      { text: "Findable", feedback: "✅ Richtig! DOI sorgt dafür, dass die Arbeit auffindbar ist." },
+      { text: "Accessible", feedback: "❌ Falsch! DOI betrifft das Auffinden, nicht den Zugang." },
+      { text: "Interoperable", feedback: "❌ Falsch! DOI regelt keine Standardisierung der Daten." },
+      { text: "Reusable", feedback: "❌ Falsch! DOI allein garantiert keine Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Ein Datensatz wird zusammen mit einer umfassenden Beschreibung der Variablen, Messmethoden und Forschungsbedingungen veröffentlicht. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Die Beschreibung hilft beim Verständnis, nicht beim Auffinden." },
+      { text: "Accessible", feedback: "❌ Falsch! Zugang ist hier nicht das Hauptkriterium." },
+      { text: "Interoperable", feedback: "❌ Falsch! Standardisierung ist hier nicht im Fokus." },
+      { text: "Reusable", feedback: "✅ Richtig! Die umfassende Beschreibung ermöglicht Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Die Ergebnisse eines Projekts können von Forschenden aus einem anderen Land über ein Webportal heruntergeladen werden, auch wenn sie nicht an der eigenen Institution arbeiten. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Auffindbarkeit ist nicht direkt beschrieben." },
+      { text: "Accessible", feedback: "✅ Richtig! Daten sind über das Webportal zugänglich." },
+      { text: "Interoperable", feedback: "❌ Falsch! Standardisierte Formate werden hier nicht erwähnt." },
+      { text: "Reusable", feedback: "❌ Falsch! Zugänglichkeit allein garantiert nicht Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Ein Konsortium stellt sicher, dass Daten von verschiedenen Sensoren und Laboren mit standardisierten Codes und Formaten kombiniert werden können. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Es geht hier nicht um Auffindbarkeit." },
+      { text: "Accessible", feedback: "❌ Falsch! Zugang ist nicht das Hauptthema." },
+      { text: "Interoperable", feedback: "✅ Richtig! Standardisierte Formate ermöglichen Interoperabilität." },
+      { text: "Reusable", feedback: "❌ Falsch! Wiederverwendbarkeit hängt von der Beschreibung ab." }
     ]
   }
 ];
 
-// render the quiz
-renderQuiz("quiz", window["quiz_data"]);
+// Render the quiz AFTER the JS file loads
+renderQuiz("quiz1", window["quiz1_data"]);
 </script>
+<p><link rel="stylesheet" href="../assets/css/quiz.css"></p>
 <p>Stellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können.</p>
-</section>
 <section id="lösungen-optional" class="level2">
 <h2 class="anchored" data-anchor-id="lösungen-optional">Lösungen (optional)</h2>
 <p>Stellen Sie Aufgaben und Lösungen noch einmal systematisch zusammen.</p>
@@ -245,6 +277,7 @@ renderQuiz("quiz", window["quiz_data"]);
 <p>Der Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die liographischen Angaben automatisch generiert und in das Dokument eingefügt.</p>
 </section>
 
+</section>
 
 <div id="quarto-appendix" class="default"><section id="nachnutzen" class="level2 appendix"><h2 class="anchored quarto-appendix-heading">Nachnutzen</h2><div class="quarto-appendix-contents">
 

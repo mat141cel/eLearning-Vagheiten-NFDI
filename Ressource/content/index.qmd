@@ -22,7 +22,7 @@ metadata-files:
 Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten.
 Mit diesen Forschungsdaten umzugehen, erfordert allerdings technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. In den letzten Jahren sind dadurch auch Projekte zur Klassifikation von Münzen mit KI möglich.
 
-<img src="/assets/img/ai_visualization.png">
+<img src="../assets/img/ai_visualization.png">
 
 ## Lernziele
 
@@ -49,35 +49,67 @@ Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:
 ## Ergebnisse
 
 ## Transferaufgaben (optional)
+# Interactive Quiz
 
-<div id="quiz"></div>
+<div id="quiz1"></div>
 
-<script src="assets/js/quiz.js"></script>
+<!-- Load JS for this page only -->
+<script src="../assets/js/quiz.js"></script>
+
 <script>
-// define the quiz data for this page
-window["quiz_data"] = [
+// Define quiz data for this page
+window["quiz1_data"] = [
   {
-    question: "Wofür steht die Abkürzung "FAIR" im Zusammenhang mit Forschungsdaten?",
+    question: "Wofür steht die Abkürzung 'FAIR' im Zusammenhang mit Forschungsdaten?",
     choices: [
-      { text: "Format, Analyze, Integrate, Recap ", feedback: "❌ Too low!" },
-      { text: "Findable, Accessible, Interoperable, Reusable", feedback: "✅ Correct!" },
-      { text: "Forschungsdaten, Ansätze, Informationen, Referenzen", feedback: "❌ Too high!" }
-      { text: "Fachliche Auswertung von Informationen in Rechenzentren", feedback: "❌ Too high!" }
+      { text: "Format, Analyze, Integrate, Recap", feedback: "❌ Falsch!" },
+      { text: "Findable, Accessible, Interoperable, Reusable", feedback: "✅ Richtig!" },
+      { text: "Forschungsdaten, Ansätze, Informationen, Referenzen", feedback: "❌ Falsch!" },
+      { text: "Fachliche Auswertung von Informationen in Rechenzentren", feedback: "❌ Falsch!" }
     ]
   },
   {
-    question: "7 × 6 = ?",
+    question: "Eine Forschungsarbeit erhält einen DOI (Digital Object Identifier). Welches FAIR-Kriterium ist erfüllt?",
     choices: [
-      { text: "36", feedback: "❌ Too low!" },
-      { text: "42", feedback: "✅ Correct!" },
-      { text: "48", feedback: "❌ Too high!" }
+      { text: "Findable", feedback: "✅ Richtig! DOI sorgt dafür, dass die Arbeit auffindbar ist." },
+      { text: "Accessible", feedback: "❌ Falsch! DOI betrifft das Auffinden, nicht den Zugang." },
+      { text: "Interoperable", feedback: "❌ Falsch! DOI regelt keine Standardisierung der Daten." },
+      { text: "Reusable", feedback: "❌ Falsch! DOI allein garantiert keine Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Ein Datensatz wird zusammen mit einer umfassenden Beschreibung der Variablen, Messmethoden und Forschungsbedingungen veröffentlicht. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Die Beschreibung hilft beim Verständnis, nicht beim Auffinden." },
+      { text: "Accessible", feedback: "❌ Falsch! Zugang ist hier nicht das Hauptkriterium." },
+      { text: "Interoperable", feedback: "❌ Falsch! Standardisierung ist hier nicht im Fokus." },
+      { text: "Reusable", feedback: "✅ Richtig! Die umfassende Beschreibung ermöglicht Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Die Ergebnisse eines Projekts können von Forschenden aus einem anderen Land über ein Webportal heruntergeladen werden, auch wenn sie nicht an der eigenen Institution arbeiten. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Auffindbarkeit ist nicht direkt beschrieben." },
+      { text: "Accessible", feedback: "✅ Richtig! Daten sind über das Webportal zugänglich." },
+      { text: "Interoperable", feedback: "❌ Falsch! Standardisierte Formate werden hier nicht erwähnt." },
+      { text: "Reusable", feedback: "❌ Falsch! Zugänglichkeit allein garantiert nicht Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Ein Konsortium stellt sicher, dass Daten von verschiedenen Sensoren und Laboren mit standardisierten Codes und Formaten kombiniert werden können. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Es geht hier nicht um Auffindbarkeit." },
+      { text: "Accessible", feedback: "❌ Falsch! Zugang ist nicht das Hauptthema." },
+      { text: "Interoperable", feedback: "✅ Richtig! Standardisierte Formate ermöglichen Interoperabilität." },
+      { text: "Reusable", feedback: "❌ Falsch! Wiederverwendbarkeit hängt von der Beschreibung ab." }
     ]
   }
 ];
 
-// render the quiz
-renderQuiz("quiz", window["quiz_data"]);
+// Render the quiz AFTER the JS file loads
+renderQuiz("quiz1", window["quiz1_data"]);
 </script>
+<link rel="stylesheet" href="../assets/css/quiz.css">
 
 
 Stellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können.

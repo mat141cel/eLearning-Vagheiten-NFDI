@@ -7,11 +7,11 @@
     "text": "Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Mit diesen Forschungsdaten umzugehen, erfordert allerdings technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. In den letzten Jahren sind dadurch auch Projekte zur Klassifikation von Münzen mit KI möglich."
   },
   {
-    "objectID": "content/index.html#praktische-bezügeanwendungsbeispielmotivation",
-    "href": "content/index.html#praktische-bezügeanwendungsbeispielmotivation",
+    "objectID": "content/index.html#motivation",
+    "href": "content/index.html#motivation",
     "title": "Hauptseite der Übung",
     "section": "",
-    "text": "Holen Sie die Lernenden in diesem Absatz ab. Stellen Sie in wenigen Sätzen, mit Beispielen und Fragen das Thema der Übung vor."
+    "text": "Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Mit diesen Forschungsdaten umzugehen, erfordert allerdings technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. In den letzten Jahren sind dadurch auch Projekte zur Klassifikation von Münzen mit KI möglich."
   },
   {
     "objectID": "content/index.html#lernziele",
@@ -28,18 +28,11 @@
     "text": "Voraussetzungen\nFür das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:\n\nes müssen keien Programme vorinstalliert werden, alles läuft interaktiv in Quarto ab\nGrundlagenwissen in Python"
   },
   {
-    "objectID": "content/index.html#datengrundlage",
-    "href": "content/index.html#datengrundlage",
+    "objectID": "content/index.html#vorbereitung-was-sind-forschungsdaten",
+    "href": "content/index.html#vorbereitung-was-sind-forschungsdaten",
     "title": "Hauptseite der Übung",
-    "section": "Datengrundlage",
-    "text": "Datengrundlage\nErläutern und verlinken sie die Datengrundlage für die Übung."
-  },
-  {
-    "objectID": "content/index.html#vorbereitung",
-    "href": "content/index.html#vorbereitung",
-    "title": "Hauptseite der Übung",
-    "section": "Vorbereitung",
-    "text": "Vorbereitung"
+    "section": "Vorbereitung: Was sind Forschungsdaten",
+    "text": "Vorbereitung: Was sind Forschungsdaten"
   },
   {
     "objectID": "content/index.html#durchführung",
@@ -60,7 +53,7 @@
     "href": "content/index.html#transferaufgaben-optional",
     "title": "Hauptseite der Übung",
     "section": "Transferaufgaben (optional)",
-    "text": "Transferaufgaben (optional)\n\n\n\n\n\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
+    "text": "Transferaufgaben (optional)"
   },
   {
     "objectID": "content/index.html#lösungen-optional",
@@ -82,209 +75,6 @@
     "title": "Hauptseite der Übung",
     "section": "Nachnutzen",
     "text": "Nachnutzen\n\nAlle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.\nUnser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.\n🔗 Dieser Baustein als Website:\n🔗 Quarto-Quellcode dieses Bausteins:"
-  },
-  {
-    "objectID": "content/index.html#footnotes",
-    "href": "content/index.html#footnotes",
-    "title": "Hauptseite der Übung",
-    "section": "Fußnoten",
-    "text": "Fußnoten\n\n\nPetersen, B., Engelhardt, C., Hörner, T., Jacob, J., Kvetnaya, T., Mühlichen, A., Schranzhofer, H., Schulz, S., Slowig, B., Trautwein-Bruns, U., Voigt, A., & Wiljes, C. (2023). Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards. Zenodo. https://doi.org/10.5281/zenodo.8010617↩︎"
-  },
-  {
-    "objectID": "content/lesson2.html",
-    "href": "content/lesson2.html",
-    "title": "Getting the Data",
-    "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten"
-  },
-  {
-    "objectID": "content/lesson2.html#praktische-bezügeanwendungsbeispielmotivation",
-    "href": "content/lesson2.html#praktische-bezügeanwendungsbeispielmotivation",
-    "title": "Getting the Data",
-    "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten"
-  },
-  {
-    "objectID": "content/lesson2.html#lernziele",
-    "href": "content/lesson2.html#lernziele",
-    "title": "Getting the Data",
-    "section": "Lernziele",
-    "text": "Lernziele\nIn diesem Skript lernen Sie:\n\nZiel 1\nZiel 2\n\nIdealerweise beziehen sie sich in dieser Aufzählung auf die Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards.1"
-  },
-  {
-    "objectID": "content/lesson2.html#voraussetzungen",
-    "href": "content/lesson2.html#voraussetzungen",
-    "title": "Getting the Data",
-    "section": "Voraussetzungen",
-    "text": "Voraussetzungen\nFür das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:\n\nVoraussetzung 1\n\nVersuchen sie so detailliert wie möglich die Voraussetzungen für die Durchführung der Übung aufzuzählen. Geben sie Hinweise, wo die Lernenden entsprechende/s Kompetenzen/Wissen erwerben können. Verweisen sie insbesondere auf Hilfestellungen für die Software-Installation und Tutorials zum Umgang."
-  },
-  {
-    "objectID": "content/lesson2.html#datengrundlage",
-    "href": "content/lesson2.html#datengrundlage",
-    "title": "Getting the Data",
-    "section": "Datengrundlage",
-    "text": "Datengrundlage\nErläutern und verlinken sie die Datengrundlage für die Übung."
-  },
-  {
-    "objectID": "content/lesson2.html#vorbereitung",
-    "href": "content/lesson2.html#vorbereitung",
-    "title": "Getting the Data",
-    "section": "Vorbereitung",
-    "text": "Vorbereitung"
-  },
-  {
-    "objectID": "content/lesson2.html#durchführung",
-    "href": "content/lesson2.html#durchführung",
-    "title": "Getting the Data",
-    "section": "Durchführung",
-    "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können"
-  },
-  {
-    "objectID": "content/lesson2.html#ergebnisse",
-    "href": "content/lesson2.html#ergebnisse",
-    "title": "Hauptseite der Übung",
-    "section": "Ergebnisse",
-    "text": "Ergebnisse"
-  },
-  {
-    "objectID": "content/lesson2.html#transferaufgaben-optional",
-    "href": "content/lesson2.html#transferaufgaben-optional",
-    "title": "Hauptseite der Übung",
-    "section": "Transferaufgaben (optional)",
-    "text": "Transferaufgaben (optional)\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
-  },
-  {
-    "objectID": "content/lesson2.html#lösungen-optional",
-    "href": "content/lesson2.html#lösungen-optional",
-    "title": "Hauptseite der Übung",
-    "section": "Lösungen (optional)",
-    "text": "Lösungen (optional)\nStellen Sie Aufgaben und Lösungen noch einmal systematisch zusammen."
-  },
-  {
-    "objectID": "content/lesson2.html#weiterführende-quellen-und-informationen",
-    "href": "content/lesson2.html#weiterführende-quellen-und-informationen",
-    "title": "Hauptseite der Übung",
-    "section": "Weiterführende Quellen und Informationen",
-    "text": "Weiterführende Quellen und Informationen\nDer Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die bibliographischen Angaben automatisch generiert und in das Dokument eingefügt."
-  },
-  {
-    "objectID": "content/lesson2.html#nachnutzen",
-    "href": "content/lesson2.html#nachnutzen",
-    "title": "Hauptseite der Übung",
-    "section": "Nachnutzen",
-    "text": "Nachnutzen\n\nAlle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.\nUnser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.\n🔗 Dieser Baustein als Website:\n🔗 Quarto-Quellcode dieses Bausteins:"
-  },
-  {
-    "objectID": "content/lesson2.html#footnotes",
-    "href": "content/lesson2.html#footnotes",
-    "title": "Getting the Data",
-    "section": "Fußnoten",
-    "text": "Fußnoten\n\n\nPetersen, B., Engelhardt, C., Hörner, T., Jacob, J., Kvetnaya, T., Mühlichen, A., Schranzhofer, H., Schulz, S., Slowig, B., Trautwein-Bruns, U., Voigt, A., & Wiljes, C. (2023). Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards. Zenodo. https://doi.org/10.5281/zenodo.8010617↩︎"
-  },
-  {
-    "objectID": "content/lesson1.html",
-    "href": "content/lesson1.html",
-    "title": "Hauptseite der Übung",
-    "section": "",
-    "text": "Holen Sie die Lernenden in diesem Absatz ab. Stellen Sie in wenigen Sätzen, mit Beispielen und Fragen das Thema der Übung vor."
-  },
-  {
-    "objectID": "content/lesson1.html#praktische-bezügeanwendungsbeispielmotivation",
-    "href": "content/lesson1.html#praktische-bezügeanwendungsbeispielmotivation",
-    "title": "Hauptseite der Übung",
-    "section": "",
-    "text": "Holen Sie die Lernenden in diesem Absatz ab. Stellen Sie in wenigen Sätzen, mit Beispielen und Fragen das Thema der Übung vor."
-  },
-  {
-    "objectID": "content/lesson1.html#lernziele",
-    "href": "content/lesson1.html#lernziele",
-    "title": "Hauptseite der Übung",
-    "section": "Lernziele",
-    "text": "Lernziele\nIn diesem Skript lernen Sie:\n\nZiel 1\nZiel 2\n\nIdealerweise beziehen sie sich in dieser Aufzählung auf die Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards.1"
-  },
-  {
-    "objectID": "content/lesson1.html#voraussetzungen",
-    "href": "content/lesson1.html#voraussetzungen",
-    "title": "Hauptseite der Übung",
-    "section": "Voraussetzungen",
-    "text": "Voraussetzungen\nFür das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:\n\nVoraussetzung 1\n\nVersuchen sie so detailliert wie möglich die Voraussetzungen für die Durchführung der Übung aufzuzählen. Geben sie Hinweise, wo die Lernenden entsprechende/s Kompetenzen/Wissen erwerben können. Verweisen sie insbesondere auf Hilfestellungen für die Software-Installation und Tutorials zum Umgang."
-  },
-  {
-    "objectID": "content/lesson1.html#datengrundlage",
-    "href": "content/lesson1.html#datengrundlage",
-    "title": "Hauptseite der Übung",
-    "section": "Datengrundlage",
-    "text": "Datengrundlage\nErläutern und verlinken sie die Datengrundlage für die Übung."
-  },
-  {
-    "objectID": "content/lesson1.html#vorbereitung",
-    "href": "content/lesson1.html#vorbereitung",
-    "title": "Hauptseite der Übung",
-    "section": "Vorbereitung",
-    "text": "Vorbereitung"
-  },
-  {
-    "objectID": "content/lesson1.html#durchführung",
-    "href": "content/lesson1.html#durchführung",
-    "title": "Hauptseite der Übung",
-    "section": "Durchführung",
-    "text": "Durchführung"
-  },
-  {
-    "objectID": "content/lesson1.html#ergebnisse",
-    "href": "content/lesson1.html#ergebnisse",
-    "title": "Hauptseite der Übung",
-    "section": "Ergebnisse",
-    "text": "Ergebnisse"
-  },
-  {
-    "objectID": "content/lesson1.html#transferaufgaben-optional",
-    "href": "content/lesson1.html#transferaufgaben-optional",
-    "title": "Hauptseite der Übung",
-    "section": "Transferaufgaben (optional)",
-    "text": "Transferaufgaben (optional)\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
-  },
-  {
-    "objectID": "content/lesson1.html#lösungen-optional",
-    "href": "content/lesson1.html#lösungen-optional",
-    "title": "Hauptseite der Übung",
-    "section": "Lösungen (optional)",
-    "text": "Lösungen (optional)\nStellen Sie Aufgaben und Lösungen noch einmal systematisch zusammen."
-  },
-  {
-    "objectID": "content/lesson1.html#weiterführende-quellen-und-informationen",
-    "href": "content/lesson1.html#weiterführende-quellen-und-informationen",
-    "title": "Hauptseite der Übung",
-    "section": "Weiterführende Quellen und Informationen",
-    "text": "Weiterführende Quellen und Informationen\nDer Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die bibliographischen Angaben automatisch generiert und in das Dokument eingefügt."
-  },
-  {
-    "objectID": "content/lesson1.html#nachnutzen",
-    "href": "content/lesson1.html#nachnutzen",
-    "title": "Hauptseite der Übung",
-    "section": "Nachnutzen",
-    "text": "Nachnutzen\n\nAlle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.\nUnser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.\n🔗 Dieser Baustein als Website:\n🔗 Quarto-Quellcode dieses Bausteins:"
-  },
-  {
-    "objectID": "content/lesson1.html#footnotes",
-    "href": "content/lesson1.html#footnotes",
-    "title": "Hauptseite der Übung",
-    "section": "Fußnoten",
-    "text": "Fußnoten\n\n\nPetersen, B., Engelhardt, C., Hörner, T., Jacob, J., Kvetnaya, T., Mühlichen, A., Schranzhofer, H., Schulz, S., Slowig, B., Trautwein-Bruns, U., Voigt, A., & Wiljes, C. (2023). Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards. Zenodo. https://doi.org/10.5281/zenodo.8010617↩︎"
-  },
-  {
-    "objectID": "content/index.html#motivation",
-    "href": "content/index.html#motivation",
-    "title": "Hauptseite der Übung",
-    "section": "",
-    "text": "Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Mit diesen Forschungsdaten umzugehen, erfordert allerdings technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. In den letzten Jahren sind dadurch auch Projekte zur Klassifikation von Münzen mit KI möglich."
-  },
-  {
-    "objectID": "content/index.html#vorbereitung-was-sind-forschungsdaten",
-    "href": "content/index.html#vorbereitung-was-sind-forschungsdaten",
-    "title": "Hauptseite der Übung",
-    "section": "Vorbereitung: Was sind Forschungsdaten",
-    "text": "Vorbereitung: Was sind Forschungsdaten"
   },
   {
     "objectID": "content/data_access.html",
@@ -364,20 +154,6 @@
     "text": "Weiterführende Quellen und Informationen"
   },
   {
-    "objectID": "content/data_access.html#nachnutzen",
-    "href": "content/data_access.html#nachnutzen",
-    "title": "Hauptseite der Übung",
-    "section": "Nachnutzen",
-    "text": "Nachnutzen\n\nAlle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.\nUnser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.\n🔗 Dieser Baustein als Website:\n🔗 Quarto-Quellcode dieses Bausteins:"
-  },
-  {
-    "objectID": "content/data_access.html#footnotes",
-    "href": "content/data_access.html#footnotes",
-    "title": "Hauptseite der Übung",
-    "section": "Fußnoten",
-    "text": "Fußnoten\n\n\nPetersen, B., Engelhardt, C., Hörner, T., Jacob, J., Kvetnaya, T., Mühlichen, A., Schranzhofer, H., Schulz, S., Slowig, B., Trautwein-Bruns, U., Voigt, A., & Wiljes, C. (2023). Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards. Zenodo. https://doi.org/10.5281/zenodo.8010617↩︎"
-  },
-  {
     "objectID": "content/data_aggregation.html",
     "href": "content/data_aggregation.html",
     "title": "Getting the Data",
@@ -432,12 +208,5 @@
     "title": "Getting the Data",
     "section": "Fußnoten",
     "text": "Fußnoten\n\n\nPetersen, B., Engelhardt, C., Hörner, T., Jacob, J., Kvetnaya, T., Mühlichen, A., Schranzhofer, H., Schulz, S., Slowig, B., Trautwein-Bruns, U., Voigt, A., & Wiljes, C. (2023). Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards. Zenodo. https://doi.org/10.5281/zenodo.8010617↩︎"
-  },
-  {
-    "objectID": "content/index.html#wofür-steht-die-abkürzung-fair-im-zusammenhang-mit-forschungsdaten",
-    "href": "content/index.html#wofür-steht-die-abkürzung-fair-im-zusammenhang-mit-forschungsdaten",
-    "title": "Hauptseite der Übung",
-    "section": "Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?",
-    "text": "Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?\n\nFormat, Analyze, Integrate, Recap\nFindable, Accessible, Interoperable, Reusable\nForschungsdaten, Ansätze, Informationen, Referenzen\nFachliche Auswertung von Informationen in Rechenzentren\n\n\n\n\n\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
   }
 ]

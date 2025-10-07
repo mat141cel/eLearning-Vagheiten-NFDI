@@ -1,7 +1,7 @@
 # Metadaten zur Steuerung des Layouts
 # Alle Optionen in der Quarto-Dokumentation: https://quarto.org/docs/reference/formats/html.html
 # Detaillierte Anpassungen an Corporate Design im Verzeichnis /brand/
-brand: /brand/_n4o_brand.yml
+brand: ../brand/_n4o_brand.yml
 
 jupyter: python3
 # Anpassungen der automatisch erzeugten Bezeichnungen in der Dokumentstruktur
@@ -34,8 +34,8 @@ format:
   html:
     embed-resources: false # `true` erstellt eine eigenständige HTML-Datei ohne externe Abhängigkeiten für die Übernahme in LMS wie Moodle oder OLAT.
     theme:
-      - brand
-      - brand/n4o_html.scss
+      - ../brand
+      - ../brand/n4o_html.scss
     number-sections: false
     anchor-sections: true
     code-overflow: scroll

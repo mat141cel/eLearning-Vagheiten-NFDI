@@ -53,14 +53,7 @@
     "href": "content/index.html#transferaufgaben-optional",
     "title": "Hauptseite der Übung",
     "section": "Transferaufgaben (optional)",
-    "text": "Transferaufgaben (optional)"
-  },
-  {
-    "objectID": "content/index.html#wofür-steht-die-abkürzung-fair-im-zusammenhang-mit-forschungsdaten",
-    "href": "content/index.html#wofür-steht-die-abkürzung-fair-im-zusammenhang-mit-forschungsdaten",
-    "title": "Hauptseite der Übung",
-    "section": "Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?",
-    "text": "Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?\n\nFormat, Analyze, Integrate, Recap\nFindable, Accessible, Interoperable, Reusable\nForschungsdaten, Ansätze, Informationen, Referenzen\nFachliche Auswertung von Informationen in Rechenzentren\n\n\n\nquarto install\nquarto add\nquarto get\n\n\n\n\nWord\nHTML\nRevealjs\nExcel\n\n\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
+    "text": "Transferaufgaben (optional)\n\n\n\n\n\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
   },
   {
     "objectID": "content/index.html#lösungen-optional",

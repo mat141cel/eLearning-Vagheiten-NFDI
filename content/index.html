@@ -205,30 +205,35 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="transferaufgaben-optional" class="level2">
 <h2 class="anchored" data-anchor-id="transferaufgaben-optional">Transferaufgaben (optional)</h2>
-</section>
-<section id="wofür-steht-die-abkürzung-fair-im-zusammenhang-mit-forschungsdaten" class="level2 quiz-question">
-<h2 class="quiz-question anchored" data-anchor-id="wofür-steht-die-abkürzung-fair-im-zusammenhang-mit-forschungsdaten">Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?</h2>
-<ul>
-<li>Format, Analyze, Integrate, Recap</li>
-<li><span class="correct">Findable, Accessible, Interoperable, Reusable</span></li>
-<li>Forschungsdaten, Ansätze, Informationen, Referenzen</li>
-<li>Fachliche Auswertung von Informationen in Rechenzentren</li>
-</ul>
-<div class="quiz" data-question="What command adds an extension to a project?">
-<ul class="task-list">
-<li><input type="checkbox">quarto install</li>
-<li><input type="checkbox" checked="">quarto add</li>
-<li><input type="checkbox">quarto get</li>
-</ul>
+<div id="quiz">
+
 </div>
-<div class="quiz" data-question="Which of these is a Quarto output format?">
-<ul class="task-list">
-<li><input type="checkbox">Word</li>
-<li><input type="checkbox" checked="">HTML</li>
-<li><input type="checkbox" checked="">Revealjs</li>
-<li><input type="checkbox">Excel</li>
-</ul>
-</div>
+<script src="assets/js/quiz.js"></script>
+<script>
+// define the quiz data for this page
+window["quiz_data"] = [
+  {
+    question: "Wofür steht die Abkürzung "FAIR" im Zusammenhang mit Forschungsdaten?",
+    choices: [
+      { text: "Format, Analyze, Integrate, Recap ", feedback: "❌ Too low!" },
+      { text: "Findable, Accessible, Interoperable, Reusable", feedback: "✅ Correct!" },
+      { text: "Forschungsdaten, Ansätze, Informationen, Referenzen", feedback: "❌ Too high!" }
+      { text: "Fachliche Auswertung von Informationen in Rechenzentren", feedback: "❌ Too high!" }
+    ]
+  },
+  {
+    question: "7 × 6 = ?",
+    choices: [
+      { text: "36", feedback: "❌ Too low!" },
+      { text: "42", feedback: "✅ Correct!" },
+      { text: "48", feedback: "❌ Too high!" }
+    ]
+  }
+];
+
+// render the quiz
+renderQuiz("quiz", window["quiz_data"]);
+</script>
 <p>Stellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können.</p>
 </section>
 <section id="lösungen-optional" class="level2">

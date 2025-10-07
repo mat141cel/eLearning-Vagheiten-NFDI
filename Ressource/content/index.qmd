@@ -15,8 +15,6 @@ metadata-files:
 # export_alle_metadaten:
 #  mode: schema
 #  exclude: [format, filters, brand, from, metadata-files, export-meta, export-meta-dir]
-revealjs-plugins:
-  - quiz
 ---
 
 ## Motivation
@@ -52,26 +50,36 @@ Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:
 
 ## Transferaufgaben (optional)
 
-## Wofür steht die Abkürzung "FAIR" im Zusammenhang mit Forschungsdaten? {.quiz-question}
+<div id="quiz"></div>
 
-- Format, Analyze, Integrate, Recap 
-- [Findable, Accessible, Interoperable, Reusable ]{.correct}
-- Forschungsdaten, Ansätze, Informationen, Referenzen
-- Fachliche Auswertung von Informationen in Rechenzentren
+<script src="assets/js/quiz.js"></script>
+<script>
+// define the quiz data for this page
+window["quiz_data"] = [
+  {
+    question: "Wofür steht die Abkürzung "FAIR" im Zusammenhang mit Forschungsdaten?",
+    choices: [
+      { text: "Format, Analyze, Integrate, Recap ", feedback: "❌ Too low!" },
+      { text: "Findable, Accessible, Interoperable, Reusable", feedback: "✅ Correct!" },
+      { text: "Forschungsdaten, Ansätze, Informationen, Referenzen", feedback: "❌ Too high!" }
+      { text: "Fachliche Auswertung von Informationen in Rechenzentren", feedback: "❌ Too high!" }
+    ]
+  },
+  {
+    question: "7 × 6 = ?",
+    choices: [
+      { text: "36", feedback: "❌ Too low!" },
+      { text: "42", feedback: "✅ Correct!" },
+      { text: "48", feedback: "❌ Too high!" }
+    ]
+  }
+];
 
-::: {.quiz data-question="What command adds an extension to a project?"}
-- [ ] quarto install
-- [x] quarto add
-- [ ] quarto get
-:::
+// render the quiz
+renderQuiz("quiz", window["quiz_data"]);
+</script>
 
 
-::: {.quiz data-question="Which of these is a Quarto output format?"}
-- [ ] Word
-- [x] HTML
-- [x] Revealjs
-- [ ] Excel
-:::
 Stellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können.
 
 ## Lösungen (optional)

@@ -60,7 +60,7 @@
     "href": "content/index.html#transferaufgaben-optional",
     "title": "Hauptseite der Übung",
     "section": "Transferaufgaben (optional)",
-    "text": "Transferaufgaben (optional)"
+    "text": "Transferaufgaben (optional)\n\n\n\n\n\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
   },
   {
     "objectID": "content/index.html#lösungen-optional",
@@ -305,7 +305,7 @@
     "href": "content/data_access.html#lernziele",
     "title": "Hauptseite der Übung",
     "section": "Lernziele",
-    "text": "Lernziele\nIn diesem Skript lernen Sie:\n\nZiel 1\nZiel 2\n\nIdealerweise beziehen sie sich in dieser Aufzählung auf die Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards.1"
+    "text": "Lernziele\nIn diesem Skript lernen Sie:\n\nZiel 1\nZiel 2"
   },
   {
     "objectID": "content/data_access.html#voraussetzungen",
@@ -361,7 +361,7 @@
     "href": "content/data_access.html#weiterführende-quellen-und-informationen",
     "title": "Hauptseite der Übung",
     "section": "Weiterführende Quellen und Informationen",
-    "text": "Weiterführende Quellen und Informationen\nDer Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die bibliographischen Angaben automatisch generiert und in das Dokument eingefügt."
+    "text": "Weiterführende Quellen und Informationen"
   },
   {
     "objectID": "content/data_access.html#nachnutzen",
@@ -438,6 +438,6 @@
     "href": "content/index.html#wofür-steht-die-abkürzung-fair-im-zusammenhang-mit-forschungsdaten",
     "title": "Hauptseite der Übung",
     "section": "Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?",
-    "text": "Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?\n\nFormat, Analyze, Integrate, Recap\nFindable, Accessible, Interoperable, Reusable\nForschungsdaten, Ansätze, Informationen, Referenzen\nFachliche Auswertung von Informationen in Rechenzentren\n\n\n\nquarto install\nquarto add\nquarto get\n\n\n\n\nWord\nHTML\nRevealjs\nExcel\n\n\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
+    "text": "Wofür steht die Abkürzung “FAIR” im Zusammenhang mit Forschungsdaten?\n\nFormat, Analyze, Integrate, Recap\nFindable, Accessible, Interoperable, Reusable\nForschungsdaten, Ansätze, Informationen, Referenzen\nFachliche Auswertung von Informationen in Rechenzentren\n\n\n\n\n\nStellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können."
   }
 ]

@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources: 
+    - assets/
 
 metadata-files:
   - layout.yml
@@ -10,9 +12,9 @@ metadata-files:
 website:
   navbar:
     left:
-      - text: Home
+      - text: Hauptseite
         href: content/index.qmd
-      - text: Lesson 1
-        href: content/lesson1.qmd
-      - text: Lesson 2
-        href: content/lesson2.qmd
+      - text: "Lektion 1: Datenzugang"
+        href: content/data_access.qmd
+      - text: "Lektion 2: Datenverarbeitung"
+        href: content/data_aggregation.qmd

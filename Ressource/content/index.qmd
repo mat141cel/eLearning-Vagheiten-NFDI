@@ -17,32 +17,32 @@ metadata-files:
 #  exclude: [format, filters, brand, from, metadata-files, export-meta, export-meta-dir]
 ---
 
-## Praktische Bezüge/Anwendungsbeispiel/Motivation
+## Motivation
 
-Holen Sie die Lernenden in diesem Absatz ab. Stellen Sie in wenigen Sätzen, mit Beispielen und Fragen das Thema der Übung vor.
+Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten.
+Mit diesen Forschungsdaten umzugehen, erfordert allerdings technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. In den letzten Jahren sind dadurch auch Projekte zur Klassifikation von Münzen mit KI möglich.
+
+<img src="/assets/img/ai_visualization.png">
 
 ## Lernziele
 
-In diesem Skript lernen Sie:
+In dieser OER lernen Sie:
 
-- Ziel 1
-- Ziel 2
+- die wichtigsten numismatischen Datenbanken kennen, und wie Daten heruntergeladen werden können (link zu data access.qmd)
+- Die Daten zu verstehen und zu bereinigen (link zu data aggregation)
 
-Idealerweise beziehen sie sich in dieser Aufzählung auf die Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards.^[Petersen, B., Engelhardt, C., Hörner, T., Jacob, J., Kvetnaya, T., Mühlichen, A., Schranzhofer, H., Schulz, S., Slowig, B., Trautwein-Bruns, U., Voigt, A., & Wiljes, C. (2023). Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards. Zenodo. [https://doi.org/10.5281/zenodo.8010617](https://doi.org/10.5281/zenodo.8010617)]
 
 ## Voraussetzungen
 
 Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:
 
-- Voraussetzung 1
+- es müssen keien Programme vorinstalliert werden, alles läuft interaktiv in Quarto ab
 
-Versuchen sie so detailliert wie möglich die Voraussetzungen für die Durchführung der Übung aufzuzählen. Geben sie Hinweise, wo die Lernenden entsprechende/s Kompetenzen/Wissen erwerben können. Verweisen sie insbesondere auf Hilfestellungen für die Software-Installation und Tutorials zum Umgang.
+- Grundlagenwissen in Python
 
-## Datengrundlage
 
-Erläutern und verlinken sie die Datengrundlage für die Übung.
 
-## Vorbereitung
+## Vorbereitung: Was sind Forschungsdaten
 
 ## Durchführung
 
@@ -58,7 +58,7 @@ Stellen Sie Aufgaben und Lösungen noch einmal systematisch zusammen.
 
 ## Weiterführende Quellen und Informationen
 
-Der Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die bibliographischen Angaben automatisch generiert und in das Dokument eingefügt.
+Der Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die     liographischen Angaben automatisch generiert und in das Dokument eingefügt.
 
 ## Nachnutzen {.appendix}
 

@@ -1,5 +1,5 @@
 ---
-title: "Hauptseite der Übung"
+title: "Getting the Data"
 subtitle: "neuer Untertitel"
 lang: de
 date: today
@@ -19,7 +19,7 @@ metadata-files:
 
 ## Praktische Bezüge/Anwendungsbeispiel/Motivation
 
-Holen Sie die Lernenden in diesem Absatz ab. Stellen Sie in wenigen Sätzen, mit Beispielen und Fragen das Thema der Übung vor.
+Es gibt verschiedene für die Numismatik relevante Seiten 
 
 ## Lernziele
 
@@ -46,27 +46,6 @@ Erläutern und verlinken sie die Datengrundlage für die Übung.
 
 ## Durchführung
 
-## Ergebnisse
+Hier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.
 
-## Transferaufgaben (optional)
-
-Stellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können.
-
-## Lösungen (optional)
-
-Stellen Sie Aufgaben und Lösungen noch einmal systematisch zusammen.
-
-## Weiterführende Quellen und Informationen
-
-Der Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die bibliographischen Angaben automatisch generiert und in das Dokument eingefügt.
-
-## Nachnutzen {.appendix}
-
-Alle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.
-
-Unser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.
-
-:link: [Dieser Baustein als Website:]({{< meta site-url >}})
-
-:link: [Quarto-Quellcode dieses Bausteins:]({{< meta repo-url >}})
-
+Dann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können

@@ -15,8 +15,6 @@ metadata-files:
 # export_alle_metadaten:
 #  mode: schema
 #  exclude: [format, filters, brand, from, metadata-files, export-meta, export-meta-dir]
-format: # import quiz plugin
-    revealjs: default
 revealjs-plugins:
   - quiz
 ---
@@ -61,6 +59,19 @@ Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:
 - Forschungsdaten, Ansätze, Informationen, Referenzen
 - Fachliche Auswertung von Informationen in Rechenzentren
 
+::: {.quiz data-question="What command adds an extension to a project?"}
+- [ ] quarto install
+- [x] quarto add
+- [ ] quarto get
+:::
+
+
+::: {.quiz data-question="Which of these is a Quarto output format?"}
+- [ ] Word
+- [x] HTML
+- [x] Revealjs
+- [ ] Excel
+:::
 Stellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können.
 
 ## Lösungen (optional)

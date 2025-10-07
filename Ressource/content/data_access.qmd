@@ -28,8 +28,6 @@ In diesem Skript lernen Sie:
 - Ziel 1
 - Ziel 2
 
-Idealerweise beziehen sie sich in dieser Aufzählung auf die Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards.^[Petersen, B., Engelhardt, C., Hörner, T., Jacob, J., Kvetnaya, T., Mühlichen, A., Schranzhofer, H., Schulz, S., Slowig, B., Trautwein-Bruns, U., Voigt, A., & Wiljes, C. (2023). Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards. Zenodo. [https://doi.org/10.5281/zenodo.8010617](https://doi.org/10.5281/zenodo.8010617)]
-
 ## Voraussetzungen
 
 Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:
@@ -57,16 +55,3 @@ Stellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenn
 Stellen Sie Aufgaben und Lösungen noch einmal systematisch zusammen.
 
 ## Weiterführende Quellen und Informationen
-
-Der Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die bibliographischen Angaben automatisch generiert und in das Dokument eingefügt.
-
-## Nachnutzen {.appendix}
-
-Alle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.
-
-Unser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.
-
-:link: [Dieser Baustein als Website:]({{< meta site-url >}})
-
-:link: [Quarto-Quellcode dieses Bausteins:]({{< meta repo-url >}})
-

@@ -15,6 +15,10 @@ metadata-files:
 # export_alle_metadaten:
 #  mode: schema
 #  exclude: [format, filters, brand, from, metadata-files, export-meta, export-meta-dir]
+format: # import quiz plugin
+    revealjs: default
+revealjs-plugins:
+  - quiz
 ---
 
 ## Motivation
@@ -49,6 +53,13 @@ Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:
 ## Ergebnisse
 
 ## Transferaufgaben (optional)
+
+## Wofür steht die Abkürzung "FAIR" im Zusammenhang mit Forschungsdaten? {.quiz-question}
+
+- Format, Analyze, Integrate, Recap 
+- [Findable, Accessible, Interoperable, Reusable ]{.correct}
+- Forschungsdaten, Ansätze, Informationen, Referenzen
+- Fachliche Auswertung von Informationen in Rechenzentren
 
 Stellen sie weiterführende Aufgaben, in denen die Lernenden die erworbenen Kenntnisse in andere Kontexte transferieren können.
 

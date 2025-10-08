@@ -1,6 +1,6 @@
 ---
-title: "Hauptseite der Übung"
-subtitle: "neuer Untertitel"
+title: "Numismatik und Digital Humanities"
+subtitle: "welche Relevanz haben gute Forschungsdaten für die Numismatik?"
 lang: de
 date: today
 date-modified: last-modified
@@ -19,12 +19,15 @@ metadata-files:
 
 ## Motivation
 
-Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten.
-Mit diesen Forschungsdaten umzugehen, erfordert allerdings technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. In den letzten Jahren sind dadurch auch Projekte zur Klassifikation von Münzen mit KI möglich.
+Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Trotzdem verwenden viele Museen, Denkmalämter und universitäte Einrichtungen verschiedene Software-Systeme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar.
 
+Dieses Modul hat zum Ziel, die bestehenden Systeme vorzustellen, so weit wie möglich interoperabel zu machen. Mit den daraus resultierenden Forschungsdaten umzugehen, erfordert technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen. 
+
+Dadurch ergeben sich neue Möglichkeiten, Münzen zu visualisieren, sei es in Hausarbeiten oder Präsentationen. In den letzten Jahren sind dadurch eine Reihe von Projekten entstanden, unter anderem mit der Nutzung von moderner KI.
+<!-- 
 *INFO: Hier noch weitere Beispiele bringe, was mit datengetriebener Numismatik angestellt werden kann*
 
-<img src="../assets/img/ai_visualization.png">
+<img src="../assets/img/ai_visualization.png"> -->
 
 ## Lernziele
 
@@ -84,7 +87,6 @@ Um die Wiederverwendbarkeit zu erleichtern, sollten diese Metadaten nach einem *
 - Für archäologische Daten: [Europeana-Datenmodell](https://pro.europeana.eu/page/edm-documentation)
 
 Als Teil der Wiederverwendbarkeit sollten auch **klare Lizenzen** vergeben werden, damit automatisierte Suchen nicht versehentlich urheberrechtlich geschütztes Material abgreifen.
-
 
 ## Transferaufgaben
 

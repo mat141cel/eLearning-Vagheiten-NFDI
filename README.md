@@ -2,7 +2,7 @@
 
 Entdecke, wie digitale Forschungsdaten die Numismatik revolutionieren! Lerne, Münzdaten zu erhalten, verstehen, analysieren und visualisieren.
 
-🌐 Live auf [GitHub Pages](mat141cel.github.io/eLearning-Vagheiten-NFDI/)
+🌐 Live auf [GitHub Pages](https://mat141cel.github.io/eLearning-Vagheiten-NFDI/)
 
 
 

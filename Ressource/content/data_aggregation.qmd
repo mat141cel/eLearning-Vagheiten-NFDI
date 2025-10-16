@@ -50,9 +50,12 @@ Hier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopie
 
 Dann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können
 
-![](assets/img/image_athens.jpg)
+![](\assets\img\image_athens.jpg)
+![](/assets/img/image_athens.jpg)
+
 
 ```{dot}
+ //| echo:false
 graph G {
 // use dot so rankdir/rank=same work
 layout=dot;
@@ -62,9 +65,9 @@ graph [splines=true, overlap=false, nodesep=1.0, ranksep=1.0, rankdir=LR];
 node [shape=none, margin=0, label=""];
 
 // Image nodes (center line) - adjust width/height as needed (in inches)
-image_athens  [image="../assets/img/image_athens.jpg", fixedsize=true, width=1.2, height=1.2];
-image_napoleon [image="../assets/img/image_napoleon.png", fixedsize=true, width=1.2, height=1.2];
-image_euro    [image="../assets/img/image_euro.jpg", fixedsize=true, width=1.2, height=1.2];
+image_athens  [image="/assets/img/image_athens.jpg", fixedsize=true, width=1.2, height=1.2];
+image_napoleon [image="/assets/img/image_napoleon.png", fixedsize=true, width=1.2, height=1.2];
+image_euro    [image="/assets/img/image_euro.jpg", fixedsize=true, width=1.2, height=1.2];
 
 // Attribute nodes (IDs ASCII-safe, labels show umlauts)
 material      [shape=ellipse, label="material"];

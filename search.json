@@ -149,50 +149,50 @@
   {
     "objectID": "content/data_aggregation.html",
     "href": "content/data_aggregation.html",
-    "title": "Getting the Data",
+    "title": "Aggregating the Data",
     "section": "",
     "text": "Es gibt verschiedene für die Numismatik relevante Seiten"
   },
   {
     "objectID": "content/data_aggregation.html#praktische-bezügeanwendungsbeispielmotivation",
     "href": "content/data_aggregation.html#praktische-bezügeanwendungsbeispielmotivation",
-    "title": "Getting the Data",
+    "title": "Aggregating the Data",
     "section": "",
     "text": "Es gibt verschiedene für die Numismatik relevante Seiten"
   },
   {
     "objectID": "content/data_aggregation.html#lernziele",
     "href": "content/data_aggregation.html#lernziele",
-    "title": "Getting the Data",
+    "title": "Aggregating the Data",
     "section": "Lernziele",
     "text": "Lernziele\nIn diesem Skript lernen Sie:\n\nZiel 1\nZiel 2\n\nIdealerweise beziehen sie sich in dieser Aufzählung auf die Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards.1"
   },
   {
     "objectID": "content/data_aggregation.html#voraussetzungen",
     "href": "content/data_aggregation.html#voraussetzungen",
-    "title": "Getting the Data",
+    "title": "Aggregating the Data",
     "section": "Voraussetzungen",
     "text": "Voraussetzungen\nFür das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:\n\nVoraussetzung 1\n\nVersuchen sie so detailliert wie möglich die Voraussetzungen für die Durchführung der Übung aufzuzählen. Geben sie Hinweise, wo die Lernenden entsprechende/s Kompetenzen/Wissen erwerben können. Verweisen sie insbesondere auf Hilfestellungen für die Software-Installation und Tutorials zum Umgang."
   },
   {
     "objectID": "content/data_aggregation.html#datengrundlage",
     "href": "content/data_aggregation.html#datengrundlage",
-    "title": "Getting the Data",
+    "title": "Aggregating the Data",
     "section": "Datengrundlage",
     "text": "Datengrundlage\nErläutern und verlinken sie die Datengrundlage für die Übung."
   },
   {
     "objectID": "content/data_aggregation.html#vorbereitung",
     "href": "content/data_aggregation.html#vorbereitung",
-    "title": "Getting the Data",
+    "title": "Aggregating the Data",
     "section": "Vorbereitung",
     "text": "Vorbereitung"
   },
   {
     "objectID": "content/data_aggregation.html#durchführung",
     "href": "content/data_aggregation.html#durchführung",
-    "title": "Getting the Data",
+    "title": "Aggregating the Data",
     "section": "Durchführung",
-    "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können"
+    "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können\n \n\n\n\n\n\n\n\nG\n\n  \n\nimage_athens\n\n  \n\nmaterial\n\n material   \n\nimage_athens–material\n\n   \n\npraegestaette\n\n prägestätte   \n\nimage_athens–praegestaette\n\n   \n\ndargestellte\n\n dargestellte   \n\nimage_athens–dargestellte\n\n   \n\ndatierung\n\n datierung   \n\nimage_athens–datierung\n\n   \n\nimage_napoleon\n\n  \n\nimage_napoleon–material\n\n   \n\nimage_napoleon–praegestaette\n\n   \n\nimage_napoleon–dargestellte\n\n   \n\nimage_napoleon–datierung\n\n   \n\nimage_euro\n\n  \n\nimage_euro–material\n\n   \n\nimage_euro–praegestaette\n\n   \n\nimage_euro–datierung"
   }
 ]

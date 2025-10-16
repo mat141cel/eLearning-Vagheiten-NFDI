@@ -193,6 +193,6 @@
     "href": "content/data_aggregation.html#durchführung",
     "title": "Aggregating the Data",
     "section": "Durchführung",
-    "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können\n \n\n\n\n\n\n\n\nG\n\n  \n\nimage_athens\n\n  \n\nmaterial\n\n material   \n\nimage_athens–material\n\n   \n\npraegestaette\n\n prägestätte   \n\nimage_athens–praegestaette\n\n   \n\ndargestellte\n\n dargestellte   \n\nimage_athens–dargestellte\n\n   \n\ndatierung\n\n datierung   \n\nimage_athens–datierung\n\n   \n\nimage_napoleon\n\n  \n\nimage_napoleon–material\n\n   \n\nimage_napoleon–praegestaette\n\n   \n\nimage_napoleon–dargestellte\n\n   \n\nimage_napoleon–datierung\n\n   \n\nimage_euro\n\n  \n\nimage_euro–material\n\n   \n\nimage_euro–praegestaette\n\n   \n\nimage_euro–datierung"
+    "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können\n\n\n\n\n\ntodo: Hintergründe ornage?"
   }
 ]

@@ -25,7 +25,7 @@ jobs:
       - name: Install Python dependencies for Jupyter
         run: |
           python -m pip install --upgrade pip
-          pip install jupyter nbformat ipykernel
+          pip install jupyter nbformat ipykernel matplotlib
 
       - name: Render site
         run: quarto render Ressource/

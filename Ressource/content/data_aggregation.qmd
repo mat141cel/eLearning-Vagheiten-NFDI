@@ -1,5 +1,5 @@
 ---
-title: "Getting the Data"
+title: "Aggregating the Data"
 subtitle: "neuer Untertitel"
 lang: de
 date: today
@@ -50,20 +50,45 @@ Hier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopie
 
 Dann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können
 
+![](assets/img/image_athens.jpg)
 
 ```{dot}
 graph G {
-  layout=neato
-  image_athens -- material;
-  image_napoleon -- material;
-  image_euro -- material;
-  image_athens -- prägestätte;
-  image_athens -- dargestellte;
-  image_athens -- datierung;
-  image_napoleon -- prägestätte;
-  image_napoleon -- dargestellte;
-  image_napoleon -- datierung;
-  image_euro -- prägestätte;
-  image_euro -- datierung;
+// use dot so rankdir/rank=same work
+layout=dot;
+graph [splines=true, overlap=false, nodesep=1.0, ranksep=1.0, rankdir=LR];
+
+// defaults for image nodes
+node [shape=none, margin=0, label=""];
+
+// Image nodes (center line) - adjust width/height as needed (in inches)
+image_athens  [image="../assets/img/image_athens.jpg", fixedsize=true, width=1.2, height=1.2];
+image_napoleon [image="../assets/img/image_napoleon.png", fixedsize=true, width=1.2, height=1.2];
+image_euro    [image="../assets/img/image_euro.jpg", fixedsize=true, width=1.2, height=1.2];
+
+// Attribute nodes (IDs ASCII-safe, labels show umlauts)
+material      [shape=ellipse, label="material"];
+praegestaette [shape=ellipse, label="prägestätte"];
+dargestellte  [shape=ellipse, label="dargestellte"];
+datierung     [shape=ellipse, label="datierung"];
+
+// Force images into one horizontal row, centered
+{ rank = same; image_athens; image_napoleon; image_euro; }
+
+// Connections
+image_athens -- material;
+image_napoleon -- material;
+image_euro -- material;
+
+image_athens -- praegestaette;
+image_athens -- dargestellte;
+image_athens -- datierung;
+
+image_napoleon -- praegestaette;
+image_napoleon -- dargestellte;
+image_napoleon -- datierung;
+
+image_euro -- praegestaette;
+image_euro -- datierung;
 }
 ```

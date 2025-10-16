@@ -49,3 +49,21 @@ Erläutern und verlinken sie die Datengrundlage für die Übung.
 Hier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.
 
 Dann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können
+
+
+```{dot}
+graph G {
+  layout=neato
+  image_athens -- material;
+  image_napoleon -- material;
+  image_euro -- material;
+  image_athens -- prägestätte;
+  image_athens -- dargestellte;
+  image_athens -- datierung;
+  image_napoleon -- prägestätte;
+  image_napoleon -- dargestellte;
+  image_napoleon -- datierung;
+  image_euro -- prägestätte;
+  image_euro -- datierung;
+}
+```

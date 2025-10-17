@@ -10,6 +10,7 @@ metadata-files:
   - oer_metadata.yml
 
 website:
+  title:  "ELearning-Modul für Münzdaten"
   navbar:
     left:
       - text: Hauptseite

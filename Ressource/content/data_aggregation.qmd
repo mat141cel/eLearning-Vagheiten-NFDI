@@ -107,4 +107,3 @@ plt.tight_layout()
 plt.show()
 ```
 
-todo: Hintergründe ornage?

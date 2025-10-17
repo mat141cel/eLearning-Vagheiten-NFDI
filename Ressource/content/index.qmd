@@ -27,42 +27,74 @@ Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen g
 Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.
 
 ## Aufbau des Kurses
-Dieser Kurs nutzt Quarto, das heißt, dass alle Grafiken und Darstellungen automatisch generiert werden. Allerdings ist Github Pages nicht interaktiv. Jeder Code ist allerdings über der jeweiligen Darstellung angegeben und kann in eine Google Colab Instanz kopiert werden. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren. Wenn interaktiver Code ausgeführt werden kann, weißt Sie der folgende Button darauf hin. Für die Nutzung von Colab ist ein Google-Account notwendig.
+Dieser Kurs kann komplett im Browser absolviert werden. Dieser Kurs nutzt Quarto, das heißt, dass alle Grafiken und Darstellungen automatisch generiert werden. Allerdings ist Github Pages nicht interaktiv. Jeder Code ist allerdings über der jeweiligen Darstellung angegeben und kann in eine Google Colab Instanz kopiert werden. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren. Wenn interaktiver Code ausgeführt werden kann, weißt Sie der folgende Button darauf hin. Für die Nutzung von Colab ist ein Google-Account notwendig.
 
+<!-- this link to colab can used on other sites, remember to define filename in top yaml -->
 [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/{{< meta filename >}}.ipynb)
 
 
 Jede Modulseite hat entweder ein Quiz oder es geht darum, einen bestimmten Wert aus der Colab Instanz in Quarto einzutragen, so können Sie den Fortschritt speichern.
-::: {.callout-warning}
-Der Fortschritt wird gelöscht, wenn die Seite verlassen wird
 
-
-
-## Voraussetzungen
-
-Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:
-
-- es müssen keien Programme vorinstalliert werden, alles läuft interaktiv in Quarto ab
-
-- Grundlagenwissen in Python, TODO: hier Kurs verlinken als Zitat
-
-
-## Vorbereitung: Was sind Forschungsdaten
-
-Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.
-
-Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant ([NFDI4Objects](https://www.nfdi4objects.net)).
-
-::: {.callout-note}
-Hier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. [Mehr erfahren](nfdi.html){.btn .btn-primary}
+::: {.callout-important}
+Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit für Dritte, sie einzusehen.
 :::
 
+## Quiz: Was können die in diesem Kurs genutzten Softwarekomponenten.
 
 
+<div id="quiz1"></div>
 
-## Weiterführende Quellen und Informationen
+<script src="/assets/js/quiz.js"></script>
+<link rel="stylesheet" href="/assets/css/quiz.css">
+<link rel="stylesheet" href="/assets/css/badges.css">
 
-Der Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die bibliographischen Angaben automatisch generiert und in das Dokument eingefügt.
+<!-- Badge/progress container -->
+<div id="quiz1-badges">
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  <div id="badge-display"></div>
+</div>
+
+<script>
+const QUIZ_KEY = "numismatik_quiz_progress";
+const currentLessonId = "{{< meta filename >}}"; // must match sidebar href filename
+
+
+// Define quiz questions
+window["quiz1_data"] = [
+  {
+    question: "Wie kann der Kurs interaktive Analysen ausführen?",
+    choices: [
+      { text: "Direkt auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch." },
+      { text: "Durch Kopieren des Codes in Google Colab", feedback: "✅ Richtig! Colab erlaubt interaktives Ausführen der Python-/R-Codezellen." },
+      { text: "Mit Offline-Software nur", feedback: "❌ Falsch! Der Kurs ist browserbasiert, Colab wird genutzt." },
+      { text: "Nur auf mobilen Geräten", feedback: "❌ Falsch! Desktop und mobile Browser funktionieren." }
+    ]
+  },
+  {
+    question: "Wie wird der Fortschritt des Kurses gespeichert?",
+    choices: [
+      { text: "Auf einem Server der Universität", feedback: "❌ Falsch! Alle Daten bleiben lokal im Browser." },
+      { text: "In der Cloud von Google ohne Zustimmung", feedback: "❌ Falsch! Nur Colab speichert temporär, Quarto nutzt lokalStorage." },
+      { text: "Lokal im Browser über localStorage", feedback: "✅ Richtig! Der Fortschritt wird nur im Browser gespeichert." },
+      { text: "Über Cookies auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch und speichert keine Cookies." }
+    ]
+  },
+  {
+    question: "Welche Herausforderung wird in der Numismatik bei digitalisierten Beständen beschrieben?",
+    choices: [
+      { text: "Alle Daten sind automatisch miteinander verknüpft", feedback: "❌ Falsch! Die Bestände sind heterogen und schwer kombinierbar." },
+      { text: "Verschiedene Museen haben unterschiedliche Softwaresysteme", feedback: "✅ Richtig! Unterschiedliche Systeme erschweren den Austausch." },
+      { text: "Digitale Münzen ersetzen physische Münzen", feedback: "❌ Falsch! Digitalisierung ergänzt nur die Forschung." },
+      { text: "Es gibt keine Herausforderung, alles ist standardisiert", feedback: "❌ Falsch! Standardisierung ist gerade eine Herausforderung." }
+    ]
+  }
+];
+
+// Render the quiz AFTER the JS file loads
+renderQuiz("quiz1", window["quiz1_data"]);
+</script>
 
 ## Nachnutzen {.appendix}
 

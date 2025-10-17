@@ -11,8 +11,10 @@ metadata-files:
 
 website:
   title:  "ELearning-Modul für Münzdaten"
-  navbar:
-    left:
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
       - text: Hauptseite
         href: content/index.qmd
       - text: "Lektion 1: Datenzugang"

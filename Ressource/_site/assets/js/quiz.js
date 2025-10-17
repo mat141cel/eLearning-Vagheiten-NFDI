@@ -1,91 +1,69 @@
-// prettier quiz.js for Quarto pages
 function renderQuiz(containerId, quizData) {
     const container = document.getElementById(containerId);
     if (!container) return;
+    container.innerHTML = "";
 
-    container.innerHTML = ""; // clear old content
+    quizData.forEach(q => {
+        const questionDiv = createElement("div", "quiz-question");
 
-    quizData.forEach((q, idx) => {
-        const questionDiv = document.createElement("div");
-        questionDiv.classList.add("quiz-question");
-
-        // Question text
-        const questionText = document.createElement("p");
-        questionText.innerHTML = `<strong>${q.question}</strong>`;
+        const questionText = createElement("p", null, `<strong>${q.question}</strong>`);
         questionDiv.appendChild(questionText);
 
-        // Options list
-        const ul = document.createElement("ul");
-        q.choices.forEach(choice => {
-            const li = document.createElement("li");
-            li.classList.add("option-button");
-            li.textContent = choice.text;
-            li.dataset.feedback = choice.feedback;
-            ul.appendChild(li);
-        });
-        questionDiv.appendChild(ul);
-
-        // Feedback div
-        const feedbackDiv = document.createElement("div");
-        feedbackDiv.classList.add("feedback");
-        questionDiv.appendChild(feedbackDiv);
-
-        // Action buttons container
-        const buttonContainer = document.createElement("div");
-        buttonContainer.classList.add("button-container");
-
-        const checkBtn = document.createElement("button");
-        checkBtn.textContent = "Check";
-        checkBtn.classList.add("check-button", "action-buttons");
-
-        const resetBtn = document.createElement("button");
-        resetBtn.textContent = "Reset";
-        resetBtn.classList.add("reset-button", "action-buttons");
-
-        buttonContainer.appendChild(checkBtn);
-        buttonContainer.appendChild(resetBtn);
-        questionDiv.appendChild(buttonContainer);
-
-        container.appendChild(questionDiv);
-
-        // State
+        const ul = createElement("ul");
+        const feedbackDiv = createElement("div", "feedback");
         let selectedOption = null;
 
-        // Option click
-        ul.querySelectorAll(".option-button").forEach(opt => {
-            opt.addEventListener("click", () => {
+        q.choices.forEach(choice => {
+            const li = createElement("li", "option-button", choice.text);
+            li.dataset.feedback = choice.feedback;
+
+            li.addEventListener("click", () => {
                 ul.querySelectorAll(".option-button").forEach(o => o.classList.remove("selected"));
-                opt.classList.add("selected");
-                selectedOption = opt;
+                li.classList.add("selected");
+                selectedOption = li;
             });
+
+            ul.appendChild(li);
         });
 
-        // Check button
-        checkBtn.addEventListener("click", () => {
+        questionDiv.appendChild(ul);
+        questionDiv.appendChild(feedbackDiv);
+
+        const buttonContainer = createElement("div", "button-container");
+
+        const checkBtn = createButton("Check", "check-button action-buttons", () => {
             if (!selectedOption) return;
             const feedback = selectedOption.dataset.feedback;
             feedbackDiv.textContent = feedback;
 
-            if (feedback.startsWith("✅")) {
-                selectedOption.classList.add("correct");
-            } else {
-                selectedOption.classList.add("incorrect");
-            }
-
-            // disable buttons after check
+            selectedOption.classList.add(feedback.startsWith("✅") ? "correct" : "incorrect");
             ul.querySelectorAll(".option-button").forEach(o => o.disabled = true);
             checkBtn.disabled = true;
         });
 
-        // Reset button
-        resetBtn.addEventListener("click", () => {
-            ul.querySelectorAll(".option-button").forEach(o => {
-                o.classList.remove("selected", "correct", "incorrect");
-                o.disabled = false;
-            });
+        const resetBtn = createButton("Reset", "reset-button action-buttons", () => {
+            ul.querySelectorAll(".option-button").forEach(o => o.classList.remove("selected", "correct", "incorrect"));
+            ul.querySelectorAll(".option-button").forEach(o => o.disabled = false);
             feedbackDiv.textContent = "";
             selectedOption = null;
             checkBtn.disabled = false;
         });
+
+        buttonContainer.append(checkBtn, resetBtn);
+        questionDiv.appendChild(buttonContainer);
+        container.appendChild(questionDiv);
     });
+
+    function createElement(tag, className = null, html = null) {
+        const el = document.createElement(tag);
+        if (className) el.className = className;
+        if (html !== null) el.innerHTML = html;
+        return el;
+    }
+
+    function createButton(text, className, onClick) {
+        const btn = createElement("button", className, text);
+        btn.addEventListener("click", onClick);
+        return btn;
+    }
 }

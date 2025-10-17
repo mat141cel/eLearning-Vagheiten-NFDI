@@ -21,8 +21,6 @@ metadata-files:
 
 You have completed <span id="progress-count">0</span> sites so far.
 
-<button id="add-progress">I finished a site!</button>
-
 <script>
   // Initialize progress in localStorage if not set
   if (!localStorage.getItem('completedSites')) {

@@ -48,14 +48,6 @@ Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit
 <link rel="stylesheet" href="/assets/css/quiz.css">
 <link rel="stylesheet" href="/assets/css/badges.css">
 
-<!-- Badge/progress container -->
-<div id="quiz1-badges">
-  <div id="progress-container">
-    <div id="progress-bar"></div>
-  </div>
-  <div id="badge-display"></div>
-</div>
-
 <script>
 const QUIZ_KEY = "numismatik_quiz_progress";
 const currentLessonId = "{{< meta filename >}}"; // must match sidebar href filename

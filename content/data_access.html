@@ -178,8 +178,38 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="welcome-to-the-course" class="level1">
+<h1>Welcome to the Course 🎉</h1>
+<p>You have completed <span id="progress-count">0</span> sites so far.</p>
+<button id="add-progress">
+I finished a site!
+</button>
+<script>
+  // Initialize progress in localStorage if not set
+  if (!localStorage.getItem('completedSites')) {
+    localStorage.setItem('completedSites', '0');
+  }
+
+  // Function to update the displayed progress
+  function updateProgress() {
+    const count = localStorage.getItem('completedSites');
+    document.getElementById('progress-count').textContent = count;
+  }
+
+  // Call once on page load
+  updateProgress();
+
+  // Increment progress when user clicks the button
+  document.getElementById('add-progress').addEventListener('click', () => {
+    let count = parseInt(localStorage.getItem('completedSites'));
+    count += 1;
+    localStorage.setItem('completedSites', count.toString());
+    updateProgress();
+  });
+</script>
 
 
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Lizenz</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.de">https://creativecommons.org/licenses/by/4.0/deed.de</a></div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Urheber:innen</h2><div id="quarto-copyright" class="quarto-appendix-contents"><div>Angabe der Urheber:innen (kann von Autor:innen abweichen bzw. diese Angaben ergänzen)</div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Zitiervorschläge</h2><div><div class="quarto-appendix-secondary-label">Mit BibTeX zitieren:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{celisi2025,
   author = {Celisi, Mattia and Boerner, Susanne},

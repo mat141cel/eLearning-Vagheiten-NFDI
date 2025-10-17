@@ -28,6 +28,12 @@ Dadurch ergeben sich neue Möglichkeiten, Münzen zu visualisieren, sei es in Ha
 ![](../assets/img/ai_visualization.png)
 
 
+Dieser Kurs nutzt Quarto, das heißt, dass alle Grafiken und Darstellungen automatisch generiert werden. Allerdings ist Github Pages nicht interaktiv. Jeder Code ist allerdings über der jeweiligen Darstellung angegeben und kann in eine Google COlab Instanz kopiert werden. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren. 
+## Interactive Exercise
+::: {.callout-tip}
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<username>/<repo>/blob/main/notebooks/lesson1.ipynb)
+:::
+
 ## Lernziele
 
 In dieser OER lernen Sie:

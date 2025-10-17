@@ -73,9 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      ELearning-Modul für Münzdaten
-      </li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/nfdi.html">was ist NFDI</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -116,6 +114,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../content/data_aggregation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lektion 2: Datenverarbeitung</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/nfdi.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">was ist NFDI</span></a>
   </div>
 </li>
     </ul>
@@ -249,14 +253,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="transferaufgaben" class="level2">
 <h2 class="anchored" data-anchor-id="transferaufgaben">Transferaufgaben</h2>
-<div id="quiz1">
+<div id="nfdi_quiz">
 
 </div>
-<!-- Load JS for this page only -->
 <script src="../assets/js/quiz.js"></script>
+<p><link rel="stylesheet" href="../assets/css/quiz.css"></p>
 <script>
 // Define quiz data for this page
-window["quiz1_data"] = [
+window["nfdi_quiz_data"] = [
   {
     question: "Wofür steht die Abkürzung 'FAIR' im Zusammenhang mit Forschungsdaten?",
     choices: [
@@ -305,9 +309,8 @@ window["quiz1_data"] = [
 ];
 
 // Render the quiz AFTER the JS file loads
-renderQuiz("quiz1", window["quiz1_data"]);
+renderQuiz("nfdi_quiz", window["nfdi_quiz_data"]);
 </script>
-<p><link rel="stylesheet" href="../assets/css/quiz.css"></p>
 
 
 </section>

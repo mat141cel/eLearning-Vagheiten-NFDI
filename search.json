@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "content/data_access.html",
+    "href": "content/data_access.html",
+    "title": "Hauptseite der Übung",
+    "section": "",
+    "text": "Welcome to the Course 🎉\nYou have completed 0 sites so far.\n\n\n\n\n\nLizenzhttps://creativecommons.org/licenses/by/4.0/deed.deUrheber:innenAngabe der Urheber:innen (kann von Autor:innen abweichen bzw. diese Angaben ergänzen)ZitiervorschlägeMit BibTeX zitieren:@misc{celisi2025,\n  author = {Celisi, Mattia and Boerner, Susanne},\n  publisher = {NFDI4Objects},\n  title = {Hauptseite der Übung},\n  date = {2025-10-17},\n  langid = {de},\n  abstract = {Zusammenfassung}\n}\nBitte zitieren Sie diesen Kurs als:\nCelisi, Mattia, and Susanne Boerner. 2025. “Hauptseite der\nÜbung.” NFDI4Objects Open Educational Resource.\nNFDI4Objects."
+  },
+  {
     "objectID": "content/nfdi.html",
     "href": "content/nfdi.html",
     "title": "Was ist NFDI?",
@@ -26,55 +33,6 @@
     "title": "Was ist NFDI?",
     "section": "Transferaufgaben",
     "text": "Transferaufgaben"
-  },
-  {
-    "objectID": "content/index.html",
-    "href": "content/index.html",
-    "title": "Numismatik und Digital Humanities",
-    "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Einige dieser Portale stellen wir bereits in der Numismatischen Toolbox vor (link). Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
-  },
-  {
-    "objectID": "content/index.html#motivation",
-    "href": "content/index.html#motivation",
-    "title": "Numismatik und Digital Humanities",
-    "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Einige dieser Portale stellen wir bereits in der Numismatischen Toolbox vor (link). Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
-  },
-  {
-    "objectID": "content/index.html#lernziele",
-    "href": "content/index.html#lernziele",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Lernziele",
-    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten."
-  },
-  {
-    "objectID": "content/index.html#aufbau-des-kurses",
-    "href": "content/index.html#aufbau-des-kurses",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\nDieser Kurs kann komplett im Browser absolviert werden. Dieser Kurs nutzt Quarto, das heißt, dass alle Grafiken und Darstellungen automatisch generiert werden. Allerdings ist Github Pages nicht interaktiv. Jeder Code ist allerdings über der jeweiligen Darstellung angegeben und kann in eine Google Colab Instanz kopiert werden. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren. Wenn interaktiver Code ausgeführt werden kann, weißt Sie der folgende Button darauf hin. Für die Nutzung von Colab ist ein Google-Account notwendig.\n\n\n\n\n\n\nJede Modulseite hat entweder ein Quiz oder es geht darum, einen bestimmten Wert aus der Colab Instanz in Quarto einzutragen, so können Sie den Fortschritt speichern.\n\n\n\n\n\n\n\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit für Dritte, sie einzusehen."
-  },
-  {
-    "objectID": "content/index.html#quiz-was-können-die-in-diesem-kurs-genutzten-softwarekomponenten.",
-    "href": "content/index.html#quiz-was-können-die-in-diesem-kurs-genutzten-softwarekomponenten.",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Quiz: Was können die in diesem Kurs genutzten Softwarekomponenten.",
-    "text": "Quiz: Was können die in diesem Kurs genutzten Softwarekomponenten."
-  },
-  {
-    "objectID": "content/index.html#nachnutzen",
-    "href": "content/index.html#nachnutzen",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Nachnutzen",
-    "text": "Nachnutzen\n\nAlle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.\nUnser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.\n🔗 Dieser Baustein als Website:\n🔗 Quarto-Quellcode dieses Bausteins:"
-  },
-  {
-    "objectID": "content/data_access.html",
-    "href": "content/data_access.html",
-    "title": "Hauptseite der Übung",
-    "section": "",
-    "text": "Welcome to the Course 🎉\nYou have completed 0 sites so far.\n\n\n\n\n\nLizenzhttps://creativecommons.org/licenses/by/4.0/deed.deUrheber:innenAngabe der Urheber:innen (kann von Autor:innen abweichen bzw. diese Angaben ergänzen)ZitiervorschlägeMit BibTeX zitieren:@misc{celisi2025,\n  author = {Celisi, Mattia and Boerner, Susanne},\n  publisher = {NFDI4Objects},\n  title = {Hauptseite der Übung},\n  date = {2025-10-17},\n  langid = {de},\n  abstract = {Zusammenfassung}\n}\nBitte zitieren Sie diesen Kurs als:\nCelisi, Mattia, and Susanne Boerner. 2025. “Hauptseite der\nÜbung.” NFDI4Objects Open Educational Resource.\nNFDI4Objects."
   },
   {
     "objectID": "content/data_aggregation.html",
@@ -124,5 +82,47 @@
     "title": "Aggregating the Data",
     "section": "Durchführung",
     "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können"
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Numismatik und Digital Humanities",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Einige dieser Portale stellen wir bereits in der Numismatischen Toolbox vor (link). Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
+  },
+  {
+    "objectID": "content/index.html#motivation",
+    "href": "content/index.html#motivation",
+    "title": "Numismatik und Digital Humanities",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Einige dieser Portale stellen wir bereits in der Numismatischen Toolbox vor (link). Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
+  },
+  {
+    "objectID": "content/index.html#lernziele",
+    "href": "content/index.html#lernziele",
+    "title": "Numismatik und Digital Humanities",
+    "section": "Lernziele",
+    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten."
+  },
+  {
+    "objectID": "content/index.html#aufbau-des-kurses",
+    "href": "content/index.html#aufbau-des-kurses",
+    "title": "Numismatik und Digital Humanities",
+    "section": "Aufbau des Kurses",
+    "text": "Aufbau des Kurses\nDieser Kurs kann komplett im Browser absolviert werden. Dieser Kurs nutzt Quarto, das heißt, dass alle Grafiken und Darstellungen automatisch generiert werden. Allerdings ist Github Pages nicht interaktiv. Jeder Code ist allerdings über der jeweiligen Darstellung angegeben und kann in eine Google Colab Instanz kopiert werden. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren. Wenn interaktiver Code ausgeführt werden kann, weißt Sie der folgende Button darauf hin. Für die Nutzung von Colab ist ein Google-Account notwendig.\n\n\n\n\n\n\nJede Modulseite hat entweder ein Quiz oder es geht darum, einen bestimmten Wert aus der Colab Instanz in Quarto einzutragen, so können Sie den Fortschritt speichern.\n\n\n\n\n\n\n\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit für Dritte, sie einzusehen."
+  },
+  {
+    "objectID": "content/index.html#quiz-was-können-die-in-diesem-kurs-genutzten-softwarekomponenten.",
+    "href": "content/index.html#quiz-was-können-die-in-diesem-kurs-genutzten-softwarekomponenten.",
+    "title": "Numismatik und Digital Humanities",
+    "section": "Quiz: Was können die in diesem Kurs genutzten Softwarekomponenten.",
+    "text": "Quiz: Was können die in diesem Kurs genutzten Softwarekomponenten."
+  },
+  {
+    "objectID": "content/index.html#progress",
+    "href": "content/index.html#progress",
+    "title": "Numismatik und Digital Humanities",
+    "section": "Progress",
+    "text": "Progress\nNachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und angezeigt."
   }
 ]

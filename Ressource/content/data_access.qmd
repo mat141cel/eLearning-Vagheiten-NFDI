@@ -16,3 +16,33 @@ metadata-files:
 #  mode: schema
 #  exclude: [format, filters, brand, from, metadata-files, export-meta, export-meta-dir]
 ---
+
+# Welcome to the Course 🎉
+
+You have completed <span id="progress-count">0</span> sites so far.
+
+<button id="add-progress">I finished a site!</button>
+
+<script>
+  // Initialize progress in localStorage if not set
+  if (!localStorage.getItem('completedSites')) {
+    localStorage.setItem('completedSites', '0');
+  }
+
+  // Function to update the displayed progress
+  function updateProgress() {
+    const count = localStorage.getItem('completedSites');
+    document.getElementById('progress-count').textContent = count;
+  }
+
+  // Call once on page load
+  updateProgress();
+
+  // Increment progress when user clicks the button
+  document.getElementById('add-progress').addEventListener('click', () => {
+    let count = parseInt(localStorage.getItem('completedSites'));
+    count += 1;
+    localStorage.setItem('completedSites', count.toString());
+    updateProgress();
+  });
+</script>

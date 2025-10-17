@@ -29,7 +29,7 @@ Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu
 ## Aufbau des Kurses
 Dieser Kurs nutzt Quarto, das heißt, dass alle Grafiken und Darstellungen automatisch generiert werden. Allerdings ist Github Pages nicht interaktiv. Jeder Code ist allerdings über der jeweiligen Darstellung angegeben und kann in eine Google Colab Instanz kopiert werden. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren. Wenn interaktiver Code ausgeführt werden kann, weißt Sie der folgende Button darauf hin. Für die Nutzung von Colab ist ein Google-Account notwendig.
 
-[![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/notebooks/{{< meta filename >}}.ipynb)
+[![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/{{< meta filename >}}.ipynb)
 
 
 Jede Modulseite hat entweder ein Quiz oder es geht darum, einen bestimmten Wert aus der Colab Instanz in Quarto einzutragen, so können Sie den Fortschritt speichern.

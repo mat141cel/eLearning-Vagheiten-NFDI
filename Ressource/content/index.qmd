@@ -42,19 +42,14 @@ Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit
 ## Quiz: Was können die in diesem Kurs genutzten Softwarekomponenten.
 
 
-<div id="quiz1"></div>
+<div id="intro_quiz"></div>
 
 <script src="/assets/js/quiz.js"></script>
 <link rel="stylesheet" href="/assets/css/quiz.css">
-<link rel="stylesheet" href="/assets/css/badges.css">
 
 <script>
-const QUIZ_KEY = "numismatik_quiz_progress";
-const currentLessonId = "{{< meta filename >}}"; // must match sidebar href filename
-
-
 // Define quiz questions
-window["quiz1_data"] = [
+window["intro_quiz_data"] = [
   {
     question: "Wie kann der Kurs interaktive Analysen ausführen?",
     choices: [
@@ -83,10 +78,18 @@ window["quiz1_data"] = [
     ]
   }
 ];
-
 // Render the quiz AFTER the JS file loads
-renderQuiz("quiz1", window["quiz1_data"]);
+renderQuiz("intro_quiz", window["intro_quiz_data"]);
 </script>
+
+
+
+## Progress
+
+Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und angezeigt.
+
+<script>
+  const cat = localStorage.getItem("myCat");
 
 ## Nachnutzen {.appendix}
 

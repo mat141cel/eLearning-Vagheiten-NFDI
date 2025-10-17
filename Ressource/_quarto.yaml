@@ -21,3 +21,5 @@ website:
         href: content/data_access.qmd
       - text: "Lektion 2: Datenverarbeitung"
         href: content/data_aggregation.qmd
+      - text: "was ist NFDI"
+        href: content/nfdi.qmd

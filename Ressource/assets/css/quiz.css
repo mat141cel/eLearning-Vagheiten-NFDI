@@ -37,40 +37,10 @@
     background-color: #c0392b;
 }
 
-.action-buttons {
-    margin-top: 10px;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.check-button {
-    background-color: #2980b9;
-    color: white;
-}
-
-.reset-button {
-    background-color: #e74c3c;
-    color: white;
-}
-
-.check-button:disabled,
-.reset-button:disabled {
-    background-color: #7f8c8d;
-    cursor: not-allowed;
-}
-
 .feedback {
     margin-top: 10px;
     font-weight: bold;
     font-size: 18px;
     text-align: center;
     min-height: 1.5em;
-}
-
-.button-container {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
 }

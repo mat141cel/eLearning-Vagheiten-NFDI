@@ -67,14 +67,14 @@ Als Teil der Wiederverwendbarkeit sollten auch **klare Lizenzen** vergeben werde
 
 ## Transferaufgaben
 
-<div id="quiz1"></div>
+<div id="nfdi_quiz"></div>
 
-<!-- Load JS for this page only -->
-<script src="../assets/js/quiz.js"></script>
+<script src="/assets/js/quiz.js"></script>
+<link rel="stylesheet" href="/assets/css/quiz.css">
 
 <script>
 // Define quiz data for this page
-window["quiz1_data"] = [
+window["nfdi_quiz_data"] = [
   {
     question: "Wofür steht die Abkürzung 'FAIR' im Zusammenhang mit Forschungsdaten?",
     choices: [
@@ -123,6 +123,5 @@ window["quiz1_data"] = [
 ];
 
 // Render the quiz AFTER the JS file loads
-renderQuiz("quiz1", window["quiz1_data"]);
+renderQuiz("nfdi_quiz", window["nfdi_quiz_data"]);
 </script>
-<link rel="stylesheet" href="../assets/css/quiz.css">

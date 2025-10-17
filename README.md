@@ -1,8 +1,8 @@
-# NFDI4objects Vorlage OER Skript
+# eLearning Ressource für den Umgang mit numismatischen Forschungsdaten
 
 Entdecke, wie digitale Forschungsdaten die Numismatik revolutionieren! Lerne, Münzdaten zu erhalten, verstehen, analysieren und visualisieren.
 
-🌐 Live auf GitHub Pages: https://dein-benutzername.github.io/numismatik-kurs
+🌐 Live auf [GitHub Pages](https://mat141cel.github.io/eLearning-Vagheiten-NFDI/)
 
 
 

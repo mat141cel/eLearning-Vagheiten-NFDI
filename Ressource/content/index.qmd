@@ -7,7 +7,6 @@ date: today
 date-modified: last-modified
 date-format: "DD.MM.YYYY"
 metadata-files: 
- - ../layout.yml
  - ../autor_innen.yml
  - ../oer_metadata.yml
 # filters: # tbd: Export-Filter für Metadaten-Dumps (OERSI etc.)
@@ -39,7 +38,7 @@ Jede Modulseite hat entweder ein Quiz oder es geht darum, einen bestimmten Wert 
 Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit für Dritte, sie einzusehen.
 :::
 
-## Quiz: Was können die in diesem Kurs genutzten Softwarekomponenten.
+## Quiz
 
 
 <div id="intro_quiz"></div>
@@ -78,26 +77,51 @@ window["intro_quiz_data"] = [
     ]
   }
 ];
-// Render the quiz AFTER the JS file loads
-renderQuiz("intro_quiz", window["intro_quiz_data"]);
+if (!localStorage.getItem("progress")) {
+    localStorage.setItem("progress", "0");
+}
+document.addEventListener("DOMContentLoaded", () => {
+    renderQuiz("intro_quiz", window["intro_quiz_data"], {
+        quizKey: "intro_quiz_completed",
+        onComplete: () => console.log("Quiz completed!")
+    });
+});
 </script>
 
 
 
-## Progress
+## Fortschritt
 
-Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und angezeigt.
+Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und angezeigt. Im Laufe des Kurses erhalten Sie neue Badges. Ihren FOrtschritt können Sie sich auf der Seite mein Fortschritt ansehen.
+
+
+<div id="progress_badges"></div>
+<link rel="stylesheet" href="/assets/css/badges.css">
+<script src="/assets/js/badges.js"></script>
 
 <script>
-  const cat = localStorage.getItem("myCat");
+  // Ensure progress exists
+  localStorage.progress ??= "0";
 
-## Nachnutzen {.appendix}
+  document.addEventListener("DOMContentLoaded", () => {
+    // Initial render
+    renderBadges("progress_badges");
 
-Alle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.
+    // Auto-update badges when progress changes
+    let last = parseInt(localStorage.progress, 10);
+    setInterval(() => {
+      const curr = parseInt(localStorage.progress, 10);
+      if (curr !== last) (last = curr, renderBadges("progress_badges"));
+    }, 200);
+  });
+</script>
 
-Unser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.
+## Förderung
 
-:link: [Dieser Baustein als Website:]({{< meta site-url >}})
+Die Materialien entstanden in dem von der DFG geförderten Projekt "[NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"}" 
 
-:link: [Quarto-Quellcode dieses Bausteins:]({{< meta repo-url >}})
+Die Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.
 
+![](/brand/logos/n4o_logo_verlauf_claim_lang.svg)
+
+![](/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg)

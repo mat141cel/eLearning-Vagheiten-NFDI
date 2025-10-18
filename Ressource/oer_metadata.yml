@@ -20,7 +20,7 @@ site-url: https://mat141cel.github.io/eLearning-Vagheiten-NFDI/
 repo-url: https://github.com/mat141cel/eLearning-Vagheiten-NFDI
 
 # Rechtliche Metadaten
-copyright: "Angabe der Urheber:innen (kann von Autor:innen abweichen bzw. diese Angaben ergänzen)"
+copyright: "©Mattia Celisi"
 license: CC BY # Optionen für Lizensierungsangaben: https://quarto.org/docs/authoring/front-matter.html#license
 
 # Spezifische Metadaten für den Export in fachliche Metadatenschemata

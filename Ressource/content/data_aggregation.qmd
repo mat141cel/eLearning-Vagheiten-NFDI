@@ -5,16 +5,6 @@ lang: de
 date: today
 date-modified: last-modified
 date-format: "DD.MM.YYYY"
-metadata-files: 
- - ../layout.yml
- - ../autor_innen.yml
- - ../oer_metadata.yml
-# filters: # tbd: Export-Filter für Metadaten-Dumps (OERSI etc.)
-#  - filters/export_alle_metadaten.lua
-#  - filters/export_oersi.lua
-# export_alle_metadaten:
-#  mode: schema
-#  exclude: [format, filters, brand, from, metadata-files, export-meta, export-meta-dir]
 ---
 
 ## Praktische Bezüge/Anwendungsbeispiel/Motivation

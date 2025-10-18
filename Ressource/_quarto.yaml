@@ -6,14 +6,21 @@ project:
 
 metadata-files:
   - layout.yml
-  - autor_innen.yml
-  - oer_metadata.yml
 
 website:
   title:  "ELearning-Modul für Münzdaten"
+  navbar:
+    background: "#005F8E"
+    left:
+      - text: Hauptseite
+        href: content/index.qmd
+      - text: Mein Fortschritt
+        href: content/progress.qmd
+
   sidebar:
     style: "docked"
     search: true
+    title: "Alle Kursseiten" # doesnt work, why
     contents:
       - text: Hauptseite
         href: content/index.qmd
@@ -23,3 +30,52 @@ website:
         href: content/data_aggregation.qmd
       - text: "was ist NFDI"
         href: content/nfdi.qmd
+  page-navigation: true
+
+
+# Formatierung
+format: 
+  html:
+    # Inhaltsverzeichnis
+    toc: true
+    toc-title: "Auf Dieser Seite"
+    toc-location: right
+    toc_float: true    
+    # Links
+    Links:
+      - text: Quarto
+        href: https://quarto.org/
+      - text: NFDI4Objects
+        href: https://nfdi4objects.net/
+    Reuse:
+      - text: GitLab Repository
+        icon: file-code
+        # Mehr icons: https://icons.getbootstrap.com/
+        target: _new
+        href: "https://gitlab.rlp.net/n4o/workshops/quarto_OSF2024"
+
+
+    embed-resources: false # `true` erstellt eine eigenständige HTML-Datei ohne externe Abhängigkeiten für die Übernahme in LMS wie Moodle oder OLAT.
+    brand: brand/_n4o_brand.yml
+    theme: brand/n4o_html.scss
+    number-sections: false
+    anchor-sections: true
+    code-overflow: scroll
+    highlight-style: gruvbox
+    code-line-numbers: true
+    respect-user-color-scheme: true
+    cap-location: bottom
+    page-layout: article
+    appendix-style: default
+    appendix-cite-as: true
+    lightbox: true
+    reference-location: document
+    citation-location: document
+    preview-links: true # Bei Klick auf einen Link eine Vorschau anzeigen
+    link-external-icon: true # Icon für externe Links anzeigen
+    link-external-newwindow: true # Links in einem neuen Tab/Fenster anzeigen
+    title-block-style: default
+    title-block-categories: true
+    # image: Link # Link zu Vorschaugraphik
+    # image-alt: # Alt-Text für Vorschaugraphik
+    repo-actions: [edit, source]

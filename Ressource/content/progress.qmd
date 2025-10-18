@@ -1,0 +1,30 @@
+---
+title: "Fortschritt"
+subtitle: "Hier sehen Sie, welche Kursseiten Sie bereits abgeschlossen haben"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+---
+
+<!-- Badge container -->
+<div id="progress_badges"></div>
+<link rel="stylesheet" href="/assets/css/badges.css">
+<script src="/assets/js/badges.js"></script>
+
+<script>
+  // Ensure progress exists
+  localStorage.progress ??= "0";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Initial render
+    renderBadges("progress_badges");
+
+    // Auto-update badges when progress changes
+    let last = parseInt(localStorage.progress, 10);
+    setInterval(() => {
+      const curr = parseInt(localStorage.progress, 10);
+      if (curr !== last) (last = curr, renderBadges("progress_badges"));
+    }, 200);
+  });
+</script>

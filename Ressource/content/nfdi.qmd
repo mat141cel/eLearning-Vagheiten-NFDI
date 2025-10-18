@@ -5,10 +5,6 @@ lang: de
 date: today
 date-modified: last-modified
 date-format: "DD.MM.YYYY"
-metadata-files: 
- - ../layout.yml
- - ../autor_innen.yml
- - ../oer_metadata.yml
 ---
 
 ## Was ist NFDI?
@@ -121,7 +117,13 @@ window["nfdi_quiz_data"] = [
     ]
   }
 ];
-
-// Render the quiz AFTER the JS file loads
-renderQuiz("nfdi_quiz", window["nfdi_quiz_data"]);
+if (!localStorage.getItem("progress")) {
+    localStorage.setItem("progress", "0");
+}
+document.addEventListener("DOMContentLoaded", () => {
+    renderQuiz("nfdi_quiz", window["nfdi_quiz_data"], {
+        quizKey: "nfdi_quiz_completed",
+        onComplete: () => console.log("Quiz completed!")
+    });
+});
 </script>

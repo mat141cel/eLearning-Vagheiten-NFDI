@@ -61,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="../assets/css/collage.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -159,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
   <li><a href="#aufbau-des-kurses" id="toc-aufbau-des-kurses" class="nav-link" data-scroll-target="#aufbau-des-kurses">Aufbau des Kurses</a>
   <ul class="collapse">
-  <li><a href="#statische-seiten" id="toc-statische-seiten" class="nav-link" data-scroll-target="#statische-seiten">Statische Seiten</a></li>
+  <li><a href="#konzepte-und-erklärungen" id="toc-konzepte-und-erklärungen" class="nav-link" data-scroll-target="#konzepte-und-erklärungen">Konzepte und Erklärungen</a></li>
   <li><a href="#interaktive-analysen-mit-google-colab" id="toc-interaktive-analysen-mit-google-colab" class="nav-link" data-scroll-target="#interaktive-analysen-mit-google-colab">Interaktive Analysen mit Google Colab</a></li>
   </ul></li>
   <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
@@ -222,12 +223,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="lernziele" class="level2">
 <h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
 <p>Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.</p>
+<div class="text-collage">
+<p><a href="https://chre.ashmus.ox.ac.uk/hoard/4155" target="_blank" style="background-image: url('/assets/img/hortfund_karte.jpg');">Geoinformationen</a> <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/ludwig-in-3d" target="_blank" style="background-image: url('/assets/img/3D_Modell.jpg');">3D-Modelle</a> <a href="https://colab.research.google.com/drive/1QpHpuCaGdZ56KoUY32a6GITzvD9AD8fH" target="_blank" style="background-image: url('/assets/img/object_recognition.jpg');">KI-Objekterkennung</a> <a href="https://zenodo.org/records/11187474" target="_blank" style="background-image: url('/assets/img/statistics.jpg');">Statistiken</a></p>
+</div>
 </section>
 <section id="aufbau-des-kurses" class="level2">
 <h2 class="anchored" data-anchor-id="aufbau-des-kurses">Aufbau des Kurses</h2>
-<section id="statische-seiten" class="level3">
-<h3 class="anchored" data-anchor-id="statische-seiten">Statische Seiten</h3>
-<p>Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Werte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden.</p>
+<section id="konzepte-und-erklärungen" class="level3">
+<h3 class="anchored" data-anchor-id="konzepte-und-erklärungen">Konzepte und Erklärungen</h3>
+<p>Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -244,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="interaktive-analysen-mit-google-colab" class="level3">
 <h3 class="anchored" data-anchor-id="interaktive-analysen-mit-google-colab">Interaktive Analysen mit Google Colab</h3>
-<p>Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne Installation Python Code auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.</p>
+<p>Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.</p>
 <p>Jede Modulseite enthält oben ein Colab-Symbol wie dieses:</p>
 <!-- this link to colab can used on other sites, remember to define filename in top yaml -->
 <div class="quarto-figure quarto-figure-center">
@@ -271,6 +275,7 @@ Hinweis zur Nutzung
 </section>
 <section id="quiz" class="level2">
 <h2 class="anchored" data-anchor-id="quiz">Quiz</h2>
+<p>Genug der einleitenden Worte, numismatische Daten rufen.</p>
 <div id="intro_quiz">
 
 </div>
@@ -320,7 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </section>
 <section id="förderung" class="level2 appendix">
 <h2 class="appendix anchored" data-anchor-id="förderung">Förderung</h2>
-<p>Die Materialien entstanden in dem von der DFG geförderten Projekt “<a href="https://gepris.dfg.de/gepris/projekt/501836407" target="_blank">NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte</a>”</p>
+<p>Die ELearning-Materialien entstanden in dem von der DFG geförderten Projekt “<a href="https://gepris.dfg.de/gepris/projekt/501836407" target="_blank">NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte</a>”</p>
 <p>Die Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.</p>
 <p><img src="../brand/logos/n4o_logo_verlauf_claim_lang.svg" class="img-fluid"></p>
 <p><img src="../assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" class="img-fluid"></p>

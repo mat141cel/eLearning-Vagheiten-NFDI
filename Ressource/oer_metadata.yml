@@ -3,12 +3,14 @@ funding: "gefördert durch die DFG (Projektnummer 501836407)"
 
 # Erschließung der Inhalte mit Quarto
 # Mit categories und keywords können die Inhalte von Quarto-Dokumenten auf zwei Ebenen erschlossen werden. Übersichtsseiten mit Suchfunktion lassen sich so automatisch mit Quarto erstellen. vgl. https://quarto.org/docs/websites/website-listings.html
-categories: # Kontrolliertes Vokabular. e.g. https://skohub.io/dini-ag-kim/hcrt/heads/master/w3id.org/kim/hcrt/index.html
-  - https://w3id.org/kim/hcrt/course
-  - https://w3id.org/kim/hcrt/data
-keywords: # Kontrolliertes Vokabular. e.g. TaDiRAH https://vocabs.dariah.eu/tadirah/de/
-  - Kurs
-  - Daten
+# categories: # Kontrolliertes Vokabular. e.g. https://skohub.io/dini-ag-kim/hcrt/heads/master/w3id.org/kim/hcrt/index.html
+#   - id: "https://w3id.org/kim/hcrt/course"
+#     label: "Course"
+#   - id: "https://w3id.org/kim/hcrt/data"
+#     label: "Data"
+# keywords: # Kontrolliertes Vokabular. e.g. TaDiRAH https://vocabs.dariah.eu/tadirah/de/
+#   - Kurs
+#   - Daten
 
 # Technische Metadaten
 site-url: https://mat141cel.github.io/eLearning-Vagheiten-NFDI/

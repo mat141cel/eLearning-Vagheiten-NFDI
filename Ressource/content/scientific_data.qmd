@@ -1,13 +1,13 @@
 ---
 title: "Forschungsdaten"
-subtitle: "Was sind numismatische Forschungsdaten?"
 lang: de
 date: today
 date-modified: last-modified
 date-format: "DD.MM.YYYY"
-title-block: false 
+title-block: None 
 ---
 
+## Was sind numismatische Forschungsdaten?
 Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.
 Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.
 
@@ -80,20 +80,3 @@ Dieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es
 
 ## Wie funktionieren Münzdaten
 Der aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.
-
-
-
-
-## Überblick über Münzdatenbanken
-
-Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal [NumiScience.de](https://Numiscience.de) wurden bereits einige aufgearbeitet. Dazu gehört [CRRO](https://pecunia.zaw.uni-heidelberg.de/NumiScience/crro-coinage-of-the-roman-republic-online), [OCRE](https://pecunia.zaw.uni-heidelberg.de/NumiScience/ocre-online-coins-of-the-roman-empire) und [PELLA](https://pecunia.zaw.uni-heidelberg.de/NumiScience/pella-coinage-of-the-kings-of-macedonia). 
-
-Bei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.
-
-::: {.callout-note collapse="true"}
-## Was sind Typenkataloge?
-Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die [Münzbestimmung](https://pecunia.zaw.uni-heidelberg.de/NumiScience/muenzbestimmung) notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.
-:::
-
-
-

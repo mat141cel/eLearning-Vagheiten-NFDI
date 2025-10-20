@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 
-## Förderung
+## Förderung {.appendix}
 
 Die Materialien entstanden in dem von der DFG geförderten Projekt "[NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"}" 
 

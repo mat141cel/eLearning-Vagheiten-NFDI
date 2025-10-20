@@ -8,5 +8,17 @@ date-format: "DD.MM.YYYY"
 ---
 
 
+## Überblick über Münzdatenbanken
+
+Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal [NumiScience.de](https://Numiscience.de) wurden bereits einige aufgearbeitet. Dazu gehört [CRRO](https://pecunia.zaw.uni-heidelberg.de/NumiScience/crro-coinage-of-the-roman-republic-online), [OCRE](https://pecunia.zaw.uni-heidelberg.de/NumiScience/ocre-online-coins-of-the-roman-empire) und [PELLA](https://pecunia.zaw.uni-heidelberg.de/NumiScience/pella-coinage-of-the-kings-of-macedonia). 
+
+Bei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.
+
+::: {.callout-note collapse="true"}
+## Was sind Typenkataloge?
+Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die [Münzbestimmung](https://pecunia.zaw.uni-heidelberg.de/NumiScience/muenzbestimmung) notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.
+:::
+
+
 
 

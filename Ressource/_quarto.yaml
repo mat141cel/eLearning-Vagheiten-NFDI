@@ -56,7 +56,7 @@ format:
     cap-location: bottom
     page-layout: article
     collapsible-header: true 
-    appendix-style: default
+    appendix-style: none
     appendix-cite-as: true
     lightbox: true
     reference-location: document

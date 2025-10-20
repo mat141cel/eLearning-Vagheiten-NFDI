@@ -108,7 +108,7 @@
     "href": "content/data_access.html",
     "title": "Daten herunterladen",
     "section": "",
-    "text": "LizenzCC BY 4.0Urheber:innen©Mattia CelisiZitiervorschlägeMit BibTeX zitieren:@misc{celisi2025,\n  author = {Celisi, Mattia and Boerner, Susanne},\n  publisher = {NFDI4Objects},\n  title = {Daten herunterladen},\n  date = {2025-10-20},\n  langid = {de}\n}\nBitte zitieren Sie diesen Kurs als:\nCelisi, Mattia, and Susanne Boerner. 2025. “Daten\nherunterladen.” NFDI4Objects Open Educational Resource.\nNFDI4Objects.",
+    "text": "LizenzCC BY 4.0Urheber:innen©Mattia CelisiZitiervorschlägeMit BibTeX zitieren:@misc{celisi2025,\n  author = {Celisi, Mattia},\n  publisher = {NFDI4Objects},\n  title = {Daten herunterladen},\n  date = {2025-10-20},\n  langid = {de}\n}\nBitte zitieren Sie diesen Kurs als:\nCelisi, Mattia. 2025. “Daten herunterladen.”\nNFDI4Objects Open Educational Resource. NFDI4Objects.",
     "crumbs": [
       "2. Datenzugang"
     ]
@@ -233,7 +233,7 @@
     "href": "content/progress.html",
     "title": "Fortschritt",
     "section": "",
-    "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt.\n\n\n\n\n\n\n\n\n\n\nLizenzCC BY 4.0Urheber:innen©Mattia CelisiZitiervorschlägeMit BibTeX zitieren:@misc{celisi2025,\n  author = {Celisi, Mattia and Boerner, Susanne},\n  publisher = {NFDI4Objects},\n  title = {Fortschritt},\n  date = {2025-10-18},\n  langid = {de}\n}\nBitte zitieren Sie diesen Kurs als:\nCelisi, Mattia, and Susanne Boerner. 2025. “Fortschritt.”\nNFDI4Objects Open Educational Resource. NFDI4Objects."
+    "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
   },
   {
     "objectID": "content/index.html#förderung",
@@ -260,7 +260,7 @@
     "href": "content/scientific_data.html",
     "title": "Forschungsdaten",
     "section": "",
-    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837",
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\nHinweis\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen.",
     "crumbs": [
       "2. Forschungsdaten"
     ]
@@ -314,5 +314,22 @@
     "crumbs": [
       "2. Forschungsdaten"
     ]
+  },
+  {
+    "objectID": "content/scientific_data.html#was-sind-numismatische-forschungsdaten",
+    "href": "content/scientific_data.html#was-sind-numismatische-forschungsdaten",
+    "title": "Forschungsdaten",
+    "section": "",
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\nHinweis\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen.",
+    "crumbs": [
+      "2. Forschungsdaten"
+    ]
+  },
+  {
+    "objectID": "content/progress.html#hier-sehen-sie-welche-kursseiten-sie-bereits-abgeschlossen-haben",
+    "href": "content/progress.html#hier-sehen-sie-welche-kursseiten-sie-bereits-abgeschlossen-haben",
+    "title": "Fortschritt",
+    "section": "",
+    "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
   }
 ]

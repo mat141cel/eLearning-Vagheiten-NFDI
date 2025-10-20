@@ -1,11 +1,12 @@
 ---
 title: "Fortschritt"
-subtitle: "Hier sehen Sie, welche Kursseiten Sie bereits abgeschlossen haben"
 lang: de
 date: today
 date-modified: last-modified
 date-format: "DD.MM.YYYY"
 ---
+
+## Hier sehen Sie, welche Kursseiten Sie bereits abgeschlossen haben
 
 Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt.
 

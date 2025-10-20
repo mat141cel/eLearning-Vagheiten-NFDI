@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter "Mein Fortschritt" ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul
 
 ## Förderung {.appendix}
 

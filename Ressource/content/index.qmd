@@ -6,6 +6,7 @@ lang: de
 date: today
 date-modified: last-modified
 date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
 ---
 
 ## Motivation
@@ -16,10 +17,18 @@ Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen g
 ## Lernziele
 Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.
 
+<div class="text-collage">
+  <a href="https://chre.ashmus.ox.ac.uk/hoard/4155" target="_blank" style="background-image: url('/assets/img/hortfund_karte.jpg');">Geoinformationen</a>
+  <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/ludwig-in-3d" target="_blank" style="background-image: url('/assets/img/3D_Modell.jpg');">3D-Modelle</a>
+  <a href="https://colab.research.google.com/drive/1QpHpuCaGdZ56KoUY32a6GITzvD9AD8fH" target="_blank" style="background-image: url('/assets/img/object_recognition.jpg');">KI-Objekterkennung</a>
+  <a href="https://zenodo.org/records/11187474" target="_blank" style="background-image: url('/assets/img/statistics.jpg');">Statistiken</a>
+</div>
+
+
 ## Aufbau des Kurses
 
-### Statische Seiten
-Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Werte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden. 
+### Konzepte und Erklärungen
+Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden. 
 
 ::: {.callout-important}
 Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.
@@ -27,7 +36,7 @@ Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit
 
 ### Interaktive Analysen mit Google Colab
 
-Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne Installation Python Code auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. 
+Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. 
   
 Jede Modulseite enthält oben ein Colab-Symbol wie dieses:  
 
@@ -40,6 +49,7 @@ Jede Modulseite enthält oben ein Colab-Symbol wie dieses:
 
 ## Quiz
 
+Genug der einleitenden Worte, numismatische Daten rufen.
 
 <div id="intro_quiz"></div>
 
@@ -91,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ## Förderung {.appendix}
 
-Die Materialien entstanden in dem von der DFG geförderten Projekt "[NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"}" 
+Die ELearning-Materialien entstanden in dem von der DFG geförderten Projekt "[NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"}" 
 
 Die Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.
 

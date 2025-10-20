@@ -24,7 +24,7 @@
     "href": "content/index.html#lernziele",
     "title": "Numismatik und Digital Humanities",
     "section": "Lernziele",
-    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.",
+    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken",
     "crumbs": [
       "1. Hauptseite"
     ]
@@ -34,7 +34,7 @@
     "href": "content/index.html#aufbau-des-kurses",
     "title": "Numismatik und Digital Humanities",
     "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\n\nStatische Seiten\nDieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Werte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden.\n\n\n\n\n\n\nWichtig\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.\n\n\n\n\nInteraktive Analysen mit Google Colab\nZu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne Installation Python Code auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.\nJede Modulseite enthält oben ein Colab-Symbol wie dieses:\n\n\n\n\n\n\n\n\nTippHinweis zur Nutzung\n\n\n\n\nFür Colab ist ein Google-Account erforderlich.",
+    "text": "Aufbau des Kurses\n\nKonzepte und Erklärungen\nDieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden.\n\n\n\n\n\n\nWichtig\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.\n\n\n\n\nInteraktive Analysen mit Google Colab\nZu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.\nJede Modulseite enthält oben ein Colab-Symbol wie dieses:\n\n\n\n\n\n\n\n\nTippHinweis zur Nutzung\n\n\n\n\nFür Colab ist ein Google-Account erforderlich.",
     "crumbs": [
       "1. Hauptseite"
     ]
@@ -108,7 +108,7 @@
     "href": "content/data_access.html",
     "title": "Daten herunterladen",
     "section": "",
-    "text": "LizenzCC BY 4.0Urheber:innen©Mattia CelisiZitiervorschlägeMit BibTeX zitieren:@misc{celisi2025,\n  author = {Celisi, Mattia},\n  publisher = {NFDI4Objects},\n  title = {Daten herunterladen},\n  date = {2025-10-20},\n  langid = {de}\n}\nBitte zitieren Sie diesen Kurs als:\nCelisi, Mattia. 2025. “Daten herunterladen.”\nNFDI4Objects Open Educational Resource. NFDI4Objects.",
+    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.\n\n\n\n\n\n\nHinweisWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.",
     "crumbs": [
       "2. Datenzugang"
     ]
@@ -240,7 +240,7 @@
     "href": "content/index.html#förderung",
     "title": "Numismatik und Digital Humanities",
     "section": "Förderung",
-    "text": "Förderung\nDie Materialien entstanden in dem von der DFG geförderten Projekt “NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte”\nDie Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.",
+    "text": "Förderung\nDie ELearning-Materialien entstanden in dem von der DFG geförderten Projekt “NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte”\nDie Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.",
     "crumbs": [
       "1. Hauptseite"
     ]
@@ -250,7 +250,7 @@
     "href": "content/index.html#quiz",
     "title": "Numismatik und Digital Humanities",
     "section": "Quiz",
-    "text": "Quiz",
+    "text": "Quiz\nGenug der einleitenden Worte, numismatische Daten rufen.",
     "crumbs": [
       "1. Hauptseite"
     ]
@@ -331,5 +331,15 @@
     "title": "Fortschritt",
     "section": "",
     "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
+  },
+  {
+    "objectID": "content/data_access.html#überblick-über-münzdatenbanken",
+    "href": "content/data_access.html#überblick-über-münzdatenbanken",
+    "title": "Daten herunterladen",
+    "section": "",
+    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.\n\n\n\n\n\n\nHinweisWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.",
+    "crumbs": [
+      "2. Datenzugang"
+    ]
   }
 ]

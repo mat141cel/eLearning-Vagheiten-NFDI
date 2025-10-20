@@ -18,10 +18,10 @@ Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen g
 Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.
 
 <div class="text-collage">
-  <a href="https://chre.ashmus.ox.ac.uk/hoard/4155" target="_blank" style="background-image: url('/assets/img/hortfund_karte.jpg');">Geoinformationen</a>
-  <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/ludwig-in-3d" target="_blank" style="background-image: url('/assets/img/3D_Modell.jpg');">3D-Modelle</a>
-  <a href="https://colab.research.google.com/drive/1QpHpuCaGdZ56KoUY32a6GITzvD9AD8fH" target="_blank" style="background-image: url('/assets/img/object_recognition.jpg');">KI-Objekterkennung</a>
-  <a href="https://zenodo.org/records/11187474" target="_blank" style="background-image: url('/assets/img/statistics.jpg');">Statistiken</a>
+  <a href="https://chre.ashmus.ox.ac.uk/hoard/4155" target="_blank" style="background-image: url('../assets/img/hortfund_karte.jpg');">Geoinformationen</a>
+  <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/ludwig-in-3d" target="_blank" style="background-image: url('../assets/img/3D_Modell.jpg');">3D-Modelle</a>
+  <a href="https://colab.research.google.com/drive/1QpHpuCaGdZ56KoUY32a6GITzvD9AD8fH" target="_blank" style="background-image: url('../assets/img/object_recognition.jpg');">KI-Objekterkennung</a>
+  <a href="https://zenodo.org/records/11187474" target="_blank" style="background-image: url('../assets/img/statistics.jpg');">Statistiken</a>
 </div>
 
 

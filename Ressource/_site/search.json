@@ -4,9 +4,9 @@
     "href": "content/index.html",
     "title": "Numismatik und Digital Humanities",
     "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Einige dieser Portale stellen wir bereits in der Numismatischen Toolbox vor (link). Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.",
     "crumbs": [
-      "Hauptseite"
+      "1. Hauptseite"
     ]
   },
   {
@@ -14,9 +14,9 @@
     "href": "content/index.html#motivation",
     "title": "Numismatik und Digital Humanities",
     "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Einige dieser Portale stellen wir bereits in der Numismatischen Toolbox vor (link). Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.",
     "crumbs": [
-      "Hauptseite"
+      "1. Hauptseite"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "section": "Lernziele",
     "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.",
     "crumbs": [
-      "Hauptseite"
+      "1. Hauptseite"
     ]
   },
   {
@@ -34,9 +34,9 @@
     "href": "content/index.html#aufbau-des-kurses",
     "title": "Numismatik und Digital Humanities",
     "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\nDieser Kurs kann komplett im Browser absolviert werden. Dieser Kurs nutzt Quarto, das heißt, dass alle Grafiken und Darstellungen automatisch generiert werden. Allerdings ist Github Pages nicht interaktiv. Jeder Code ist allerdings über der jeweiligen Darstellung angegeben und kann in eine Google Colab Instanz kopiert werden. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren. Wenn interaktiver Code ausgeführt werden kann, weißt Sie der folgende Button darauf hin. Für die Nutzung von Colab ist ein Google-Account notwendig.\n\n\nJede Modulseite hat entweder ein Quiz oder es geht darum, einen bestimmten Wert aus der Colab Instanz in Quarto einzutragen, so können Sie den Fortschritt speichern.\n\n\n\n\n\n\nWichtig\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit für Dritte, sie einzusehen.",
+    "text": "Aufbau des Kurses\n\nStatische Seiten\nDieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Werte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden.\n\n\n\n\n\n\nWichtig\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.\n\n\n\n\nInteraktive Analysen mit Google Colab\nZu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne Installation Python Code auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.\nJede Modulseite enthält oben ein Colab-Symbol wie dieses:\n\n\n\n\n\n\n\n\nTippHinweis zur Nutzung\n\n\n\n\nFür Colab ist ein Google-Account erforderlich.",
     "crumbs": [
-      "Hauptseite"
+      "1. Hauptseite"
     ]
   },
   {
@@ -108,10 +108,9 @@
     "href": "content/data_access.html",
     "title": "Daten herunterladen",
     "section": "",
-    "text": "ZitiervorschlägeMit BibTeX zitieren:@misc{2025,\n  author = {},\n  publisher = {NFDI4Objects},\n  title = {Daten herunterladen},\n  date = {2025-10-18},\n  langid = {de}\n}\nBitte zitieren Sie diesen Kurs als:\n“Daten herunterladen.” 2025. NFDI4Objects Open\nEducational Resource. NFDI4Objects.",
+    "text": "LizenzCC BY 4.0Urheber:innen©Mattia CelisiZitiervorschlägeMit BibTeX zitieren:@misc{celisi2025,\n  author = {Celisi, Mattia and Boerner, Susanne},\n  publisher = {NFDI4Objects},\n  title = {Daten herunterladen},\n  date = {2025-10-20},\n  langid = {de}\n}\nBitte zitieren Sie diesen Kurs als:\nCelisi, Mattia, and Susanne Boerner. 2025. “Daten\nherunterladen.” NFDI4Objects Open Educational Resource.\nNFDI4Objects.",
     "crumbs": [
-      "Hauptseite",
-      "Lektion 1: Datenzugang"
+      "2. Datenzugang"
     ]
   },
   {
@@ -165,8 +164,7 @@
     "section": "Datengrundlage",
     "text": "Datengrundlage\nErläutern und verlinken sie die Datengrundlage für die Übung.",
     "crumbs": [
-      "Hauptseite",
-      "Lektion 2: Datenverarbeitung"
+      "3. Datenverarbeitung"
     ]
   },
   {
@@ -176,8 +174,7 @@
     "section": "Vorbereitung",
     "text": "Vorbereitung",
     "crumbs": [
-      "Hauptseite",
-      "Lektion 2: Datenverarbeitung"
+      "3. Datenverarbeitung"
     ]
   },
   {
@@ -187,8 +184,7 @@
     "section": "Durchführung",
     "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können",
     "crumbs": [
-      "Hauptseite",
-      "Lektion 2: Datenverarbeitung"
+      "3. Datenverarbeitung"
     ]
   },
   {
@@ -229,7 +225,7 @@
     "section": "Fortschritt",
     "text": "Fortschritt\nNachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und angezeigt. Im Laufe des Kurses erhalten Sie neue Badges. Ihren FOrtschritt können Sie sich auf der Seite mein Fortschritt ansehen.",
     "crumbs": [
-      "Hauptseite"
+      "1. Hauptseite"
     ]
   },
   {
@@ -237,7 +233,7 @@
     "href": "content/progress.html",
     "title": "Fortschritt",
     "section": "",
-    "text": "ZitiervorschlägeMit BibTeX zitieren:@misc{2025,\n  author = {},\n  publisher = {NFDI4Objects},\n  title = {Fortschritt},\n  date = {2025-10-18},\n  langid = {de}\n}\nBitte zitieren Sie diesen Kurs als:\n“Fortschritt.” 2025. NFDI4Objects Open Educational\nResource. NFDI4Objects."
+    "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt.\n\n\n\n\n\n\n\n\n\n\nLizenzCC BY 4.0Urheber:innen©Mattia CelisiZitiervorschlägeMit BibTeX zitieren:@misc{celisi2025,\n  author = {Celisi, Mattia and Boerner, Susanne},\n  publisher = {NFDI4Objects},\n  title = {Fortschritt},\n  date = {2025-10-18},\n  langid = {de}\n}\nBitte zitieren Sie diesen Kurs als:\nCelisi, Mattia, and Susanne Boerner. 2025. “Fortschritt.”\nNFDI4Objects Open Educational Resource. NFDI4Objects."
   },
   {
     "objectID": "content/index.html#förderung",
@@ -246,7 +242,7 @@
     "section": "Förderung",
     "text": "Förderung\nDie Materialien entstanden in dem von der DFG geförderten Projekt “NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte”\nDie Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.",
     "crumbs": [
-      "Hauptseite"
+      "1. Hauptseite"
     ]
   },
   {
@@ -256,7 +252,67 @@
     "section": "Quiz",
     "text": "Quiz",
     "crumbs": [
-      "Hauptseite"
+      "1. Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/scientific_data.html",
+    "href": "content/scientific_data.html",
+    "title": "Forschungsdaten",
+    "section": "",
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837",
+    "crumbs": [
+      "2. Forschungsdaten"
+    ]
+  },
+  {
+    "objectID": "content/scientific_data.html#anwendungsbeispiel",
+    "href": "content/scientific_data.html#anwendungsbeispiel",
+    "title": "Wissenschaftliche Daten",
+    "section": "",
+    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Auf dem Portal NumiScience wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.\n::: {.callout-note} Was sind Typenkataloge? Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert. :::",
+    "crumbs": [
+      "2. Forschungsdaten"
+    ]
+  },
+  {
+    "objectID": "content/scientific_data.html#was-sind-forschungsdaten",
+    "href": "content/scientific_data.html#was-sind-forschungsdaten",
+    "title": "Wissenschaftliche Daten",
+    "section": "",
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen.",
+    "crumbs": [
+      "2. Forschungsdaten"
+    ]
+  },
+  {
+    "objectID": "content/scientific_data.html#section",
+    "href": "content/scientific_data.html#section",
+    "title": "Wissenschaftliche Daten",
+    "section": "",
+    "text": "Der aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.",
+    "crumbs": [
+      "2. Forschungsdaten"
+    ]
+  },
+  {
+    "objectID": "content/scientific_data.html#überblick-über-münzdatenbanken",
+    "href": "content/scientific_data.html#überblick-über-münzdatenbanken",
+    "title": "Forschungsdaten",
+    "section": "Überblick über Münzdatenbanken",
+    "text": "Überblick über Münzdatenbanken\nEs gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.\n\n\n\n\n\n\nHinweisWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.",
+    "crumbs": [
+      "2. Forschungsdaten"
+    ]
+  },
+  {
+    "objectID": "content/scientific_data.html#wie-funktionieren-münzdaten",
+    "href": "content/scientific_data.html#wie-funktionieren-münzdaten",
+    "title": "Forschungsdaten",
+    "section": "Wie funktionieren Münzdaten",
+    "text": "Wie funktionieren Münzdaten\nDer aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.",
+    "crumbs": [
+      "2. Forschungsdaten"
     ]
   }
 ]

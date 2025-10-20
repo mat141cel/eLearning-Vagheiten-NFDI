@@ -7,6 +7,8 @@ date-modified: last-modified
 date-format: "DD.MM.YYYY"
 ---
 
+Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt.
+
 <!-- Badge container -->
 <div id="progress_badges"></div>
 <link rel="stylesheet" href="/assets/css/badges.css">

@@ -1,8 +1,3 @@
-# Beschreibende Metadaten
-abstract: "Zusammenfassung"
-abstract-title: "Zusammenfassung"
-description: |
-  Beschreibung
 funding: "gefördert durch die DFG (Projektnummer 501836407)"
 # vgl. https://quarto.org/docs/authoring/front-matter.html#funding
 

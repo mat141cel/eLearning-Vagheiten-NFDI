@@ -6,36 +6,36 @@ lang: de
 date: today
 date-modified: last-modified
 date-format: "DD.MM.YYYY"
-metadata-files: 
- - ../autor_innen.yml
- - ../oer_metadata.yml
-# filters: # tbd: Export-Filter für Metadaten-Dumps (OERSI etc.)
-#  - filters/export_alle_metadaten.lua
-#  - filters/export_oersi.lua
-# export_alle_metadaten:
-#  mode: schema
-#  exclude: [format, filters, brand, from, metadata-files, export-meta, export-meta-dir]
 ---
 
 ## Motivation
 
-In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Einige dieser Portale stellen wir bereits in der Numismatischen Toolbox vor (link). Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist.
+In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals [Numiscience.de]("https://pecunia.zaw.uni-heidelberg.de/NumiScience/ocre-online-coins-of-the-roman-empire").
 Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.
 
 ## Lernziele
 Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.
 
 ## Aufbau des Kurses
-Dieser Kurs kann komplett im Browser absolviert werden. Dieser Kurs nutzt Quarto, das heißt, dass alle Grafiken und Darstellungen automatisch generiert werden. Allerdings ist Github Pages nicht interaktiv. Jeder Code ist allerdings über der jeweiligen Darstellung angegeben und kann in eine Google Colab Instanz kopiert werden. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren. Wenn interaktiver Code ausgeführt werden kann, weißt Sie der folgende Button darauf hin. Für die Nutzung von Colab ist ein Google-Account notwendig.
+
+### Statische Seiten
+Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Werte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden. 
+
+::: {.callout-important}
+Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.
+:::
+
+### Interaktive Analysen mit Google Colab
+
+Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne Installation Python Code auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. 
+  
+Jede Modulseite enthält oben ein Colab-Symbol wie dieses:  
 
 <!-- this link to colab can used on other sites, remember to define filename in top yaml -->
 [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/{{< meta filename >}}.ipynb)
 
-
-Jede Modulseite hat entweder ein Quiz oder es geht darum, einen bestimmten Wert aus der Colab Instanz in Quarto einzutragen, so können Sie den Fortschritt speichern.
-
-::: {.callout-important}
-Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit für Dritte, sie einzusehen.
+::: {.callout-tip title="Hinweis zur Nutzung"}
+- Für Colab ist ein **Google-Account** erforderlich. 
 :::
 
 ## Quiz
@@ -88,33 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-
-
-## Fortschritt
-
-Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und angezeigt. Im Laufe des Kurses erhalten Sie neue Badges. Ihren FOrtschritt können Sie sich auf der Seite mein Fortschritt ansehen.
-
-
-<div id="progress_badges"></div>
-<link rel="stylesheet" href="/assets/css/badges.css">
-<script src="/assets/js/badges.js"></script>
-
-<script>
-  // Ensure progress exists
-  localStorage.progress ??= "0";
-
-  document.addEventListener("DOMContentLoaded", () => {
-    // Initial render
-    renderBadges("progress_badges");
-
-    // Auto-update badges when progress changes
-    let last = parseInt(localStorage.progress, 10);
-    setInterval(() => {
-      const curr = parseInt(localStorage.progress, 10);
-      if (curr !== last) (last = curr, renderBadges("progress_badges"));
-    }, 200);
-  });
-</script>
 
 ## Förderung
 

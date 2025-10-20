@@ -1,0 +1,99 @@
+---
+title: "Forschungsdaten"
+subtitle: "Was sind numismatische Forschungsdaten?"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+title-block: false 
+---
+
+Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.
+Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.
+
+```{python}
+#| echo: false
+import matplotlib.pyplot as plt
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+from pathlib import Path
+from PIL import Image
+
+# --- Configuration ---
+images_dir = Path.cwd().parent / "assets" / "img"
+images = [images_dir / "image_athens.jpg", images_dir /"image_napoleon.png", images_dir / "image_euro.jpg"]
+
+image_positions = [1, 3, 5]
+image_y = 2
+
+# Attributes as single entries
+attributes_data = [
+    {"name": "Prägestätte", "x": 0.5, "y": 3.5, "direction": 1, "connected_to": [0,2]},
+    {"name": "Dargestellte", "x": 4, "y": 3.5, "direction": 1, "connected_to": [0,1]},
+    {"name": "Datierung", "x": 1, "y": 0.5, "direction": -1, "connected_to": [0,1,2]},
+    {"name": "Material", "x": 3, "y": 0.5, "direction": -1, "connected_to": [1,1,2]}
+]
+
+# --- Helper ---
+def load_img(path, size=(150, 150)):
+    img = Image.open(path).convert("RGBA")
+    img = img.resize(size, Image.LANCZOS)
+    return OffsetImage(img, zoom=1)
+
+# --- Figure ---
+fig, ax = plt.subplots(figsize=(8,4))
+ax.axis('off')
+
+# Draw images
+for x, img_path in zip(image_positions, images):
+    ab = AnnotationBbox(load_img(img_path), (x, image_y), frameon=False)
+    ax.add_artist(ab)
+
+# Draw attributes and arrows
+for attr in attributes_data:
+    # Draw attribute node
+    ax.text(attr["x"], attr["y"], attr["name"], ha='center', va='center', fontsize=10,
+            bbox=dict(boxstyle="round,pad=0.4", facecolor="#F97307", edgecolor="#555555"))
+    
+    # Draw arrows from connected images
+    for img_idx in attr["connected_to"]:
+        img_x = image_positions[img_idx]
+        ax.annotate("", xy=(attr["x"], attr["y"] - 0.15*attr["direction"]),
+                    xytext=(img_x, image_y + 0.2*attr["direction"]),
+                    arrowprops=dict(arrowstyle="-|>", color="#555555", lw=1.2))
+
+# Layout
+plt.xlim(0,6)
+plt.ylim(0,4)
+plt.tight_layout()
+plt.show()
+```
+
+Links: https://ikmk.smb.museum/object?id=18214977 
+Mitte: https://nat.museum-digital.de/object/73659
+Rechts: https://ikmk.smb.museum/object?id=18203837
+
+
+
+::: {.callout-note}
+Dieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen. 
+:::
+
+## Wie funktionieren Münzdaten
+Der aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.
+
+
+
+
+## Überblick über Münzdatenbanken
+
+Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal [NumiScience.de](https://Numiscience.de) wurden bereits einige aufgearbeitet. Dazu gehört [CRRO](https://pecunia.zaw.uni-heidelberg.de/NumiScience/crro-coinage-of-the-roman-republic-online), [OCRE](https://pecunia.zaw.uni-heidelberg.de/NumiScience/ocre-online-coins-of-the-roman-empire) und [PELLA](https://pecunia.zaw.uni-heidelberg.de/NumiScience/pella-coinage-of-the-kings-of-macedonia). 
+
+Bei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.
+
+::: {.callout-note collapse="true"}
+## Was sind Typenkataloge?
+Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die [Münzbestimmung](https://pecunia.zaw.uni-heidelberg.de/NumiScience/muenzbestimmung) notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.
+:::
+
+
+

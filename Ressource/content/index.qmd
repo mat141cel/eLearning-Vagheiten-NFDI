@@ -24,11 +24,10 @@ Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu
   <a href="https://zenodo.org/records/11187474" target="_blank" style="background-image: url('../assets/img/statistics.jpg');">Statistiken</a>
 </div>
 
-
 ## Aufbau des Kurses
 
 ### Konzepte und Erklärungen
-Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden. 
+Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite [mein Fortschritt]("progress.qmd") angesehen werden. 
 
 ::: {.callout-important}
 Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.
@@ -41,7 +40,7 @@ Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verli
 Jede Modulseite enthält oben ein Colab-Symbol wie dieses:  
 
 <!-- this link to colab can used on other sites, remember to define filename in top yaml -->
-[![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/{{< meta filename >}}.ipynb)
+[![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/_{{< meta filename >}}.ipynb)
 
 ::: {.callout-tip title="Hinweis zur Nutzung"}
 - Für Colab ist ein **Google-Account** erforderlich. 
@@ -98,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter "Mein Fortschritt" ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul
+Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter [mein Fortschritt]("progress.qmd") ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul
 
 ## Förderung {.appendix}
 

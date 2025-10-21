@@ -108,7 +108,7 @@
     "href": "content/data_access.html",
     "title": "Daten herunterladen",
     "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.\n\n\n\n\n\n\nHinweisWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.",
+    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.",
     "crumbs": [
       "2. Datenzugang"
     ]
@@ -250,7 +250,7 @@
     "href": "content/index.html#quiz",
     "title": "Numismatik und Digital Humanities",
     "section": "Quiz",
-    "text": "Quiz\nGenug der einleitenden Worte, numismatische Daten rufen.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter “Mein Fortschritt” ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
+    "text": "Quiz\nGenug der einleitenden Worte, numismatische Daten rufen.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
     "crumbs": [
       "1. Hauptseite"
     ]
@@ -310,7 +310,7 @@
     "href": "content/scientific_data.html#wie-funktionieren-münzdaten",
     "title": "Forschungsdaten",
     "section": "Wie funktionieren Münzdaten",
-    "text": "Wie funktionieren Münzdaten\nDer aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.",
+    "text": "Wie funktionieren Münzdaten\nGrundsätzlich geht es darum, alle Informationen mit einer Münze zu verknüpfen. Die einfachste Form, Daten strukturiert zu speichern, ist eine Tabelle. Allerdings gibt es häufig auch Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben.\n\n\n\n\n\n\nHinweisWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.\n\n\n\nWenn man sich Daten als Tabellen vorstellt, bedeutet das, dass es zwei Tabellen braucht, eine mit Informationen für Münzen und eine mit Informationen zu ihrem Typ. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen ergibt es Sinn, eigene Tabellen zu erstellen, damit die Daten zentralisiert verändert werden können.\nDer aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.\n\nWas ist eine Ontologie?\nEs gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant sind. Diese wurden von der Numismatischen Forschungsgemeinschaft bereits standardisiert und stetig aktualisiert. International gültig ist die Nomisma Ontology. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld. Ontologien lassen sich einfach mit einer Graph-Metapher verstehen.\n\n\n\nName\nGewicht\n\n\n\n\nhttps://ikmk.smb.museum/object?id=18214977\n17,13\n\n\n\nDer Name weißt dabei eindeutig auf die Tetradrachme aus Athen hin, die mit der Objektnummer: 18214977 beim Münzkabinett der Staatlichen Museen Berlin liegt.\n\n\nWas sind Normdaten?\nBei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text.",
     "crumbs": [
       "2. Forschungsdaten"
     ]
@@ -337,9 +337,19 @@
     "href": "content/data_access.html#überblick-über-münzdatenbanken",
     "title": "Daten herunterladen",
     "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.\n\n\n\n\n\n\nHinweisWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.",
+    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.",
     "crumbs": [
       "2. Datenzugang"
+    ]
+  },
+  {
+    "objectID": "content/scientific_data.html#wie-anwendungsbeispiele",
+    "href": "content/scientific_data.html#wie-anwendungsbeispiele",
+    "title": "Forschungsdaten",
+    "section": "Wie Anwendungsbeispiele?",
+    "text": "Wie Anwendungsbeispiele?",
+    "crumbs": [
+      "2. Forschungsdaten"
     ]
   }
 ]

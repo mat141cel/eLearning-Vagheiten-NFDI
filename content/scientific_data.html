@@ -157,7 +157,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#was-sind-numismatische-forschungsdaten" id="toc-was-sind-numismatische-forschungsdaten" class="nav-link active" data-scroll-target="#was-sind-numismatische-forschungsdaten">Was sind numismatische Forschungsdaten?</a></li>
-  <li><a href="#wie-funktionieren-münzdaten" id="toc-wie-funktionieren-münzdaten" class="nav-link" data-scroll-target="#wie-funktionieren-münzdaten">Wie funktionieren Münzdaten</a></li>
+  <li><a href="#wie-funktionieren-münzdaten" id="toc-wie-funktionieren-münzdaten" class="nav-link" data-scroll-target="#wie-funktionieren-münzdaten">Wie funktionieren Münzdaten</a>
+  <ul class="collapse">
+  <li><a href="#was-ist-eine-ontologie" id="toc-was-ist-eine-ontologie" class="nav-link" data-scroll-target="#was-ist-eine-ontologie">Was ist eine Ontologie?</a></li>
+  <li><a href="#was-sind-normdaten" id="toc-was-sind-normdaten" class="nav-link" data-scroll-target="#was-sind-normdaten">Was sind Normdaten?</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -192,14 +196,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Veröffentlicht am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">20.10.2025</p>
+      <p class="date">21.10.2025</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Zuletzt geändert am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">20.10.2025</p>
+      <p class="date-modified">21.10.2025</p>
     </div>
   </div>
     
@@ -211,7 +215,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="was-sind-numismatische-forschungsdaten" class="level2">
 <h2 class="anchored" data-anchor-id="was-sind-numismatische-forschungsdaten">Was sind numismatische Forschungsdaten?</h2>
 <p>Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.</p>
-<div id="14caeba9" class="cell" data-execution_count="1">
+<div id="df85977a" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <p><img src="scientific_data_files/figure-html/cell-2-output-1.png" class="img-fluid"></p>
 </div>
@@ -233,9 +237,51 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="wie-funktionieren-münzdaten" class="level2">
 <h2 class="anchored" data-anchor-id="wie-funktionieren-münzdaten">Wie funktionieren Münzdaten</h2>
+<p>Grundsätzlich geht es darum, alle Informationen mit einer Münze zu verknüpfen. Die einfachste Form, Daten strukturiert zu speichern, ist eine Tabelle. Allerdings gibt es häufig auch Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was sind Typenkataloge?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/muenzbestimmung">Münzbestimmung</a> notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.</p>
+</div>
+</div>
+</div>
+<p>Wenn man sich Daten als Tabellen vorstellt, bedeutet das, dass es zwei Tabellen braucht, eine mit Informationen für Münzen und eine mit Informationen zu ihrem Typ. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen ergibt es Sinn, eigene Tabellen zu erstellen, damit die Daten zentralisiert verändert werden können.</p>
 <p>Der aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.</p>
+<section id="was-ist-eine-ontologie" class="level3">
+<h3 class="anchored" data-anchor-id="was-ist-eine-ontologie">Was ist eine Ontologie?</h3>
+<p>Es gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant sind. Diese wurden von der Numismatischen Forschungsgemeinschaft bereits standardisiert und stetig aktualisiert. International gültig ist die <a href="http://www.nomisma.org/ontology">Nomisma Ontology</a>. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld. Ontologien lassen sich einfach mit einer Graph-Metapher verstehen.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th style="text-align: left;">Gewicht</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>https://ikmk.smb.museum/object?id=18214977</td>
+<td style="text-align: left;">17,13</td>
+</tr>
+</tbody>
+</table>
+<p>Der Name weißt dabei eindeutig auf die Tetradrachme aus Athen hin, die mit der Objektnummer: 18214977 beim Münzkabinett der Staatlichen Museen Berlin liegt.</p>
+<p>In einer Graph-basierten Darstellung würde aus dieser Tabelle werden? TODO: Hier User für Graphbasierte Darstellung anfragen?</p>
+</section>
+<section id="was-sind-normdaten" class="level3">
+<h3 class="anchored" data-anchor-id="was-sind-normdaten">Was sind Normdaten?</h3>
+<p>Bei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

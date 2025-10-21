@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "content/data_access.html",
-    "href": "content/data_access.html",
-    "title": "Daten herunterladen",
-    "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.\n\n\n\n\n\n\nWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert."
-  },
-  {
-    "objectID": "content/data_access.html#überblick-über-münzdatenbanken",
-    "href": "content/data_access.html#überblick-über-münzdatenbanken",
-    "title": "Daten herunterladen",
-    "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.\n\n\n\n\n\n\nWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert."
-  },
-  {
     "objectID": "content/nfdi.html",
     "href": "content/nfdi.html",
     "title": "Was ist NFDI?",
@@ -42,39 +28,25 @@
     "text": "Transferaufgaben"
   },
   {
-    "objectID": "content/progress.html",
-    "href": "content/progress.html",
-    "title": "Fortschritt",
+    "objectID": "content/scientific_data.html",
+    "href": "content/scientific_data.html",
+    "title": "Forschungsdaten",
     "section": "",
-    "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
   },
   {
-    "objectID": "content/progress.html#hier-sehen-sie-welche-kursseiten-sie-bereits-abgeschlossen-haben",
-    "href": "content/progress.html#hier-sehen-sie-welche-kursseiten-sie-bereits-abgeschlossen-haben",
-    "title": "Fortschritt",
+    "objectID": "content/scientific_data.html#was-sind-numismatische-forschungsdaten",
+    "href": "content/scientific_data.html#was-sind-numismatische-forschungsdaten",
+    "title": "Forschungsdaten",
     "section": "",
-    "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
   },
   {
-    "objectID": "content/data_aggregation.html#datengrundlage",
-    "href": "content/data_aggregation.html#datengrundlage",
-    "title": "Aggregating the Data",
-    "section": "Datengrundlage",
-    "text": "Datengrundlage\nErläutern und verlinken sie die Datengrundlage für die Übung."
-  },
-  {
-    "objectID": "content/data_aggregation.html#vorbereitung",
-    "href": "content/data_aggregation.html#vorbereitung",
-    "title": "Aggregating the Data",
-    "section": "Vorbereitung",
-    "text": "Vorbereitung"
-  },
-  {
-    "objectID": "content/data_aggregation.html#durchführung",
-    "href": "content/data_aggregation.html#durchführung",
-    "title": "Aggregating the Data",
-    "section": "Durchführung",
-    "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können"
+    "objectID": "content/scientific_data.html#wie-funktionieren-münzdaten",
+    "href": "content/scientific_data.html#wie-funktionieren-münzdaten",
+    "title": "Forschungsdaten",
+    "section": "Wie funktionieren Münzdaten",
+    "text": "Wie funktionieren Münzdaten\nGrundsätzlich geht es darum, alle Informationen mit einer Münze zu verknüpfen. Die einfachste Form, Daten strukturiert zu speichern, ist eine Tabelle. Allerdings gibt es häufig auch Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben.\n\n\n\n\n\n\nWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.\n\n\n\nWenn man sich Daten als Tabellen vorstellt, bedeutet das, dass es zwei Tabellen braucht, eine mit Informationen für Münzen und eine mit Informationen zu ihrem Typ. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen ergibt es Sinn, eigene Tabellen zu erstellen, damit die Daten zentralisiert verändert werden können.\nDer aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.\n\nWas ist eine Ontologie?\nEs gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant sind. Diese wurden von der Numismatischen Forschungsgemeinschaft bereits standardisiert und stetig aktualisiert. International gültig ist die Nomisma Ontology. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld. Ontologien lassen sich einfach mit einer Graph-Metapher verstehen.\n\n\n\nName\nGewicht\n\n\n\n\nhttps://ikmk.smb.museum/object?id=18214977\n17,13\n\n\n\nDer Name weißt dabei eindeutig auf die Tetradrachme aus Athen hin, die mit der Objektnummer: 18214977 beim Münzkabinett der Staatlichen Museen Berlin liegt.\nIn einer Graph-basierten Darstellung würde aus dieser Tabelle werden? TODO: Hier User für Graphbasierte Darstellung anfragen?\n\n\nWas sind Normdaten?\nBei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text."
   },
   {
     "objectID": "content/index.html",
@@ -109,7 +81,7 @@
     "href": "content/index.html#quiz",
     "title": "Numismatik und Digital Humanities",
     "section": "Quiz",
-    "text": "Quiz\nGenug der einleitenden Worte, numismatische Daten rufen.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter “Mein Fortschritt” ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
+    "text": "Quiz\nGenug der einleitenden Worte, numismatische Daten rufen.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
   },
   {
     "objectID": "content/index.html#förderung",
@@ -119,24 +91,52 @@
     "text": "Förderung\nDie ELearning-Materialien entstanden in dem von der DFG geförderten Projekt “NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte”\nDie Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt."
   },
   {
-    "objectID": "content/scientific_data.html",
-    "href": "content/scientific_data.html",
-    "title": "Forschungsdaten",
+    "objectID": "content/progress.html",
+    "href": "content/progress.html",
+    "title": "Fortschritt",
     "section": "",
-    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
+    "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
   },
   {
-    "objectID": "content/scientific_data.html#was-sind-numismatische-forschungsdaten",
-    "href": "content/scientific_data.html#was-sind-numismatische-forschungsdaten",
-    "title": "Forschungsdaten",
+    "objectID": "content/progress.html#hier-sehen-sie-welche-kursseiten-sie-bereits-abgeschlossen-haben",
+    "href": "content/progress.html#hier-sehen-sie-welche-kursseiten-sie-bereits-abgeschlossen-haben",
+    "title": "Fortschritt",
     "section": "",
-    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
+    "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
   },
   {
-    "objectID": "content/scientific_data.html#wie-funktionieren-münzdaten",
-    "href": "content/scientific_data.html#wie-funktionieren-münzdaten",
-    "title": "Forschungsdaten",
-    "section": "Wie funktionieren Münzdaten",
-    "text": "Wie funktionieren Münzdaten\nDer aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können."
+    "objectID": "content/data_access.html",
+    "href": "content/data_access.html",
+    "title": "Daten herunterladen",
+    "section": "",
+    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden."
+  },
+  {
+    "objectID": "content/data_access.html#überblick-über-münzdatenbanken",
+    "href": "content/data_access.html#überblick-über-münzdatenbanken",
+    "title": "Daten herunterladen",
+    "section": "",
+    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden."
+  },
+  {
+    "objectID": "content/data_aggregation.html#datengrundlage",
+    "href": "content/data_aggregation.html#datengrundlage",
+    "title": "Aggregating the Data",
+    "section": "Datengrundlage",
+    "text": "Datengrundlage\nErläutern und verlinken sie die Datengrundlage für die Übung."
+  },
+  {
+    "objectID": "content/data_aggregation.html#vorbereitung",
+    "href": "content/data_aggregation.html#vorbereitung",
+    "title": "Aggregating the Data",
+    "section": "Vorbereitung",
+    "text": "Vorbereitung"
+  },
+  {
+    "objectID": "content/data_aggregation.html#durchführung",
+    "href": "content/data_aggregation.html#durchführung",
+    "title": "Aggregating the Data",
+    "section": "Durchführung",
+    "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können"
   }
 ]

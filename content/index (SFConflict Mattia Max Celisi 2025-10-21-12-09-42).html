@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/scientific_data.html" rel="next">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,7 +60,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../assets/css/collage.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -96,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/index.html">1. Hauptseite</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Numismatik und Digital Humanities</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -118,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../content/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Hauptseite</span></a>
   </div>
 </li>
@@ -158,13 +156,17 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
   <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
-  <li><a href="#aufbau-des-kurses" id="toc-aufbau-des-kurses" class="nav-link" data-scroll-target="#aufbau-des-kurses">Aufbau des Kurses</a>
+  <li><a href="#voraussetzungen" id="toc-voraussetzungen" class="nav-link" data-scroll-target="#voraussetzungen">Voraussetzungen</a></li>
+  <li><a href="#vorbereitung-was-sind-forschungsdaten" id="toc-vorbereitung-was-sind-forschungsdaten" class="nav-link" data-scroll-target="#vorbereitung-was-sind-forschungsdaten">Vorbereitung: Was sind Forschungsdaten</a>
   <ul class="collapse">
-  <li><a href="#konzepte-und-erklärungen" id="toc-konzepte-und-erklärungen" class="nav-link" data-scroll-target="#konzepte-und-erklärungen">Konzepte und Erklärungen</a></li>
-  <li><a href="#interaktive-analysen-mit-google-colab" id="toc-interaktive-analysen-mit-google-colab" class="nav-link" data-scroll-target="#interaktive-analysen-mit-google-colab">Interaktive Analysen mit Google Colab</a></li>
+  <li><a href="#findable" id="toc-findable" class="nav-link" data-scroll-target="#findable">Findable</a></li>
+  <li><a href="#accessible" id="toc-accessible" class="nav-link" data-scroll-target="#accessible">Accessible</a></li>
+  <li><a href="#interoperable" id="toc-interoperable" class="nav-link" data-scroll-target="#interoperable">Interoperable</a></li>
+  <li><a href="#reusable" id="toc-reusable" class="nav-link" data-scroll-target="#reusable">Reusable</a></li>
   </ul></li>
-  <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
-  <li><a href="#förderung" id="toc-förderung" class="nav-link" data-scroll-target="#förderung">Förderung</a></li>
+  <li><a href="#transferaufgaben" id="toc-transferaufgaben" class="nav-link" data-scroll-target="#transferaufgaben">Transferaufgaben</a></li>
+  <li><a href="#weiterführende-quellen-und-informationen" id="toc-weiterführende-quellen-und-informationen" class="nav-link" data-scroll-target="#weiterführende-quellen-und-informationen">Weiterführende Quellen und Informationen</a></li>
+  <li><a href="#nachnutzen" id="toc-nachnutzen" class="nav-link" data-scroll-target="#nachnutzen">Nachnutzen</a></li>
   </ul>
 </nav>
     </div>
@@ -218,118 +220,144 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="motivation" class="level2">
 <h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
-<p>In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals <a href="&quot;https://pecunia.zaw.uni-heidelberg.de/NumiScience/ocre-online-coins-of-the-roman-empire&quot;">Numiscience.de</a>. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.</p>
+<p>Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Trotzdem verwenden viele Museen, Denkmalämter und universitäte Einrichtungen verschiedene Software-Systeme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar.</p>
+<p>Dieses Modul hat zum Ziel, die bestehenden Systeme vorzustellen, so weit wie möglich interoperabel zu machen. Mit den daraus resultierenden Forschungsdaten umzugehen, erfordert technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen.</p>
+<p>Dadurch ergeben sich neue Möglichkeiten, Münzen zu visualisieren, sei es in Hausarbeiten oder Präsentationen. In den letzten Jahren sind dadurch eine Reihe von Projekten entstanden, unter anderem mit der Nutzung von moderner KI.</p>
+<p><img src="../assets/img/ai_visualization.png" class="img-fluid"></p>
 </section>
 <section id="lernziele" class="level2">
 <h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
-<p>Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.</p>
-<div class="text-collage">
-<p><a href="https://chre.ashmus.ox.ac.uk/hoard/4155" target="_blank" style="background-image: url('../assets/img/hortfund_karte.jpg');">Geoinformationen</a> <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/ludwig-in-3d" target="_blank" style="background-image: url('../assets/img/3D_Modell.jpg');">3D-Modelle</a> <a href="https://colab.research.google.com/drive/1QpHpuCaGdZ56KoUY32a6GITzvD9AD8fH" target="_blank" style="background-image: url('../assets/img/object_recognition.jpg');">KI-Objekterkennung</a> <a href="https://zenodo.org/records/11187474" target="_blank" style="background-image: url('../assets/img/statistics.jpg');">Statistiken</a></p>
-</div>
-</section>
-<section id="aufbau-des-kurses" class="level2">
-<h2 class="anchored" data-anchor-id="aufbau-des-kurses">Aufbau des Kurses</h2>
-<section id="konzepte-und-erklärungen" class="level3">
-<h3 class="anchored" data-anchor-id="konzepte-und-erklärungen">Konzepte und Erklärungen</h3>
-<p>Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite <a href="&quot;progress.qmd&quot;">mein Fortschritt</a> angesehen werden.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.</p>
-</div>
-</div>
-</section>
-<section id="interaktive-analysen-mit-google-colab" class="level3">
-<h3 class="anchored" data-anchor-id="interaktive-analysen-mit-google-colab">Interaktive Analysen mit Google Colab</h3>
-<p>Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.</p>
-<p>Jede Modulseite enthält oben ein Colab-Symbol wie dieses:</p>
-<!-- this link to colab can used on other sites, remember to define filename in top yaml -->
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/_index.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
-</figure>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Hinweis zur Nutzung">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hinweis zur Nutzung
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>In dieser OER lernen Sie:</p>
 <ul>
-<li>Für Colab ist ein <strong>Google-Account</strong> erforderlich.</li>
+<li>die wichtigsten numismatischen Datenbanken kennen, und wie Daten heruntergeladen werden können (link zu data access.qmd)</li>
+<li>Die Daten zu verstehen und zu bereinigen (link zu data aggregation)</li>
 </ul>
-</div>
-</div>
 </section>
+<section id="voraussetzungen" class="level2">
+<h2 class="anchored" data-anchor-id="voraussetzungen">Voraussetzungen</h2>
+<p>Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:</p>
+<ul>
+<li><p>es müssen keien Programme vorinstalliert werden, alles läuft interaktiv in Quarto ab</p></li>
+<li><p>Grundlagenwissen in Python</p></li>
+</ul>
 </section>
-<section id="quiz" class="level2">
-<h2 class="anchored" data-anchor-id="quiz">Quiz</h2>
-<p>Genug der einleitenden Worte, numismatische Daten rufen.</p>
-<div id="intro_quiz">
+<section id="vorbereitung-was-sind-forschungsdaten" class="level2">
+<h2 class="anchored" data-anchor-id="vorbereitung-was-sind-forschungsdaten">Vorbereitung: Was sind Forschungsdaten</h2>
+<p>Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.</p>
+<p>Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (<a href="https://www.nfdi4objects.net">NFDI4Objects</a>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
 
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Hier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. <a href="nfdi.html" class="btn btn-primary">Mehr erfahren</a></p>
+</div>
+</div>
+<p>Die Aufarbeitung der Daten soll dabei anhand der <strong>FAIR-Kriterien</strong> erfolgen. Das Akronym steht für die Kategorien <strong>Findable, Accessible, Interoperable, Reusable</strong>, also <strong>auffindbar, zugänglich, interoperabel und wiederverwendbar</strong>. FAIR-Kriterien werden in etwa seit zehn Jahren in der Wissenschaft genutzt. Initiativen wie <a href="https://www.go-fair.org/fair-principles">GO-Fair</a> haben die Prinzipien ausformuliert.</p>
+<section id="findable" class="level3">
+<h3 class="anchored" data-anchor-id="findable">Findable</h3>
+<p>Die Kategorie <strong>Findable</strong> bezieht sich zunächst darauf, dass die Daten im Web eindeutig identifizierbar sein müssen. Ihre URL muss persistent, also unveränderlich sein, sodass in der Zukunft keine andere Ressource die gleiche URL bekommt. Es gibt mehrere Services, die diese Anforderungen erfüllen, zum Beispiel die DOI (Digital Object Identifier)-Organisation.</p>
+<p>In der Numismatik haben moderne Münzdatenbanken einen eindeutigen und persistenten Permalink, so auch die Münzen der Heidelberger Sammlung (<a href="https://pecunia.zaw.uni-heidelberg.de/ikmk/object?id=ID1383">Beispiel</a>). Die Daten sollen allerdings auch auffindbar sein, wenn der Identifier unbekannt ist. Dafür müssen die Daten mit gut beschriebenen <strong>Metadaten</strong> ausgezeichnet sein. Dazu gehören bei Münzdaten Informationen zur Prägestätte, Nominal oder Gewicht. Auch diese Informationen, sowie Publikationen, die auf Münzen verweisen, sollten mit einem Identifikator versehen sein.</p>
+</section>
+<section id="accessible" class="level3">
+<h3 class="anchored" data-anchor-id="accessible">Accessible</h3>
+<p>Neben der Auffindbarkeit ist entscheidend, dass Münzobjekte und die dazugehörigen Beschreibungen <strong>zugänglich</strong> sind. Ein Digitalisat einer Münze in einer Online-Datenbank muss über standardisierte Protokolle (z. B. HTTPS) erreichbar sein.</p>
+<p>Ist ein direkter Zugriff auf hochauflösende Bilder aus urheberrechtlichen Gründen eingeschränkt, können zumindest die Metadaten frei zugänglich bleiben. So kann ein Forscher nachvollziehen, dass eine bestimmte Münze dokumentiert ist, selbst wenn er nicht sofort das Bildmaterial herunterladen darf.</p>
+</section>
+<section id="interoperable" class="level3">
+<h3 class="anchored" data-anchor-id="interoperable">Interoperable</h3>
+<p>Forschungsdaten in der Numismatik sollen sich mit anderen Sammlungen und Fachdaten verknüpfen lassen. Dafür ist es wichtig, gemeinsame <strong>Standards und Vokabulare</strong> zu nutzen.</p>
+<p>Ein Beispiel wäre die Verwendung von Normdaten wie GND-IDs für antike Herrscher oder Nomisma.org-Referenzen für Münztypen. Wenn eine römische Münze aus Trier mit „RIC“-Referenzen (Roman Imperial Coinage) ausgezeichnet und gleichzeitig mit Ontologien wie Nomisma.org verknüpft wird, lassen sich Informationen aus verschiedenen Museen und Publikationen problemlos kombinieren.</p>
+</section>
+<section id="reusable" class="level3">
+<h3 class="anchored" data-anchor-id="reusable">Reusable</h3>
+<p>Die <strong>Wiederverwendbarkeit</strong> bezieht sich auf die Fähigkeit des Nutzenden, die Daten korrekt zu interpretieren. Dazu sollten so viele Kontextinformationen wie möglich gegeben werden, auch diejenigen, die auf den ersten Blick irrelevant erscheinen.</p>
+<p>Dazu gehören: - Versionsnamen der Daten<br>
+- Konkrete Informationen zur im Erhebungsprozess verwendeten Soft- und Hardware<br>
+- Schritte im Datenerhebungsprozess (Formulierung des Ziels, Kennzeichnung von fremden Daten, Beschreibung der Datenverarbeitungsschritte)</p>
+<p>Um die Wiederverwendbarkeit zu erleichtern, sollten diese Metadaten nach einem <strong>standardisierten Muster</strong> angegeben werden.<br>
+- Bei Publikationen: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms">Dublin Core</a><br>
+- Für archäologische Daten: <a href="https://pro.europeana.eu/page/edm-documentation">Europeana-Datenmodell</a></p>
+<p>Als Teil der Wiederverwendbarkeit sollten auch <strong>klare Lizenzen</strong> vergeben werden, damit automatisierte Suchen nicht versehentlich urheberrechtlich geschütztes Material abgreifen.</p>
+</section>
+</section>
+<section id="transferaufgaben" class="level2">
+<h2 class="anchored" data-anchor-id="transferaufgaben">Transferaufgaben</h2>
+<div id="quiz1">
+
+</div>
+<!-- Load JS for this page only -->
 <script src="../assets/js/quiz.js"></script>
-<p><link rel="stylesheet" href="../assets/css/quiz.css"></p>
 <script>
-// Define quiz questions
-window["intro_quiz_data"] = [
+// Define quiz data for this page
+window["quiz1_data"] = [
   {
-    question: "Wie kann der Kurs interaktive Analysen ausführen?",
+    question: "Wofür steht die Abkürzung 'FAIR' im Zusammenhang mit Forschungsdaten?",
     choices: [
-      { text: "Direkt auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch." },
-      { text: "Durch Kopieren des Codes in Google Colab", feedback: "✅ Richtig! Colab erlaubt interaktives Ausführen der Python-/R-Codezellen." },
-      { text: "Mit Offline-Software nur", feedback: "❌ Falsch! Der Kurs ist browserbasiert, Colab wird genutzt." },
-      { text: "Nur auf mobilen Geräten", feedback: "❌ Falsch! Desktop und mobile Browser funktionieren." }
+      { text: "Format, Analyze, Integrate, Recap", feedback: "❌ Falsch!" },
+      { text: "Findable, Accessible, Interoperable, Reusable", feedback: "✅ Richtig!" },
+      { text: "Forschungsdaten, Ansätze, Informationen, Referenzen", feedback: "❌ Falsch!" },
+      { text: "Fachliche Auswertung von Informationen in Rechenzentren", feedback: "❌ Falsch!" }
     ]
   },
   {
-    question: "Wie wird der Fortschritt des Kurses gespeichert?",
+    question: "Eine Forschungsarbeit erhält einen DOI (Digital Object Identifier). Welches FAIR-Kriterium ist erfüllt?",
     choices: [
-      { text: "Auf einem Server der Universität", feedback: "❌ Falsch! Alle Daten bleiben lokal im Browser." },
-      { text: "In der Cloud von Google ohne Zustimmung", feedback: "❌ Falsch! Nur Colab speichert temporär, Quarto nutzt lokalStorage." },
-      { text: "Lokal im Browser über localStorage", feedback: "✅ Richtig! Der Fortschritt wird nur im Browser gespeichert." },
-      { text: "Über Cookies auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch und speichert keine Cookies." }
+      { text: "Findable", feedback: "✅ Richtig! DOI sorgt dafür, dass die Arbeit auffindbar ist." },
+      { text: "Accessible", feedback: "❌ Falsch! DOI betrifft das Auffinden, nicht den Zugang." },
+      { text: "Interoperable", feedback: "❌ Falsch! DOI regelt keine Standardisierung der Daten." },
+      { text: "Reusable", feedback: "❌ Falsch! DOI allein garantiert keine Wiederverwendbarkeit." }
     ]
   },
   {
-    question: "Welche Herausforderung wird in der Numismatik bei digitalisierten Beständen beschrieben?",
+    question: "Ein Datensatz wird zusammen mit einer umfassenden Beschreibung der Variablen, Messmethoden und Forschungsbedingungen veröffentlicht. Welches FAIR-Kriterium ist erfüllt?",
     choices: [
-      { text: "Alle Daten sind automatisch miteinander verknüpft", feedback: "❌ Falsch! Die Bestände sind heterogen und schwer kombinierbar." },
-      { text: "Verschiedene Museen haben unterschiedliche Softwaresysteme", feedback: "✅ Richtig! Unterschiedliche Systeme erschweren den Austausch." },
-      { text: "Digitale Münzen ersetzen physische Münzen", feedback: "❌ Falsch! Digitalisierung ergänzt nur die Forschung." },
-      { text: "Es gibt keine Herausforderung, alles ist standardisiert", feedback: "❌ Falsch! Standardisierung ist gerade eine Herausforderung." }
+      { text: "Findable", feedback: "❌ Falsch! Die Beschreibung hilft beim Verständnis, nicht beim Auffinden." },
+      { text: "Accessible", feedback: "❌ Falsch! Zugang ist hier nicht das Hauptkriterium." },
+      { text: "Interoperable", feedback: "❌ Falsch! Standardisierung ist hier nicht im Fokus." },
+      { text: "Reusable", feedback: "✅ Richtig! Die umfassende Beschreibung ermöglicht Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Die Ergebnisse eines Projekts können von Forschenden aus einem anderen Land über ein Webportal heruntergeladen werden, auch wenn sie nicht an der eigenen Institution arbeiten. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Auffindbarkeit ist nicht direkt beschrieben." },
+      { text: "Accessible", feedback: "✅ Richtig! Daten sind über das Webportal zugänglich." },
+      { text: "Interoperable", feedback: "❌ Falsch! Standardisierte Formate werden hier nicht erwähnt." },
+      { text: "Reusable", feedback: "❌ Falsch! Zugänglichkeit allein garantiert nicht Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Ein Konsortium stellt sicher, dass Daten von verschiedenen Sensoren und Laboren mit standardisierten Codes und Formaten kombiniert werden können. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Es geht hier nicht um Auffindbarkeit." },
+      { text: "Accessible", feedback: "❌ Falsch! Zugang ist nicht das Hauptthema." },
+      { text: "Interoperable", feedback: "✅ Richtig! Standardisierte Formate ermöglichen Interoperabilität." },
+      { text: "Reusable", feedback: "❌ Falsch! Wiederverwendbarkeit hängt von der Beschreibung ab." }
     ]
   }
 ];
-if (!localStorage.getItem("progress")) {
-    localStorage.setItem("progress", "0");
-}
-document.addEventListener("DOMContentLoaded", () => {
-    renderQuiz("intro_quiz", window["intro_quiz_data"], {
-        quizKey: "intro_quiz_completed",
-        onComplete: () => console.log("Quiz completed!")
-    });
-});
+
+// Render the quiz AFTER the JS file loads
+renderQuiz("quiz1", window["quiz1_data"]);
 </script>
-<p>Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter <a href="&quot;progress.qmd&quot;">mein Fortschritt</a> ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul</p>
+<p><link rel="stylesheet" href="../assets/css/quiz.css"></p>
 </section>
-<section id="förderung" class="level2 appendix">
-<h2 class="appendix anchored" data-anchor-id="förderung">Förderung</h2>
-<p>Die ELearning-Materialien entstanden in dem von der DFG geförderten Projekt “<a href="https://gepris.dfg.de/gepris/projekt/501836407" target="_blank">NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte</a>”</p>
-<p>Die Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.</p>
-<p><img src="../brand/logos/n4o_logo_verlauf_claim_lang.svg" class="img-fluid"></p>
-<p><img src="../assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" class="img-fluid"></p>
+<section id="weiterführende-quellen-und-informationen" class="level2">
+<h2 class="anchored" data-anchor-id="weiterführende-quellen-und-informationen">Weiterführende Quellen und Informationen</h2>
+<p>Der Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die liographischen Angaben automatisch generiert und in das Dokument eingefügt.</p>
+</section>
+<section id="nachnutzen" class="level2 appendix">
+<h2 class="appendix anchored" data-anchor-id="nachnutzen">Nachnutzen</h2>
+<p>Alle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.</p>
+<p>Unser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.</p>
+<p><span class="emoji" data-emoji="link">🔗</span> <a href="https://mat141cel.github.io/eLearning-Vagheiten-NFDI/">Dieser Baustein als Website:</a></p>
+<p><span class="emoji" data-emoji="link">🔗</span> <a href="https://github.com/mat141cel/eLearning-Vagheiten-NFDI">Quarto-Quellcode dieses Bausteins:</a></p>
 
 
 </section>
@@ -612,15 +640,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../content/scientific_data.html" class="pagination-link">
-        <span class="nav-page-text">2. Forschungsdaten</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

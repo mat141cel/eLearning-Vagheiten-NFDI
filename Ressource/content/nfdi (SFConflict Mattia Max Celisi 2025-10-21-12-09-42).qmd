@@ -1,0 +1,24 @@
+---
+title: "Was ist NFDI?"
+subtitle: ""
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+metadata-files: 
+ - ../layout.yml
+ - ../autor_innen.yml
+ - ../oer_metadata.yml
+---
+
+## Was ist NFDI?
+
+Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland.
+Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.
+Grafik Aufbau der NFDI:
+ 
+Bildquelle: https://www.nfdi.de/verein
+Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:
+ 
+Quelle: https://www.nfdi.de/konsortien/nfdi4objects
+ 

@@ -1,0 +1,110 @@
+---
+title: "Aggregating the Data"
+subtitle: "neuer Untertitel"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+metadata-files: 
+ - ../layout.yml
+ - ../autor_innen.yml
+ - ../oer_metadata.yml
+# filters: # tbd: Export-Filter für Metadaten-Dumps (OERSI etc.)
+#  - filters/export_alle_metadaten.lua
+#  - filters/export_oersi.lua
+# export_alle_metadaten:
+#  mode: schema
+#  exclude: [format, filters, brand, from, metadata-files, export-meta, export-meta-dir]
+---
+
+## Praktische Bezüge/Anwendungsbeispiel/Motivation
+
+Es gibt verschiedene für die Numismatik relevante Seiten 
+
+## Lernziele
+
+In diesem Skript lernen Sie:
+
+- Ziel 1
+- Ziel 2
+
+Idealerweise beziehen sie sich in dieser Aufzählung auf die Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards.^[Petersen, B., Engelhardt, C., Hörner, T., Jacob, J., Kvetnaya, T., Mühlichen, A., Schranzhofer, H., Schulz, S., Slowig, B., Trautwein-Bruns, U., Voigt, A., & Wiljes, C. (2023). Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards. Zenodo. [https://doi.org/10.5281/zenodo.8010617](https://doi.org/10.5281/zenodo.8010617)]
+
+## Voraussetzungen
+
+Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:
+
+- Voraussetzung 1
+
+Versuchen sie so detailliert wie möglich die Voraussetzungen für die Durchführung der Übung aufzuzählen. Geben sie Hinweise, wo die Lernenden entsprechende/s Kompetenzen/Wissen erwerben können. Verweisen sie insbesondere auf Hilfestellungen für die Software-Installation und Tutorials zum Umgang.
+
+## Datengrundlage
+
+Erläutern und verlinken sie die Datengrundlage für die Übung.
+
+## Vorbereitung
+
+## Durchführung
+
+Hier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.
+
+Dann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können
+
+```{python}
+#| echo: false
+import matplotlib.pyplot as plt
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+from pathlib import Path
+from PIL import Image
+
+# --- Configuration ---
+images_dir = Path.cwd().parent / "assets" / "img"
+images = [images_dir / "image_athens.jpg", images_dir /"image_napoleon.png", images_dir / "image_euro.jpg"]
+
+image_positions = [1, 3, 5]
+image_y = 2
+
+# Attributes as single entries
+attributes_data = [
+    {"name": "Prägestätte", "x": 0.5, "y": 3.5, "direction": 1, "connected_to": [0,2]},
+    {"name": "Dargestellte", "x": 4, "y": 3.5, "direction": 1, "connected_to": [0,1]},
+    {"name": "Datierung", "x": 1, "y": 0.5, "direction": -1, "connected_to": [0,1,2]},
+    {"name": "Material", "x": 3, "y": 0.5, "direction": -1, "connected_to": [1,1,2]}
+]
+
+# --- Helper ---
+def load_img(path, size=(150, 150)):
+    img = Image.open(path).convert("RGBA")
+    img = img.resize(size, Image.LANCZOS)
+    return OffsetImage(img, zoom=1)
+
+# --- Figure ---
+fig, ax = plt.subplots(figsize=(8,4))
+ax.axis('off')
+
+# Draw images
+for x, img_path in zip(image_positions, images):
+    ab = AnnotationBbox(load_img(img_path), (x, image_y), frameon=False)
+    ax.add_artist(ab)
+
+# Draw attributes and arrows
+for attr in attributes_data:
+    # Draw attribute node
+    ax.text(attr["x"], attr["y"], attr["name"], ha='center', va='center', fontsize=10,
+            bbox=dict(boxstyle="round,pad=0.4", facecolor="#F97307", edgecolor="#555555"))
+    
+    # Draw arrows from connected images
+    for img_idx in attr["connected_to"]:
+        img_x = image_positions[img_idx]
+        ax.annotate("", xy=(attr["x"], attr["y"] - 0.15*attr["direction"]),
+                    xytext=(img_x, image_y + 0.2*attr["direction"]),
+                    arrowprops=dict(arrowstyle="-|>", color="#555555", lw=1.2))
+
+# Layout
+plt.xlim(0,6)
+plt.ylim(0,4)
+plt.tight_layout()
+plt.show()
+```
+
+todo: Hintergründe ornage?

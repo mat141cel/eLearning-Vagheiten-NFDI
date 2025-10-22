@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: _site
+  resources: 
+    - assets/
+
+metadata-files:
+  - layout.yml
+  - autor_innen.yml
+  - oer_metadata.yml
+
+website:
+  title:  "ELearning-Modul für Münzdaten"
+  navbar:
+    left:
+      - text: Hauptseite
+        href: content/index.qmd
+      - text: "Lektion 1: Datenzugang"
+        href: content/data_access.qmd
+      - text: "Lektion 2: Datenverarbeitung"
+        href: content/data_aggregation.qmd
+
+format:
+  html:
+    include-after-scripts:
+      - assets/js/progress.js

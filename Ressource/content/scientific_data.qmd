@@ -95,15 +95,13 @@ Der aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepte
 ### Was ist eine Ontologie?
 Es gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant sind. Diese wurden von der Numismatischen Forschungsgemeinschaft bereits standardisiert und stetig aktualisiert. International gültig ist die [Nomisma Ontology](http://www.nomisma.org/ontology). Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld. Ontologien lassen sich einfach mit einer Graph-Metapher verstehen.
 
-| Name | Gewicht |
-|---------|:-----|
-| https://ikmk.smb.museum/object?id=18214977      | 17,13   |
+| Name | Gewicht in g | Durchmesser in mm | Webportal
+|---------|:-----|-----|-----|
+| https://ikmk.smb.museum/object?id=18201393      | 5,10    | 20  | http://numismatics.org/ocre/id/ric.5.post.29 |
 
 
-Der Name weißt dabei eindeutig auf die Tetradrachme aus Athen hin, die mit der Objektnummer: 18214977 beim Münzkabinett der Staatlichen Museen Berlin liegt. 
+Das Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. In der Darstellung als 
 
-In einer Graph-basierten Darstellung würde aus dieser Tabelle werden?
-TODO: Hier User für Graphbasierte Darstellung anfragen?
 
 ### Was sind Normdaten?
 

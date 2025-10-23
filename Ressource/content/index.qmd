@@ -27,9 +27,10 @@ Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu
 ## Aufbau des Kurses
 
 ### Konzepte und Erklärungen
-Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite [mein Fortschritt]("progress.qmd") angesehen werden. 
+Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite [mein Fortschritt](progress.qmd) angesehen werden. 
 
 ::: {.callout-important}
+## Hinweis zum Datenschutz
 Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.
 :::
 
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter [mein Fortschritt]("progress.qmd") ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul
+Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter [mein Fortschritt](progress.qmd) ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul
 
 ## Förderung {.appendix}
 

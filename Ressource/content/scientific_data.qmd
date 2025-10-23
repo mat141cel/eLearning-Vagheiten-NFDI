@@ -99,9 +99,52 @@ Es gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant 
 |---------|:-----|-----|-----|
 | https://ikmk.smb.museum/object?id=18201393      | 5,10    | 20  | http://numismatics.org/ocre/id/ric.5.post.29 |
 
+: Münzdaten in tabellarischer Form {#tbl-muenzdaten tbl-colwidths="[20,10,10,20]"}
 
-Das Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. In der Darstellung als 
 
+
+
+Das Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. In der Darstellung als Graph wird wird jeder Eintrag zum einem Objekt
+
+``` {python}
+#| echo: False
+import rdflib
+from rdflib.extras.external_graph_libs import rdflib_to_networkx_multidigraph
+import networkx as nx
+import matplotlib.pyplot as plt
+
+ttl_data = """
+@prefix schema: <http://schema.org/> .
+@prefix ns1: <https://ikmk.smb.museum/object/> .
+@prefix ocre: <http://numismatics.org/ocre/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+ 
+ns1:18201393
+    schema:Gewicht "5.10"^^xsd:decimal ;
+    schema:Durchmesser "20"^^xsd:decimal ;
+    schema:Webportal ocre:ric.5.post.29 .
+"""
+
+# Load RDF
+g = rdflib.Graph()
+g.parse(data=ttl_data, format='turtle')
+
+# Convert to NetworkX
+G = rdflib_to_networkx_multidigraph(g)
+
+# Extract predicates as edge labels
+edge_labels = {}
+for s, p, o in g:
+    edge_labels[(s, o)] = p.split('#')[-1] if '#' in p else p.split('/')[-1]
+
+# Plot
+pos = nx.spring_layout(G, scale=2)
+nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=2000, font_size=8, arrows=True)
+nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=7)
+
+plt.show()
+
+```
 
 ### Was sind Normdaten?
 

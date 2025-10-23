@@ -2,3 +2,5 @@ jupyter
 nbformat
 ipykernel
 matplotlib
+rdflib
+networkx

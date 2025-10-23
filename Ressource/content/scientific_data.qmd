@@ -93,7 +93,7 @@ Der aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepte
 
 
 ### Was ist eine Ontologie?
-Es gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant sind. Diese wurden von der Numismatischen Forschungsgemeinschaft bereits standardisiert und stetig aktualisiert. International gültig ist die [Nomisma Ontology](http://www.nomisma.org/ontology). Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld. Ontologien lassen sich einfach mit einer Graph-Metapher verstehen.
+Es gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant sind.  Ontologien lassen sich einfach verstehen, wenn man Daten als Graphen versteht. Normalerweise liegen Daten in tabellarischer Form wie im folgenden Beispiel vor. 
 
 | Name | Gewicht in g | Durchmesser in mm | Webportal
 |---------|:-----|-----|-----|
@@ -101,10 +101,8 @@ Es gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant 
 
 : Münzdaten in tabellarischer Form {#tbl-muenzdaten tbl-colwidths="[20,10,10,20]"}
 
+Das Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser und ist dem Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29 zugeordnet. Für die Darstellung als Graph braucht muss das Namensfeld als zentrales Objekt definiert werden, die mit den anderen Werten über die jeweiligen Prädikate der Zeilenüberschriften verbunden sind. Das folgende Beispiel zeigt diese Funktionsweise eines Graphen.
 
-
-
-Das Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. In der Darstellung als Graph wird wird jeder Eintrag zum einem Objekt
 
 ``` {python}
 #| echo: False
@@ -145,6 +143,15 @@ nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=7)
 plt.show()
 
 ```
+
+Wenn Daten auf diese Weise dargestellt werden, zeigt sich, an welchen Stellen eine Standardisierung notwendig ist. Das Objekt Münze braucht eine festgelegte Anzahl an Feldern, die dem Objekt zugeordnet werden kann und der Inhalt der Felder sollte ebenfalls normiert sein. So sollte zum Beispiel nicht eine Institution den Link zum Typportal mit "http://numismatics.org/ocre..."  angeben, während eine andere "http://www.numismatics.org/ocre..." schreibt.
+
+Die Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph.
+
+Um Herauszufinden, wie dieser Graph aussieht, öffnen sie das interaktive Modul in Colab.
+
+Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die [Nomisma Ontology](http://www.nomisma.org/ontology). Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.
+
 
 ### Was sind Normdaten?
 

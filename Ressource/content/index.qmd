@@ -44,7 +44,7 @@ Jede Modulseite enthält oben ein Colab-Symbol wie dieses:
 [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/_{{< meta filename >}}.ipynb)
 
 ::: {.callout-tip title="Hinweis zur Nutzung"}
-- Für Colab ist ein **Google-Account** erforderlich. 
+Für Colab ist ein **Google-Account** erforderlich. Öffnen Sie die Colab-Seite und lösen Sie die interaktiven Aufgaben. Diese sind notwendig, um die Quizfragen richtig zu beantworten. 
 :::
 
 ## Quiz
@@ -84,6 +84,14 @@ window["intro_quiz_data"] = [
       { text: "Verschiedene Museen haben unterschiedliche Softwaresysteme", feedback: "✅ Richtig! Unterschiedliche Systeme erschweren den Austausch." },
       { text: "Digitale Münzen ersetzen physische Münzen", feedback: "❌ Falsch! Digitalisierung ergänzt nur die Forschung." },
       { text: "Es gibt keine Herausforderung, alles ist standardisiert", feedback: "❌ Falsch! Standardisierung ist gerade eine Herausforderung." }
+    ]
+  }
+    question: "Wie kann überprüft werden, ob ein Link zu einem Typenportal eine Reichsprägung von Hadrian ist?",
+    choices: [
+      { text: "OCRE enthält ausschließlich Münzen von Hadrian", feedback: "❌ Falsch! OCRE enthält Münzen aus der gesamten römischen Kaiserzeit: von Augustus bis Zenon." },
+      { text: "Die URL enthält 'https://numismatics.org/ocre/hadrian'", feedback: "❌ Falsch! OCRE hat ordnet die Münzen zuerst nach der Bandnummer des RIC." },
+      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hadrian'", feedback: "❌ Falsch! Jeder Kaiser hat ein eigenes Kürzel." },
+      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hdn'", feedback: "✅ Richtig" }
     ]
   }
 ];

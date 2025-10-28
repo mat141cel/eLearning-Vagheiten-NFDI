@@ -26,16 +26,12 @@ website:
         href: content/index.qmd
       - text: "2. Forschungsdaten"
         href: content/scientific_data.qmd
-      - text: "2. Datenzugang"
-        href: content/data_access.qmd
-      - text: "3. Datenverarbeitung"
-        href: content/data_aggregation.qmd
-      - text: "4. Was ist NFDI?"
-
-
-
-       
+      - text: "3. Was ist NFDI?"
         href: content/nfdi.qmd
+      - text: "4. Datenzugang"
+        href: content/data_access.qmd
+      - text: "5. Datenverarbeitung"
+        href: content/data_aggregation.qmd
   page-navigation: true
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Numismatik und Digital Humanities"
 filename: index
-subtitle: "welche Relevanz haben gute Forschungsdaten für die Numismatik?"
+subtitle: "Welche Relevanz haben Forschungsdaten für die Numismatik?"
 lang: de
 date: today
 date-modified: last-modified
@@ -27,7 +27,7 @@ Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu
 ## Aufbau des Kurses
 
 ### Konzepte und Erklärungen
-Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite [mein Fortschritt](progress.qmd) angesehen werden. 
+Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite [mein Fortschritt](progress.html) angesehen werden. 
 
 ::: {.callout-important}
 ## Hinweis zum Datenschutz
@@ -36,16 +36,15 @@ Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit
 
 ### Interaktive Analysen mit Google Colab
 
-Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. 
+Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab (Google-Account ist erforderlich). Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. 
   
 Jede Modulseite enthält oben ein Colab-Symbol wie dieses:  
 
 <!-- this link to colab can used on other sites, remember to define filename in top yaml -->
 [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/_{{< meta filename >}}.ipynb)
 
-::: {.callout-tip title="Hinweis zur Nutzung"}
-Für Colab ist ein Google-Account erforderlich. Öffnen Sie die Colab-Seite und lösen Sie die interaktiven Aufgaben. Diese sind notwendig, um die Quizfragen richtig zu beantworten. 
-:::
+Klicken Sie auf das Symbol und schließen Sie die erste Lektion in Colab ab. Das ist notwendig, um die folgenden Quizfragen richtig zu beantworten. 
+
 
 ## Quiz
 
@@ -107,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter [mein Fortschritt](progress.qmd) ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul
+Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter [mein Fortschritt](progress.html) ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul
 
 ## Förderung {.appendix}
 

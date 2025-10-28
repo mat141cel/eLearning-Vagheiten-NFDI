@@ -31,6 +31,10 @@ website:
       - text: "3. Datenverarbeitung"
         href: content/data_aggregation.qmd
       - text: "4. Was ist NFDI?"
+
+
+
+       
         href: content/nfdi.qmd
   page-navigation: true
 

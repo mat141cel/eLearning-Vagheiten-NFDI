@@ -32,60 +32,123 @@
     "href": "content/scientific_data.html",
     "title": "Forschungsdaten",
     "section": "",
-    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden können. Sie sind Grundlage und Ergebnis wissenschaftlicher Arbeit.\nFür jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. Alle der folgenden Münzen aus unterschiedlichen Epochen haben beispielsweise das Informationen zu Material, Dargestellten, Prägestätten. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, kann auch gerade das Nichtvorhandensein dieser Informationen wichtig für die Interpretation der Münzdaten sein.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
   },
   {
     "objectID": "content/scientific_data.html#was-sind-numismatische-forschungsdaten",
     "href": "content/scientific_data.html#was-sind-numismatische-forschungsdaten",
     "title": "Forschungsdaten",
     "section": "",
-    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden können. Sie sind Grundlage und Ergebnis wissenschaftlicher Arbeit.\nFür jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. Alle der folgenden Münzen aus unterschiedlichen Epochen haben beispielsweise das Informationen zu Material, Dargestellten, Prägestätten. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, kann auch gerade das Nichtvorhandensein dieser Informationen wichtig für die Interpretation der Münzdaten sein.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
   },
   {
-    "objectID": "content/scientific_data.html#wie-funktionieren-münzdaten",
-    "href": "content/scientific_data.html#wie-funktionieren-münzdaten",
+    "objectID": "content/scientific_data.html#wie-können-wir-uns-münzdaten-vorstellen",
+    "href": "content/scientific_data.html#wie-können-wir-uns-münzdaten-vorstellen",
     "title": "Forschungsdaten",
-    "section": "Wie funktionieren Münzdaten",
-    "text": "Wie funktionieren Münzdaten\nGrundsätzlich geht es darum, alle Informationen mit einer Münze zu verknüpfen. Die einfachste Form, Daten strukturiert zu speichern, ist eine Tabelle. Allerdings gibt es häufig auch Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben.\n\n\n\n\n\n\nWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.\n\n\n\nWenn man sich Daten als Tabellen vorstellt, bedeutet das, dass es zwei Tabellen braucht, eine mit Informationen für Münzen und eine mit Informationen zu ihrem Typ. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen ergibt es Sinn, eigene Tabellen zu erstellen, damit die Daten zentralisiert verändert werden können.\nDer aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.\n\nWas ist eine Ontologie?\nEs gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant sind. Diese wurden von der Numismatischen Forschungsgemeinschaft bereits standardisiert und stetig aktualisiert. International gültig ist die Nomisma Ontology. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld. Ontologien lassen sich einfach mit einer Graph-Metapher verstehen.\n\n\n\n\n\n\n\n\n\nName\nGewicht in g\nDurchmesser in mm\nWebportal\n\n\n\n\nhttps://ikmk.smb.museum/object?id=18201393\n5,10\n20\nhttp://numismatics.org/ocre/id/ric.5.post.29\n\n\n\nDas Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. In der Darstellung als\n\n\nWas sind Normdaten?\nBei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text."
+    "section": "Wie können wir uns Münzdaten vorstellen",
+    "text": "Wie können wir uns Münzdaten vorstellen\nDie einfachste Form, Münzdaten strukturiert zu speichern, ist eine Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden. Das folgende Beispiel zeigt dabei, dass eine Tabelle für Münzdaten nicht ausreicht.\n\n\nTabelle 1: Münzdaten in tabellarischer Form\n\n\n\n\n\n\n\n\nName\nGewicht in g\nDurchmesser in mm\nWebportal\n\n\n\n\nhttps://ikmk.smb.museum/object?id=18201393\n5,10\n20\nhttp://numismatics.org/ocre/id/ric.5.post.29\n\n\n\n\nDas Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29.\n\n\n\n\n\n\nWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.\n\n\n\nEs ergibt Sinn die Informationen, die dem Münztyp zugeordnet werden, in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.\n\nWas ist eine Ontologie?\nSobald Münzdaten aus komplexen Verbindungen verschiedener Datenquellen bestehen, eignet sich eine andere Darstellungsform als Tabellen: Graphen. Für die Darstellung als Graph braucht muss das Namensfeld als zentrales Objekt definiert werden, die mit den anderen Werten über die jeweiligen Prädikate der Zeilenüberschriften verbunden sind. Das vorige Beispiel würde als Graph wie folgt aussehen:\n\n\n\n\n\n\n\nWas ist eine Ontologie?\nWenn Daten auf diese Weise dargestellt werden, zeigt sich, an welchen Stellen eine Standardisierung notwendig ist. Das Objekt Münze braucht eine festgelegte Anzahl an Feldern, die dem Objekt zugeordnet werden kann und der Inhalt der Felder sollte ebenfalls normiert sein. So sollte zum Beispiel nicht eine Institution den Link zum Typportal mit “http://numismatics.org/ocre…” angeben, während eine andere “http://www.numismatics.org/ocre…” schreibt.\nDie Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph.\nUm Herauszufinden, wie dieser Graph aussieht, öffnen sie das interaktive Modul in Colab.\nDiese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die Nomisma Ontology. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.\n\n\nWas sind Normdaten?\nBei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text."
   },
   {
     "objectID": "content/index.html",
     "href": "content/index.html",
     "title": "Numismatik und Digital Humanities",
     "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
   },
   {
     "objectID": "content/index.html#motivation",
     "href": "content/index.html#motivation",
     "title": "Numismatik und Digital Humanities",
     "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
   },
   {
     "objectID": "content/index.html#lernziele",
     "href": "content/index.html#lernziele",
     "title": "Numismatik und Digital Humanities",
     "section": "Lernziele",
-    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken"
+    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI (https://www.nfdi.de/), 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken"
   },
   {
     "objectID": "content/index.html#aufbau-des-kurses",
     "href": "content/index.html#aufbau-des-kurses",
     "title": "Numismatik und Digital Humanities",
     "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\n\nKonzepte und Erklärungen\nDieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden.\n\n\n\n\n\n\n\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.\n\n\n\n\nInteraktive Analysen mit Google Colab\nZu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab. Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.\nJede Modulseite enthält oben ein Colab-Symbol wie dieses:\n\n\n\n\n\n\n\n\n\n\n\n\nHinweis zur Nutzung\n\n\n\n\nFür Colab ist ein Google-Account erforderlich."
+    "text": "Aufbau des Kurses\nDas Modul befindet sich derzeit im Aufbau.\n\nKonzepte und Erklärungen\nDieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden.\n\n\n\n\n\n\nHinweis zum Datenschutz\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.\n\n\n\n\nInteraktive Analysen mit Google Colab\nZu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab (Google-Account ist erforderlich). Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.\nJede Modulseite enthält oben ein Colab-Symbol wie dieses:\n\n\n\n\n\n\nKlicken Sie auf das Symbol und schließen Sie die erste Lektion in Colab ab. Das ist notwendig, um die folgenden Quizfragen richtig zu beantworten."
   },
   {
     "objectID": "content/index.html#quiz",
     "href": "content/index.html#quiz",
     "title": "Numismatik und Digital Humanities",
     "section": "Quiz",
-    "text": "Quiz\nGenug der einleitenden Worte, numismatische Daten rufen.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
+    "text": "Quiz\nGenug der einleitenden Worte, numismatische Daten warten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
   },
   {
     "objectID": "content/index.html#förderung",
     "href": "content/index.html#förderung",
+    "title": "Numismatik und Digital Humanities",
+    "section": "Förderung",
+    "text": "Förderung\nDie ELearning-Materialien entstanden in dem von der DFG geförderten Projekt “NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte”\nDie Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt."
+  },
+  {
+    "objectID": "content/scientific_data (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html",
+    "href": "content/scientific_data (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html",
+    "title": "Forschungsdaten",
+    "section": "",
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie sind Grundlage und Ergebnis wissenschaftlicher Arbeit.\nFür jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Informationen zu Material, Dargestellten, Prägestätten. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
+  },
+  {
+    "objectID": "content/scientific_data (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#was-sind-numismatische-forschungsdaten",
+    "href": "content/scientific_data (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#was-sind-numismatische-forschungsdaten",
+    "title": "Forschungsdaten",
+    "section": "",
+    "text": "Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie sind Grundlage und Ergebnis wissenschaftlicher Arbeit.\nFür jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Informationen zu Material, Dargestellten, Prägestätten. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.\n\n\n\n\n\nLinks: https://ikmk.smb.museum/object?id=18214977 Mitte: https://nat.museum-digital.de/object/73659 Rechts: https://ikmk.smb.museum/object?id=18203837\n\n\n\n\n\n\n\n\n\n\nDieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen."
+  },
+  {
+    "objectID": "content/scientific_data (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#wie-können-wir-uns-münzdaten-vorstellen",
+    "href": "content/scientific_data (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#wie-können-wir-uns-münzdaten-vorstellen",
+    "title": "Forschungsdaten",
+    "section": "Wie können wir uns Münzdaten vorstellen",
+    "text": "Wie können wir uns Münzdaten vorstellen\nDie einfachste Form, Münzdaten strukturiert zu speichern, ist eine Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden. Das folgende Beispiel zeigt dabei, dass eine Tabelle für Münzdaten nicht ausreicht.\n\n\nTabelle 1: Münzdaten in tabellarischer Form\n\n\n\n\n\n\n\n\nName\nGewicht in g\nDurchmesser in mm\nWebportal\n\n\n\n\nhttps://ikmk.smb.museum/object?id=18201393\n5,10\n20\nhttp://numismatics.org/ocre/id/ric.5.post.29\n\n\n\n\nDas Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29.\n\n\n\n\n\n\nWas sind Typenkataloge?\n\n\n\n\n\nTypenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die Münzbestimmung notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.\n\n\n\nEs ergibt Sinn die Informationen, die dem Münztyp zugeordnet werden, in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.\n\nWas ist eine Ontologie?\nSobald Münzdaten aus komplexen Verbindungen verschiedener Datenquellen bestehen, eignet sich eine andere Darstellungsform als Tabellen: Graphen. Für die Darstellung als Graph braucht muss das Namensfeld als zentrales Objekt definiert werden, die mit den anderen Werten über die jeweiligen Prädikate der Zeilenüberschriften verbunden sind. Das vorige Beispiel würde als Graph wie folgt aussehen:\n\n\n\n\n\n\n\nWas ist eine Ontologie?\nWenn Daten auf diese Weise dargestellt werden, zeigt sich, an welchen Stellen eine Standardisierung notwendig ist. Das Objekt Münze braucht eine festgelegte Anzahl an Feldern, die dem Objekt zugeordnet werden kann und der Inhalt der Felder sollte ebenfalls normiert sein. So sollte zum Beispiel nicht eine Institution den Link zum Typportal mit “http://numismatics.org/ocre…” angeben, während eine andere “http://www.numismatics.org/ocre…” schreibt.\nDie Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph.\nUm Herauszufinden, wie dieser Graph aussieht, öffnen sie das interaktive Modul in Colab.\nDiese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die Nomisma Ontology. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.\n\n\nWas sind Normdaten?\nBei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text."
+  },
+  {
+    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html",
+    "href": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html",
+    "title": "Numismatik und Digital Humanities",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
+  },
+  {
+    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#motivation",
+    "href": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#motivation",
+    "title": "Numismatik und Digital Humanities",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten."
+  },
+  {
+    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#lernziele",
+    "href": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#lernziele",
+    "title": "Numismatik und Digital Humanities",
+    "section": "Lernziele",
+    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken"
+  },
+  {
+    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#aufbau-des-kurses",
+    "href": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#aufbau-des-kurses",
+    "title": "Numismatik und Digital Humanities",
+    "section": "Aufbau des Kurses",
+    "text": "Aufbau des Kurses\n\nKonzepte und Erklärungen\nDieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden.\n\n\n\n\n\n\nHinweis zum Datenschutz\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.\n\n\n\n\nInteraktive Analysen mit Google Colab\nZu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab (Google-Account ist erforderlich). Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.\nJede Modulseite enthält oben ein Colab-Symbol wie dieses:\n\n\n\n\n\n\nKlicken Sie auf das Symbol und schließen Sie die erste Lektion in Colab ab. Das ist notwendig, um die folgenden Quizfragen richtig zu beantworten."
+  },
+  {
+    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#quiz",
+    "href": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#quiz",
+    "title": "Numismatik und Digital Humanities",
+    "section": "Quiz",
+    "text": "Quiz\nGenug der einleitenden Worte, numismatische Daten warten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
+  },
+  {
+    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#förderung",
+    "href": "content/index (SFConflict Mattia Max Celisi 2025-11-13-12-47-40).html#förderung",
     "title": "Numismatik und Digital Humanities",
     "section": "Förderung",
     "text": "Förderung\nDie ELearning-Materialien entstanden in dem von der DFG geförderten Projekt “NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte”\nDie Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt."
@@ -105,34 +168,6 @@
     "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
   },
   {
-    "objectID": "content/data_access (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html",
-    "href": "content/data_access (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html",
-    "title": "Hauptseite der Übung",
-    "section": "",
-    "text": "Holen Sie die Lernenden in diesem Absatz ab. Stellen Sie in wenigen Sätzen, mit Beispielen und Fragen das Thema der Übung vor."
-  },
-  {
-    "objectID": "content/data_access (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#praktische-bezügeanwendungsbeispielmotivation",
-    "href": "content/data_access (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#praktische-bezügeanwendungsbeispielmotivation",
-    "title": "Hauptseite der Übung",
-    "section": "",
-    "text": "Holen Sie die Lernenden in diesem Absatz ab. Stellen Sie in wenigen Sätzen, mit Beispielen und Fragen das Thema der Übung vor."
-  },
-  {
-    "objectID": "content/data_access (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#lernziele",
-    "href": "content/data_access (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#lernziele",
-    "title": "Hauptseite der Übung",
-    "section": "Lernziele",
-    "text": "Lernziele\nIn diesem Skript lernen Sie:\n\nZiel 1\nZiel 2"
-  },
-  {
-    "objectID": "content/data_access (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#voraussetzungen",
-    "href": "content/data_access (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#voraussetzungen",
-    "title": "Hauptseite der Übung",
-    "section": "Voraussetzungen",
-    "text": "Voraussetzungen\nFür das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:\n\nVoraussetzung 1\n\nVersuchen sie so detailliert wie möglich die Voraussetzungen für die Durchführung der Übung aufzuzählen. Geben sie Hinweise, wo die Lernenden entsprechende/s Kompetenzen/Wissen erwerben können. Verweisen sie insbesondere auf Hilfestellungen für die Software-Installation und Tutorials zum Umgang.\n\n✅ Step 1 — Mark Lesson 1 Complete\n\nMark Lesson 1 Complete\n\n\n\n\n✅ Step 2 — Mark Lesson 2 Complete\n\nMark Lesson 2 Complete\n\n\n\n\n✅ Step 3 — Mark Quiz Complete\n\nMark Quiz 1 Complete\n\n\n\n\n🔄 Step 4 — Reload to Check Persistence\nAfter clicking some buttons: 1. Reload this page (Ctrl+R or Cmd+R).\n2. Buttons you clicked should appear faded and crossed out (.completed class applied).\n3. If they do, your progress.js is working properly. 🎉\n\n\n\n🔁 Step 5 — Reset All Progress\nUse the Reset My Progress button (bottom-left of your screen) to clear stored data.\nReload and verify the buttons are active again.\n\n\n\n🧩 Notes\n\nYour name will appear in the bottom-right corner once you’ve “logged in.”\n\nData is stored only on your device and is not sent anywhere.\n\nClearing browser data (or using Incognito mode) will reset everything."
-  },
-  {
     "objectID": "content/data_access.html",
     "href": "content/data_access.html",
     "title": "Daten herunterladen",
@@ -145,69 +180,6 @@
     "title": "Daten herunterladen",
     "section": "",
     "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden."
-  },
-  {
-    "objectID": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html",
-    "href": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html",
-    "title": "Aggregating the Data",
-    "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten"
-  },
-  {
-    "objectID": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#praktische-bezügeanwendungsbeispielmotivation",
-    "href": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#praktische-bezügeanwendungsbeispielmotivation",
-    "title": "Aggregating the Data",
-    "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten"
-  },
-  {
-    "objectID": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#lernziele",
-    "href": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#lernziele",
-    "title": "Aggregating the Data",
-    "section": "Lernziele",
-    "text": "Lernziele\nIn diesem Skript lernen Sie:\n\nZiel 1\nZiel 2\n\nIdealerweise beziehen sie sich in dieser Aufzählung auf die Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards.1"
-  },
-  {
-    "objectID": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#voraussetzungen",
-    "href": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#voraussetzungen",
-    "title": "Aggregating the Data",
-    "section": "Voraussetzungen",
-    "text": "Voraussetzungen\nFür das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:\n\nVoraussetzung 1\n\nVersuchen sie so detailliert wie möglich die Voraussetzungen für die Durchführung der Übung aufzuzählen. Geben sie Hinweise, wo die Lernenden entsprechende/s Kompetenzen/Wissen erwerben können. Verweisen sie insbesondere auf Hilfestellungen für die Software-Installation und Tutorials zum Umgang."
-  },
-  {
-    "objectID": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#datengrundlage",
-    "href": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#datengrundlage",
-    "title": "Aggregating the Data",
-    "section": "Datengrundlage",
-    "text": "Datengrundlage\nErläutern und verlinken sie die Datengrundlage für die Übung."
-  },
-  {
-    "objectID": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#vorbereitung",
-    "href": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#vorbereitung",
-    "title": "Aggregating the Data",
-    "section": "Vorbereitung",
-    "text": "Vorbereitung"
-  },
-  {
-    "objectID": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#durchführung",
-    "href": "content/data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#durchführung",
-    "title": "Aggregating the Data",
-    "section": "Durchführung",
-    "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können\n\n\n\n\n\ntodo: Hintergründe ornage?"
-  },
-  {
-    "objectID": "content/nfdi (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html",
-    "href": "content/nfdi (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html",
-    "title": "Was ist NFDI?",
-    "section": "",
-    "text": "Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus. Grafik Aufbau der NFDI:\nBildquelle: https://www.nfdi.de/verein Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:\nQuelle: https://www.nfdi.de/konsortien/nfdi4objects"
-  },
-  {
-    "objectID": "content/nfdi (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#was-ist-nfdi",
-    "href": "content/nfdi (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#was-ist-nfdi",
-    "title": "Was ist NFDI?",
-    "section": "",
-    "text": "Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus. Grafik Aufbau der NFDI:\nBildquelle: https://www.nfdi.de/verein Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:\nQuelle: https://www.nfdi.de/konsortien/nfdi4objects"
   },
   {
     "objectID": "content/data_aggregation.html#datengrundlage",
@@ -229,61 +201,5 @@
     "title": "Aggregating the Data",
     "section": "Durchführung",
     "text": "Durchführung\nHier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.\nDann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können"
-  },
-  {
-    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html",
-    "href": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html",
-    "title": "Numismatik und Digital Humanities",
-    "section": "",
-    "text": "Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Trotzdem verwenden viele Museen, Denkmalämter und universitäte Einrichtungen verschiedene Software-Systeme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar.\nDieses Modul hat zum Ziel, die bestehenden Systeme vorzustellen, so weit wie möglich interoperabel zu machen. Mit den daraus resultierenden Forschungsdaten umzugehen, erfordert technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen.\nDadurch ergeben sich neue Möglichkeiten, Münzen zu visualisieren, sei es in Hausarbeiten oder Präsentationen. In den letzten Jahren sind dadurch eine Reihe von Projekten entstanden, unter anderem mit der Nutzung von moderner KI."
-  },
-  {
-    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#motivation",
-    "href": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#motivation",
-    "title": "Numismatik und Digital Humanities",
-    "section": "",
-    "text": "Nutzung von digitalen Münzfotografien, sei es durch die Nutzung der digitalisierten Typenkataloge wie OCRE. Die Numismatik ist in der Digitalisierung ihrer Bestände bereits weit fortgeschritten. Trotzdem verwenden viele Museen, Denkmalämter und universitäte Einrichtungen verschiedene Software-Systeme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar.\nDieses Modul hat zum Ziel, die bestehenden Systeme vorzustellen, so weit wie möglich interoperabel zu machen. Mit den daraus resultierenden Forschungsdaten umzugehen, erfordert technische Fähigkeiten und eine Kenntnis der Möglichkeiten und Grenzen der Daten. Dann ist es ein leichtes, Münzdaten für die eigene Forschung zu verwenden und neue Fragestellungen zu erschließen.\nDadurch ergeben sich neue Möglichkeiten, Münzen zu visualisieren, sei es in Hausarbeiten oder Präsentationen. In den letzten Jahren sind dadurch eine Reihe von Projekten entstanden, unter anderem mit der Nutzung von moderner KI."
-  },
-  {
-    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#lernziele",
-    "href": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#lernziele",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Lernziele",
-    "text": "Lernziele\nIn dieser OER lernen Sie:\n\ndie wichtigsten numismatischen Datenbanken kennen, und wie Daten heruntergeladen werden können (link zu data access.qmd)\nDie Daten zu verstehen und zu bereinigen (link zu data aggregation)"
-  },
-  {
-    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#voraussetzungen",
-    "href": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#voraussetzungen",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Voraussetzungen",
-    "text": "Voraussetzungen\nFür das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:\n\nes müssen keien Programme vorinstalliert werden, alles läuft interaktiv in Quarto ab\nGrundlagenwissen in Python"
-  },
-  {
-    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#vorbereitung-was-sind-forschungsdaten",
-    "href": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#vorbereitung-was-sind-forschungsdaten",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Vorbereitung: Was sind Forschungsdaten",
-    "text": "Vorbereitung: Was sind Forschungsdaten\nForschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.\nUm den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (NFDI4Objects).\n\n\n\n\n\n\n\n\n\n\nHier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. Mehr erfahren\n\n\nDie Aufarbeitung der Daten soll dabei anhand der FAIR-Kriterien erfolgen. Das Akronym steht für die Kategorien Findable, Accessible, Interoperable, Reusable, also auffindbar, zugänglich, interoperabel und wiederverwendbar. FAIR-Kriterien werden in etwa seit zehn Jahren in der Wissenschaft genutzt. Initiativen wie GO-Fair haben die Prinzipien ausformuliert.\n\nFindable\nDie Kategorie Findable bezieht sich zunächst darauf, dass die Daten im Web eindeutig identifizierbar sein müssen. Ihre URL muss persistent, also unveränderlich sein, sodass in der Zukunft keine andere Ressource die gleiche URL bekommt. Es gibt mehrere Services, die diese Anforderungen erfüllen, zum Beispiel die DOI (Digital Object Identifier)-Organisation.\nIn der Numismatik haben moderne Münzdatenbanken einen eindeutigen und persistenten Permalink, so auch die Münzen der Heidelberger Sammlung (Beispiel). Die Daten sollen allerdings auch auffindbar sein, wenn der Identifier unbekannt ist. Dafür müssen die Daten mit gut beschriebenen Metadaten ausgezeichnet sein. Dazu gehören bei Münzdaten Informationen zur Prägestätte, Nominal oder Gewicht. Auch diese Informationen, sowie Publikationen, die auf Münzen verweisen, sollten mit einem Identifikator versehen sein.\n\n\nAccessible\nNeben der Auffindbarkeit ist entscheidend, dass Münzobjekte und die dazugehörigen Beschreibungen zugänglich sind. Ein Digitalisat einer Münze in einer Online-Datenbank muss über standardisierte Protokolle (z. B. HTTPS) erreichbar sein.\nIst ein direkter Zugriff auf hochauflösende Bilder aus urheberrechtlichen Gründen eingeschränkt, können zumindest die Metadaten frei zugänglich bleiben. So kann ein Forscher nachvollziehen, dass eine bestimmte Münze dokumentiert ist, selbst wenn er nicht sofort das Bildmaterial herunterladen darf.\n\n\nInteroperable\nForschungsdaten in der Numismatik sollen sich mit anderen Sammlungen und Fachdaten verknüpfen lassen. Dafür ist es wichtig, gemeinsame Standards und Vokabulare zu nutzen.\nEin Beispiel wäre die Verwendung von Normdaten wie GND-IDs für antike Herrscher oder Nomisma.org-Referenzen für Münztypen. Wenn eine römische Münze aus Trier mit „RIC“-Referenzen (Roman Imperial Coinage) ausgezeichnet und gleichzeitig mit Ontologien wie Nomisma.org verknüpft wird, lassen sich Informationen aus verschiedenen Museen und Publikationen problemlos kombinieren.\n\n\nReusable\nDie Wiederverwendbarkeit bezieht sich auf die Fähigkeit des Nutzenden, die Daten korrekt zu interpretieren. Dazu sollten so viele Kontextinformationen wie möglich gegeben werden, auch diejenigen, die auf den ersten Blick irrelevant erscheinen.\nDazu gehören: - Versionsnamen der Daten\n- Konkrete Informationen zur im Erhebungsprozess verwendeten Soft- und Hardware\n- Schritte im Datenerhebungsprozess (Formulierung des Ziels, Kennzeichnung von fremden Daten, Beschreibung der Datenverarbeitungsschritte)\nUm die Wiederverwendbarkeit zu erleichtern, sollten diese Metadaten nach einem standardisierten Muster angegeben werden.\n- Bei Publikationen: Dublin Core\n- Für archäologische Daten: Europeana-Datenmodell\nAls Teil der Wiederverwendbarkeit sollten auch klare Lizenzen vergeben werden, damit automatisierte Suchen nicht versehentlich urheberrechtlich geschütztes Material abgreifen."
-  },
-  {
-    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#transferaufgaben",
-    "href": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#transferaufgaben",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Transferaufgaben",
-    "text": "Transferaufgaben"
-  },
-  {
-    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#weiterführende-quellen-und-informationen",
-    "href": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#weiterführende-quellen-und-informationen",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Weiterführende Quellen und Informationen",
-    "text": "Weiterführende Quellen und Informationen\nDer Ort für weiterführende Quellen und Informationen. Wenn Sie Fußnoten im Text eingefügt haben, werden die liographischen Angaben automatisch generiert und in das Dokument eingefügt."
-  },
-  {
-    "objectID": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#nachnutzen",
-    "href": "content/index (SFConflict Mattia Max Celisi 2025-10-21-12-09-42).html#nachnutzen",
-    "title": "Numismatik und Digital Humanities",
-    "section": "Nachnutzen",
-    "text": "Nachnutzen\nAlle sind herzlich eingeladen, diesen Baustein und die zugehörige Copyleft-Lizenz zu nutzen, um ihr Wissen und Expertise in die Verbesserung und Aktualisierung einzubringen. Alle können die Inhalte erweitern oder überarbeiten, zum Beispiel um Anwendungsszenarien und Nutzungskontexte zu erweitern.\nUnser Wunsch ist ein lebendiges, stetig wachsendes Dokument, das sich durch die Beiträge vieler verändert - im Einklang mit eines sich wandelnden Umfelds. Wir freuen uns im Falle einer Überarbeitung über eine kurze Notiz – das ist aber selbstverständlich keine Pflicht.\n🔗 Dieser Baustein als Website:\n🔗 Quarto-Quellcode dieses Bausteins:"
   }
 ]

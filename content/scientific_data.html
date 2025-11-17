@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/data_access.html" rel="next">
+<link href="../content/nfdi.html" rel="next">
 <link href="../content/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -130,20 +130,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/nfdi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Was ist NFDI?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/data_access.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Datenzugang</span></a>
+ <span class="menu-text">4. Datenzugang</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/data_aggregation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Datenverarbeitung</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/nfdi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Was ist NFDI?</span></a>
+ <span class="menu-text">5. Datenverarbeitung</span></a>
   </div>
 </li>
     </ul>
@@ -157,9 +157,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#was-sind-numismatische-forschungsdaten" id="toc-was-sind-numismatische-forschungsdaten" class="nav-link active" data-scroll-target="#was-sind-numismatische-forschungsdaten">Was sind numismatische Forschungsdaten?</a></li>
-  <li><a href="#wie-funktionieren-münzdaten" id="toc-wie-funktionieren-münzdaten" class="nav-link" data-scroll-target="#wie-funktionieren-münzdaten">Wie funktionieren Münzdaten</a>
+  <li><a href="#wie-können-wir-uns-münzdaten-vorstellen" id="toc-wie-können-wir-uns-münzdaten-vorstellen" class="nav-link" data-scroll-target="#wie-können-wir-uns-münzdaten-vorstellen">Wie können wir uns Münzdaten vorstellen</a>
   <ul class="collapse">
   <li><a href="#was-ist-eine-ontologie" id="toc-was-ist-eine-ontologie" class="nav-link" data-scroll-target="#was-ist-eine-ontologie">Was ist eine Ontologie?</a></li>
+  <li><a href="#was-ist-eine-ontologie-1" id="toc-was-ist-eine-ontologie-1" class="nav-link" data-scroll-target="#was-ist-eine-ontologie-1">Was ist eine Ontologie?</a></li>
   <li><a href="#was-sind-normdaten" id="toc-was-sind-normdaten" class="nav-link" data-scroll-target="#was-sind-normdaten">Was sind Normdaten?</a></li>
   </ul></li>
   </ul>
@@ -196,14 +197,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Veröffentlicht am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">22.10.2025</p>
+      <p class="date">17.11.2025</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Zuletzt geändert am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">22.10.2025</p>
+      <p class="date-modified">17.11.2025</p>
     </div>
   </div>
     
@@ -214,8 +215,9 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="was-sind-numismatische-forschungsdaten" class="level2">
 <h2 class="anchored" data-anchor-id="was-sind-numismatische-forschungsdaten">Was sind numismatische Forschungsdaten?</h2>
-<p>Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse. Auf jeder Münze, egal aus welcher Zeit oder Region, sind die gleichen Daten zu finden. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Feld Material, Dargestellte, Prägestätte und weitere. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten.</p>
-<div id="2df82ff2" class="cell" data-execution_count="1">
+<p>Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden können. Sie sind Grundlage und Ergebnis wissenschaftlicher Arbeit.</p>
+<p>Für jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. Alle der folgenden Münzen aus unterschiedlichen Epochen haben beispielsweise das Informationen zu Material, Dargestellten, Prägestätten. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, kann auch gerade das Nichtvorhandensein dieser Informationen wichtig für die Interpretation der Münzdaten sein.</p>
+<div id="c0138186" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <p><img src="scientific_data_files/figure-html/cell-2-output-1.png" class="img-fluid"></p>
 </div>
@@ -235,35 +237,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="wie-funktionieren-münzdaten" class="level2">
-<h2 class="anchored" data-anchor-id="wie-funktionieren-münzdaten">Wie funktionieren Münzdaten</h2>
-<p>Grundsätzlich geht es darum, alle Informationen mit einer Münze zu verknüpfen. Die einfachste Form, Daten strukturiert zu speichern, ist eine Tabelle. Allerdings gibt es häufig auch Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Was sind Typenkataloge?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/muenzbestimmung">Münzbestimmung</a> notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.</p>
-</div>
-</div>
-</div>
-<p>Wenn man sich Daten als Tabellen vorstellt, bedeutet das, dass es zwei Tabellen braucht, eine mit Informationen für Münzen und eine mit Informationen zu ihrem Typ. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen ergibt es Sinn, eigene Tabellen zu erstellen, damit die Daten zentralisiert verändert werden können.</p>
-<p>Der aktuelle Stand in der Darstellung von Münzen basiert auf drei Grundkonzepten, nämlich Ontologien, Normdaten und Knowledge-Graphen. In den folgenden Modulseiten werden diese Konzepte vorgestellt. Anschließend wird diskutiert, welche Probleme aktuelle Münzdaten trotzdem haben, und wie diese gelöst werden können.</p>
-<section id="was-ist-eine-ontologie" class="level3">
-<h3 class="anchored" data-anchor-id="was-ist-eine-ontologie">Was ist eine Ontologie?</h3>
-<p>Es gibt also eine fixe Anzahl an Datenfeldern, die für die Numismatik relevant sind. Diese wurden von der Numismatischen Forschungsgemeinschaft bereits standardisiert und stetig aktualisiert. International gültig ist die <a href="http://www.nomisma.org/ontology">Nomisma Ontology</a>. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld. Ontologien lassen sich einfach mit einer Graph-Metapher verstehen.</p>
+<section id="wie-können-wir-uns-münzdaten-vorstellen" class="level2">
+<h2 class="anchored" data-anchor-id="wie-können-wir-uns-münzdaten-vorstellen">Wie können wir uns Münzdaten vorstellen</h2>
+<p>Die einfachste Form, Münzdaten strukturiert zu speichern, ist eine Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden. Das folgende Beispiel zeigt dabei, dass eine Tabelle für Münzdaten nicht ausreicht.</p>
+<div id="tbl-muenzdaten" class="anchored">
 <table class="table">
+<caption>Tabelle&nbsp;1: Münzdaten in tabellarischer Form</caption>
 <colgroup>
-<col style="width: 36%">
-<col style="width: 24%">
 <col style="width: 20%">
+<col style="width: 10%">
+<col style="width: 10%">
 <col style="width: 20%">
 </colgroup>
 <thead>
@@ -283,7 +266,40 @@ Was sind Typenkataloge?
 </tr>
 </tbody>
 </table>
-<p>Das Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. In der Darstellung als</p>
+</div>
+<p>Das Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was sind Typenkataloge?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/muenzbestimmung">Münzbestimmung</a> notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.</p>
+</div>
+</div>
+</div>
+<p>Es ergibt Sinn die Informationen, die dem Münztyp zugeordnet werden, in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.</p>
+<section id="was-ist-eine-ontologie" class="level3">
+<h3 class="anchored" data-anchor-id="was-ist-eine-ontologie">Was ist eine Ontologie?</h3>
+<p>Sobald Münzdaten aus komplexen Verbindungen verschiedener Datenquellen bestehen, eignet sich eine andere Darstellungsform als Tabellen: Graphen. Für die Darstellung als Graph braucht muss das Namensfeld als zentrales Objekt definiert werden, die mit den anderen Werten über die jeweiligen Prädikate der Zeilenüberschriften verbunden sind. Das vorige Beispiel würde als Graph wie folgt aussehen:</p>
+<div id="c34999d1" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<p><img src="scientific_data_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="was-ist-eine-ontologie-1" class="level3">
+<h3 class="anchored" data-anchor-id="was-ist-eine-ontologie-1">Was ist eine Ontologie?</h3>
+<p>Wenn Daten auf diese Weise dargestellt werden, zeigt sich, an welchen Stellen eine Standardisierung notwendig ist. Das Objekt Münze braucht eine festgelegte Anzahl an Feldern, die dem Objekt zugeordnet werden kann und der Inhalt der Felder sollte ebenfalls normiert sein. So sollte zum Beispiel nicht eine Institution den Link zum Typportal mit “http://numismatics.org/ocre…” angeben, während eine andere “http://www.numismatics.org/ocre…” schreibt.</p>
+<p>Die Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph.</p>
+<p>Um Herauszufinden, wie dieser Graph aussieht, öffnen sie das interaktive Modul in Colab.</p>
+<p>Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die <a href="http://www.nomisma.org/ontology">Nomisma Ontology</a>. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.</p>
 </section>
 <section id="was-sind-normdaten" class="level3">
 <h3 class="anchored" data-anchor-id="was-sind-normdaten">Was sind Normdaten?</h3>
@@ -578,8 +594,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/data_access.html" class="pagination-link">
-        <span class="nav-page-text">2. Datenzugang</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/nfdi.html" class="pagination-link">
+        <span class="nav-page-text">3. Was ist NFDI?</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

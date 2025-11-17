@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ELearning-Modul für Münzdaten - Aggregating the Data</title>
+<title>ELearning-Modul für Münzdaten - Numismatik und Digital Humanities</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="../assets/css/collage.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -94,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Aggregating the Data</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Numismatik und Digital Humanities</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -128,20 +129,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/nfdi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Was ist NFDI?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/data_access.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Datenzugang</span></a>
+ <span class="menu-text">4. Datenzugang</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/data_aggregation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Datenverarbeitung</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/nfdi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Was ist NFDI?</span></a>
+ <span class="menu-text">5. Datenverarbeitung</span></a>
   </div>
 </li>
     </ul>
@@ -154,12 +155,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf Dieser Seite</h2>
    
   <ul>
-  <li><a href="#praktische-bezügeanwendungsbeispielmotivation" id="toc-praktische-bezügeanwendungsbeispielmotivation" class="nav-link active" data-scroll-target="#praktische-bezügeanwendungsbeispielmotivation">Praktische Bezüge/Anwendungsbeispiel/Motivation</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
   <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
-  <li><a href="#voraussetzungen" id="toc-voraussetzungen" class="nav-link" data-scroll-target="#voraussetzungen">Voraussetzungen</a></li>
-  <li><a href="#datengrundlage" id="toc-datengrundlage" class="nav-link" data-scroll-target="#datengrundlage">Datengrundlage</a></li>
-  <li><a href="#vorbereitung" id="toc-vorbereitung" class="nav-link" data-scroll-target="#vorbereitung">Vorbereitung</a></li>
-  <li><a href="#durchführung" id="toc-durchführung" class="nav-link" data-scroll-target="#durchführung">Durchführung</a></li>
+  <li><a href="#aufbau-des-kurses" id="toc-aufbau-des-kurses" class="nav-link" data-scroll-target="#aufbau-des-kurses">Aufbau des Kurses</a>
+  <ul class="collapse">
+  <li><a href="#konzepte-und-erklärungen" id="toc-konzepte-und-erklärungen" class="nav-link" data-scroll-target="#konzepte-und-erklärungen">Konzepte und Erklärungen</a></li>
+  <li><a href="#interaktive-analysen-mit-google-colab" id="toc-interaktive-analysen-mit-google-colab" class="nav-link" data-scroll-target="#interaktive-analysen-mit-google-colab">Interaktive Analysen mit Google Colab</a></li>
+  </ul></li>
+  <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
+  <li><a href="#förderung" id="toc-förderung" class="nav-link" data-scroll-target="#förderung">Förderung</a></li>
   </ul>
 </nav>
     </div>
@@ -168,8 +172,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aggregating the Data</h1>
-<p class="subtitle lead">neuer Untertitel</p>
+<h1 class="title">Numismatik und Digital Humanities</h1>
+<p class="subtitle lead">Welche Relevanz haben Forschungsdaten für die Numismatik?</p>
 </div>
 
 
@@ -195,14 +199,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Veröffentlicht am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">22.10.2025</p>
+      <p class="date">17.11.2025</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Zuletzt geändert am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">22.10.2025</p>
+      <p class="date-modified">17.11.2025</p>
     </div>
   </div>
     
@@ -211,53 +215,118 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="praktische-bezügeanwendungsbeispielmotivation" class="level2">
-<h2 class="anchored" data-anchor-id="praktische-bezügeanwendungsbeispielmotivation">Praktische Bezüge/Anwendungsbeispiel/Motivation</h2>
-<p>Es gibt verschiedene für die Numismatik relevante Seiten</p>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände bereits weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals <a href="&quot;https://pecunia.zaw.uni-heidelberg.de/NumiScience/ocre-online-coins-of-the-roman-empire&quot;">Numiscience.de</a>. Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene Softwaresysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.</p>
 </section>
 <section id="lernziele" class="level2">
 <h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
-<p>In diesem Skript lernen Sie:</p>
-<ul>
-<li>Ziel 1</li>
-<li>Ziel 2</li>
-</ul>
-<p>Idealerweise beziehen sie sich in dieser Aufzählung auf die Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie 3D Modellage oder Erkennung von Münzen durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.</p>
+<div class="text-collage">
+<p><a href="https://chre.ashmus.ox.ac.uk/hoard/4155" target="_blank" style="background-image: url('../assets/img/hortfund_karte.jpg');">Geoinformationen</a> <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/ludwig-in-3d" target="_blank" style="background-image: url('../assets/img/3D_Modell.jpg');">3D-Modelle</a> <a href="https://colab.research.google.com/drive/1QpHpuCaGdZ56KoUY32a6GITzvD9AD8fH" target="_blank" style="background-image: url('../assets/img/object_recognition.jpg');">KI-Objekterkennung</a> <a href="https://zenodo.org/records/11187474" target="_blank" style="background-image: url('../assets/img/statistics.jpg');">Statistiken</a></p>
+</div>
 </section>
-<section id="voraussetzungen" class="level2">
-<h2 class="anchored" data-anchor-id="voraussetzungen">Voraussetzungen</h2>
-<p>Für das erfolgreiche Absolvieren dieser Übung wird vorausgesetzt:</p>
-<ul>
-<li>Voraussetzung 1</li>
-</ul>
-<p>Versuchen sie so detailliert wie möglich die Voraussetzungen für die Durchführung der Übung aufzuzählen. Geben sie Hinweise, wo die Lernenden entsprechende/s Kompetenzen/Wissen erwerben können. Verweisen sie insbesondere auf Hilfestellungen für die Software-Installation und Tutorials zum Umgang.</p>
-</section>
-<section id="datengrundlage" class="level2">
-<h2 class="anchored" data-anchor-id="datengrundlage">Datengrundlage</h2>
-<p>Erläutern und verlinken sie die Datengrundlage für die Übung.</p>
-</section>
-<section id="vorbereitung" class="level2">
-<h2 class="anchored" data-anchor-id="vorbereitung">Vorbereitung</h2>
-</section>
-<section id="durchführung" class="level2">
-<h2 class="anchored" data-anchor-id="durchführung">Durchführung</h2>
-<p>Hier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.</p>
-<p>Dann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können</p>
-<div id="919bdea9" class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display">
-<p><img src="data_aggregation (SFConflict Mattia Max Celisi 2025-10-21-12-09-42)_files/figure-html/cell-2-output-1.png" class="img-fluid"></p>
+<section id="aufbau-des-kurses" class="level2">
+<h2 class="anchored" data-anchor-id="aufbau-des-kurses">Aufbau des Kurses</h2>
+<section id="konzepte-und-erklärungen" class="level3">
+<h3 class="anchored" data-anchor-id="konzepte-und-erklärungen">Konzepte und Erklärungen</h3>
+<p>Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite <a href="progress.html">mein Fortschritt</a> angesehen werden.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis zum Datenschutz
 </div>
 </div>
-<p>todo: Hintergründe ornage?</p>
+<div class="callout-body-container callout-body">
+<p>Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.</p>
+</div>
+</div>
+</section>
+<section id="interaktive-analysen-mit-google-colab" class="level3">
+<h3 class="anchored" data-anchor-id="interaktive-analysen-mit-google-colab">Interaktive Analysen mit Google Colab</h3>
+<p>Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab (Google-Account ist erforderlich). Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.</p>
+<p>Jede Modulseite enthält oben ein Colab-Symbol wie dieses:</p>
+<!-- this link to colab can used on other sites, remember to define filename in top yaml -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/_index.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<p>Klicken Sie auf das Symbol und schließen Sie die erste Lektion in Colab ab. Das ist notwendig, um die folgenden Quizfragen richtig zu beantworten.</p>
+</section>
+</section>
+<section id="quiz" class="level2">
+<h2 class="anchored" data-anchor-id="quiz">Quiz</h2>
+<p>Genug der einleitenden Worte, numismatische Daten warten.</p>
+<div id="intro_quiz">
+
+</div>
+<script src="../assets/js/quiz.js"></script>
+<p><link rel="stylesheet" href="../assets/css/quiz.css"></p>
+<script>
+// Define quiz questions
+window["intro_quiz_data"] = [
+  {
+    question: "Wie kann der Kurs interaktive Analysen ausführen?",
+    choices: [
+      { text: "Direkt auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch." },
+      { text: "Durch Kopieren des Codes in Google Colab", feedback: "✅ Richtig! Colab erlaubt interaktives Ausführen der Python-/R-Codezellen." },
+      { text: "Mit Offline-Software nur", feedback: "❌ Falsch! Der Kurs ist browserbasiert, Colab wird genutzt." },
+      { text: "Nur auf mobilen Geräten", feedback: "❌ Falsch! Desktop und mobile Browser funktionieren." }
+    ]
+  },
+  {
+    question: "Wie wird der Fortschritt des Kurses gespeichert?",
+    choices: [
+      { text: "Auf einem Server der Universität", feedback: "❌ Falsch! Alle Daten bleiben lokal im Browser." },
+      { text: "In der Cloud von Google ohne Zustimmung", feedback: "❌ Falsch! Nur Colab speichert temporär, Quarto nutzt lokalStorage." },
+      { text: "Lokal im Browser über localStorage", feedback: "✅ Richtig! Der Fortschritt wird nur im Browser gespeichert." },
+      { text: "Über Cookies auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch und speichert keine Cookies." }
+    ]
+  },
+  {
+    question: "Welche Herausforderung wird in der Numismatik bei digitalisierten Beständen beschrieben?",
+    choices: [
+      { text: "Alle Daten sind automatisch miteinander verknüpft", feedback: "❌ Falsch! Die Bestände sind heterogen und schwer kombinierbar." },
+      { text: "Verschiedene Museen haben unterschiedliche Softwaresysteme", feedback: "✅ Richtig! Unterschiedliche Systeme erschweren den Austausch." },
+      { text: "Digitale Münzen ersetzen physische Münzen", feedback: "❌ Falsch! Digitalisierung ergänzt nur die Forschung." },
+      { text: "Es gibt keine Herausforderung, alles ist standardisiert", feedback: "❌ Falsch! Standardisierung ist gerade eine Herausforderung." }
+    ]
+  },
+  {
+    question: "Wie kann überprüft werden, ob ein Link zu einem Typenportal eine Reichsprägung von Hadrian ist?",
+    choices: [
+      { text: "OCRE enthält ausschließlich Münzen von Hadrian", feedback: "❌ Falsch! OCRE enthält Münzen aus der gesamten römischen Kaiserzeit: von Augustus bis Zenon." },
+      { text: "Die URL enthält 'https://numismatics.org/ocre/hadrian'", feedback: "❌ Falsch! OCRE hat ordnet die Münzen zuerst nach der Bandnummer des RIC." },
+      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hadrian'", feedback: "❌ Falsch! Jeder Kaiser hat ein eigenes Kürzel." },
+      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hdn'", feedback: "✅ Richtig" }
+    ]
+  }
+];
+if (!localStorage.getItem("progress")) {
+    localStorage.setItem("progress", "0");
+}
+document.addEventListener("DOMContentLoaded", () => {
+    renderQuiz("intro_quiz", window["intro_quiz_data"], {
+        quizKey: "intro_quiz_completed",
+        onComplete: () => console.log("Quiz completed!")
+    });
+});
+</script>
+<p>Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter <a href="progress.html">mein Fortschritt</a> ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul</p>
+</section>
+<section id="förderung" class="level2 appendix">
+<h2 class="appendix anchored" data-anchor-id="förderung">Förderung</h2>
+<p>Die ELearning-Materialien entstanden in dem von der DFG geförderten Projekt “<a href="https://gepris.dfg.de/gepris/projekt/501836407" target="_blank">NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte</a>”</p>
+<p>Die Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.</p>
+<p><img src="../brand/logos/n4o_logo_verlauf_claim_lang.svg" class="img-fluid"></p>
+<p><img src="../assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" class="img-fluid"></p>
 
 
 </section>
-<aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>Petersen, B., Engelhardt, C., Hörner, T., Jacob, J., Kvetnaya, T., Mühlichen, A., Schranzhofer, H., Schulz, S., Slowig, B., Trautwein-Bruns, U., Voigt, A., &amp; Wiljes, C. (2023). Lernzielmatrix zum Themenbereich Forschungsdatenmanagement (FDM) für die Zielgruppen Studierende, PhDs und Data Stewards. Zenodo. <a href="https://doi.org/10.5281/zenodo.8010617">https://doi.org/10.5281/zenodo.8010617</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</aside>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -8,9 +8,9 @@ title-block: None
 ---
 
 ## Was sind numismatische Forschungsdaten?
-Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden können. Sie sind Grundlage und Ergebnis wissenschaftlicher Arbeit.
+Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie sind Grundlage und Ergebnis wissenschaftlicher Arbeit.
 
-Für jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. Alle der folgenden Münzen aus unterschiedlichen Epochen haben beispielsweise das Informationen zu Material, Dargestellten, Prägestätten. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, kann auch gerade das Nichtvorhandensein dieser Informationen wichtig für die Interpretation der Münzdaten sein. 
+Für jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. All diese Münzen aus unterschiedlichen Epochen haben beispielsweise das Informationen zu Material, Dargestellten, Prägestätten. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, ist dieses gerade nicht vorhanden sein dieser Informationen wichtig für die Interpretation der Münzdaten. 
 
 ```{python}
 #| echo: false

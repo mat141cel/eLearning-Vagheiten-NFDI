@@ -10,12 +10,12 @@ css: /assets/css/collage.css
 ---
 
 ## Motivation
-In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen [Grundwissenschaften]("https://de.wikipedia.org/wiki/Historische_Hilfswissenschaften") bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals [Numiscience.de]("https://pecunia.zaw.uni-heidelberg.de/NumiScience/numismatische-toolbox").
+In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen [Grundwissenschaften](https://de.wikipedia.org/wiki/Historische_Hilfswissenschaften) bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals [Numiscience.de](https://pecunia.zaw.uni-heidelberg.de/NumiScience/numismatische-toolbox).
 
 Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.
 
 ## Lernziele
-Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI (https://www.nfdi.de/), 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.
+Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in [NFDI](https://www.nfdi.de/), 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.
 
 
 <div class="text-collage">
@@ -29,7 +29,7 @@ Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu
 Das Modul befindet sich derzeit im Aufbau.
 
 ### Konzepte und Erklärungen
-Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite [mein Fortschritt](progress.html) angesehen werden. 
+Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite ["Mein Fortschritt"](progress.html) angesehen werden. 
 
 ::: {.callout-important}
 ## Hinweis zum Datenschutz
@@ -40,17 +40,15 @@ Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit
 
 Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab (Google-Account ist erforderlich). Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. 
   
-Jede Modulseite enthält oben ein Colab-Symbol wie dieses:  
+Jede Modulseite enthält ein Colab-Symbol. Klicken Sie auf das Symbol und schließen Sie die erste Lektion in Colab ab. Das ist notwendig, um die folgenden Quizfragen richtig zu beantworten. 
 
 <!-- this link to colab can used on other sites, remember to define filename in top yaml -->
 [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/_{{< meta filename >}}.ipynb)
 
-Klicken Sie auf das Symbol und schließen Sie die erste Lektion in Colab ab. Das ist notwendig, um die folgenden Quizfragen richtig zu beantworten. 
 
 
 ## Quiz
-
-Genug der einleitenden Worte, numismatische Daten warten.
+Haben Sie Sich die interaktiven Kurselemente in Colab angesehen? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.
 
 <div id="intro_quiz"></div>
 
@@ -112,10 +110,8 @@ Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im
 
 ## Förderung {.appendix}
 
-Die ELearning-Materialien entstanden in dem von der DFG geförderten Projekt "[NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"}" 
+Diese ELearning-Materialien sind in dem von der DFG geförderten Projekt [NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"} entstanden und wurden an der [Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik)](https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts) entwickelt.
 
-Die Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.
+<img src="/brand/logos/n4o_logo_verlauf_claim_lang.svg" style="max-width:50%; height:auto;">
 
-![](/brand/logos/n4o_logo_verlauf_claim_lang.svg)
-
-![](/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg)
+<img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" style="max-width:50%; height:auto;">

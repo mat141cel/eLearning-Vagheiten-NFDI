@@ -22,6 +22,6 @@ citation: # vgl. https://quarto.org/docs/reference/metadata/citation.html
   type: document
   container-title: "NFDI4Objects Open Educational Resource"
   publisher: NFDI4Objects
-bibliography: ../references.bib
+bibliography: references.bib
 
 from: markdown+emoji # vgl. https://quarto.org/docs/visual-editor/content.html#emojis und https://gist.github.com/rxaviers/7360908

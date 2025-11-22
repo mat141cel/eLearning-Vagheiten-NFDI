@@ -24,7 +24,7 @@
     "href": "content/index.html#lernziele",
     "title": "Numismatik und Digital Humanities",
     "section": "Lernziele",
-    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI (https://www.nfdi.de/), 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken",
+    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken",
     "crumbs": [
       "1. Hauptseite"
     ]
@@ -34,7 +34,7 @@
     "href": "content/index.html#aufbau-des-kurses",
     "title": "Numismatik und Digital Humanities",
     "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\nDas Modul befindet sich derzeit im Aufbau.\n\nKonzepte und Erklärungen\nDieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite mein Fortschritt angesehen werden.\n\n\n\n\n\n\nWichtigHinweis zum Datenschutz\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.\n\n\n\n\nInteraktive Analysen mit Google Colab\nZu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab (Google-Account ist erforderlich). Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.\nJede Modulseite enthält oben ein Colab-Symbol wie dieses:\n\n\nKlicken Sie auf das Symbol und schließen Sie die erste Lektion in Colab ab. Das ist notwendig, um die folgenden Quizfragen richtig zu beantworten.",
+    "text": "Aufbau des Kurses\nDas Modul befindet sich derzeit im Aufbau.\n\nKonzepte und Erklärungen\nDieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite “Mein Fortschritt” angesehen werden.\n\n\n\n\n\n\nWichtigHinweis zum Datenschutz\n\n\n\nAlle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.\n\n\n\n\nInteraktive Analysen mit Google Colab\nZu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab (Google-Account ist erforderlich). Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.\nJede Modulseite enthält ein Colab-Symbol. Klicken Sie auf das Symbol und schließen Sie die erste Lektion in Colab ab. Das ist notwendig, um die folgenden Quizfragen richtig zu beantworten.",
     "crumbs": [
       "1. Hauptseite"
     ]
@@ -236,7 +236,7 @@
     "href": "content/index.html#förderung",
     "title": "Numismatik und Digital Humanities",
     "section": "Förderung",
-    "text": "Förderung\nDie ELearning-Materialien entstanden in dem von der DFG geförderten Projekt “NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte”\nDie Materialien wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.",
+    "text": "Förderung\nDiese ELearning-Materialien sind in dem von der DFG geförderten Projekt NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte entstanden und wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.",
     "crumbs": [
       "1. Hauptseite"
     ]
@@ -246,7 +246,7 @@
     "href": "content/index.html#quiz",
     "title": "Numismatik und Digital Humanities",
     "section": "Quiz",
-    "text": "Quiz\nGenug der einleitenden Worte, numismatische Daten warten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
+    "text": "Quiz\nHaben Sie Sich die interaktiven Kurselemente in Colab angesehen? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
     "crumbs": [
       "1. Hauptseite"
     ]

@@ -97,10 +97,10 @@ Das Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit de
 Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die [Münzbestimmung](https://pecunia.zaw.uni-heidelberg.de/NumiScience/muenzbestimmung) notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.
 :::
 
-Es ergibt Sinn die Informationen, die dem Münztyp zugeordnet werden, in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.
+Es ergibt Sinn die Informationen, die die Münze mit anderen Münzen des gleichen Typs teiltm Münztyp zugeordnet werden, in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.
 
 
-### Was ist eine Ontologie?
+### Was sind Graphen?
 
 Sobald Münzdaten aus komplexen Verbindungen verschiedener Datenquellen bestehen, eignet sich eine andere Darstellungsform als Tabellen: Graphen.
 Für die Darstellung als Graph braucht muss das Namensfeld als zentrales Objekt definiert werden, die mit den anderen Werten über die jeweiligen Prädikate der Zeilenüberschriften verbunden sind. Das vorige Beispiel würde als Graph wie folgt aussehen:
@@ -147,15 +147,12 @@ plt.show()
 
 ### Was ist eine Ontologie?
 
-Wenn Daten auf diese Weise dargestellt werden, zeigt sich, an welchen Stellen eine Standardisierung notwendig ist. Das Objekt Münze braucht eine festgelegte Anzahl an Feldern, die dem Objekt zugeordnet werden kann und der Inhalt der Felder sollte ebenfalls normiert sein. So sollte zum Beispiel nicht eine Institution den Link zum Typportal mit "http://numismatics.org/ocre..."  angeben, während eine andere "http://www.numismatics.org/ocre..." schreibt.
+Wenn Daten auf als Graphen dargestellt werden, zeigt sich unmittelbar, welche Elemente durch eine Ontologie standardisiert werden können. „Ontologie“ ist ursprünglich ein Begriff aus der Philosophie. Er stammt aus dem Griechischen und kann mit der „Lehre des Seins“ übersetzt werden. In der Informatik meint der Begriff aber eine solche Systematisierung von Begrifflichkeiten und deren Abhängigkeiten voneinander. Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die [Nomisma Ontology](http://www.nomisma.org/ontology). Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld. Um Herauszufinden, wie ein voll standardisierter Graph aussieht, öffnen sie das interaktive Modul in Colab.
 
+Die Nomisma Ontology differenziert nach Objekten und Typen, die jeweils andere Datenfelder haben. So werden die Informationen effektiv nur dort gespeichert, wo sie dazu gehören. 
 Die Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph.
 
-Um Herauszufinden, wie dieser Graph aussieht, öffnen sie das interaktive Modul in Colab.
-
-Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die [Nomisma Ontology](http://www.nomisma.org/ontology). Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.
-
-
 ### Was sind Normdaten?
+
 
 Bei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text. 

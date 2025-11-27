@@ -159,8 +159,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#was-sind-numismatische-forschungsdaten" id="toc-was-sind-numismatische-forschungsdaten" class="nav-link active" data-scroll-target="#was-sind-numismatische-forschungsdaten">Was sind numismatische Forschungsdaten?</a></li>
   <li><a href="#wie-können-wir-uns-münzdaten-vorstellen" id="toc-wie-können-wir-uns-münzdaten-vorstellen" class="nav-link" data-scroll-target="#wie-können-wir-uns-münzdaten-vorstellen">Wie können wir uns Münzdaten vorstellen</a>
   <ul class="collapse">
+  <li><a href="#was-sind-graphen" id="toc-was-sind-graphen" class="nav-link" data-scroll-target="#was-sind-graphen">Was sind Graphen?</a></li>
   <li><a href="#was-ist-eine-ontologie" id="toc-was-ist-eine-ontologie" class="nav-link" data-scroll-target="#was-ist-eine-ontologie">Was ist eine Ontologie?</a></li>
-  <li><a href="#was-ist-eine-ontologie-1" id="toc-was-ist-eine-ontologie-1" class="nav-link" data-scroll-target="#was-ist-eine-ontologie-1">Was ist eine Ontologie?</a></li>
   <li><a href="#was-sind-normdaten" id="toc-was-sind-normdaten" class="nav-link" data-scroll-target="#was-sind-normdaten">Was sind Normdaten?</a></li>
   </ul></li>
   </ul>
@@ -197,14 +197,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Veröffentlicht am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">22.11.2025</p>
+      <p class="date">27.11.2025</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Zuletzt geändert am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">22.11.2025</p>
+      <p class="date-modified">27.11.2025</p>
     </div>
   </div>
     
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="was-sind-numismatische-forschungsdaten">Was sind numismatische Forschungsdaten?</h2>
 <p>Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden können. Sie sind Grundlage und Ergebnis wissenschaftlicher Arbeit.</p>
 <p>Für jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. Alle der folgenden Münzen aus unterschiedlichen Epochen haben beispielsweise das Informationen zu Material, Dargestellten, Prägestätten. Auch wenn die Euromünze keine dargestellte Person hat und die Prägestätte der Münze von Napoleon III. unbekannt ist, kann auch gerade das Nichtvorhandensein dieser Informationen wichtig für die Interpretation der Münzdaten sein.</p>
-<div id="f69d5e50" class="cell" data-execution_count="1">
+<div id="0240ca0d" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <p><img src="scientific_data_files/figure-html/cell-2-output-1.png" class="img-fluid"></p>
 </div>
@@ -284,22 +284,20 @@ Was sind Typenkataloge?
 </div>
 </div>
 </div>
-<p>Es ergibt Sinn die Informationen, die dem Münztyp zugeordnet werden, in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.</p>
-<section id="was-ist-eine-ontologie" class="level3">
-<h3 class="anchored" data-anchor-id="was-ist-eine-ontologie">Was ist eine Ontologie?</h3>
+<p>Es ergibt Sinn die Informationen, die die Münze mit anderen Münzen des gleichen Typs teiltm Münztyp zugeordnet werden, in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.</p>
+<section id="was-sind-graphen" class="level3">
+<h3 class="anchored" data-anchor-id="was-sind-graphen">Was sind Graphen?</h3>
 <p>Sobald Münzdaten aus komplexen Verbindungen verschiedener Datenquellen bestehen, eignet sich eine andere Darstellungsform als Tabellen: Graphen. Für die Darstellung als Graph braucht muss das Namensfeld als zentrales Objekt definiert werden, die mit den anderen Werten über die jeweiligen Prädikate der Zeilenüberschriften verbunden sind. Das vorige Beispiel würde als Graph wie folgt aussehen:</p>
-<div id="56988cd8" class="cell" data-execution_count="2">
+<div id="48dea278" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <p><img src="scientific_data_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
-<section id="was-ist-eine-ontologie-1" class="level3">
-<h3 class="anchored" data-anchor-id="was-ist-eine-ontologie-1">Was ist eine Ontologie?</h3>
-<p>Wenn Daten auf diese Weise dargestellt werden, zeigt sich, an welchen Stellen eine Standardisierung notwendig ist. Das Objekt Münze braucht eine festgelegte Anzahl an Feldern, die dem Objekt zugeordnet werden kann und der Inhalt der Felder sollte ebenfalls normiert sein. So sollte zum Beispiel nicht eine Institution den Link zum Typportal mit “http://numismatics.org/ocre…” angeben, während eine andere “http://www.numismatics.org/ocre…” schreibt.</p>
-<p>Die Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph.</p>
-<p>Um Herauszufinden, wie dieser Graph aussieht, öffnen sie das interaktive Modul in Colab.</p>
-<p>Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die <a href="http://www.nomisma.org/ontology">Nomisma Ontology</a>. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.</p>
+<section id="was-ist-eine-ontologie" class="level3">
+<h3 class="anchored" data-anchor-id="was-ist-eine-ontologie">Was ist eine Ontologie?</h3>
+<p>Wenn Daten auf als Graphen dargestellt werden, zeigt sich unmittelbar, welche Elemente durch eine Ontologie standardisiert werden können. „Ontologie“ ist ursprünglich ein Begriff aus der Philosophie. Er stammt aus dem Griechischen und kann mit der „Lehre des Seins“ übersetzt werden. In der Informatik meint der Begriff aber eine solche Systematisierung von Begrifflichkeiten und deren Abhängigkeiten voneinander. Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die <a href="http://www.nomisma.org/ontology">Nomisma Ontology</a>. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld. Um Herauszufinden, wie ein voll standardisierter Graph aussieht, öffnen sie das interaktive Modul in Colab.</p>
+<p>Die Nomisma Ontology differenziert nach Objekten und Typen, die jeweils andere Datenfelder haben. So werden die Informationen effektiv nur dort gespeichert, wo sie dazu gehören. Die Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph.</p>
 </section>
 <section id="was-sind-normdaten" class="level3">
 <h3 class="anchored" data-anchor-id="was-sind-normdaten">Was sind Normdaten?</h3>

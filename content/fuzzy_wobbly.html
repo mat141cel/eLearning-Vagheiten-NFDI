@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ELearning-Modul für Münzdaten - Aggregating the Data</title>
+<title>ELearning-Modul für Münzdaten - Unsichere Daten</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/nfdi.html" rel="next">
-<link href="../content/data_access.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -99,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/index_digital.html">🔍 I. Digitale Grundlagen</a></li><li class="breadcrumb-item"><a href="../content/data_aggregation.html">4. Datenverarbeitung</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Unsichere Daten</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -154,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/data_aggregation.html" class="sidebar-item-text sidebar-link active">
+  <a href="../content/data_aggregation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4. Datenverarbeitung</span></a>
   </div>
 </li>
@@ -187,10 +185,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf Dieser Seite</h2>
    
   <ul>
-  <li><a href="#praktische-bezügeanwendungsbeispielmotivation" id="toc-praktische-bezügeanwendungsbeispielmotivation" class="nav-link active" data-scroll-target="#praktische-bezügeanwendungsbeispielmotivation">Praktische Bezüge/Anwendungsbeispiel/Motivation</a></li>
-  <li><a href="#datengrundlage" id="toc-datengrundlage" class="nav-link" data-scroll-target="#datengrundlage">Datengrundlage</a></li>
-  <li><a href="#vorbereitung" id="toc-vorbereitung" class="nav-link" data-scroll-target="#vorbereitung">Vorbereitung</a></li>
-  <li><a href="#durchführung" id="toc-durchführung" class="nav-link" data-scroll-target="#durchführung">Durchführung</a></li>
+  <li><a href="#was-sind-unsicherheiten" id="toc-was-sind-unsicherheiten" class="nav-link active" data-scroll-target="#was-sind-unsicherheiten">Was sind Unsicherheiten?</a></li>
   </ul>
 </nav>
     </div>
@@ -199,8 +194,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aggregating the Data</h1>
-<p class="subtitle lead">neuer Untertitel</p>
+<h1 class="title">Unsichere Daten</h1>
+<p class="subtitle lead">hier geht es darum, das unsichere und vage Aussagen in Münzdaten zu erkennen</p>
 </div>
 
 
@@ -242,20 +237,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="praktische-bezügeanwendungsbeispielmotivation" class="level2">
-<h2 class="anchored" data-anchor-id="praktische-bezügeanwendungsbeispielmotivation">Praktische Bezüge/Anwendungsbeispiel/Motivation</h2>
-</section>
-<section id="datengrundlage" class="level2">
-<h2 class="anchored" data-anchor-id="datengrundlage">Datengrundlage</h2>
-<p>Erläutern und verlinken sie die Datengrundlage für die Übung.</p>
-</section>
-<section id="vorbereitung" class="level2">
-<h2 class="anchored" data-anchor-id="vorbereitung">Vorbereitung</h2>
-</section>
-<section id="durchführung" class="level2">
-<h2 class="anchored" data-anchor-id="durchführung">Durchführung</h2>
-<p>Hier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.</p>
-<p>Dann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können</p>
+<section id="was-sind-unsicherheiten" class="level2">
+<h2 class="anchored" data-anchor-id="was-sind-unsicherheiten">Was sind Unsicherheiten?</h2>
+<p>Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Münzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen.</p>
+<p>Um Unsicherheiten und Vagheiten darzustellen, wird bisher meist auf Freitextfelder zurückgegriffen, in dem die Benutzer beliebige Aussagen eintragen können.</p>
+<p>Mit der Deutung dieser Daten beschäftigt sich das Projekt “Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts” bei NFDI4objects.</p>
+<p>Beispiele:</p>
+<p>die Münze: https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099</p>
+<p>Die Datierung dieser Münze lautet nach 274 n.&nbsp;Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n.&nbsp;Chr. datiert wird. Es ist demnach nur ein (Terminus Post Quem)[https://en.wikipedia.org/wiki/Terminus_post_quem] angegeben, und es ist unsicher, bis wann diese Münzen noch geprägt wurden.</p>
+<p>sie können also keine Unsicherheiten in Daten darstellen. Das bedeutet bei der Digitalisierung von Münzen eine Herausforderung, d.&nbsp;Denn Unsicherheiten und Vagheiten sind elementar, um Münzdaten richtig erfassen und später bewerten und deuten zu können.</p>
+<p>Mit dieser Herausforderung befasst sich das Projekt XXXX im Rahmen von NFDI4objects. Projektbeteiligte, Zielsetzung (verständlich!!!) etc. Im Folgenden wird erklärt, was genau Unsicherheiten und Vagheiten sind, der Unterschied von beidem erläutert und die Herausforderungen hinsichtlich …..</p>
+<p>Nach diesem Modul kennen Sie die relevantesten Münzdatenbanken, ihr Darstellungsschema und können Daten aus verschiedenen Quellen miteinander verknüpfen .</p>
+<p>Weiterführende Literatur mit link auf die Definitionspapers Was der Unterschied</p>
 
 
 <script type="ojs-module-contents">
@@ -563,18 +556,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../content/data_access.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3. Datenzugang</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../content/nfdi.html" class="pagination-link">
-        <span class="nav-page-text">3. Was ist die NFDI?</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

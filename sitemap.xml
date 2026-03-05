@@ -2,30 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://USERNAME.github.io/index.html</loc>
-    <lastmod>2025-11-27T15:03:32.061Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/nfdi.html</loc>
-    <lastmod>2025-11-27T15:03:32.684Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/scientific_data.html</loc>
-    <lastmod>2025-11-27T15:03:42.878Z</lastmod>
+    <lastmod>2026-03-05T16:00:45.290Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/content/index.html</loc>
-    <lastmod>2025-11-27T15:03:43.202Z</lastmod>
+    <lastmod>2026-03-05T16:00:45.927Z</lastmod>
   </url>
   <url>
-    <loc>https://USERNAME.github.io/content/progress.html</loc>
-    <lastmod>2025-11-27T15:03:43.452Z</lastmod>
+    <loc>https://USERNAME.github.io/content/fuzzy_wobbly.html</loc>
+    <lastmod>2026-03-05T16:00:46.212Z</lastmod>
   </url>
   <url>
-    <loc>https://USERNAME.github.io/content/data_access.html</loc>
-    <lastmod>2025-11-27T15:03:43.689Z</lastmod>
+    <loc>https://USERNAME.github.io/content/nfdi.html</loc>
+    <lastmod>2026-03-05T16:00:46.544Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/index_digital.html</loc>
+    <lastmod>2026-03-05T16:00:56.094Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/content/data_aggregation.html</loc>
-    <lastmod>2025-11-27T15:03:43.926Z</lastmod>
+    <lastmod>2026-03-05T16:00:56.379Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/scientific_data.html</loc>
+    <lastmod>2026-03-05T16:01:00.179Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/data_access.html</loc>
+    <lastmod>2026-03-05T16:01:00.439Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/progress.html</loc>
+    <lastmod>2026-03-05T16:01:00.695Z</lastmod>
   </url>
 </urlset>

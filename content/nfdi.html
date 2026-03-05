@@ -30,17 +30,17 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/data_access.html" rel="next">
-<link href="../content/scientific_data.html" rel="prev">
+<link href="../content/data_aggregation.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,6 +60,8 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Abschicken"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 </head>
@@ -96,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/nfdi.html">3. Was ist NFDI?</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/nfdi.html">🌐 II. Umgang mit vagen Daten</a></li><li class="breadcrumb-item"><a href="../content/nfdi.html">3. Was ist die NFDI?</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -119,33 +121,61 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Hauptseite</span></a>
+ <span class="menu-text">Hauptseite</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">🔍 I. Digitale Grundlagen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/index_digital.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Digitale Numismatik</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/scientific_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Forschungsdaten</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/nfdi.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">3. Was ist NFDI?</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/data_access.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Datenzugang</span></a>
+ <span class="menu-text">3. Datenzugang</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/data_aggregation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Datenverarbeitung</span></a>
+ <span class="menu-text">4. Datenverarbeitung</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">🌐 II. Umgang mit vagen Daten</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/nfdi.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">3. Was ist die NFDI?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -199,14 +229,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Veröffentlicht am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">27.11.2025</p>
+      <p class="date">05.03.2026</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Zuletzt geändert am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">27.11.2025</p>
+      <p class="date-modified">05.03.2026</p>
     </div>
   </div>
     
@@ -220,12 +250,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.nfdi.de/wp-content/uploads/2025/01/Base4NFDI_hell.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.nfdi.de/wp-content/uploads/2025/01/Base4NFDI_hell.png" class="img-fluid figure-img" alt="https://www.nfdi.de/verein"></p>
 <figcaption class="figure-caption">Grafik Aufbau der NFDI</figcaption>
 </figure>
 </div>
-<p>Bildquelle: https://www.nfdi.de/verein Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:</p>
-<p>Quelle: https://www.nfdi.de/konsortien/nfdi4objects   ## Vorbereitung: Was sind Forschungsdaten</p>
+<p>Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:</p>
+<p><img src="https://www.nfdi.de/wp-content/uploads/2023/12/TAs-Bildmarke.png" class="img-fluid" alt="https://www.nfdi.de/konsortien/nfdi4objects">   ## Vorbereitung: Was sind Forschungsdaten</p>
 <p>Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.</p>
 <p>Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (<a href="https://www.nfdi4objects.net">NFDI4Objects</a>).</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -340,9 +370,34 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+{"contents":[]}
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../content";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -622,14 +677,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/scientific_data.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2. Forschungsdaten</span>
+      <a href="../content/data_aggregation.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4. Datenverarbeitung</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/data_access.html" class="pagination-link">
-        <span class="nav-page-text">4. Datenzugang</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

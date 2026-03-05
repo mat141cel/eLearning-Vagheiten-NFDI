@@ -22,7 +22,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
   
       - name: Install Quarto Live Extension
-        run: quarto add r-wasm/quarto-live --no-promt
+        run: quarto add r-wasm/quarto-live --no-prompt
 
       - name: Install dependencies
         run: pip install -r requirements.txt

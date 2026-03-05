@@ -17,6 +17,11 @@ Alle der folgenden Münzen aus unterschiedlichen Epochen haben beispielsweise da
 
 ```{python}
 #| echo: false
+#| label: fig-muenzdaten
+#| fig-cap: "**Münzen und ihre zugehörigen Datenfelder.**  
+#|   URLs zu den Originaldatensätzen von links nach rechts: \
+#|   https://ikmk.smb.museum/object?id=18214977, https://nat.museum-digital.de/object/73659, \
+#|   https://ikmk.smb.museum/object?id=18203837."
 import matplotlib.pyplot as plt
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from pathlib import Path
@@ -71,21 +76,16 @@ plt.ylim(0,4)
 plt.tight_layout()
 plt.show()
 ```
-: Münzen und ihre Datenfelder {#tbl-muenzdaten tbl-colwidths="[20,10,10,20]"}
-Links: https://ikmk.smb.museum/object?id=18214977 
-Mitte: https://nat.museum-digital.de/object/73659
-Rechts: https://ikmk.smb.museum/object?id=18203837
-############ TODO: Wie sinnvoll hier zitieren
-
-
 
 ::: {.callout-note}
-Dieses Bild wurde nicht händisch in einem Bildbearbeitungsprogramm erstellt. Es wurde direkt in Python programmiert und nutzt die Daten, die direkt aus den Münzdatenbanken kommen. Am Ende dieses und des nächsten Moduls können wir Schaubilder wie das obere mit Münzen aus verschiedenen Datenbanken selbst erstellen. 
+Dieses Bild wurde nicht händisch erstellt, sondern mithilfe der Daten aus bestehenden Münzdatenbanken programmiert. Am Ende dieses und des nächsten Moduls lernen Sie, Schaubilder wie dieses mit Münzen aus verschiedenen Datenbanken selbst erstellen. 
 :::
 
 ## Wie können wir uns Münzdaten vorstellen
 
-Die einfachste Form, Münzdaten strukturiert zu speichern, ist eine Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden. Das folgende Beispiel zeigt dabei, dass eine Tabelle für Münzdaten nicht ausreicht. 
+Die einfachste Form, Münzdaten strukturiert zu speichern, ist als Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden. 
+
+Die folgende Tabelle zeigt einen Ausschnitt aus einem solchen Münzdatensatz. Das Feld Name identifiziert dabei eindeutig den Aureus des Postumus, der mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29.
 
 
 | Name | Gewicht| Durchmesser | Webportal
@@ -94,7 +94,7 @@ Die einfachste Form, Münzdaten strukturiert zu speichern, ist eine Tabelle. Die
 
 : Münzdaten in tabellarischer Form {#tbl-muenzdaten tbl-colwidths="[15,10,10,15]"}
 
-Das Feld Name weißt dabei eindeutig auf den Aureus des Postumus hin, die mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29.
+
  
 ::: {.callout-note collapse="true"}
 ## Was sind Typenkataloge?
@@ -208,6 +208,10 @@ Diese Darstellungsweise erleichtert die Beantwortung von komplexen Fragestellung
 
 
 Man nehme die Fragestellung: In einem Münzfund wurden zahlreiche Münzen unterschiedlicher römischer Kaiser gefunden. Uns interessiert, ob diese Münzen eher am Anfang oder am Ende der Regierungszeit der jeweiligen Kaiser geprägt wurden. 
+
+:::{.callout-note}
+Teilweise haben besitzen auch bereits bestehende Datenbanken die Funktion, sich den Datensatz als Graphen anzeigen zu lassen Beispielsweise die Datenbank [Museum Digital](https://nat.museum-digital.de) Zur Nutzung dieser Funktion, navigieren Sie zu einem Datensatz, beispielsweise dem der [oben gezeigten Münze](https://nat.museum-digital.de/object/73659) und klicken Sie direkt unter dem Bild auf den Reiter Graphenansicht.
+:::
 
 ### Was ist eine Ontologie?
 

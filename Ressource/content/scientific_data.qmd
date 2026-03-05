@@ -104,7 +104,7 @@ Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art
 Es ergibt Sinn, die Informationen, die die Münze mit anderen Münzen des gleichen Typs teiltm Münztyp zugeordnet werden, in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.
 
 
-## Übung 2: Mit einer Typreferenz verknüpfte Daten herausfinden
+### Übung 2: Mit einer Typreferenz verknüpfte Daten herausfinden
 Navigieren Sie in einem neuen Tab zu einem Referenzportal wie [CRRO](http://numismatics.org/crro), [OCRE](http://numismatics.org/ocre) oder [Pella](http://numismatics.org/pella). Suchen Sie darin nach einem Münztyp und nach einer Münze. Geben sie beide in die folgende Python-Zelle ein und führen Sie sie aus.
 
 ### TODO kleines GUIDE wo lassen sich Münztypen finden

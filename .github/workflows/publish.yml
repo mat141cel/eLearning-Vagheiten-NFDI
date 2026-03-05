@@ -18,13 +18,11 @@ jobs:
           python-version: 3.12
           cache: 'pip' # <-- built-in caching of pip deps (simplest way)
       
-      - name: Install Quarto
-        run: |
-          wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.60/quarto-1.4.60-linux-amd64.deb
-          sudo dpkg -i quarto-1.4.60-linux-amd64.deb
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
   
       - name: Install Quarto Live Extension
-        run: quarto add r-wasm/quarto-live --no-ask
+        run: quarto add r-wasm/quarto-live
 
       - name: Install dependencies
         run: pip install -r requirements.txt

@@ -70,7 +70,6 @@ Der Kurs nutzt **Quarto Live**, das die folgenden Vorteile bietet:
 ## Hinweis zum Datenschutz
 Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses, noch für Dritte.
 :::
-:::
 
 ### Warum Python?
 Der Kurs nutzt interaktive Elemente in der Programmiersprache **Python**. Python wird aufgrund der folgenden Eigenschaften häufig im Umgang mit Daten eingesetzt.

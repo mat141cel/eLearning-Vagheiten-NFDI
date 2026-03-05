@@ -23,27 +23,38 @@ website:
     search: true
     title: "Alle Kursseiten" # doesnt work, why
     contents:
-      - text: "1. Hauptseite"
+      - text: "Hauptseite"
         href: content/index.qmd
-      - text: "2. Forschungsdaten"
-        href: content/scientific_data.qmd
-      - text: "3. Was ist NFDI?"
-        href: content/nfdi.qmd
-      - text: "4. Datenzugang"
-        href: content/data_access.qmd
-      - text: "5. Datenverarbeitung"
-        href: content/data_aggregation.qmd
+      - section: "🔍 I. Digitale Grundlagen"
+        contents:
+          - text: "1. Digitale Numismatik"
+            href: content/index_digital.qmd
+          - text: "2. Forschungsdaten"
+            href: content/scientific_data.qmd
+          - text: "3. Datenzugang"
+            href: content/data_access.qmd
+          - text: "4. Datenverarbeitung"
+            href: content/data_aggregation.qmd
+      - section: "🌐 II. Umgang mit vagen Daten"
+        contents:
+          - text: "3. Was ist die NFDI?"
+            href: content/nfdi.qmd
+          
+
   page-navigation: true
 
 
 # Formatierung
 format: 
-  html:
+  live-html:
     # Inhaltsverzeichnis
     toc: true
     toc-title: "Auf Dieser Seite"
     toc-location: right
     toc_float: true    
+
+    # Python Module Styles
+    highlight-style: flatly
 
     embed-resources: false
     brand: brand/_n4o_brand.yml
@@ -51,7 +62,7 @@ format:
     number-sections: false
     anchor-sections: true
     code-overflow: scroll
-    highlight-style: gruvbox
+
     code-line-numbers: true
     respect-user-color-scheme: true
     cap-location: bottom

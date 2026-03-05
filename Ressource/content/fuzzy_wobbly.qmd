@@ -1,0 +1,41 @@
+---
+title: "Unsichere Daten"
+subtitle: "hier geht es darum, das unsichere und vage Aussagen in Münzdaten zu erkennen"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+---
+
+
+## Was sind Unsicherheiten?
+
+Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Münzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. 
+
+Um Unsicherheiten und Vagheiten darzustellen, wird bisher meist auf Freitextfelder zurückgegriffen, in dem die Benutzer beliebige Aussagen eintragen können. 
+
+Mit der Deutung dieser Daten beschäftigt sich das Projekt "Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts" bei NFDI4objects.
+
+Beispiele:
+
+die Münze: https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099
+
+Die Datierung dieser Münze lautet nach 274 n. Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n. Chr. datiert wird. Es ist demnach nur ein (Terminus Post Quem)[https://en.wikipedia.org/wiki/Terminus_post_quem] angegeben, und es ist unsicher, bis wann diese Münzen noch geprägt wurden.
+
+
+
+
+
+sie können also keine Unsicherheiten in Daten darstellen. Das bedeutet bei der Digitalisierung von Münzen eine Herausforderung, d. Denn Unsicherheiten und Vagheiten sind elementar, um Münzdaten richtig erfassen und später bewerten und deuten zu können.
+
+ Mit dieser Herausforderung befasst sich das Projekt XXXX im Rahmen von NFDI4objects. Projektbeteiligte, Zielsetzung (verständlich!!!) etc.
+Im Folgenden wird erklärt, was genau Unsicherheiten und Vagheiten sind, der Unterschied von beidem erläutert und die Herausforderungen hinsichtlich  …..
+
+ Nach diesem Modul kennen Sie die relevantesten Münzdatenbanken, ihr Darstellungsschema und können Daten aus verschiedenen Quellen miteinander verknüpfen .
+
+Weiterführende Literatur mit link auf die Definitionspapers
+Was der Unterschied
+
+
+
+

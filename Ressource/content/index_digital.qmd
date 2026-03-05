@@ -1,0 +1,132 @@
+---
+title: "Digitale Numismatik"
+filename: index
+subtitle: "Welche Relevanz haben Forschungsdaten für die Numismatik?"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+## Motivation
+In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen [Grundwissenschaften](https://de.wikipedia.org/wiki/Historische_Hilfswissenschaften) bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals [Numiscience.de](https://pecunia.zaw.uni-heidelberg.de/NumiScience/numismatische-toolbox).
+
+Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.
+
+## Lernziele
+Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in [NFDI](https://www.nfdi.de/), 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.
+
+
+<div class="text-collage">
+  <a href="https://chre.ashmus.ox.ac.uk/hoard/4155" target="_blank" style="background-image: url('../assets/img/hortfund_karte.jpg');">Geoinformationen</a>
+  <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/ludwig-in-3d" target="_blank" style="background-image: url('../assets/img/3D_Modell.jpg');">3D-Modelle</a>
+  <a href="https://colab.research.google.com/drive/1QpHpuCaGdZ56KoUY32a6GITzvD9AD8fH" target="_blank" style="background-image: url('../assets/img/object_recognition.jpg');">KI-Objekterkennung</a>
+  <a href="https://zenodo.org/records/11187474" target="_blank" style="background-image: url('../assets/img/statistics.jpg');">Statistiken</a>
+</div>
+
+## Aufbau des Kurses
+Das Modul befindet sich derzeit im Aufbau und besteht aus drei Elementen.
+
+
+### Interaktive Analysen
+
+Zu jedem Modul gibt es einen begleitenden Python-Code der interaktiv ausgeführt werden kann. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. 
+
+Keine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen. 
+
+Die Übungen sind so aufgebaut, dass Sie manche Werte verändern, um die richtigen Ergebnisse zu erhalten. Diese Werte sind im Code mit "<------" gekennzeichnet.
+
+#### Übung 1: Münzen von Hadrian identifizieren
+
+Navigieren Sie in einem neuen Tab zu einem Referenzportal wie [CRRO](http://numismatics.org/crro), [OCRE](http://numismatics.org/ocre) oder [Pella](http://numismatics.org/pella). Suchen Sie darin nach einer Münze von Hadrian und kopieren Sie die URLs der Resulate das markierte Feld im folgenden Code. Versteht der Code, ob die Münze von Hadrian ist? Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?
+
+
+```{pyodide}
+#| exercise: ex_1 
+url = ""  # <------ Hier URL zwischen die Anführungszeichen (!) einfügen
+
+if "numismatics.org/ocre" not in url:
+    if "pella" in url:
+      print("Pella ist ein Portal für hellenistische Prägungen. Hier gibt es keine Münzen von Hadrian.")
+    if "crro" in url:
+      print("CRRO ist ein Portal für Prägungen aus der römischen Republik. Hier gibt es keine Münzen von Hadrian.")
+else:
+  if "hdn" in url:
+    print(f"Richtig, {url} ist eine Münze von Hadrian!")
+  else:
+    print("Dieser Typ ist zwar aus Ocre, aber diese Münze ist nicht von Hadrian.")
+```
+
+::: { .hint exercise="ex_1" title="Hinweis anzeigen"}
+**Hinweis:** Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten. Welches Kürzel in den URLs könnte auf Hadrian verweisen?
+:::
+
+::: { .solution exercise="ex_1" }
+**Lösung:**
+Nur OCRE enthält Münzen von Hadrian. Diese können durch das "hdn" in der URL identifiziert werden. Hier ist ein Beispiel für eine gültige URL eines Hadrian-Typs:
+```python
+url = "http://numismatics.org/ocre/id/ric.2_3(2).hdn.744"
+```
+:::
+
+
+## Quiz
+Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.
+
+<div id="intro_quiz"></div>
+
+<script src="/assets/js/quiz.js"></script>
+<link rel="stylesheet" href="/assets/css/quiz.css">
+
+<script>
+// Define quiz questions
+window["intro_quiz_data"] = [
+  {
+    question: "Wie kann der Kurs interaktive Analysen ausführen?",
+    choices: [
+      { text: "Direkt in diesem Kurs", feedback: "✅ Richtig! Keine weiteren Programme müssen installiert werden." },
+      { text: "Durch Kopieren in Offline-Software", feedback: "❌ Falsch! Der gesamte Kurs ist browserbasiert." },
+      { text: "Nur auf Windows-Geräten", feedback: "❌ Falsch! Auch Apple, Linux und sogar Android- Geräte können den Code ausführen." }
+    ]
+  },
+  {
+    question: "Wie wird der Fortschritt des Kurses gespeichert?",
+    choices: [
+      { text: "Auf einem Server der Universität", feedback: "❌ Falsch! Alle Daten bleiben lokal in Ihrem Browser." },
+      { text: "In der Cloud von Google", feedback: "❌ Falsch! Alle Daten bleiben lokal im Browser." },
+      { text: "Lokal im Browser", feedback: "✅ Richtig! Der Fortschritt wird nur im Browser gespeichert und wird nirgendwohin gesendet." },
+      { text: "Über Cookies auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch und speichert keine Cookies." }
+    ]
+  },
+  {
+    question: "Welche Herausforderung wird in der Numismatik bei digitalisierten Beständen beschrieben?",
+    choices: [
+      { text: "Alle Daten sind automatisch miteinander verknüpft", feedback: "❌ Falsch! Die Bestände sind heterogen und schwer kombinierbar." },
+      { text: "Verschiedene Museen haben unterschiedliche Softwaresysteme", feedback: "✅ Richtig! Unterschiedliche Systeme erschweren den Austausch." },
+      { text: "Digitale Münzen ersetzen physische Münzen", feedback: "❌ Falsch! Digitalisierung ergänzt nur die Forschung." },
+      { text: "Es gibt keine Herausforderung, alles ist standardisiert", feedback: "❌ Falsch! Standardisierung ist gerade eine Herausforderung." }
+    ]
+  },
+  {
+    question: "Wie kann überprüft werden, ob ein Link zu einem Typenportal eine Reichsprägung von Hadrian ist?",
+    choices: [
+      { text: "OCRE enthält ausschließlich Münzen von Hadrian", feedback: "❌ Falsch! OCRE enthält Münzen aus der gesamten römischen Kaiserzeit: von Augustus bis Zenon." },
+      { text: "Die URL enthält 'https://numismatics.org/ocre/hadrian'", feedback: "❌ Falsch! OCRE hat ordnet die Münzen zuerst nach der Bandnummer des RIC." },
+      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hadrian'", feedback: "❌ Falsch! Jeder Kaiser hat ein eigenes Kürzel." },
+      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hdn'", feedback: "✅ Richtig" }
+    ]
+  }
+];
+if (!localStorage.getItem("progress")) {
+    localStorage.setItem("progress", "0");
+}
+document.addEventListener("DOMContentLoaded", () => {
+    renderQuiz("intro_quiz", window["intro_quiz_data"], {
+        quizKey: "intro_quiz_completed",
+        onComplete: () => console.log("Quiz completed!")
+    });
+});
+</script>
+
+Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter [mein Fortschritt](progress.html) ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul

@@ -1,7 +1,7 @@
 ---
-title: "Numismatik und Digital Humanities"
 filename: index
-subtitle: "Welche Relevanz haben Forschungsdaten für die Numismatik?"
+title: "Über diesen Kurs"
+subtitle: "Einführung in das interaktive Lernmodul"
 lang: de
 date: today
 date-modified: last-modified
@@ -9,89 +9,108 @@ date-format: "DD.MM.YYYY"
 css: /assets/css/collage.css
 ---
 
-## Motivation
-In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen [Grundwissenschaften](https://de.wikipedia.org/wiki/Historische_Hilfswissenschaften) bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals [Numiscience.de](https://pecunia.zaw.uni-heidelberg.de/NumiScience/numismatische-toolbox).
+## Warum dieser Kurs?
 
-Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.
-
-## Lernziele
-Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in [NFDI](https://www.nfdi.de/), 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.
+In der [Numismatik](https://de.wikipedia.org/wiki/Numismatik) ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.
 
 
-<div class="text-collage">
-  <a href="https://chre.ashmus.ox.ac.uk/hoard/4155" target="_blank" style="background-image: url('../assets/img/hortfund_karte.jpg');">Geoinformationen</a>
-  <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/ludwig-in-3d" target="_blank" style="background-image: url('../assets/img/3D_Modell.jpg');">3D-Modelle</a>
-  <a href="https://colab.research.google.com/drive/1QpHpuCaGdZ56KoUY32a6GITzvD9AD8fH" target="_blank" style="background-image: url('../assets/img/object_recognition.jpg');">KI-Objekterkennung</a>
-  <a href="https://zenodo.org/records/11187474" target="_blank" style="background-image: url('../assets/img/statistics.jpg');">Statistiken</a>
-</div>
+## Aufbau des Moduls
 
-## Aufbau des Kurses
-Das Modul befindet sich derzeit im Aufbau.
+::::: {.grid}
 
-### Konzepte und Erklärungen
-Dieser Kurs kann komplett im Browser absolviert werden. Jede Modulseite endet entweder mit einem Quiz über die Inhalte der Seite oder zu recherchierende Konzepte werden abgefragt. Nachdem Sie das Quiz erfolgreich abgeschlossen haben, wird Ihr Fortschritt gespeichert und kann auf der Seite ["Mein Fortschritt"](progress.html) angesehen werden. 
+:::: {.g-col-12 .g-col-md-6}
+
+::: {.card}
+### 1. Digitale Numismatik
+
+**Inhalt**  
+Grundlagen zu Forschungsdaten, Datenformaten und Portalrecherche  
+
+**Warum wichtig?**  
+Zeigt, wo die Daten herkommen und wie man sie findet
+:::
+
+::::
+
+:::: {.g-col-12 .g-col-md-6}
+
+::: {.card}
+### 2. Vagheiten
+
+**Inhalt**  
+Wissenschaftlicher Umgang mit unsicheren bzw. lückenhaften Daten  
+
+**Warum?**  
+Vermittelt, wie man Unsicherheit transparent macht
+:::
+
+::::
+
+:::::
+
+::: {.callout-tip}
+Die Module können in beliebiger Reihenfolge absolviert werden.  
+Sie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.
+:::
+
+
+## So funktioniert dieser Kurs
+
+Der Kurs nutzt **Quarto Live**, das die folgenden Vorteile bietet:
+
+|   |   |
+|---|---|
+| Web‑basiert   | Der Kurs läuft komplett im Browser (Chrome, Firefox, Edge …). |
+| Sicher        | Der Code wird in einer isolierten Web‑Assembly‑Umgebung ausgeführt – keine Daten verlassen Ihren Rechner. |
+| Interaktiv    | Sie können Code‑Zellen anpassen und sofort das Ergebnis sehen. |
+
+> **Mehr erfahren:** <https://quarto.org/docs/computations/quarto-live.html>
 
 ::: {.callout-important}
 ## Hinweis zum Datenschutz
-Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses , noch für Dritte.
+Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses, noch für Dritte.
+:::
 :::
 
-### Interaktive Analysen mit Google Colab
+### Warum Python?
+Der Kurs nutzt interaktive Elemente in der Programmiersprache **Python**. Python wird aufgrund der folgenden Eigenschaften häufig im Umgang mit Daten eingesetzt.
 
-Zu jedem Modul gibt es den begleitenden Python-Code in einer ausführbaren Verlinkung zu Google Colab (Google-Account ist erforderlich). Google Colab eignet sich gut, um ohne vorherige Installationen Codezeilen auszuführen. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. 
-  
-Jede Modulseite enthält ein Colab-Symbol. Klicken Sie auf das Symbol und schließen Sie die erste Lektion in Colab ab. Das ist notwendig, um die folgenden Quizfragen richtig zu beantworten. 
+|   |   |
+|---|---|
+| Einfach zu lesen   | Die Syntax ist fast wie ein Satz in natürlicher Sprache. |
+| Große Community    | Viele Beispiele und Tutorials, speziell für die Digital Humanities. |
+| Flexibilität       | Mit Bibliotheken wie `pandas`, `numpy` und `matplotlib` können Daten einfach verarbeitet und visualisiert werden. |
 
-<!-- this link to colab can used on other sites, remember to define filename in top yaml -->
-[![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mat141cel/eLearning-Vagheiten-NFDI/blob/main/Ressource/notebooks/_{{< meta filename >}}.ipynb)
+> **Einsteiger‑Tutorial:** <https://www.python.org/about/gettingstarted/>  
 
 
 
-## Quiz
-Haben Sie Sich die interaktiven Kurselemente in Colab angesehen? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.
+## Quiz: Kurs-Check
+Haben Sie verstanden, wie der Kurs funktioniert?
 
-<div id="intro_quiz"></div>
+<div id="index_quiz"></div>
 
 <script src="/assets/js/quiz.js"></script>
 <link rel="stylesheet" href="/assets/css/quiz.css">
 
 <script>
 // Define quiz questions
-window["intro_quiz_data"] = [
+window["index_quiz_data"] = [
   {
     question: "Wie kann der Kurs interaktive Analysen ausführen?",
     choices: [
-      { text: "Direkt auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch." },
-      { text: "Durch Kopieren des Codes in Google Colab", feedback: "✅ Richtig! Colab erlaubt interaktives Ausführen der Python-/R-Codezellen." },
-      { text: "Mit Offline-Software nur", feedback: "❌ Falsch! Der Kurs ist browserbasiert, Colab wird genutzt." },
-      { text: "Nur auf mobilen Geräten", feedback: "❌ Falsch! Desktop und mobile Browser funktionieren." }
+      { text: "Direkt in diesem Kurs", feedback: "✅ Richtig! Keine weiteren Programme müssen installiert werden." },
+      { text: "Durch Kopieren in Offline-Software", feedback: "❌ Falsch! Der gesamte Kurs ist browserbasiert." },
+      { text: "Nur auf Windows-Geräten", feedback: "❌ Falsch! Auch Apple, Linux und sogar Android- Geräte können den Code ausführen." }
     ]
   },
   {
     question: "Wie wird der Fortschritt des Kurses gespeichert?",
     choices: [
-      { text: "Auf einem Server der Universität", feedback: "❌ Falsch! Alle Daten bleiben lokal im Browser." },
-      { text: "In der Cloud von Google ohne Zustimmung", feedback: "❌ Falsch! Nur Colab speichert temporär, Quarto nutzt lokalStorage." },
-      { text: "Lokal im Browser über localStorage", feedback: "✅ Richtig! Der Fortschritt wird nur im Browser gespeichert." },
+      { text: "Auf einem Server der Universität", feedback: "❌ Falsch! Alle Daten bleiben lokal in Ihrem Browser." },
+      { text: "In der Cloud von Google", feedback: "❌ Falsch! Alle Daten bleiben lokal im Browser." },
+      { text: "Lokal im Browser", feedback: "✅ Richtig! Der Fortschritt wird nur im Browser gespeichert und wird nirgendwohin gesendet." },
       { text: "Über Cookies auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch und speichert keine Cookies." }
-    ]
-  },
-  {
-    question: "Welche Herausforderung wird in der Numismatik bei digitalisierten Beständen beschrieben?",
-    choices: [
-      { text: "Alle Daten sind automatisch miteinander verknüpft", feedback: "❌ Falsch! Die Bestände sind heterogen und schwer kombinierbar." },
-      { text: "Verschiedene Museen haben unterschiedliche Softwaresysteme", feedback: "✅ Richtig! Unterschiedliche Systeme erschweren den Austausch." },
-      { text: "Digitale Münzen ersetzen physische Münzen", feedback: "❌ Falsch! Digitalisierung ergänzt nur die Forschung." },
-      { text: "Es gibt keine Herausforderung, alles ist standardisiert", feedback: "❌ Falsch! Standardisierung ist gerade eine Herausforderung." }
-    ]
-  },
-  {
-    question: "Wie kann überprüft werden, ob ein Link zu einem Typenportal eine Reichsprägung von Hadrian ist?",
-    choices: [
-      { text: "OCRE enthält ausschließlich Münzen von Hadrian", feedback: "❌ Falsch! OCRE enthält Münzen aus der gesamten römischen Kaiserzeit: von Augustus bis Zenon." },
-      { text: "Die URL enthält 'https://numismatics.org/ocre/hadrian'", feedback: "❌ Falsch! OCRE hat ordnet die Münzen zuerst nach der Bandnummer des RIC." },
-      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hadrian'", feedback: "❌ Falsch! Jeder Kaiser hat ein eigenes Kürzel." },
-      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hdn'", feedback: "✅ Richtig" }
     ]
   }
 ];
@@ -99,19 +118,26 @@ if (!localStorage.getItem("progress")) {
     localStorage.setItem("progress", "0");
 }
 document.addEventListener("DOMContentLoaded", () => {
-    renderQuiz("intro_quiz", window["intro_quiz_data"], {
-        quizKey: "intro_quiz_completed",
+    renderQuiz("index_quiz", window["index_quiz_data"], {
+        quizKey: "index_quiz_completed",
         onComplete: () => console.log("Quiz completed!")
     });
 });
 </script>
 
-Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter [mein Fortschritt](progress.html) ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul
 
 ## Förderung {.appendix}
 
 Diese ELearning-Materialien sind in dem von der DFG geförderten Projekt [NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"} entstanden und wurden an der [Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik)](https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts) entwickelt.
 
-<img src="/brand/logos/n4o_logo_verlauf_claim_lang.svg" style="max-width:50%; height:auto;">
+::: {.columns}
+::: {.column width="40%"}
+<img src="/brand/logos/n4o_logo_verlauf_claim_lang.svg"
+     style="max-width:100%; height:auto;">
+:::
 
-<img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" style="max-width:50%; height:auto;">
+::: {.column width="60%"}
+<img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg"
+     style="max-width:100%; height:auto;">
+:::
+:::

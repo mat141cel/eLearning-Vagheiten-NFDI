@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://USERNAME.github.io/index.html</loc>
-    <lastmod>2026-03-05T16:04:31.225Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/index.html</loc>
-    <lastmod>2026-03-05T16:04:31.869Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/fuzzy_wobbly.html</loc>
-    <lastmod>2026-03-05T16:04:32.161Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/nfdi.html</loc>
-    <lastmod>2026-03-05T16:04:32.509Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/index_digital.html</loc>
-    <lastmod>2026-03-05T16:04:41.050Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/data_aggregation.html</loc>
-    <lastmod>2026-03-05T16:04:41.328Z</lastmod>
+    <loc>https://USERNAME.github.io/content/progress.html</loc>
+    <lastmod>2026-03-05T18:39:50.225Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/content/scientific_data.html</loc>
-    <lastmod>2026-03-05T16:04:45.098Z</lastmod>
+    <lastmod>2026-03-05T18:39:50.225Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/index_digital.html</loc>
+    <lastmod>2026-03-05T18:39:50.225Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/fuzzy_wobbly.html</loc>
+    <lastmod>2026-03-05T18:39:50.225Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/index.html</loc>
+    <lastmod>2026-03-05T18:39:50.225Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/index.html</loc>
+    <lastmod>2026-03-05T18:39:50.225Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/nfdi.html</loc>
+    <lastmod>2026-03-05T18:39:50.225Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/data_aggregation.html</loc>
+    <lastmod>2026-03-05T18:39:50.225Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/content/data_access.html</loc>
-    <lastmod>2026-03-05T16:04:45.362Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/progress.html</loc>
-    <lastmod>2026-03-05T16:04:45.605Z</lastmod>
+    <lastmod>2026-03-05T18:39:50.224Z</lastmod>
   </url>
 </urlset>

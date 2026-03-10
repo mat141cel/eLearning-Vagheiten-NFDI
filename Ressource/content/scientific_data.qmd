@@ -100,7 +100,7 @@ Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art
 : Münzdaten in tabellarischer Form {#tbl-muenzdaten tbl-colwidths="[15,10,10,15]"}
 
 
-Es ergibt Sinn, die Informationen, die die Münze mit anderen Münzen des gleichen Typs teiltm Münztyp zugeordnet werden, in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.
+Es ergibt Sinn, die Informationen, die die Münze mit anderen Münzen des gleichen Typs teilt, dem Münztyp zugeordnet in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.
 
 
 ### Übung 2: Mit einer Typreferenz verknüpfte Daten herausfinden
@@ -115,43 +115,109 @@ Wird im Folgenden von Münzen und Münztypen gesprochen, ist die jeweilige URL g
 
 Wie verändert sich die Tabelle, je nachdem ob Sie eine URL zu einem Münztyp oder zu einer Münze eingegeben haben? Prüfen Sie den jeweiligen Output und überlegen Sie, warum es Sinn ergibt, warum die Daten in den jeweiligen Tabellen gespeichert sind.
 
+<style>
+/* This targets the specific container you found */
+#exercise-loading-indicator,
+.exercise-loading-indicator,
+.exercise-loading-details {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Also hides the pulsing spinner accompanying the text */
+.spinner-grow {
+    display: none !important;
+}
+</style>
+
 
 ```{pyodide}
-#| envir: coin_data
 #| exercise: ex_2
-url = "" # <------ Hier URL zwischen die Anführungszeichen (!) einfügen
+url = "______"
 
+from IPython.display import display, HTML
+html = await get_coin_html(url)
+display(HTML(html))
+```
+
+
+```{pyodide}
+#| exercise: ex_2
+#| setup: true
+#| hide-output: true
 
 from pyodide.http import pyfetch
 import pandas as pd
 import urllib.parse
-from IPython.display import display, HTML
+from IPython.display import HTML
 
-raw_query = f"SELECT ?predicate ?object WHERE {{ <{url}> ?predicate ?object . }}"
-safe_query = urllib.parse.quote(raw_query)
-api_url = f"https://nomisma.org/query?query={safe_query}&output=json"
+async def fetch_coin_data(url):
+    """Fetch SPARQL data from Nomisma and return as DataFrame."""
+    url = url.strip()
+    if not url:
+        return None, "Bitte eine URL eingeben."
 
-# 4. Fetch
-res = await pyfetch(api_url, method="GET")
-if res.status == 200:
+    url = url.replace("https://", "http://")
+    raw_query = f"SELECT ?predicate ?object WHERE {{ <{url}> ?predicate ?object . }}"
+
+    # Step 4: Encode the query for URL
+    encoded_query = urllib.parse.quote(raw_query)
+
+    # Step 5: Build the full Nomisma API URL
+    api_url = f"http://nomisma.org/query?query={encoded_query}&output=json"
+
+    res = await pyfetch(api_url, method="GET")
+    if res.status != 200:
+        return None, f"Fehler beim Abrufen der Daten: HTTP {res.status}"
+    
     data = await res.json()
     rows = []
     for r in data['results']['bindings']:
         p = r['predicate']['value'].split('/')[-1].split('#')[-1]
         o = r['object']['value'].split('/')[-1].split('#')[-1]
         rows.append({"Attribute": p, "Value": o})
+    
     df = pd.DataFrame(rows)
     pd.set_option('display.max_colwidth', None)
-    display(HTML(f"<h3>Source: <a href='{url}' target='_blank'>{url}</a></h3>"))
-    display(HTML(df.to_html(index=False)))
+    return df, None
+
+async def get_coin_html(url):
+    """Return HTML string for display in exercise block."""
+    df, error = await fetch_coin_data(url)
+    html = f"<h3>Source: <a href='{url}' target='_blank'>{url}</a></h3>"
+    if df is not None and not df.empty:
+        html += df.to_html(index=False)
+    return html
 ```
 
 
-### Was sind Graphen?
 
-Sobald Münzdaten aus komplexen Verbindungen verschiedener Datenquellen bestehen, eignet sich eine andere Darstellungsform als Tabellen: Graphen. Bei Graphen gibt es nicht die Tabelle "Münzen" oder "Münztypen", die verschiedene Einträge enthalten. Stattdessen steht die einzelne Münze (über einen eindeutigen Identifikator, siehe forlgender Abschnitt "Normdaten") im Zentrum. Die Münze ist über beschriftete Pfeile mit den ihr zugeordneten Informationen verbunden. Die Beschriftungen der Pfeile entsprechen dabei den Namen der Tabellenspalten. Das können Sie im folgenden Codebeispiel überprüfen, indem Sie ihre URL aus dem vorigen Beispiel einfügen.  
 
 ```{pyodide}
+#| exercise: ex_2
+#| check: true
+
+# Trim and basic empty check
+if not url.strip() or url.strip() == "______":
+    result = {"correct": False, "message": "Bitte eine URL eingeben."}
+elif "http" not in url:
+    result = {"correct": False, "message": "Für diese URL wurden keine Daten gefunden."}
+
+result
+```
+
+
+## Was sind Graphen?
+
+Wie Sie bemerkt haben, werden Tabellen schnell unübersichtlich und es wird nicht unmittelbar deutlich, wie die Tabellen von Münztyp und Münze miteinander verbunden sind. Hier bietet sich eine Visualisierung als Graph an.  
+
+Bei Graphen gibt es nicht die Tabelle "Münzen" oder "Münztypen", die verschiedene Einträge enthalten. Stattdessen steht die einzelne Münze (über einen eindeutigen Identifikator, siehe forlgender Abschnitt "Normdaten") im Zentrum. Die Münze ist über beschriftete Pfeile mit den ihr zugeordneten Informationen verbunden. Die Beschriftungen der Pfeile entsprechen dabei den Namen der Tabellenspalten. Das können Sie im folgenden Codebeispiel überprüfen, indem Sie ihre URL aus dem vorigen Beispiel einfügen.  
+
+### Übung 3: Darstellung von Münzdaten als Graph
+
+```{pyodide}
+#| exercise: ex_3
 #| envir: coin_data
 
 url = ""   # <------ Hier URL zwischen die Anführungszeichen (!) einfügen
@@ -207,6 +273,21 @@ if res.status == 200:
     )
     plt.show()
 ```
+
+
+```{pyodide}
+#| exercise: ex_3
+#| check: true
+
+# Trim and basic empty check
+if not url.strip() or url.strip() == "______":
+    result = {"correct": False, "message": "Bitte eine URL eingeben."}
+elif "http" not in url:
+    result = {"correct": False, "message": "Für diese URL wurden keine Daten gefunden."}
+
+result
+```
+
 
 Diese Darstellungsweise erleichtert die Beantwortung von komplexen Fragestellungen
 

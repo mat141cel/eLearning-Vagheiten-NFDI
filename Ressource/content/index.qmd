@@ -1,6 +1,6 @@
 ---
 filename: index
-title: "Über diesen Kurs"
+title: "Digitale Numismatik"
 subtitle: "Einführung in das interaktive Lernmodul"
 lang: de
 date: today
@@ -11,42 +11,33 @@ css: /assets/css/collage.css
 
 ## Warum dieser Kurs?
 
-In der [Numismatik](https://de.wikipedia.org/wiki/Numismatik) ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.
+In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.
 
 
 ## Aufbau des Moduls
 
 ::::: {.grid}
-
 :::: {.g-col-12 .g-col-md-6}
-
 ::: {.card}
-### 1. Digitale Numismatik
-
-**Inhalt**  
-Grundlagen zu Forschungsdaten, Datenformaten und Portalrecherche  
-
-**Warum wichtig?**  
-Zeigt, wo die Daten herkommen und wie man sie findet
+::: {.card-body}
+### 1. Münzen Digital
+**Inhalt** Forschungsdaten und Portalrecherche  
+**Warum?** Datenquellen verstehen
 :::
-
+:::
 ::::
 
 :::: {.g-col-12 .g-col-md-6}
-
 ::: {.card}
-### 2. Vagheiten
-
-**Inhalt**  
-Wissenschaftlicher Umgang mit unsicheren bzw. lückenhaften Daten  
-
-**Warum?**  
-Vermittelt, wie man Unsicherheit transparent macht
+::: {.card-body}
+### 2. Vage Münzdaten
+**Inhalt** Umgang mit unsicheren Daten  
+**Warum?** Transparenz
 :::
-
+:::
 ::::
-
 :::::
+
 
 ::: {.callout-tip}
 Die Module können in beliebiger Reihenfolge absolviert werden.  
@@ -56,74 +47,32 @@ Sie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.
 
 ## So funktioniert dieser Kurs
 
-Der Kurs nutzt **Quarto Live**, das die folgenden Vorteile bietet:
+Dieser Kurs wurde mit **Quarto Live** geschrieben, das interaktive Übungen erlaubt.
 
+::: {.callout-note collapse="true"}
+## Mehr über den Kurs in Quarto Live
 |   |   |
 |---|---|
 | Web‑basiert   | Der Kurs läuft komplett im Browser (Chrome, Firefox, Edge …). |
 | Sicher        | Der Code wird in einer isolierten Web‑Assembly‑Umgebung ausgeführt – keine Daten verlassen Ihren Rechner. |
 | Interaktiv    | Sie können Code‑Zellen anpassen und sofort das Ergebnis sehen. |
 
-> **Mehr erfahren:** <https://quarto.org/docs/computations/quarto-live.html>
-
-::: {.callout-important}
-## Hinweis zum Datenschutz
-Alle Daten werden lokal in Ihrem Browser gespeichert. Es gibt keine Möglichkeit, sie einzusehen, weder für den Autor diese Kurses, noch für Dritte.
+**Mehr erfahren:** <https://quarto.org/docs/computations/quarto-live.html>
 :::
 
-### Warum Python?
-Der Kurs nutzt interaktive Elemente in der Programmiersprache **Python**. Python wird aufgrund der folgenden Eigenschaften häufig im Umgang mit Daten eingesetzt.
 
+Die interaktiven Elemente des Kurses nutzen die Programmiersprache **Python**. Dieser Kurs erfordert keine Informatikkentnisse, wenn Sie aber mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt.  
+
+::: {.callout-note collapse="true"}
+## Warum Python lernen?
 |   |   |
 |---|---|
 | Einfach zu lesen   | Die Syntax ist fast wie ein Satz in natürlicher Sprache. |
 | Große Community    | Viele Beispiele und Tutorials, speziell für die Digital Humanities. |
 | Flexibilität       | Mit Bibliotheken wie `pandas`, `numpy` und `matplotlib` können Daten einfach verarbeitet und visualisiert werden. |
 
-> **Einsteiger‑Tutorial:** <https://www.python.org/about/gettingstarted/>  
-
-
-
-## Quiz: Kurs-Check
-Haben Sie verstanden, wie der Kurs funktioniert?
-
-<div id="index_quiz"></div>
-
-<script src="/assets/js/quiz.js"></script>
-<link rel="stylesheet" href="/assets/css/quiz.css">
-
-<script>
-// Define quiz questions
-window["index_quiz_data"] = [
-  {
-    question: "Wie kann der Kurs interaktive Analysen ausführen?",
-    choices: [
-      { text: "Direkt in diesem Kurs", feedback: "✅ Richtig! Keine weiteren Programme müssen installiert werden." },
-      { text: "Durch Kopieren in Offline-Software", feedback: "❌ Falsch! Der gesamte Kurs ist browserbasiert." },
-      { text: "Nur auf Windows-Geräten", feedback: "❌ Falsch! Auch Apple, Linux und sogar Android- Geräte können den Code ausführen." }
-    ]
-  },
-  {
-    question: "Wie wird der Fortschritt des Kurses gespeichert?",
-    choices: [
-      { text: "Auf einem Server der Universität", feedback: "❌ Falsch! Alle Daten bleiben lokal in Ihrem Browser." },
-      { text: "In der Cloud von Google", feedback: "❌ Falsch! Alle Daten bleiben lokal im Browser." },
-      { text: "Lokal im Browser", feedback: "✅ Richtig! Der Fortschritt wird nur im Browser gespeichert und wird nirgendwohin gesendet." },
-      { text: "Über Cookies auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch und speichert keine Cookies." }
-    ]
-  }
-];
-if (!localStorage.getItem("progress")) {
-    localStorage.setItem("progress", "0");
-}
-document.addEventListener("DOMContentLoaded", () => {
-    renderQuiz("index_quiz", window["index_quiz_data"], {
-        quizKey: "index_quiz_completed",
-        onComplete: () => console.log("Quiz completed!")
-    });
-});
-</script>
-
+**Einsteiger‑Tutorial:** <https://www.python.org/about/gettingstarted/>  
+:::
 
 ## Förderung {.appendix}
 
@@ -131,12 +80,10 @@ Diese ELearning-Materialien sind in dem von der DFG geförderten Projekt [NFDI4O
 
 ::: {.columns}
 ::: {.column width="40%"}
-<img src="/brand/logos/n4o_logo_verlauf_claim_lang.svg"
-     style="max-width:100%; height:auto;">
+<img src="/brand/logos/n4o_logo_verlauf_claim_lang.svg"  style="max-width:100%; height:auto;">
 :::
 
 ::: {.column width="60%"}
-<img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg"
-     style="max-width:100%; height:auto;">
+<img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" style="max-width:100%; height:auto;">
 :::
 :::

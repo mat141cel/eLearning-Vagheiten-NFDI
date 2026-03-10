@@ -30,43 +30,110 @@ Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu
 Das Modul befindet sich derzeit im Aufbau und besteht aus drei Elementen.
 
 
-### Interaktive Analysen
+## Interaktive Analysen
 
-Zu jedem Modul gibt es einen begleitenden Python-Code der interaktiv ausgeführt werden kann. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. 
+Zu jedem Modul gibt es einen begleitenden Python-Code der interaktiv ausgeführt werden kann. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. Um die Übung zu starten, klicken Sie auf Run Code. (Sollte der Button ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint)
 
 Keine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen. 
 
-Die Übungen sind so aufgebaut, dass Sie manche Werte verändern, um die richtigen Ergebnisse zu erhalten. Diese Werte sind im Code mit "<------" gekennzeichnet.
 
-#### Übung 1: Münzen von Hadrian identifizieren
+### Übung 1: Münzen von Hadrian identifizieren
 
-Navigieren Sie in einem neuen Tab zu einem Referenzportal wie [CRRO](http://numismatics.org/crro), [OCRE](http://numismatics.org/ocre) oder [Pella](http://numismatics.org/pella). Suchen Sie darin nach einer Münze von Hadrian und kopieren Sie die URLs der Resulate das markierte Feld im folgenden Code. Versteht der Code, ob die Münze von Hadrian ist? Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?
+Navigieren Sie in einem neuen Tab zu einem Referenzportal wie [CRRO](http://numismatics.org/crro), [OCRE](http://numismatics.org/ocre) oder [Pella](http://numismatics.org/pella). Klicken Sie anschließend auf den Reiter "Browse" und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.
 
+::: {.callout-note collapse="true"}
+## Wie finde ich die Links?
+![1. Alle Münzen in den Datenbanken anzeigen](../assets/img/CRRO_how_to_browse.jpg)
+
+![2. Diesen Link kopieren (Rechtsklick -> Link-Adresse kopieren)](../assets/img/CRRO_how_to_extract_url.jpg)
+
+:::
+
+
+Führen Sie danach die folgende Codezelle mit "Run Code" aus und fügen Sie die URLs der Resultate zwischen die Anführungsstriche neben "url" ein. Führen Sie den Code nochnmal aus und überprüfen Sie den Output. Wie versteht der Code, ob der Link zu Münzen von Hadrian führt? Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?
+
+Nach dieser Übung haben Sie sich ein Bild gemacht, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.
+
+
+<style>
+/* This targets the specific container you found */
+#exercise-loading-indicator,
+.exercise-loading-indicator,
+.exercise-loading-details {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Also hides the pulsing spinner accompanying the text */
+.spinner-grow {
+    display: none !important;
+}
+</style>
 
 ```{pyodide}
-#| exercise: ex_1 
-url = ""  # <------ Hier URL zwischen die Anführungszeichen (!) einfügen
+#| exercise: ex_1
+url = "______"
 
 if "numismatics.org/ocre" not in url:
-    if "pella" in url:
-      print("Pella ist ein Portal für hellenistische Prägungen. Hier gibt es keine Münzen von Hadrian.")
-    if "crro" in url:
-      print("CRRO ist ein Portal für Prägungen aus der römischen Republik. Hier gibt es keine Münzen von Hadrian.")
+    result = "not_ocre"
+elif "hdn" in url:
+    result = "hadrian"
 else:
-  if "hdn" in url:
-    print(f"Richtig, {url} ist eine Münze von Hadrian!")
-  else:
-    print("Dieser Typ ist zwar aus Ocre, aber diese Münze ist nicht von Hadrian.")
+    result = "ocre_not_hadrian"
+```
+
+```{pyodide}
+#| exercise: ex_1
+#| setup: true
+import micropip
+await micropip.install('urllib', keep_going=True)
+
+pyodide, micropip, ipython, setup
+from urllib.parse import urlparse
+
+def validate(url):
+    if not isinstance(url, str) or url.strip() == "______":
+        return "empty"
+    p = urlparse(url.strip())
+    if not p.scheme or not p.netloc:
+        return "invalid"
+    return "ok"
+```
+
+```{pyodide}
+#| exercise: ex_1
+#| check: true
+
+v = validate(url)
+
+if v == "empty":
+    result = {"correct": False, "message": "Bitte eine URL eingeben."}
+elif v == "invalid":
+    result = {"correct": False, "message": "Das ist keine gültige URL."}
+elif "pella" in url:
+    result = {"correct": False, "message": "Pella enthält hellenistische Münzen, keine von Hadrian."}
+elif "crro" in url:
+    result = {"correct": False, "message": "CRRO enthält republikanische Münzen, keine von Hadrian."}
+elif "numismatics.org/ocre" not in url:
+    result = {"correct": False, "message": "Das ist keine URL aus CRRO / PELLA / OCRE"}
+elif "hdn" in url:
+    result = {"correct": True, "message": f"Richtig: {url} ist ein Hadrian-Typ."}
+else:
+    result = {"correct": False, "message": "Das ist eine Münze aus OCRE, aber nicht von Hadrian."}
+
+result
 ```
 
 ::: { .hint exercise="ex_1" title="Hinweis anzeigen"}
-**Hinweis:** Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten. Welches Kürzel in den URLs könnte auf Hadrian verweisen?
+**Hinweis:** Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten.  
+Welches Kürzel in den URLs könnte auf Hadrian verweisen?
 :::
 
 ::: { .solution exercise="ex_1" }
 **Lösung:**
 Nur OCRE enthält Münzen von Hadrian. Diese können durch das "hdn" in der URL identifiziert werden. Hier ist ein Beispiel für eine gültige URL eines Hadrian-Typs:
-```python
+```python 
 url = "http://numismatics.org/ocre/id/ric.2_3(2).hdn.744"
 ```
 :::
@@ -83,23 +150,6 @@ Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die f
 <script>
 // Define quiz questions
 window["intro_quiz_data"] = [
-  {
-    question: "Wie kann der Kurs interaktive Analysen ausführen?",
-    choices: [
-      { text: "Direkt in diesem Kurs", feedback: "✅ Richtig! Keine weiteren Programme müssen installiert werden." },
-      { text: "Durch Kopieren in Offline-Software", feedback: "❌ Falsch! Der gesamte Kurs ist browserbasiert." },
-      { text: "Nur auf Windows-Geräten", feedback: "❌ Falsch! Auch Apple, Linux und sogar Android- Geräte können den Code ausführen." }
-    ]
-  },
-  {
-    question: "Wie wird der Fortschritt des Kurses gespeichert?",
-    choices: [
-      { text: "Auf einem Server der Universität", feedback: "❌ Falsch! Alle Daten bleiben lokal in Ihrem Browser." },
-      { text: "In der Cloud von Google", feedback: "❌ Falsch! Alle Daten bleiben lokal im Browser." },
-      { text: "Lokal im Browser", feedback: "✅ Richtig! Der Fortschritt wird nur im Browser gespeichert und wird nirgendwohin gesendet." },
-      { text: "Über Cookies auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch und speichert keine Cookies." }
-    ]
-  },
   {
     question: "Welche Herausforderung wird in der Numismatik bei digitalisierten Beständen beschrieben?",
     choices: [

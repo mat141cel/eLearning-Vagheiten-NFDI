@@ -25,10 +25,9 @@ website:
     contents:
       - text: "Hauptseite"
         href: content/index.qmd
-      - section: "🔍 I. Digitale Grundlagen"
+      - section: "🔍 I. Digitale Numismatik"
+        href: content/index_digital.qmd
         contents:
-          - text: "1. Digitale Numismatik"
-            href: content/index_digital.qmd
           - text: "2. Forschungsdaten"
             href: content/scientific_data.qmd
           - text: "3. Datenzugang"

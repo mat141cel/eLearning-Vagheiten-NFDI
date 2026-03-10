@@ -58,30 +58,23 @@
     left: 15%;
 }
 
-/* add more with different top/left for more images */
-
-/* Make grid columns stretch content */
 .grid>[class*="g-col-"] {
     display: flex;
 }
 
-/* Make cards fill the column */
-.grid .card {
-    flex: 1;
-    width: 100%;
-}
-
 .card {
-    transition: transform 0.18s ease-out, box-shadow 0.18s ease-out;
+    flex: 1;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    will-change: transform;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card .card-body {
-    padding: 1.25rem;
+.card-body {
+    padding-left: 2.5rem;
+    padding: 1.5rem;
 }
 
 .card:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }

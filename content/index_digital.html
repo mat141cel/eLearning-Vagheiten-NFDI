@@ -80,6 +80,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/bootstrap/bootstrap-5a35fba529a40769c781ead7d6133a0a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -146,7 +149,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/index_digital.html">🔍 I. Digitale Grundlagen</a></li><li class="breadcrumb-item"><a href="../content/index_digital.html">1. Digitale Numismatik</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/index_digital.html">🔍 I. Digitale Numismatik</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -174,19 +177,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">🔍 I. Digitale Grundlagen</span></a>
+            <a href="../content/index_digital.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">🔍 I. Digitale Numismatik</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/index_digital.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">1. Digitale Numismatik</span></a>
-  </div>
-</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/scientific_data.html" class="sidebar-item-text sidebar-link">
@@ -236,9 +233,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
   <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
-  <li><a href="#aufbau-des-kurses" id="toc-aufbau-des-kurses" class="nav-link" data-scroll-target="#aufbau-des-kurses">Aufbau des Kurses</a>
+  <li><a href="#aufbau-des-kurses" id="toc-aufbau-des-kurses" class="nav-link" data-scroll-target="#aufbau-des-kurses">Aufbau des Kurses</a></li>
+  <li><a href="#interaktive-analysen" id="toc-interaktive-analysen" class="nav-link" data-scroll-target="#interaktive-analysen">Interaktive Analysen</a>
   <ul class="collapse">
-  <li><a href="#interaktive-analysen" id="toc-interaktive-analysen" class="nav-link" data-scroll-target="#interaktive-analysen">Interaktive Analysen</a></li>
+  <li><a href="#übung-1-münzen-von-hadrian-identifizieren" id="toc-übung-1-münzen-von-hadrian-identifizieren" class="nav-link" data-scroll-target="#übung-1-münzen-von-hadrian-identifizieren">Übung 1: Münzen von Hadrian identifizieren</a></li>
   </ul></li>
   <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz">Quiz</a></li>
   </ul>
@@ -247,7 +245,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/index_digital.html">🔍 I. Digitale Grundlagen</a></li><li class="breadcrumb-item"><a href="../content/index_digital.html">1. Digitale Numismatik</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Digitale Numismatik</h1>
 <p class="subtitle lead">Welche Relevanz haben Forschungsdaten für die Numismatik?</p>
@@ -276,14 +274,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Veröffentlicht am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">05.03.2026</p>
+      <p class="date">10.03.2026</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Zuletzt geändert am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">05.03.2026</p>
+      <p class="date-modified">10.03.2026</p>
     </div>
   </div>
     
@@ -309,30 +307,80 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="aufbau-des-kurses" class="level2">
 <h2 class="anchored" data-anchor-id="aufbau-des-kurses">Aufbau des Kurses</h2>
 <p>Das Modul befindet sich derzeit im Aufbau und besteht aus drei Elementen.</p>
-<section id="interaktive-analysen" class="level3">
-<h3 class="anchored" data-anchor-id="interaktive-analysen">Interaktive Analysen</h3>
-<p>Zu jedem Modul gibt es einen begleitenden Python-Code der interaktiv ausgeführt werden kann. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen.</p>
+</section>
+<section id="interaktive-analysen" class="level2">
+<h2 class="anchored" data-anchor-id="interaktive-analysen">Interaktive Analysen</h2>
+<p>Zu jedem Modul gibt es einen begleitenden Python-Code der interaktiv ausgeführt werden kann. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. Um die Übung zu starten, klicken Sie auf Run Code. (Sollte der Button ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint)</p>
 <p>Keine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen.</p>
-<p>Die Übungen sind so aufgebaut, dass Sie manche Werte verändern, um die richtigen Ergebnisse zu erhalten. Diese Werte sind im Code mit “&lt;——” gekennzeichnet.</p>
-<section id="übung-1-münzen-von-hadrian-identifizieren" class="level4">
-<h4 class="anchored" data-anchor-id="übung-1-münzen-von-hadrian-identifizieren">Übung 1: Münzen von Hadrian identifizieren</h4>
-<p>Navigieren Sie in einem neuen Tab zu einem Referenzportal wie <a href="http://numismatics.org/crro">CRRO</a>, <a href="http://numismatics.org/ocre">OCRE</a> oder <a href="http://numismatics.org/pella">Pella</a>. Suchen Sie darin nach einer Münze von Hadrian und kopieren Sie die URLs der Resulate das markierte Feld im folgenden Code. Versteht der Code, ob die Münze von Hadrian ist? Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?</p>
+<section id="übung-1-münzen-von-hadrian-identifizieren" class="level3">
+<h3 class="anchored" data-anchor-id="übung-1-münzen-von-hadrian-identifizieren">Übung 1: Münzen von Hadrian identifizieren</h3>
+<p>Navigieren Sie in einem neuen Tab zu einem Referenzportal wie <a href="http://numismatics.org/crro">CRRO</a>, <a href="http://numismatics.org/ocre">OCRE</a> oder <a href="http://numismatics.org/pella">Pella</a>. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Wie finde ich die Links?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/CRRO_how_to_browse.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="1. Alle Münzen in den Datenbanken anzeigen"><img src="../assets/img/CRRO_how_to_browse.jpg" class="img-fluid figure-img" alt="1. Alle Münzen in den Datenbanken anzeigen"></a></p>
+<figcaption>1. Alle Münzen in den Datenbanken anzeigen</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/CRRO_how_to_extract_url.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="2. Diesen Link kopieren (Rechtsklick -> Link-Adresse kopieren)"><img src="../assets/img/CRRO_how_to_extract_url.jpg" class="img-fluid figure-img" alt="2. Diesen Link kopieren (Rechtsklick -> Link-Adresse kopieren)"></a></p>
+<figcaption>2. Diesen Link kopieren (Rechtsklick -&gt; Link-Adresse kopieren)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Führen Sie danach die folgende Codezelle mit “Run Code” aus und fügen Sie die URLs der Resultate zwischen die Anführungsstriche neben “url” ein. Führen Sie den Code nochnmal aus und überprüfen Sie den Output. Wie versteht der Code, ob der Link zu Münzen von Hadrian führt? Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?</p>
+<p>Nach dieser Übung haben Sie sich ein Bild gemacht, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.</p>
+<style>
+/* This targets the specific container you found */
+#exercise-loading-indicator,
+.exercise-loading-indicator,
+.exercise-loading-details {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Also hides the pulsing spinner accompanying the text */
+.spinner-grow {
+    display: none !important;
+}
+</style>
 <div>
 <div id="pyodide-1" class="exercise-cell">
 
 </div>
 <script type="pyodide-1-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsImV4ZXJjaXNlIjoiZXhfMSJ9LCJjb2RlIjoidXJsID0gXCJcIiAgIyA8LS0tLS0tIEhpZXIgVVJMIHp3aXNjaGVuIGRpZSBBbmbDvGhydW5nc3plaWNoZW4gKCEpIGVpbmbDvGdlblxuXG5pZiBcIm51bWlzbWF0aWNzLm9yZy9vY3JlXCIgbm90IGluIHVybDpcbiAgICBpZiBcInBlbGxhXCIgaW4gdXJsOlxuICAgICAgcHJpbnQoXCJQZWxsYSBpc3QgZWluIFBvcnRhbCBmw7xyIGhlbGxlbmlzdGlzY2hlIFByw6RndW5nZW4uIEhpZXIgZ2lidCBlcyBrZWluZSBNw7xuemVuIHZvbiBIYWRyaWFuLlwiKVxuICAgIGlmIFwiY3Jyb1wiIGluIHVybDpcbiAgICAgIHByaW50KFwiQ1JSTyBpc3QgZWluIFBvcnRhbCBmw7xyIFByw6RndW5nZW4gYXVzIGRlciByw7ZtaXNjaGVuIFJlcHVibGlrLiBIaWVyIGdpYnQgZXMga2VpbmUgTcO8bnplbiB2b24gSGFkcmlhbi5cIilcbmVsc2U6XG4gIGlmIFwiaGRuXCIgaW4gdXJsOlxuICAgIHByaW50KGZcIlJpY2h0aWcsIHt1cmx9IGlzdCBlaW5lIE3DvG56ZSB2b24gSGFkcmlhbiFcIilcbiAgZWxzZTpcbiAgICBwcmludChcIkRpZXNlciBUeXAgaXN0IHp3YXIgYXVzIE9jcmUsIGFiZXIgZGllc2UgTcO8bnplIGlzdCBuaWNodCB2b24gSGFkcmlhbi5cIikifQ==
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsImV4ZXJjaXNlIjoiZXhfMSJ9LCJjb2RlIjoidXJsID0gXCJfX19fX19cIlxuXG5pZiBcIm51bWlzbWF0aWNzLm9yZy9vY3JlXCIgbm90IGluIHVybDpcbiAgICByZXN1bHQgPSBcIm5vdF9vY3JlXCJcbmVsaWYgXCJoZG5cIiBpbiB1cmw6XG4gICAgcmVzdWx0ID0gXCJoYWRyaWFuXCJcbmVsc2U6XG4gICAgcmVzdWx0ID0gXCJvY3JlX25vdF9oYWRyaWFuXCIifQ==
 </script>
 </div>
+<script type="exercise-setup-ex_1-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsImV4ZXJjaXNlIjoiZXhfMSIsInNldHVwIjp0cnVlfSwiY29kZSI6ImltcG9ydCBtaWNyb3BpcFxuYXdhaXQgbWljcm9waXAuaW5zdGFsbCgndXJsbGliJywga2VlcF9nb2luZz1UcnVlKVxuXG5weW9kaWRlLCBtaWNyb3BpcCwgaXB5dGhvbiwgc2V0dXBcbmZyb20gdXJsbGliLnBhcnNlIGltcG9ydCB1cmxwYXJzZVxuXG5kZWYgdmFsaWRhdGUodXJsKTpcbiAgICBpZiBub3QgaXNpbnN0YW5jZSh1cmwsIHN0cikgb3IgdXJsLnN0cmlwKCkgPT0gXCJfX19fX19cIjpcbiAgICAgICAgcmV0dXJuIFwiZW1wdHlcIlxuICAgIHAgPSB1cmxwYXJzZSh1cmwuc3RyaXAoKSlcbiAgICBpZiBub3QgcC5zY2hlbWUgb3Igbm90IHAubmV0bG9jOlxuICAgICAgICByZXR1cm4gXCJpbnZhbGlkXCJcbiAgICByZXR1cm4gXCJva1wiIn0=
+</script>
+<script type="exercise-check-ex_1-contents">
+eyJhdHRyIjp7ImNoZWNrIjp0cnVlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJleGVyY2lzZSI6ImV4XzEifSwiY29kZSI6IlxudiA9IHZhbGlkYXRlKHVybClcblxuaWYgdiA9PSBcImVtcHR5XCI6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiQml0dGUgZWluZSBVUkwgZWluZ2ViZW4uXCJ9XG5lbGlmIHYgPT0gXCJpbnZhbGlkXCI6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiRGFzIGlzdCBrZWluZSBnw7xsdGlnZSBVUkwuXCJ9XG5lbGlmIFwicGVsbGFcIiBpbiB1cmw6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiUGVsbGEgZW50aMOkbHQgaGVsbGVuaXN0aXNjaGUgTcO8bnplbiwga2VpbmUgdm9uIEhhZHJpYW4uXCJ9XG5lbGlmIFwiY3Jyb1wiIGluIHVybDpcbiAgICByZXN1bHQgPSB7XCJjb3JyZWN0XCI6IEZhbHNlLCBcIm1lc3NhZ2VcIjogXCJDUlJPIGVudGjDpGx0IHJlcHVibGlrYW5pc2NoZSBNw7xuemVuLCBrZWluZSB2b24gSGFkcmlhbi5cIn1cbmVsaWYgXCJudW1pc21hdGljcy5vcmcvb2NyZVwiIG5vdCBpbiB1cmw6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiRGFzIGlzdCBrZWluZSBVUkwgYXVzIENSUk8gLyBQRUxMQSAvIE9DUkVcIn1cbmVsaWYgXCJoZG5cIiBpbiB1cmw6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBUcnVlLCBcIm1lc3NhZ2VcIjogZlwiUmljaHRpZzoge3VybH0gaXN0IGVpbiBIYWRyaWFuLVR5cC5cIn1cbmVsc2U6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiRGFzIGlzdCBlaW5lIE3DvG56ZSBhdXMgT0NSRSwgYWJlciBuaWNodCB2b24gSGFkcmlhbi5cIn1cblxucmVzdWx0In0=
+</script>
 <div class="hint webr-ojs-exercise exercise-hint d-none" data-exercise="ex_1" title="Hinweis anzeigen">
-<p><strong>Hinweis:</strong> Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten. Welches Kürzel in den URLs könnte auf Hadrian verweisen?</p>
+<p><strong>Hinweis:</strong> Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten.<br>
+Welches Kürzel in den URLs könnte auf Hadrian verweisen?</p>
 </div>
 <div class="webr-ojs-exercise exercise-solution d-none" data-exercise="ex_1">
 <p><strong>Lösung:</strong> Nur OCRE enthält Münzen von Hadrian. Diese können durch das “hdn” in der URL identifiziert werden. Hier ist ein Beispiel für eine gültige URL eines Hadrian-Typs:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>url <span class="op">=</span> <span class="st">"http://numismatics.org/ocre/id/ric.2_3(2).hdn.744"</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section>
 </section>
 </section>
 <section id="quiz" class="level2">
@@ -346,23 +394,6 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsImV4ZXJjaXNlIjoiZXhfMSJ9LCJjb2RlIjoi
 <script>
 // Define quiz questions
 window["intro_quiz_data"] = [
-  {
-    question: "Wie kann der Kurs interaktive Analysen ausführen?",
-    choices: [
-      { text: "Direkt in diesem Kurs", feedback: "✅ Richtig! Keine weiteren Programme müssen installiert werden." },
-      { text: "Durch Kopieren in Offline-Software", feedback: "❌ Falsch! Der gesamte Kurs ist browserbasiert." },
-      { text: "Nur auf Windows-Geräten", feedback: "❌ Falsch! Auch Apple, Linux und sogar Android- Geräte können den Code ausführen." }
-    ]
-  },
-  {
-    question: "Wie wird der Fortschritt des Kurses gespeichert?",
-    choices: [
-      { text: "Auf einem Server der Universität", feedback: "❌ Falsch! Alle Daten bleiben lokal in Ihrem Browser." },
-      { text: "In der Cloud von Google", feedback: "❌ Falsch! Alle Daten bleiben lokal im Browser." },
-      { text: "Lokal im Browser", feedback: "✅ Richtig! Der Fortschritt wird nur im Browser gespeichert und wird nirgendwohin gesendet." },
-      { text: "Über Cookies auf GitHub Pages", feedback: "❌ Falsch! GitHub Pages ist statisch und speichert keine Cookies." }
-    ]
-  },
   {
     question: "Welche Herausforderung wird in der Numismatik bei digitalisierten Beständen beschrieben?",
     choices: [
@@ -846,6 +877,38 @@ window._ojs.runtime.interpretFromScriptTags();
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

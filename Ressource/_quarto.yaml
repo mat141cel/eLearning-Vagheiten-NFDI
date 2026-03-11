@@ -37,9 +37,11 @@ website:
       - section: "🌐 II. Umgang mit vagen Daten"
         href: content/vague_index.qmd
         contents:
-          - text: "1. Was ist die NFDI?"
+          - text: "1. Formen von Unsicherheite"
+            href: content/vague_definitions.qmd
+          - text: "2. Was ist die NFDI?"
             href: content/vague_nfdi.qmd
-          - text: "2. Lösungen für Unsicherheiten und Vagheiten"
+          - text: "3. Lösungen für Unsicherheiten und Vagheiten"
             href: content/vague_solving_vagueness.qmd
           
 

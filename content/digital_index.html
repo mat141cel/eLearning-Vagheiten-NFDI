@@ -8,7 +8,7 @@
 
 <meta name="author" content="Mattia Celisi">
 
-<title>Digitale Numismatik – ELearning-Modul für Münzdaten</title>
+<title>Basiswissen digitale Numismatik – ELearning-Modul für Münzdaten</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -149,7 +149,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/digital_index.html">🔍 I. Digitale Numismatik</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/digital_index.html">🔍 I. Basiswissen digitale Numismatik</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -178,7 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/digital_index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">🔍 I. Digitale Numismatik</span></a>
+ <span class="menu-text">🔍 I. Basiswissen digitale Numismatik</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -192,14 +192,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/digital_fair_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Regeln für gute Forschungsdaten</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/digital_data_access.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Datenzugang</span></a>
+ <span class="menu-text">3. Datenzugang</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/digital_data_aggregation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Datenverarbeitung</span></a>
+ <span class="menu-text">4. Datenverarbeitung</span></a>
   </div>
 </li>
       </ul>
@@ -207,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/vague_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🌐 II. Umgang mit vagen Daten</span></a>
+ <span class="menu-text">🌐 II. Vage Münzdaten</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -216,13 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/vague_definitions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Formen von Unsicherheite</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/vague_nfdi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Was ist die NFDI?</span></a>
+ <span class="menu-text">1. Formen von Unsicherheiten</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -259,7 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Digitale Numismatik</h1>
+<h1 class="title">Basiswissen digitale Numismatik</h1>
 <p class="subtitle lead">Welche Relevanz haben Forschungsdaten für die Numismatik?</p>
 </div>
 
@@ -307,7 +307,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="motivation" class="level2">
 <h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
 <p>In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen <a href="https://de.wikipedia.org/wiki/Historische_Hilfswissenschaften">Grundwissenschaften</a> bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/numismatische-toolbox">Numiscience.de</a>.</p>
-<p>Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.</p>
+<p>Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.</p>
 </section>
 <section id="lernziele" class="level2">
 <h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>

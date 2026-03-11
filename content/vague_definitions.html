@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/vague_nfdi.html" rel="next">
+<link href="../content/vague_solving_vagueness.html" rel="next">
 <link href="../content/vague_index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/vague_index.html">🌐 II. Umgang mit vagen Daten</a></li><li class="breadcrumb-item"><a href="../content/vague_definitions.html">1. Formen von Unsicherheite</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/vague_index.html">🌐 II. Vage Münzdaten</a></li><li class="breadcrumb-item"><a href="../content/vague_definitions.html">1. Formen von Unsicherheiten</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/digital_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🔍 I. Digitale Numismatik</span></a>
+ <span class="menu-text">🔍 I. Basiswissen digitale Numismatik</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -154,14 +154,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/digital_fair_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Regeln für gute Forschungsdaten</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/digital_data_access.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Datenzugang</span></a>
+ <span class="menu-text">3. Datenzugang</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/digital_data_aggregation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Datenverarbeitung</span></a>
+ <span class="menu-text">4. Datenverarbeitung</span></a>
   </div>
 </li>
       </ul>
@@ -169,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/vague_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🌐 II. Umgang mit vagen Daten</span></a>
+ <span class="menu-text">🌐 II. Vage Münzdaten</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -178,13 +184,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/vague_definitions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">1. Formen von Unsicherheite</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/vague_nfdi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Was ist die NFDI?</span></a>
+ <span class="menu-text">1. Formen von Unsicherheiten</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -200,13 +200,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf Dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#todo-unsicherheiten-in-normdaten" id="toc-todo-unsicherheiten-in-normdaten" class="nav-link active" data-scroll-target="#todo-unsicherheiten-in-normdaten">TODO Unsicherheiten in Normdaten</a>
+  <ul class="collapse">
+  <li><a href="#beispiel-für-die-nutzung-von-freitextfeldern-wo-es-anders-modelliert-werden-sollte" id="toc-beispiel-für-die-nutzung-von-freitextfeldern-wo-es-anders-modelliert-werden-sollte" class="nav-link" data-scroll-target="#beispiel-für-die-nutzung-von-freitextfeldern-wo-es-anders-modelliert-werden-sollte">Beispiel für die Nutzung von Freitextfeldern, wo es anders modelliert werden sollte</a></li>
+  <li><a href="#unsicherheiten-in-münzbeschreibungen-auch-ausgelöst-von-freitextfeldern" id="toc-unsicherheiten-in-münzbeschreibungen-auch-ausgelöst-von-freitextfeldern" class="nav-link" data-scroll-target="#unsicherheiten-in-münzbeschreibungen-auch-ausgelöst-von-freitextfeldern">Unsicherheiten in Münzbeschreibungen, auch ausgelöst von Freitextfeldern</a></li>
+  <li><a href="#todo-auch-in-die-afe-hd-und-graffiti-nach-suchen" id="toc-todo-auch-in-die-afe-hd-und-graffiti-nach-suchen" class="nav-link" data-scroll-target="#todo-auch-in-die-afe-hd-und-graffiti-nach-suchen">TODO: Auch in die AFE-HD und Graffiti nach (?) suchen</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/vague_index.html">🌐 II. Umgang mit vagen Daten</a></li><li class="breadcrumb-item"><a href="../content/vague_definitions.html">1. Formen von Unsicherheite</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/vague_index.html">🌐 II. Vage Münzdaten</a></li><li class="breadcrumb-item"><a href="../content/vague_definitions.html">1. Formen von Unsicherheiten</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Arten von Unsicherheiten / Vagheiten</h1>
 <p class="subtitle lead">Welche Herausforderungen liegen in unsicheren Forschungsdaten für die Numismatik?</p>
@@ -254,14 +265,54 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Um Unsicherheiten und Vagheiten darzustellen, wird bisher meist auf Freitextfelder zurückgegriffen, in dem die Benutzer beliebige Aussagen eintragen können.</p>
+<section id="todo-unsicherheiten-in-normdaten" class="level2">
+<h2 class="anchored" data-anchor-id="todo-unsicherheiten-in-normdaten">TODO Unsicherheiten in Normdaten</h2>
 <p>Mit der Deutung dieser Daten beschäftigt sich das Projekt <a href="https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts">Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts</a> an der Universität Heidelberg im Rahmen von NFDI4objects.</p>
 <p>Beispiele:</p>
 <p>die Münze: https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099</p>
 <p>Die Datierung dieser Münze lautet nach 274 n.&nbsp;Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n.&nbsp;Chr. datiert wird. Es ist demnach nur ein (Terminus Post Quem)[https://en.wikipedia.org/wiki/Terminus_post_quem] angegeben, und es ist unsicher, bis wann diese Münzen noch geprägt wurden.</p>
+<p>die Münze: https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID287</p>
+<p>Die Datierung dieser Münze lautet 550-456 (oder 480?) v. Chr.. Hier ist unklar, ob sich das Jahr 480 auf das Enddatum bezieht, oder ob es einen gänzlich neuen Zeitraum (von einem Jahr) bildet. Außerdem ist nicht klar, was mit dem Fragezeichen gemeint ist. Bedeutet es, dass es unsicher ist, dass es die alternative Datierung gibt, oder bedeutet es, dass es sicher eine zweite Datierung gibt, die aber zeitlich nicht sicher ist und deswegen auf den ungefähren Zeitpunkt 480 gesetzt wurde.</p>
+<section id="beispiel-für-die-nutzung-von-freitextfeldern-wo-es-anders-modelliert-werden-sollte" class="level3">
+<h3 class="anchored" data-anchor-id="beispiel-für-die-nutzung-von-freitextfeldern-wo-es-anders-modelliert-werden-sollte">Beispiel für die Nutzung von Freitextfeldern, wo es anders modelliert werden sollte</h3>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID882 Literatur: RIC I² Nr. 94? 110?</p>
 <p>sie können also keine Unsicherheiten in Daten darstellen. Das bedeutet bei der Digitalisierung von Münzen eine Herausforderung, d.&nbsp;Denn Unsicherheiten und Vagheiten sind elementar, um Münzdaten richtig erfassen und später bewerten und deuten zu können.</p>
 <p>Mit dieser Herausforderung befasst sich das Projekt XXXX im Rahmen von NFDI4objects. Projektbeteiligte, Zielsetzung (verständlich!!!) etc. Im Folgenden wird erklärt, was genau Unsicherheiten und Vagheiten sind, der Unterschied von beidem erläutert und die Herausforderungen hinsichtlich …..</p>
 <p>Nach diesem Modul kennen Sie die relevantesten Münzdatenbanken, ihr Darstellungsschema und können Daten aus verschiedenen Quellen miteinander verknüpfen .</p>
 <p>Weiterführende Literatur mit link auf die Definitionspapers Was der Unterschied</p>
+</section>
+<section id="unsicherheiten-in-münzbeschreibungen-auch-ausgelöst-von-freitextfeldern" class="level3">
+<h3 class="anchored" data-anchor-id="unsicherheiten-in-münzbeschreibungen-auch-ausgelöst-von-freitextfeldern">Unsicherheiten in Münzbeschreibungen, auch ausgelöst von Freitextfeldern</h3>
+<section id="weil-deutung-eines-objektes-ist-unsicher" class="level4">
+<h4 class="anchored" data-anchor-id="weil-deutung-eines-objektes-ist-unsicher">? weil Deutung eines Objektes ist unsicher</h4>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID53 Zwei Kaiserpaare stehen gerüstet beiderseits eines Dreifußes. Im Hintergrund ein Militärlager (?) mit Toranlage und sechs Türmen.</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID51 Claudius II. (?) n.r. mit Strahlenkrone.</p>
+</section>
+<section id="als-bezeichnung-eines-nicht-mehr-sichtbaren-objekts" class="level4">
+<h4 class="anchored" data-anchor-id="als-bezeichnung-eines-nicht-mehr-sichtbaren-objekts">? als Bezeichnung eines nicht mehr sichtbaren Objekts</h4>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID264 Thronender Zeus n.&nbsp;l. mit Adler auf der rechten Hand. Das Zepter hält er in der Linken. Links im Feld ein Kantharos, unter dem Thron eine Ähre (?)</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID280 Kopf der Pallas Athena n.&nbsp;l. mit korinthischem Helm. Rechts QM-Monogramm und eine kleine Herme. Unter dem Kinn der Buchstabe I (?).</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID150 Chimäre läuft nach rechts. Darüber ein Ruder?</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID282 Eule n.&nbsp;r. mit frontal ausgerichtetem Kopf auf Amphora (?) im Olivenkranz.</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID1206 Sitzende Sphinx n.&nbsp;l. [Davor eine Amphore?].</p>
+</section>
+<section id="als-vermutete-präzisierung-eines-allgemein-benannten-objekts" class="level4">
+<h4 class="anchored" data-anchor-id="als-vermutete-präzisierung-eines-allgemein-benannten-objekts">? als vermutete Präzisierung eines allgemein benannten Objekts</h4>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID977 Flussgott (Acheloos?) läuft als menschengesichtiger, bärtiger Stier nach rechts. Darüber fliegt eine Nike nach rechts, die ihn bekränzt.</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID319 Cupido reitet auf einer Ziege (Amaltheia?) nach r., darüber zwei Dioskurenmützen mit jeweils einem Stern. Im Abschnitt ein Thyrsosstab, das Ganze im Kranz.</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID194 Weiblicher Kopf mit Sakkos n.&nbsp;r. (Nymphe?).</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID353 Pferdekopf (Pegasos?) n.&nbsp;r.</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID42 Kopf der Roma mit phrygischem Helm nach r. Dahinter Kontrollzeichen (Füllhorn?).</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID4 Drapierte weibliche Büste (Roma?) mit Halskette, Diadem und Lorbeerkranz nach r. Dahinter XVI (ligiert).</p>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID365 Belorbeerter Kopf des Apollo mit einem geschultertem Zepter nach r., davor Kontrollzeichen (Öl-?)Zweig.</p>
+</section>
+<section id="als-unsichere-unsicherheit" class="level4">
+<h4 class="anchored" data-anchor-id="als-unsichere-unsicherheit">? als unsichere Unsicherheit</h4>
+<p>https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&amp;id=ID843 [ΠTOΛΕΜΑΙΟΥ ΒΑΣΙΛΕΥΣ]. Ein Adler steht mit geschlossenen Flügeln auf einem Blitzbündel n.&nbsp;l. Im l. Feld Beizeichen und Monogramm? unklarer Bezug: Beizeichen/Monogramm/beides unsicher?</p>
+</section>
+</section>
+<section id="todo-auch-in-die-afe-hd-und-graffiti-nach-suchen" class="level3">
+<h3 class="anchored" data-anchor-id="todo-auch-in-die-afe-hd-und-graffiti-nach-suchen">TODO: Auch in die AFE-HD und Graffiti nach (?) suchen</h3>
 
 
 <script type="ojs-module-contents">
@@ -278,6 +329,8 @@ eyJjb250ZW50cyI6W119
 <script type="vfs-file">
 W10=
 </script>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
@@ -700,13 +753,13 @@ window._ojs.runtime.interpretFromScriptTags();
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/vague_index.html" class="pagination-link" aria-label="🌐 II. Umgang mit vagen Daten">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🌐 II. Umgang mit vagen Daten</span>
+      <a href="../content/vague_index.html" class="pagination-link" aria-label="🌐 II. Vage Münzdaten">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🌐 II. Vage Münzdaten</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/vague_nfdi.html" class="pagination-link" aria-label="2. Was ist die NFDI?">
-        <span class="nav-page-text">2. Was ist die NFDI?</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/vague_solving_vagueness.html" class="pagination-link" aria-label="3. Lösungen für Unsicherheiten und Vagheiten">
+        <span class="nav-page-text">3. Lösungen für Unsicherheiten und Vagheiten</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

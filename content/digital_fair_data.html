@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/vague_solving_vagueness.html" rel="next">
-<link href="../content/vague_definitions.html" rel="prev">
+<link href="../content/digital_data_access.html" rel="next">
+<link href="../content/digital_scientific_data.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/vague_index.html">🌐 II. Umgang mit vagen Daten</a></li><li class="breadcrumb-item"><a href="../content/vague_nfdi.html">2. Was ist die NFDI?</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/digital_index.html">🔍 I. Basiswissen digitale Numismatik</a></li><li class="breadcrumb-item"><a href="../content/digital_fair_data.html">2. Regeln für gute Forschungsdaten</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/digital_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🔍 I. Digitale Numismatik</span></a>
+ <span class="menu-text">🔍 I. Basiswissen digitale Numismatik</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -156,14 +156,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/digital_fair_data.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2. Regeln für gute Forschungsdaten</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/digital_data_access.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Datenzugang</span></a>
+ <span class="menu-text">3. Datenzugang</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/digital_data_aggregation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Datenverarbeitung</span></a>
+ <span class="menu-text">4. Datenverarbeitung</span></a>
   </div>
 </li>
       </ul>
@@ -171,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/vague_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🌐 II. Umgang mit vagen Daten</span></a>
+ <span class="menu-text">🌐 II. Vage Münzdaten</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -180,13 +186,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/vague_definitions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Formen von Unsicherheite</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/vague_nfdi.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">2. Was ist die NFDI?</span></a>
+ <span class="menu-text">1. Formen von Unsicherheiten</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -207,7 +207,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf Dieser Seite</h2>
    
   <ul>
-  <li><a href="#was-ist-nfdi" id="toc-was-ist-nfdi" class="nav-link active" data-scroll-target="#was-ist-nfdi">Was ist NFDI?</a></li>
+  <li><a href="#vorbereitung-was-sind-forschungsdaten" id="toc-vorbereitung-was-sind-forschungsdaten" class="nav-link active" data-scroll-target="#vorbereitung-was-sind-forschungsdaten">Vorbereitung: Was sind Forschungsdaten</a></li>
+  <li><a href="#was-ist-nfdi" id="toc-was-ist-nfdi" class="nav-link" data-scroll-target="#was-ist-nfdi">Was ist NFDI?</a></li>
   <li><a href="#was-ist-nfdi-1" id="toc-was-ist-nfdi-1" class="nav-link" data-scroll-target="#was-ist-nfdi-1">Was ist NFDI?</a>
   <ul class="collapse">
   <li><a href="#findable" id="toc-findable" class="nav-link" data-scroll-target="#findable">Findable</a></li>
@@ -222,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/vague_index.html">🌐 II. Umgang mit vagen Daten</a></li><li class="breadcrumb-item"><a href="../content/vague_nfdi.html">2. Was ist die NFDI?</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/digital_index.html">🔍 I. Basiswissen digitale Numismatik</a></li><li class="breadcrumb-item"><a href="../content/digital_fair_data.html">2. Regeln für gute Forschungsdaten</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Was ist NFDI?</h1>
 </div>
@@ -268,18 +269,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="was-ist-nfdi" class="level2">
-<h2 class="anchored" data-anchor-id="was-ist-nfdi">Was ist NFDI?</h2>
-<p>Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://www.nfdi.de/wp-content/uploads/2025/01/Base4NFDI_hell.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Grafik Aufbau der NFDI"><img src="https://www.nfdi.de/wp-content/uploads/2025/01/Base4NFDI_hell.png" class="img-fluid figure-img" alt="https://www.nfdi.de/verein"></a></p>
-<figcaption>Grafik Aufbau der NFDI</figcaption>
-</figure>
-</div>
-<p>Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:</p>
-<p><img src="https://www.nfdi.de/wp-content/uploads/2023/12/TAs-Bildmarke.png" class="img-fluid" alt="https://www.nfdi.de/konsortien/nfdi4objects">   ## Vorbereitung: Was sind Forschungsdaten</p>
-<p>Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.</p>
+<section id="vorbereitung-was-sind-forschungsdaten" class="level2">
+<h2 class="anchored" data-anchor-id="vorbereitung-was-sind-forschungsdaten">Vorbereitung: Was sind Forschungsdaten</h2>
 <p>Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (<a href="https://www.nfdi4objects.net">NFDI4Objects</a>).</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -294,6 +285,18 @@ Hinweis
 <p>Hier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. <a href="nfdi.html" class="btn btn-primary">Mehr erfahren</a></p>
 </div>
 </div>
+</section>
+<section id="was-ist-nfdi" class="level2">
+<h2 class="anchored" data-anchor-id="was-ist-nfdi">Was ist NFDI?</h2>
+<p>Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.nfdi.de/wp-content/uploads/2025/01/Base4NFDI_hell.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Grafik Aufbau der NFDI"><img src="https://www.nfdi.de/wp-content/uploads/2025/01/Base4NFDI_hell.png" class="img-fluid figure-img" alt="https://www.nfdi.de/verein"></a></p>
+<figcaption>Grafik Aufbau der NFDI</figcaption>
+</figure>
+</div>
+<p>Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:</p>
+<p><img src="https://www.nfdi.de/wp-content/uploads/2023/12/TAs-Bildmarke.png" class="img-fluid" alt="https://www.nfdi.de/konsortien/nfdi4objects">  </p>
 </section>
 <section id="was-ist-nfdi-1" class="level2">
 <h2 class="anchored" data-anchor-id="was-ist-nfdi-1">Was ist NFDI?</h2>
@@ -830,13 +833,13 @@ window._ojs.runtime.interpretFromScriptTags();
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/vague_definitions.html" class="pagination-link" aria-label="1. Formen von Unsicherheite">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1. Formen von Unsicherheite</span>
+      <a href="../content/digital_scientific_data.html" class="pagination-link" aria-label="1. Forschungsdaten">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1. Forschungsdaten</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/vague_solving_vagueness.html" class="pagination-link" aria-label="3. Lösungen für Unsicherheiten und Vagheiten">
-        <span class="nav-page-text">3. Lösungen für Unsicherheiten und Vagheiten</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/digital_data_access.html" class="pagination-link" aria-label="3. Datenzugang">
+        <span class="nav-page-text">3. Datenzugang</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

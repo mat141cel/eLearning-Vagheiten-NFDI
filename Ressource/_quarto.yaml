@@ -26,18 +26,21 @@ website:
       - text: "Hauptseite"
         href: content/index.qmd
       - section: "🔍 I. Digitale Numismatik"
-        href: content/index_digital.qmd
+        href: content/digital_index.qmd
         contents:
-          - text: "2. Forschungsdaten"
-            href: content/scientific_data.qmd
-          - text: "3. Datenzugang"
-            href: content/data_access.qmd
-          - text: "4. Datenverarbeitung"
-            href: content/data_aggregation.qmd
+          - text: "1. Forschungsdaten"
+            href: content/digital_scientific_data.qmd
+          - text: "2. Datenzugang"
+            href: content/digital_data_access.qmd
+          - text: "3. Datenverarbeitung"
+            href: content/digital_data_aggregation.qmd
       - section: "🌐 II. Umgang mit vagen Daten"
+        href: content/vague_index.qmd
         contents:
-          - text: "3. Was ist die NFDI?"
-            href: content/nfdi.qmd
+          - text: "1. Was ist die NFDI?"
+            href: content/vague_nfdi.qmd
+          - text: "2. Lösungen für Unsicherheiten und Vagheiten"
+            href: content/vague_solving_vagueness.qmd
           
 
   page-navigation: true

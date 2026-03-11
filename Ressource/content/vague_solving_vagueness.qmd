@@ -1,0 +1,14 @@
+---
+title: "Strategien zur Problemlösung von Vagheiten"
+subtitle: ""
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+---
+
+## Wie können Vagheiten gelöst werden
+
+### zusätzlicher Kontext
+
+Verschiedene numismatische Datenbanken liefern neue Ansätze zur Darstellung von Vagheiten, die mehr Kontext liefern, und 

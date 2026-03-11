@@ -14,7 +14,7 @@ css: /assets/css/collage.css
 In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.
 
 
-## Aufbau des Moduls
+## Aufbau des Kurses
 
 ::::: {.grid}
 :::: {.g-col-12 .g-col-md-6}

@@ -8,7 +8,7 @@
 
 <meta name="author" content="Mattia Celisi">
 
-<title>Digitale Numismatik – ELearning-Modul für Münzdaten</title>
+<title>Was ist NFDI? – ELearning-Modul für Münzdaten</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/digital_index.html" rel="next">
+<link href="../content/vague_solving_vagueness.html" rel="next">
+<link href="../content/vague_index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -44,6 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-5a35fba529a40769c781ead7d6133a0a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +79,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../assets/css/collage.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -110,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/index.html">Hauptseite</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/vague_index.html">🌐 II. Umgang mit vagen Daten</a></li><li class="breadcrumb-item"><a href="../content/vague_nfdi.html">1. Was ist die NFDI?</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -132,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../content/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hauptseite</span></a>
   </div>
 </li>
@@ -176,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/vague_nfdi.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/vague_nfdi.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">1. Was ist die NFDI?</span></a>
   </div>
 </li>
@@ -198,20 +201,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf Dieser Seite</h2>
    
   <ul>
-  <li><a href="#warum-dieser-kurs" id="toc-warum-dieser-kurs" class="nav-link active" data-scroll-target="#warum-dieser-kurs">Warum dieser Kurs?</a></li>
-  <li><a href="#aufbau-des-kurses" id="toc-aufbau-des-kurses" class="nav-link" data-scroll-target="#aufbau-des-kurses">Aufbau des Kurses</a></li>
-  <li><a href="#so-funktioniert-dieser-kurs" id="toc-so-funktioniert-dieser-kurs" class="nav-link" data-scroll-target="#so-funktioniert-dieser-kurs">So funktioniert dieser Kurs</a></li>
-  <li><a href="#förderung" id="toc-förderung" class="nav-link" data-scroll-target="#förderung">Förderung</a></li>
+  <li><a href="#was-ist-nfdi" id="toc-was-ist-nfdi" class="nav-link active" data-scroll-target="#was-ist-nfdi">Was ist NFDI?</a></li>
+  <li><a href="#was-ist-nfdi-1" id="toc-was-ist-nfdi-1" class="nav-link" data-scroll-target="#was-ist-nfdi-1">Was ist NFDI?</a>
+  <ul class="collapse">
+  <li><a href="#findable" id="toc-findable" class="nav-link" data-scroll-target="#findable">Findable</a></li>
+  <li><a href="#accessible" id="toc-accessible" class="nav-link" data-scroll-target="#accessible">Accessible</a></li>
+  <li><a href="#interoperable" id="toc-interoperable" class="nav-link" data-scroll-target="#interoperable">Interoperable</a></li>
+  <li><a href="#reusable" id="toc-reusable" class="nav-link" data-scroll-target="#reusable">Reusable</a></li>
+  </ul></li>
+  <li><a href="#transferaufgaben" id="toc-transferaufgaben" class="nav-link" data-scroll-target="#transferaufgaben">Transferaufgaben</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/vague_index.html">🌐 II. Umgang mit vagen Daten</a></li><li class="breadcrumb-item"><a href="../content/vague_nfdi.html">1. Was ist die NFDI?</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Digitale Numismatik</h1>
-<p class="subtitle lead">Einführung in das interaktive Lernmodul</p>
+<h1 class="title">Was ist NFDI?</h1>
 </div>
 
 
@@ -255,134 +262,129 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="warum-dieser-kurs" class="level2">
-<h2 class="anchored" data-anchor-id="warum-dieser-kurs">Warum dieser Kurs?</h2>
-<p>In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.</p>
-</section>
-<section id="aufbau-des-kurses" class="level2">
-<h2 class="anchored" data-anchor-id="aufbau-des-kurses">Aufbau des Kurses</h2>
-<div class="grid">
-<div class="g-col-12 g-col-md-6">
-<div class="card">
-<section id="münzen-digital" class="level3 card-body">
-<h3 class="anchored" data-anchor-id="münzen-digital">1. Münzen Digital</h3>
-<p><strong>Inhalt</strong> Forschungsdaten und Portalrecherche<br>
-<strong>Warum?</strong> Datenquellen verstehen</p>
-</section>
+<section id="was-ist-nfdi" class="level2">
+<h2 class="anchored" data-anchor-id="was-ist-nfdi">Was ist NFDI?</h2>
+<p>Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.nfdi.de/wp-content/uploads/2025/01/Base4NFDI_hell.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Grafik Aufbau der NFDI"><img src="https://www.nfdi.de/wp-content/uploads/2025/01/Base4NFDI_hell.png" class="img-fluid figure-img" alt="https://www.nfdi.de/verein"></a></p>
+<figcaption>Grafik Aufbau der NFDI</figcaption>
+</figure>
 </div>
-</div>
-<div class="g-col-12 g-col-md-6">
-<div class="card">
-<section id="vage-münzdaten" class="level3 card-body">
-<h3 class="anchored" data-anchor-id="vage-münzdaten">2. Vage Münzdaten</h3>
-<p><strong>Inhalt</strong> Umgang mit unsicheren Daten<br>
-<strong>Warum?</strong> Transparenz</p>
-</section>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<p>Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:</p>
+<p><img src="https://www.nfdi.de/wp-content/uploads/2023/12/TAs-Bildmarke.png" class="img-fluid" alt="https://www.nfdi.de/konsortien/nfdi4objects">   ## Vorbereitung: Was sind Forschungsdaten</p>
+<p>Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.</p>
+<p>Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (<a href="https://www.nfdi4objects.net">NFDI4Objects</a>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tipp
+Hinweis
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Die Module können in beliebiger Reihenfolge absolviert werden.<br>
-Sie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.</p>
+<p>Hier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. <a href="nfdi.html" class="btn btn-primary">Mehr erfahren</a></p>
 </div>
 </div>
 </section>
-<section id="so-funktioniert-dieser-kurs" class="level2">
-<h2 class="anchored" data-anchor-id="so-funktioniert-dieser-kurs">So funktioniert dieser Kurs</h2>
-<p>Dieser Kurs wurde mit <strong>Quarto Live</strong> geschrieben, das interaktive Übungen erlaubt.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Hinweis</span>Mehr über den Kurs in Quarto Live
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<table class="table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Web‑basiert</td>
-<td>Der Kurs läuft komplett im Browser (Chrome, Firefox, Edge …).</td>
-</tr>
-<tr class="even">
-<td>Sicher</td>
-<td>Der Code wird in einer isolierten Web‑Assembly‑Umgebung ausgeführt – keine Daten verlassen Ihren Rechner.</td>
-</tr>
-<tr class="odd">
-<td>Interaktiv</td>
-<td>Sie können Code‑Zellen anpassen und sofort das Ergebnis sehen.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Mehr erfahren:</strong> <a href="https://quarto.org/docs/computations/quarto-live.html" class="uri">https://quarto.org/docs/computations/quarto-live.html</a></p>
-</div>
-</div>
-</div>
-<p>Die interaktiven Elemente des Kurses nutzen die Programmiersprache <strong>Python</strong>. Dieser Kurs erfordert keine Informatikkentnisse, wenn Sie aber mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Hinweis</span>Warum Python lernen?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<table class="table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Einfach zu lesen</td>
-<td>Die Syntax ist fast wie ein Satz in natürlicher Sprache.</td>
-</tr>
-<tr class="even">
-<td>Große Community</td>
-<td>Viele Beispiele und Tutorials, speziell für die Digital Humanities.</td>
-</tr>
-<tr class="odd">
-<td>Flexibilität</td>
-<td>Mit Bibliotheken wie <code>pandas</code>, <code>numpy</code> und <code>matplotlib</code> können Daten einfach verarbeitet und visualisiert werden.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Einsteiger‑Tutorial:</strong> <a href="https://www.python.org/about/gettingstarted/" class="uri">https://www.python.org/about/gettingstarted/</a></p>
-</div>
-</div>
-</div>
+<section id="was-ist-nfdi-1" class="level2">
+<h2 class="anchored" data-anchor-id="was-ist-nfdi-1">Was ist NFDI?</h2>
+<p>Die Aufarbeitung der Daten soll dabei anhand der <strong>FAIR-Kriterien</strong> erfolgen. Das Akronym steht für die Kategorien <strong>Findable, Accessible, Interoperable, Reusable</strong>, also <strong>auffindbar, zugänglich, interoperabel und wiederverwendbar</strong>. FAIR-Kriterien werden in etwa seit zehn Jahren in der Wissenschaft genutzt. Initiativen wie <a href="https://www.go-fair.org/fair-principles">GO-Fair</a> haben die Prinzipien ausformuliert.</p>
+<section id="findable" class="level3">
+<h3 class="anchored" data-anchor-id="findable">Findable</h3>
+<p>Die Kategorie <strong>Findable</strong> bezieht sich zunächst darauf, dass die Daten im Web eindeutig identifizierbar sein müssen. Ihre URL muss persistent, also unveränderlich sein, sodass in der Zukunft keine andere Ressource die gleiche URL bekommt. Es gibt mehrere Services, die diese Anforderungen erfüllen, zum Beispiel die DOI (Digital Object Identifier)-Organisation.</p>
+<p>In der Numismatik haben moderne Münzdatenbanken einen eindeutigen und persistenten Permalink, so auch die Münzen der Heidelberger Sammlung (<a href="https://pecunia.zaw.uni-heidelberg.de/ikmk/object?id=ID1383">Beispiel</a>). Die Daten sollen allerdings auch auffindbar sein, wenn der Identifier unbekannt ist. Dafür müssen die Daten mit gut beschriebenen <strong>Metadaten</strong> ausgezeichnet sein. Dazu gehören bei Münzdaten Informationen zur Prägestätte, Nominal oder Gewicht. Auch diese Informationen, sowie Publikationen, die auf Münzen verweisen, sollten mit einem Identifikator versehen sein.</p>
 </section>
-<section id="förderung" class="level2 appendix">
-<h2 class="appendix anchored" data-anchor-id="förderung">Förderung</h2>
-<p>Diese ELearning-Materialien sind in dem von der DFG geförderten Projekt <a href="https://gepris.dfg.de/gepris/projekt/501836407" target="_blank">NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte</a> entstanden und wurden an der <a href="https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts">Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik)</a> entwickelt.</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img src="../brand/logos/n4o_logo_verlauf_claim_lang.svg" style="max-width:100%; height:auto;"></p>
-</div><div class="column" style="width:60%;">
-<p><img src="../assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" style="max-width:100%; height:auto;"></p>
+<section id="accessible" class="level3">
+<h3 class="anchored" data-anchor-id="accessible">Accessible</h3>
+<p>Neben der Auffindbarkeit ist entscheidend, dass Münzobjekte und die dazugehörigen Beschreibungen <strong>zugänglich</strong> sind. Ein Digitalisat einer Münze in einer Online-Datenbank muss über standardisierte Protokolle (z. B. HTTPS) erreichbar sein.</p>
+<p>Ist ein direkter Zugriff auf hochauflösende Bilder aus urheberrechtlichen Gründen eingeschränkt, können zumindest die Metadaten frei zugänglich bleiben. So kann ein Forscher nachvollziehen, dass eine bestimmte Münze dokumentiert ist, selbst wenn er nicht sofort das Bildmaterial herunterladen darf.</p>
+</section>
+<section id="interoperable" class="level3">
+<h3 class="anchored" data-anchor-id="interoperable">Interoperable</h3>
+<p>Forschungsdaten in der Numismatik sollen sich mit anderen Sammlungen und Fachdaten verknüpfen lassen. Dafür ist es wichtig, gemeinsame <strong>Standards und Vokabulare</strong> zu nutzen.</p>
+<p>Ein Beispiel wäre die Verwendung von Normdaten wie GND-IDs für antike Herrscher oder Nomisma.org-Referenzen für Münztypen. Wenn eine römische Münze aus Trier mit „RIC“-Referenzen (Roman Imperial Coinage) ausgezeichnet und gleichzeitig mit Ontologien wie Nomisma.org verknüpft wird, lassen sich Informationen aus verschiedenen Museen und Publikationen problemlos kombinieren.</p>
+</section>
+<section id="reusable" class="level3">
+<h3 class="anchored" data-anchor-id="reusable">Reusable</h3>
+<p>Die <strong>Wiederverwendbarkeit</strong> bezieht sich auf die Fähigkeit des Nutzenden, die Daten korrekt zu interpretieren. Dazu sollten so viele Kontextinformationen wie möglich gegeben werden, auch diejenigen, die auf den ersten Blick irrelevant erscheinen.</p>
+<p>Dazu gehören: - Versionsnamen der Daten<br>
+- Konkrete Informationen zur im Erhebungsprozess verwendeten Soft- und Hardware<br>
+- Schritte im Datenerhebungsprozess (Formulierung des Ziels, Kennzeichnung von fremden Daten, Beschreibung der Datenverarbeitungsschritte)</p>
+<p>Um die Wiederverwendbarkeit zu erleichtern, sollten diese Metadaten nach einem <strong>standardisierten Muster</strong> angegeben werden.<br>
+- Bei Publikationen: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms">Dublin Core</a><br>
+- Für archäologische Daten: <a href="https://pro.europeana.eu/page/edm-documentation">Europeana-Datenmodell</a></p>
+<p>Als Teil der Wiederverwendbarkeit sollten auch <strong>klare Lizenzen</strong> vergeben werden, damit automatisierte Suchen nicht versehentlich urheberrechtlich geschütztes Material abgreifen.</p>
+</section>
+</section>
+<section id="transferaufgaben" class="level2">
+<h2 class="anchored" data-anchor-id="transferaufgaben">Transferaufgaben</h2>
+<div id="nfdi_quiz">
+
 </div>
-</div>
+<script src="../assets/js/quiz.js"></script>
+<p><link rel="stylesheet" href="../assets/css/quiz.css"></p>
+<script>
+// Define quiz data for this page
+window["nfdi_quiz_data"] = [
+  {
+    question: "Wofür steht die Abkürzung 'FAIR' im Zusammenhang mit Forschungsdaten?",
+    choices: [
+      { text: "Format, Analyze, Integrate, Recap", feedback: "❌ Falsch!" },
+      { text: "Findable, Accessible, Interoperable, Reusable", feedback: "✅ Richtig!" },
+      { text: "Forschungsdaten, Ansätze, Informationen, Referenzen", feedback: "❌ Falsch!" },
+      { text: "Fachliche Auswertung von Informationen in Rechenzentren", feedback: "❌ Falsch!" }
+    ]
+  },
+  {
+    question: "Eine Forschungsarbeit erhält einen DOI (Digital Object Identifier). Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "✅ Richtig! DOI sorgt dafür, dass die Arbeit auffindbar ist." },
+      { text: "Accessible", feedback: "❌ Falsch! DOI betrifft das Auffinden, nicht den Zugang." },
+      { text: "Interoperable", feedback: "❌ Falsch! DOI regelt keine Standardisierung der Daten." },
+      { text: "Reusable", feedback: "❌ Falsch! DOI allein garantiert keine Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Ein Datensatz wird zusammen mit einer umfassenden Beschreibung der Variablen, Messmethoden und Forschungsbedingungen veröffentlicht. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Die Beschreibung hilft beim Verständnis, nicht beim Auffinden." },
+      { text: "Accessible", feedback: "❌ Falsch! Zugang ist hier nicht das Hauptkriterium." },
+      { text: "Interoperable", feedback: "❌ Falsch! Standardisierung ist hier nicht im Fokus." },
+      { text: "Reusable", feedback: "✅ Richtig! Die umfassende Beschreibung ermöglicht Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Die Ergebnisse eines Projekts können von Forschenden aus einem anderen Land über ein Webportal heruntergeladen werden, auch wenn sie nicht an der eigenen Institution arbeiten. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Auffindbarkeit ist nicht direkt beschrieben." },
+      { text: "Accessible", feedback: "✅ Richtig! Daten sind über das Webportal zugänglich." },
+      { text: "Interoperable", feedback: "❌ Falsch! Standardisierte Formate werden hier nicht erwähnt." },
+      { text: "Reusable", feedback: "❌ Falsch! Zugänglichkeit allein garantiert nicht Wiederverwendbarkeit." }
+    ]
+  },
+  {
+    question: "Ein Konsortium stellt sicher, dass Daten von verschiedenen Sensoren und Laboren mit standardisierten Codes und Formaten kombiniert werden können. Welches FAIR-Kriterium ist erfüllt?",
+    choices: [
+      { text: "Findable", feedback: "❌ Falsch! Es geht hier nicht um Auffindbarkeit." },
+      { text: "Accessible", feedback: "❌ Falsch! Zugang ist nicht das Hauptthema." },
+      { text: "Interoperable", feedback: "✅ Richtig! Standardisierte Formate ermöglichen Interoperabilität." },
+      { text: "Reusable", feedback: "❌ Falsch! Wiederverwendbarkeit hängt von der Beschreibung ab." }
+    ]
+  }
+];
+if (!localStorage.getItem("progress")) {
+    localStorage.setItem("progress", "0");
+}
+document.addEventListener("DOMContentLoaded", () => {
+    renderQuiz("nfdi_quiz", window["nfdi_quiz_data"], {
+        quizKey: "nfdi_quiz_completed",
+        onComplete: () => console.log("Quiz completed!")
+    });
+});
+</script>
 
 
 <script type="ojs-module-contents">
@@ -822,14 +824,49 @@ window._ojs.runtime.interpretFromScriptTags();
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../content/vague_index.html" class="pagination-link" aria-label="🌐 II. Umgang mit vagen Daten">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🌐 II. Umgang mit vagen Daten</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/digital_index.html" class="pagination-link" aria-label="🔍 I. Digitale Numismatik">
-        <span class="nav-page-text">🔍 I. Digitale Numismatik</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/vague_solving_vagueness.html" class="pagination-link" aria-label="2. Lösungen für Unsicherheiten und Vagheiten">
+        <span class="nav-page-text">2. Lösungen für Unsicherheiten und Vagheiten</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

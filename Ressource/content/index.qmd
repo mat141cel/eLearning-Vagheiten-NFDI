@@ -11,7 +11,7 @@ css: /assets/css/collage.css
 
 ## Warum dieser Kurs?
 
-In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.
+Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.
 
 
 ## Aufbau des Kurses
@@ -20,7 +20,7 @@ In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die
 :::: {.g-col-12 .g-col-md-6}
 ::: {.card}
 ::: {.card-body}
-### 1. Münzen Digital
+### 1. Basiswissen digitale Numismatik
 **Inhalt** Forschungsdaten und Portalrecherche  
 **Warum?** Datenquellen verstehen
 :::
@@ -31,8 +31,10 @@ In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die
 ::: {.card}
 ::: {.card-body}
 ### 2. Vage Münzdaten
-**Inhalt** Umgang mit unsicheren Daten  
-**Warum?** Transparenz
+**Inhalt** Umgang mit unsicheren und vagen Daten  
+**Warum?** Auswertungen transparent und reproduzierbar machen  
+
+[zum Kurs]()
 :::
 :::
 ::::
@@ -44,8 +46,7 @@ Die Module können in beliebiger Reihenfolge absolviert werden.
 Sie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.
 :::
 
-
-## So funktioniert dieser Kurs
+## Technische Grundlage des Kurses
 
 Dieser Kurs wurde mit **Quarto Live** geschrieben, das interaktive Übungen erlaubt.
 
@@ -61,7 +62,7 @@ Dieser Kurs wurde mit **Quarto Live** geschrieben, das interaktive Übungen er
 :::
 
 
-Die interaktiven Elemente des Kurses nutzen die Programmiersprache **Python**. Dieser Kurs erfordert keine Informatikkentnisse, wenn Sie aber mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt.  
+Die interaktiven Elemente des Kurses nutzen die Programmiersprache **Python**. Wenn Sie mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt.  
 
 ::: {.callout-note collapse="true"}
 ## Warum Python lernen?
@@ -76,9 +77,11 @@ Die interaktiven Elemente des Kurses nutzen die Programmiersprache **Python**. D
 
 ## Förderung {.appendix}
 
-Diese ELearning-Materialien sind in dem von der DFG geförderten Projekt [NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"} entstanden und wurden an der [Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik)](https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts) entwickelt.
+Diese ELearning-Materialien wurden in dem von der DFG geförderten Projekt [NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"} erstellt und wurden an der [Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik)](https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts) entwickelt.
 
-::: {.columns}
+
+
+<!-- ::: {.columns}
 ::: {.column width="40%"}
 <img src="/brand/logos/n4o_logo_verlauf_claim_lang.svg"  style="max-width:100%; height:auto;">
 :::
@@ -86,4 +89,11 @@ Diese ELearning-Materialien sind in dem von der DFG geförderten Projekt [NFDI4O
 ::: {.column width="60%"}
 <img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" style="max-width:100%; height:auto;">
 :::
-:::
+::: -->
+
+<img src="https://backend.sage.uni-heidelberg.de/sites/default/files/site_logo/WEB-Kopfgrafik_Alte-Geschichte-Epigraphik_DE.svg"  style="max-width:60%; height:auto;">
+
+<img src="/brand/logos/n4o_logo_verlauf_claim_lang.svg"  style="max-width:50%; height:auto;">
+
+
+<img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" style="max-width:60%; height:auto;">

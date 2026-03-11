@@ -7,6 +7,15 @@ date-modified: last-modified
 date-format: "DD.MM.YYYY"
 ---
 
+## Vorbereitung: Was sind Forschungsdaten
+
+Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant ([NFDI4Objects](https://www.nfdi4objects.net)).
+
+::: {.callout-note}
+Hier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. [Mehr erfahren](nfdi.html){.btn .btn-primary}
+:::
+
+
 ## Was ist NFDI?
 
 Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland.
@@ -19,15 +28,6 @@ Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Obje
 
 ![Task Areas bei NFDI4Objects](https://www.nfdi.de/wp-content/uploads/2023/12/TAs-Bildmarke.png){fig-alt="https://www.nfdi.de/konsortien/nfdi4objects"}
  
-## Vorbereitung: Was sind Forschungsdaten
-
-Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.
-
-Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant ([NFDI4Objects](https://www.nfdi4objects.net)).
-
-::: {.callout-note}
-Hier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. [Mehr erfahren](nfdi.html){.btn .btn-primary}
-:::
 
 
 ## Was ist NFDI?

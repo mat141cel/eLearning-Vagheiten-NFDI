@@ -1,5 +1,5 @@
 ---
-title: "Digitale Numismatik"
+title: "Basiswissen digitale Numismatik"
 filename: index
 subtitle: "Welche Relevanz haben Forschungsdaten für die Numismatik?"
 lang: de
@@ -13,7 +13,7 @@ css: /assets/css/collage.css
 ## Motivation
 In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen [Grundwissenschaften](https://de.wikipedia.org/wiki/Historische_Hilfswissenschaften) bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals [Numiscience.de](https://pecunia.zaw.uni-heidelberg.de/NumiScience/numismatische-toolbox).
 
-Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.
+Trotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.
 
 ## Lernziele
 Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in [NFDI](https://www.nfdi.de/), 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.

@@ -7,14 +7,15 @@ date-modified: last-modified
 date-format: "DD.MM.YYYY"
 ---
 
-
+<!-- 
 ## Überblick über Münzdatenbanken
 
 Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal [NumiScience.de](https://Numiscience.de) wurden bereits einige aufgearbeitet. Dazu gehört [CRRO](https://pecunia.zaw.uni-heidelberg.de/NumiScience/crro-coinage-of-the-roman-republic-online), [OCRE](https://pecunia.zaw.uni-heidelberg.de/NumiScience/ocre-online-coins-of-the-roman-empire) und [PELLA](https://pecunia.zaw.uni-heidelberg.de/NumiScience/pella-coinage-of-the-kings-of-macedonia). 
 
 Bei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.
+ -->
 
-
+Diese Seite befindet sich im Aufbau und wird bald veröffentlicht
 
 
 

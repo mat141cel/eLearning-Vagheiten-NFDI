@@ -37,18 +37,11 @@ Für die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedo
 * Mittelpunkt
 * anteilig auf alle Jahre im Zeitraum verteilt
 
-Je nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.
-
-| Methode | Vorteile | Nachteile |
-|---|---|---|
-| **Startjahr verwenden** | - Einfach zu berechnen und leicht verständlich  <br> - Klare Zuordnung zu einem einzelnen Histogramm-Bin  <br> - Schnelle Darstellung großer Datenmengen | - Kann künstliche Häufungen am Beginn von Zeiträumen erzeugen  <br> - Ignoriert die Dauer des Datierungsintervalls  <br> - Suggeriert eine Präzision, die in den Daten nicht vorhanden ist |
-| **Mittelpunkt des Zeitraums verwenden** | - Berücksichtigt zumindest die Länge des Intervalls  <br> - Verteilt Werte weniger stark an Periodenanfänge  <br> - Häufig eine pragmatische Annäherung | - Bleibt eine künstliche Präzisierung  <br> - Lange Zeiträume werden auf einen einzigen Punkt reduziert  <br> - Kann ebenfalls künstliche Peaks in der Mitte von Zeiträumen erzeugen |
-| **Verteilung über den gesamten Zeitraum** | - Spiegelt die Unsicherheit der Datierung besser wider  <br> - Vermeidet künstliche Punktkonzentrationen  <br> - Zeigt eher den möglichen Zeitraum der Prägung | - Methodisch komplexer  <br> - Werte werden über viele Bins verteilt und wirken dadurch „glatter“  <br> - Anzahl der Münzen pro Jahr kann schwerer interpretierbar sein, da eine Münze mehrere Jahre beeinflusst |
-
+Je nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.  
 
 Bei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.  
 
-
+Wählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf "Run Code" Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?
 
 <style>
 /* This targets the specific container you found */
@@ -184,6 +177,12 @@ plt.show()
 
 
 
+
+| Methode | Vorteile | Nachteile |
+|---|---|---|
+| **Start- /Endjahr** | - leicht verständlich  <br> - Klare Zuordnung | - künstliche Häufungen am Beginn/Ende von Zeiträumen  <br> - Ignoriert die Länge der Datierung  <br> -  künstliche Präzision |
+| **Mittelpunkt** | - Berücksichtigt die Länge des Intervalls  <br> - Häufig eine pragmatische Annäherung | - Bleibt eine künstliche Präzisierung  <br> - Lange Zeiträume werden auf einen einzigen Punkt reduziert  <br> - erzeugt künstliche Häufungen in der Mitte von Zeiträumen |
+| **Verteilung über den gesamten Zeitraum** | - Spiegelt die Unsicherheit der Datierung besser wider  <br> - Vermeidet künstliche Punktkonzentrationen  <br> | - Methodisch komplexer  <br> - Werte wirken künstlich „glatter“  <br> - Anzahl der Münzen pro Jahr kann schwerer interpretierbar sein, da eine Münze mehrere Jahre beeinflusst |
 
 ## TODO anstatt OJS, mache ein Grid der verschiedenen Visualisierungsmöglichkeiten
 Um Unsicherheiten und Vagheiten darzustellen, wird bisher meist auf Freitextfelder zurückgegriffen, in dem die Benutzer beliebige Aussagen eintragen können. 

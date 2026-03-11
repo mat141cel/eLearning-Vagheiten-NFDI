@@ -306,38 +306,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>anteilig auf alle Jahre im Zeitraum verteilt</li>
 </ul>
 <p>Je nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.</p>
-<table class="table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Methode</th>
-<th>Vorteile</th>
-<th>Nachteile</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Startjahr verwenden</strong></td>
-<td>- Einfach zu berechnen und leicht verständlich <br> - Klare Zuordnung zu einem einzelnen Histogramm-Bin <br> - Schnelle Darstellung großer Datenmengen</td>
-<td>- Kann künstliche Häufungen am Beginn von Zeiträumen erzeugen <br> - Ignoriert die Dauer des Datierungsintervalls <br> - Suggeriert eine Präzision, die in den Daten nicht vorhanden ist</td>
-</tr>
-<tr class="even">
-<td><strong>Mittelpunkt des Zeitraums verwenden</strong></td>
-<td>- Berücksichtigt zumindest die Länge des Intervalls <br> - Verteilt Werte weniger stark an Periodenanfänge <br> - Häufig eine pragmatische Annäherung</td>
-<td>- Bleibt eine künstliche Präzisierung <br> - Lange Zeiträume werden auf einen einzigen Punkt reduziert <br> - Kann ebenfalls künstliche Peaks in der Mitte von Zeiträumen erzeugen</td>
-</tr>
-<tr class="odd">
-<td><strong>Verteilung über den gesamten Zeitraum</strong></td>
-<td>- Spiegelt die Unsicherheit der Datierung besser wider <br> - Vermeidet künstliche Punktkonzentrationen <br> - Zeigt eher den möglichen Zeitraum der Prägung</td>
-<td>- Methodisch komplexer <br> - Werte werden über viele Bins verteilt und wirken dadurch „glatter“ <br> - Anzahl der Münzen pro Jahr kann schwerer interpretierbar sein, da eine Münze mehrere Jahre beeinflusst</td>
-</tr>
-</tbody>
-</table>
 <p>Bei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.</p>
+<p>Wählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?</p>
 <style>
 /* This targets the specific container you found */
 #exercise-loading-indicator,
@@ -354,10 +324,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="70" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 69;"><span id="cb1-70"><a href="#cb1-70"></a>viewof emperor <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb1-71"><a href="#cb1-71"></a>  [<span class="st">"galerius"</span><span class="op">,</span> <span class="st">"valerian"</span><span class="op">,</span> <span class="st">"commodus"</span><span class="op">,</span> <span class="st">"pertinax"</span>]<span class="op">,</span></span>
-<span id="cb1-72"><a href="#cb1-72"></a>  {<span class="dt">label</span><span class="op">:</span> <span class="st">"Emperor"</span>}</span>
-<span id="cb1-73"><a href="#cb1-73"></a>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="63" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 62;"><span id="cb1-63"><a href="#cb1-63"></a>viewof emperor <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb1-64"><a href="#cb1-64"></a>  [<span class="st">"galerius"</span><span class="op">,</span> <span class="st">"valerian"</span><span class="op">,</span> <span class="st">"commodus"</span><span class="op">,</span> <span class="st">"pertinax"</span>]<span class="op">,</span></span>
+<span id="cb1-65"><a href="#cb1-65"></a>  {<span class="dt">label</span><span class="op">:</span> <span class="st">"Emperor"</span>}</span>
+<span id="cb1-66"><a href="#cb1-66"></a>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -375,6 +345,37 @@ eyJhdHRyIjp7ImRlZmluZSI6WyJjaHJvbm9fcGxvdCJdLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJl
 eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsImV4ZXJjaXNlIjoiZXhfMTEiLCJpbnB1dCI6WyJlbXBlcm9yIl19LCJjb2RlIjoicXVlcnkgPSBmXCJcIlwiXG5QUkVGSVggbm06IDxodHRwOi8vbm9taXNtYS5vcmcvaWQvPlxuUFJFRklYIG5tbzogPGh0dHA6Ly9ub21pc21hLm9yZy9vbnRvbG9neSM+XG5cblNFTEVDVCA/Y29pbiA/ZW5kX2RhdGUgP3N0YXJ0X2RhdGUgV0hFUkUge3tcbj90eXBlIG5tbzpoYXNBdXRob3JpdHkgbm06e2VtcGVyb3J9IC5cbj90eXBlIG5tbzpoYXNFbmREYXRlID9lbmRfZGF0ZSAuXG4/dHlwZSBubW86aGFzU3RhcnREYXRlID9zdGFydF9kYXRlIC5cbj9jb2luIG5tbzpoYXNUeXBlU2VyaWVzSXRlbSA/dHlwZSAuXG59fVxuXCJcIlwiXG5cbmRhdGEgPSBhd2FpdCBmZXRjaF9jb2luX2RhdGEocXVlcnkpXG4jIEdlbmVyYXRlIHBsb3RcbmZpZyA9IGNocm9ub19wbG90KGRhdGEpXG5cbnBsdC5zaG93KCkifQ==
 </script>
 </div>
+<table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Methode</th>
+<th>Vorteile</th>
+<th>Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Start- /Endjahr</strong></td>
+<td>- leicht verständlich <br> - Klare Zuordnung</td>
+<td>- künstliche Häufungen am Beginn/Ende von Zeiträumen <br> - Ignoriert die Länge der Datierung <br> - künstliche Präzision</td>
+</tr>
+<tr class="even">
+<td><strong>Mittelpunkt</strong></td>
+<td>- Berücksichtigt die Länge des Intervalls <br> - Häufig eine pragmatische Annäherung</td>
+<td>- Bleibt eine künstliche Präzisierung <br> - Lange Zeiträume werden auf einen einzigen Punkt reduziert <br> - erzeugt künstliche Häufungen in der Mitte von Zeiträumen</td>
+</tr>
+<tr class="odd">
+<td><strong>Verteilung über den gesamten Zeitraum</strong></td>
+<td>- Spiegelt die Unsicherheit der Datierung besser wider <br> - Vermeidet künstliche Punktkonzentrationen <br></td>
+<td>- Methodisch komplexer <br> - Werte wirken künstlich „glatter“ <br> - Anzahl der Münzen pro Jahr kann schwerer interpretierbar sein, da eine Münze mehrere Jahre beeinflusst</td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <section id="todo-anstatt-ojs-mache-ein-grid-der-verschiedenen-visualisierungsmöglichkeiten" class="level2">

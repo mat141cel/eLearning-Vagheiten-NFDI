@@ -1,5 +1,5 @@
 ---
-title: "Vagheiten"
+title: "Arten von Unsicherheiten / Vagheiten"
 filename: index
 subtitle: "Welche Herausforderungen liegen in unsicheren Forschungsdaten für die Numismatik?"
 lang: de
@@ -8,6 +8,7 @@ date-modified: last-modified
 date-format: "DD.MM.YYYY"
 css: /assets/css/collage.css
 ---
+
 
 ## Was sind Unsicherheiten?
 
@@ -175,6 +176,31 @@ plt.show()
 | **Mittelpunkt** | - Berücksichtigt die Länge des Intervalls  <br> - Häufig eine pragmatische Annäherung | - Bleibt eine künstliche Präzisierung  <br> - Lange Zeiträume werden auf einen einzigen Punkt reduziert  <br> - erzeugt künstliche Häufungen in der Mitte von Zeiträumen |
 | **Verteilung über den gesamten Zeitraum** | - Spiegelt die Unsicherheit der Datierung besser wider  <br> - Vermeidet künstliche Punktkonzentrationen  <br> | - Methodisch komplexer  <br> - Werte wirken künstlich „glatter“  <br> - Anzahl der Münzen pro Jahr ist keine ganze Zahl ist schwerer interpretierbar |
 
-Wie Sie sehen, sind Auswertungen mit unsicheren Münzdaten schwerer generalisierbar. In den Folgenden Modulseiten lernen Sie, wie sie trotzdem ansprechende und belastbare Auswertungen erstellen können, selbst wenn die Datengrundlage noch unsicherer ist, wie im obigen Beispiel.
+## TODO anstatt OJS, mache ein Grid der verschiedenen Visualisierungsmöglichkeiten
+Um Unsicherheiten und Vagheiten darzustellen, wird bisher meist auf Freitextfelder zurückgegriffen, in dem die Benutzer beliebige Aussagen eintragen können. 
+
+Mit der Deutung dieser Daten beschäftigt sich das Projekt [Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts](https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts) an der Universität Heidelberg im Rahmen von NFDI4objects.
+
+Beispiele:
+
+die Münze: https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099
+
+Die Datierung dieser Münze lautet nach 274 n. Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n. Chr. datiert wird. Es ist demnach nur ein (Terminus Post Quem)[https://en.wikipedia.org/wiki/Terminus_post_quem] angegeben, und es ist unsicher, bis wann diese Münzen noch geprägt wurden.
+
+
+
+
+
+sie können also keine Unsicherheiten in Daten darstellen. Das bedeutet bei der Digitalisierung von Münzen eine Herausforderung, d. Denn Unsicherheiten und Vagheiten sind elementar, um Münzdaten richtig erfassen und später bewerten und deuten zu können.
+
+ Mit dieser Herausforderung befasst sich das Projekt XXXX im Rahmen von NFDI4objects. Projektbeteiligte, Zielsetzung (verständlich!!!) etc.
+Im Folgenden wird erklärt, was genau Unsicherheiten und Vagheiten sind, der Unterschied von beidem erläutert und die Herausforderungen hinsichtlich  …..
+
+ Nach diesem Modul kennen Sie die relevantesten Münzdatenbanken, ihr Darstellungsschema und können Daten aus verschiedenen Quellen miteinander verknüpfen .
+
+Weiterführende Literatur mit link auf die Definitionspapers
+Was der Unterschied
+
+
 
 

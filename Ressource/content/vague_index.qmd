@@ -120,36 +120,40 @@ async def fetch_coin_data(url):
 
 def chrono_plot(data):
 
-    years = np.arange(data.start_date.min(), data.end_date.max()+1)
+    years = np.arange(data.start_date.min(), data.end_date.max() + 1)
 
-    fig, axes = plt.subplots(1, 3, figsize=(15,4))
+    fig, axes = plt.subplots(2, 2, figsize=(12, 8))
 
-    # Mittelpunkt
+    # --- Chronologie nach Startdatum ---
+    axes[0,0].hist(data.start_date, bins=20)
+    axes[0,0].set_title("Chronologie nach Startdatum")
+    axes[0,0].set_xlabel("Jahr")
+    axes[0,0].set_ylabel("Münzen")
+
+    # --- Chronologie nach Enddatum ---
+    axes[0,1].hist(data.end_date, bins=20)
+    axes[0,1].set_title("Chronologie nach Enddatum")
+    axes[0,1].set_xlabel("Jahr")
+    axes[0,1].set_ylabel("Münzen")
+
+    # --- Chronologie nach Mittelpunkt ---
     mid = (data.start_date + data.end_date) / 2
-    axes[0].hist(mid, bins=20)
-    axes[0].set_title("Mittelpunkt")
-    axes[0].set_xlabel("Jahr")
-    axes[0].set_ylabel("Münzen")
+    axes[1,0].hist(mid, bins=20)
+    axes[1,0].set_title("Chronologie nach Mittelpunkt")
+    axes[1,0].set_xlabel("Jahr")
+    axes[1,0].set_ylabel("Münzen")
 
-    # Bereichsüberlappung
-    counts = []
-    for y in years:
-        counts.append(((data.start_date <= y) & (data.end_date >= y)).sum())
-
-    axes[1].plot(years, counts)
-    axes[1].set_title("Bereichsüberlappung")
-    axes[1].set_xlabel("Jahr")
-
-    # Gleichverteilte Wahrscheinlichkeit
+    # --- Chronologie nach gleichverteilter Wahrscheinlichkeit ---
     prob = np.zeros(len(years))
     for _, r in data.iterrows():
         span = r.end_date - r.start_date + 1
         mask = (years >= r.start_date) & (years <= r.end_date)
-        prob[mask] += 1/span
+        prob[mask] += 1 / span
 
-    axes[2].plot(years, prob)
-    axes[2].set_title("Gleichverteilte Wahrscheinlichkeit")
-    axes[2].set_xlabel("Jahr")
+    axes[1,1].plot(years, prob)
+    axes[1,1].set_title("Chronologie nach gleichverteilter Wahrscheinlichkeit")
+    axes[1,1].set_xlabel("Jahr")
+    axes[1,1].set_ylabel("Erwartete Münzen")
 
     fig.tight_layout()
     return fig

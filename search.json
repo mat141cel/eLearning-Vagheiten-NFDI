@@ -2,9 +2,9 @@
   {
     "objectID": "content/vague_index.html",
     "href": "content/vague_index.html",
-    "title": "Unsichere Daten",
+    "title": "Vagheiten",
     "section": "",
-    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System.\nMünzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.\n\n\nIn diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.\nFür die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:\n\nStartjahr / Endjahr\nMittelpunkt\nanteilig auf alle Jahre im Zeitraum verteilt\n\nJe nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr kann schwerer interpretierbar sein, da eine Münze mehrere Jahre beeinflusst",
+    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System.\nMünzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.\n\n\nIn diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.\nFür die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:\n\nStartjahr / Endjahr\nMittelpunkt\nanteilig auf alle Jahre im Zeitraum verteilt\n\nJe nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr ist keine ganze Zahl ist schwerer interpretierbar\n\n\n\nWie Sie sehen, sind Auswertungen mit unsicheren Münzdaten schwerer generalisierbar. In den Folgenden Modulseiten lernen Sie, wie sie trotzdem ansprechende und belastbare Auswertungen erstellen können, selbst wenn die Datengrundlage noch unsicherer ist, wie im obigen Beispiel.",
     "crumbs": [
       "🌐 II. Umgang mit vagen Daten"
     ]
@@ -12,19 +12,9 @@
   {
     "objectID": "content/vague_index.html#was-sind-unsicherheiten",
     "href": "content/vague_index.html#was-sind-unsicherheiten",
-    "title": "Unsichere Daten",
+    "title": "Vagheiten",
     "section": "",
-    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System.\nMünzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.\n\n\nIn diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.\nFür die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:\n\nStartjahr / Endjahr\nMittelpunkt\nanteilig auf alle Jahre im Zeitraum verteilt\n\nJe nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr kann schwerer interpretierbar sein, da eine Münze mehrere Jahre beeinflusst",
-    "crumbs": [
-      "🌐 II. Umgang mit vagen Daten"
-    ]
-  },
-  {
-    "objectID": "content/vague_index.html#todo-anstatt-ojs-mache-ein-grid-der-verschiedenen-visualisierungsmöglichkeiten",
-    "href": "content/vague_index.html#todo-anstatt-ojs-mache-ein-grid-der-verschiedenen-visualisierungsmöglichkeiten",
-    "title": "Unsichere Daten",
-    "section": "TODO anstatt OJS, mache ein Grid der verschiedenen Visualisierungsmöglichkeiten",
-    "text": "TODO anstatt OJS, mache ein Grid der verschiedenen Visualisierungsmöglichkeiten\nUm Unsicherheiten und Vagheiten darzustellen, wird bisher meist auf Freitextfelder zurückgegriffen, in dem die Benutzer beliebige Aussagen eintragen können.\nMit der Deutung dieser Daten beschäftigt sich das Projekt “Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts” bei NFDI4objects.\nBeispiele:\ndie Münze: https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099\nDie Datierung dieser Münze lautet nach 274 n. Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n. Chr. datiert wird. Es ist demnach nur ein (Terminus Post Quem)[https://en.wikipedia.org/wiki/Terminus_post_quem] angegeben, und es ist unsicher, bis wann diese Münzen noch geprägt wurden.\nsie können also keine Unsicherheiten in Daten darstellen. Das bedeutet bei der Digitalisierung von Münzen eine Herausforderung, d. Denn Unsicherheiten und Vagheiten sind elementar, um Münzdaten richtig erfassen und später bewerten und deuten zu können.\nMit dieser Herausforderung befasst sich das Projekt XXXX im Rahmen von NFDI4objects. Projektbeteiligte, Zielsetzung (verständlich!!!) etc. Im Folgenden wird erklärt, was genau Unsicherheiten und Vagheiten sind, der Unterschied von beidem erläutert und die Herausforderungen hinsichtlich …..\nNach diesem Modul kennen Sie die relevantesten Münzdatenbanken, ihr Darstellungsschema und können Daten aus verschiedenen Quellen miteinander verknüpfen .\nWeiterführende Literatur mit link auf die Definitionspapers Was der Unterschied",
+    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System.\nMünzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.\n\n\nIn diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.\nFür die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:\n\nStartjahr / Endjahr\nMittelpunkt\nanteilig auf alle Jahre im Zeitraum verteilt\n\nJe nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr ist keine ganze Zahl ist schwerer interpretierbar\n\n\n\nWie Sie sehen, sind Auswertungen mit unsicheren Münzdaten schwerer generalisierbar. In den Folgenden Modulseiten lernen Sie, wie sie trotzdem ansprechende und belastbare Auswertungen erstellen können, selbst wenn die Datengrundlage noch unsicherer ist, wie im obigen Beispiel.",
     "crumbs": [
       "🌐 II. Umgang mit vagen Daten"
     ]
@@ -44,47 +34,156 @@
     "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
   },
   {
-    "objectID": "content/vague_nfdi.html",
-    "href": "content/vague_nfdi.html",
-    "title": "Was ist NFDI?",
+    "objectID": "content/vague_definitions.html",
+    "href": "content/vague_definitions.html",
+    "title": "Arten von Unsicherheiten / Vagheiten",
     "section": "",
-    "text": "Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.\n\n\n\nGrafik Aufbau der NFDI\n\n\nDie Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:\n   ## Vorbereitung: Was sind Forschungsdaten\nForschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.\nUm den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (NFDI4Objects).\n\n\n\n\n\n\nHinweis\n\n\n\nHier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. Mehr erfahren",
-    "crumbs": [
-      "🌐 II. Umgang mit vagen Daten",
-      "1. Was ist die NFDI?"
-    ]
+    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System.\nMünzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.\n\n\nIn diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.\nFür die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:\n\nStartjahr / Endjahr\nMittelpunkt\nanteilig auf alle Jahre im Zeitraum verteilt\n\nJe nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr ist keine ganze Zahl ist schwerer interpretierbar"
   },
   {
-    "objectID": "content/vague_nfdi.html#was-ist-nfdi",
-    "href": "content/vague_nfdi.html#was-ist-nfdi",
-    "title": "Was ist NFDI?",
+    "objectID": "content/vague_definitions.html#was-sind-unsicherheiten",
+    "href": "content/vague_definitions.html#was-sind-unsicherheiten",
+    "title": "Arten von Unsicherheiten / Vagheiten",
     "section": "",
-    "text": "Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.\n\n\n\nGrafik Aufbau der NFDI\n\n\nDie Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:\n   ## Vorbereitung: Was sind Forschungsdaten\nForschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.\nUm den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (NFDI4Objects).\n\n\n\n\n\n\nHinweis\n\n\n\nHier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. Mehr erfahren",
+    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System.\nMünzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.\n\n\nIn diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.\nFür die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:\n\nStartjahr / Endjahr\nMittelpunkt\nanteilig auf alle Jahre im Zeitraum verteilt\n\nJe nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr ist keine ganze Zahl ist schwerer interpretierbar"
+  },
+  {
+    "objectID": "content/vague_definitions.html#todo-anstatt-ojs-mache-ein-grid-der-verschiedenen-visualisierungsmöglichkeiten",
+    "href": "content/vague_definitions.html#todo-anstatt-ojs-mache-ein-grid-der-verschiedenen-visualisierungsmöglichkeiten",
+    "title": "Arten von Unsicherheiten / Vagheiten",
+    "section": "TODO anstatt OJS, mache ein Grid der verschiedenen Visualisierungsmöglichkeiten",
+    "text": "TODO anstatt OJS, mache ein Grid der verschiedenen Visualisierungsmöglichkeiten\nUm Unsicherheiten und Vagheiten darzustellen, wird bisher meist auf Freitextfelder zurückgegriffen, in dem die Benutzer beliebige Aussagen eintragen können.\nMit der Deutung dieser Daten beschäftigt sich das Projekt Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts an der Universität Heidelberg im Rahmen von NFDI4objects.\nBeispiele:\ndie Münze: https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099\nDie Datierung dieser Münze lautet nach 274 n. Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n. Chr. datiert wird. Es ist demnach nur ein (Terminus Post Quem)[https://en.wikipedia.org/wiki/Terminus_post_quem] angegeben, und es ist unsicher, bis wann diese Münzen noch geprägt wurden.\nsie können also keine Unsicherheiten in Daten darstellen. Das bedeutet bei der Digitalisierung von Münzen eine Herausforderung, d. Denn Unsicherheiten und Vagheiten sind elementar, um Münzdaten richtig erfassen und später bewerten und deuten zu können.\nMit dieser Herausforderung befasst sich das Projekt XXXX im Rahmen von NFDI4objects. Projektbeteiligte, Zielsetzung (verständlich!!!) etc. Im Folgenden wird erklärt, was genau Unsicherheiten und Vagheiten sind, der Unterschied von beidem erläutert und die Herausforderungen hinsichtlich …..\nNach diesem Modul kennen Sie die relevantesten Münzdatenbanken, ihr Darstellungsschema und können Daten aus verschiedenen Quellen miteinander verknüpfen .\nWeiterführende Literatur mit link auf die Definitionspapers Was der Unterschied"
+  },
+  {
+    "objectID": "content/digital_index.html",
+    "href": "content/digital_index.html",
+    "title": "Digitale Numismatik",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.",
     "crumbs": [
-      "🌐 II. Umgang mit vagen Daten",
-      "1. Was ist die NFDI?"
+      "🔍 I. Digitale Numismatik"
     ]
   },
   {
-    "objectID": "content/vague_nfdi.html#was-ist-nfdi-1",
-    "href": "content/vague_nfdi.html#was-ist-nfdi-1",
-    "title": "Was ist NFDI?",
-    "section": "Was ist NFDI?",
-    "text": "Was ist NFDI?\nDie Aufarbeitung der Daten soll dabei anhand der FAIR-Kriterien erfolgen. Das Akronym steht für die Kategorien Findable, Accessible, Interoperable, Reusable, also auffindbar, zugänglich, interoperabel und wiederverwendbar. FAIR-Kriterien werden in etwa seit zehn Jahren in der Wissenschaft genutzt. Initiativen wie GO-Fair haben die Prinzipien ausformuliert.\n\nFindable\nDie Kategorie Findable bezieht sich zunächst darauf, dass die Daten im Web eindeutig identifizierbar sein müssen. Ihre URL muss persistent, also unveränderlich sein, sodass in der Zukunft keine andere Ressource die gleiche URL bekommt. Es gibt mehrere Services, die diese Anforderungen erfüllen, zum Beispiel die DOI (Digital Object Identifier)-Organisation.\nIn der Numismatik haben moderne Münzdatenbanken einen eindeutigen und persistenten Permalink, so auch die Münzen der Heidelberger Sammlung (Beispiel). Die Daten sollen allerdings auch auffindbar sein, wenn der Identifier unbekannt ist. Dafür müssen die Daten mit gut beschriebenen Metadaten ausgezeichnet sein. Dazu gehören bei Münzdaten Informationen zur Prägestätte, Nominal oder Gewicht. Auch diese Informationen, sowie Publikationen, die auf Münzen verweisen, sollten mit einem Identifikator versehen sein.\n\n\nAccessible\nNeben der Auffindbarkeit ist entscheidend, dass Münzobjekte und die dazugehörigen Beschreibungen zugänglich sind. Ein Digitalisat einer Münze in einer Online-Datenbank muss über standardisierte Protokolle (z. B. HTTPS) erreichbar sein.\nIst ein direkter Zugriff auf hochauflösende Bilder aus urheberrechtlichen Gründen eingeschränkt, können zumindest die Metadaten frei zugänglich bleiben. So kann ein Forscher nachvollziehen, dass eine bestimmte Münze dokumentiert ist, selbst wenn er nicht sofort das Bildmaterial herunterladen darf.\n\n\nInteroperable\nForschungsdaten in der Numismatik sollen sich mit anderen Sammlungen und Fachdaten verknüpfen lassen. Dafür ist es wichtig, gemeinsame Standards und Vokabulare zu nutzen.\nEin Beispiel wäre die Verwendung von Normdaten wie GND-IDs für antike Herrscher oder Nomisma.org-Referenzen für Münztypen. Wenn eine römische Münze aus Trier mit „RIC“-Referenzen (Roman Imperial Coinage) ausgezeichnet und gleichzeitig mit Ontologien wie Nomisma.org verknüpft wird, lassen sich Informationen aus verschiedenen Museen und Publikationen problemlos kombinieren.\n\n\nReusable\nDie Wiederverwendbarkeit bezieht sich auf die Fähigkeit des Nutzenden, die Daten korrekt zu interpretieren. Dazu sollten so viele Kontextinformationen wie möglich gegeben werden, auch diejenigen, die auf den ersten Blick irrelevant erscheinen.\nDazu gehören: - Versionsnamen der Daten\n- Konkrete Informationen zur im Erhebungsprozess verwendeten Soft- und Hardware\n- Schritte im Datenerhebungsprozess (Formulierung des Ziels, Kennzeichnung von fremden Daten, Beschreibung der Datenverarbeitungsschritte)\nUm die Wiederverwendbarkeit zu erleichtern, sollten diese Metadaten nach einem standardisierten Muster angegeben werden.\n- Bei Publikationen: Dublin Core\n- Für archäologische Daten: Europeana-Datenmodell\nAls Teil der Wiederverwendbarkeit sollten auch klare Lizenzen vergeben werden, damit automatisierte Suchen nicht versehentlich urheberrechtlich geschütztes Material abgreifen.",
+    "objectID": "content/digital_index.html#motivation",
+    "href": "content/digital_index.html#motivation",
+    "title": "Digitale Numismatik",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.",
     "crumbs": [
-      "🌐 II. Umgang mit vagen Daten",
-      "1. Was ist die NFDI?"
+      "🔍 I. Digitale Numismatik"
     ]
   },
   {
-    "objectID": "content/vague_nfdi.html#transferaufgaben",
-    "href": "content/vague_nfdi.html#transferaufgaben",
-    "title": "Was ist NFDI?",
-    "section": "Transferaufgaben",
-    "text": "Transferaufgaben",
+    "objectID": "content/digital_index.html#lernziele",
+    "href": "content/digital_index.html#lernziele",
+    "title": "Digitale Numismatik",
+    "section": "Lernziele",
+    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken",
     "crumbs": [
-      "🌐 II. Umgang mit vagen Daten",
-      "1. Was ist die NFDI?"
+      "🔍 I. Digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#aufbau-des-kurses",
+    "href": "content/digital_index.html#aufbau-des-kurses",
+    "title": "Digitale Numismatik",
+    "section": "Aufbau des Kurses",
+    "text": "Aufbau des Kurses\nDas Modul befindet sich derzeit im Aufbau und besteht aus drei Elementen.",
+    "crumbs": [
+      "🔍 I. Digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#interaktive-analysen",
+    "href": "content/digital_index.html#interaktive-analysen",
+    "title": "Digitale Numismatik",
+    "section": "Interaktive Analysen",
+    "text": "Interaktive Analysen\nZu jedem Modul gibt es einen begleitenden Python-Code der interaktiv ausgeführt werden kann. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. Um die Übung zu starten, klicken Sie auf Run Code. (Sollte der Button ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint)\nKeine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen.\n\nÜbung 1: Münzen von Hadrian identifizieren\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.\n\n\n\n\n\n\nHinweisWie finde ich die Links?\n\n\n\n\n\n\n\n\n1. Alle Münzen in den Datenbanken anzeigen\n\n\n\n\n\n2. Diesen Link kopieren (Rechtsklick -&gt; Link-Adresse kopieren)\n\n\n\n\n\nFühren Sie danach die folgende Codezelle mit “Run Code” aus und fügen Sie die URLs der Resultate zwischen die Anführungsstriche neben “url” ein. Führen Sie den Code nochnmal aus und überprüfen Sie den Output. Wie versteht der Code, ob der Link zu Münzen von Hadrian führt? Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?\nNach dieser Übung haben Sie sich ein Bild gemacht, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\n\n\n\n\n\n\n\n\n\n\nHinweis: Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten.\nWelches Kürzel in den URLs könnte auf Hadrian verweisen?\n\n\nLösung: Nur OCRE enthält Münzen von Hadrian. Diese können durch das “hdn” in der URL identifiziert werden. Hier ist ein Beispiel für eine gültige URL eines Hadrian-Typs:\nurl = \"http://numismatics.org/ocre/id/ric.2_3(2).hdn.744\"",
+    "crumbs": [
+      "🔍 I. Digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#quiz",
+    "href": "content/digital_index.html#quiz",
+    "title": "Digitale Numismatik",
+    "section": "Quiz",
+    "text": "Quiz\nHaben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
+    "crumbs": [
+      "🔍 I. Digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Digitale Numismatik",
+    "section": "",
+    "text": "In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
+    "crumbs": [
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#warum-dieser-kurs",
+    "href": "content/index.html#warum-dieser-kurs",
+    "title": "Digitale Numismatik",
+    "section": "",
+    "text": "In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
+    "crumbs": [
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#aufbau-des-kurses",
+    "href": "content/index.html#aufbau-des-kurses",
+    "title": "Digitale Numismatik",
+    "section": "Aufbau des Kurses",
+    "text": "Aufbau des Kurses\n\n\n\n\n1. Münzen Digital\nInhalt Forschungsdaten und Portalrecherche\nWarum? Datenquellen verstehen\n\n\n\n\n\n\n2. Vage Münzdaten\nInhalt Umgang mit unsicheren Daten\nWarum? Transparenz\n\n\n\n\n\n\n\n\n\n\nTipp\n\n\n\nDie Module können in beliebiger Reihenfolge absolviert werden.\nSie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.",
+    "crumbs": [
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#so-funktioniert-dieser-kurs",
+    "href": "content/index.html#so-funktioniert-dieser-kurs",
+    "title": "Digitale Numismatik",
+    "section": "So funktioniert dieser Kurs",
+    "text": "So funktioniert dieser Kurs\nDieser Kurs wurde mit Quarto Live geschrieben, das interaktive Übungen erlaubt.\n\n\n\n\n\n\nHinweisMehr über den Kurs in Quarto Live\n\n\n\n\n\n\n\n\n\n\n\n\nWeb‑basiert\nDer Kurs läuft komplett im Browser (Chrome, Firefox, Edge …).\n\n\nSicher\nDer Code wird in einer isolierten Web‑Assembly‑Umgebung ausgeführt – keine Daten verlassen Ihren Rechner.\n\n\nInteraktiv\nSie können Code‑Zellen anpassen und sofort das Ergebnis sehen.\n\n\n\nMehr erfahren: https://quarto.org/docs/computations/quarto-live.html\n\n\n\nDie interaktiven Elemente des Kurses nutzen die Programmiersprache Python. Dieser Kurs erfordert keine Informatikkentnisse, wenn Sie aber mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt.\n\n\n\n\n\n\nHinweisWarum Python lernen?\n\n\n\n\n\n\n\n\n\n\n\n\nEinfach zu lesen\nDie Syntax ist fast wie ein Satz in natürlicher Sprache.\n\n\nGroße Community\nViele Beispiele und Tutorials, speziell für die Digital Humanities.\n\n\nFlexibilität\nMit Bibliotheken wie pandas, numpy und matplotlib können Daten einfach verarbeitet und visualisiert werden.\n\n\n\nEinsteiger‑Tutorial: https://www.python.org/about/gettingstarted/",
+    "crumbs": [
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#förderung",
+    "href": "content/index.html#förderung",
+    "title": "Digitale Numismatik",
+    "section": "Förderung",
+    "text": "Förderung\nDiese ELearning-Materialien sind in dem von der DFG geförderten Projekt NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte entstanden und wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.",
+    "crumbs": [
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/digital_data_access.html",
+    "href": "content/digital_data_access.html",
+    "title": "Daten herunterladen",
+    "section": "",
+    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.",
+    "crumbs": [
+      "🔍 I. Digitale Numismatik",
+      "2. Datenzugang"
+    ]
+  },
+  {
+    "objectID": "content/digital_data_access.html#überblick-über-münzdatenbanken",
+    "href": "content/digital_data_access.html#überblick-über-münzdatenbanken",
+    "title": "Daten herunterladen",
+    "section": "",
+    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.",
+    "crumbs": [
+      "🔍 I. Digitale Numismatik",
+      "2. Datenzugang"
     ]
   },
   {
@@ -154,135 +253,47 @@
     ]
   },
   {
-    "objectID": "content/digital_data_access.html",
-    "href": "content/digital_data_access.html",
-    "title": "Daten herunterladen",
+    "objectID": "content/vague_nfdi.html",
+    "href": "content/vague_nfdi.html",
+    "title": "Was ist NFDI?",
     "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.",
+    "text": "Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.\n\n\n\nGrafik Aufbau der NFDI\n\n\nDie Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:\n   ## Vorbereitung: Was sind Forschungsdaten\nForschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.\nUm den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (NFDI4Objects).\n\n\n\n\n\n\nHinweis\n\n\n\nHier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. Mehr erfahren",
     "crumbs": [
-      "🔍 I. Digitale Numismatik",
-      "2. Datenzugang"
+      "🌐 II. Umgang mit vagen Daten",
+      "1. Was ist die NFDI?"
     ]
   },
   {
-    "objectID": "content/digital_data_access.html#überblick-über-münzdatenbanken",
-    "href": "content/digital_data_access.html#überblick-über-münzdatenbanken",
-    "title": "Daten herunterladen",
+    "objectID": "content/vague_nfdi.html#was-ist-nfdi",
+    "href": "content/vague_nfdi.html#was-ist-nfdi",
+    "title": "Was ist NFDI?",
     "section": "",
-    "text": "Es gibt verschiedene für die Numismatik relevante Seiten. Im Portal NumiScience.de wurden bereits einige aufgearbeitet. Dazu gehört CRRO, OCRE und PELLA.\nBei diesen Datenbanken handelt es sich um digitalisierte Typenkataloge, die bei der American Numismatic Society entstanden sind, und alle die gleiche Software verwenden.",
+    "text": "Die Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.\n\n\n\nGrafik Aufbau der NFDI\n\n\nDie Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:\n   ## Vorbereitung: Was sind Forschungsdaten\nForschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.\nUm den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (NFDI4Objects).\n\n\n\n\n\n\nHinweis\n\n\n\nHier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. Mehr erfahren",
     "crumbs": [
-      "🔍 I. Digitale Numismatik",
-      "2. Datenzugang"
+      "🌐 II. Umgang mit vagen Daten",
+      "1. Was ist die NFDI?"
     ]
   },
   {
-    "objectID": "content/index.html",
-    "href": "content/index.html",
-    "title": "Digitale Numismatik",
-    "section": "",
-    "text": "In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
+    "objectID": "content/vague_nfdi.html#was-ist-nfdi-1",
+    "href": "content/vague_nfdi.html#was-ist-nfdi-1",
+    "title": "Was ist NFDI?",
+    "section": "Was ist NFDI?",
+    "text": "Was ist NFDI?\nDie Aufarbeitung der Daten soll dabei anhand der FAIR-Kriterien erfolgen. Das Akronym steht für die Kategorien Findable, Accessible, Interoperable, Reusable, also auffindbar, zugänglich, interoperabel und wiederverwendbar. FAIR-Kriterien werden in etwa seit zehn Jahren in der Wissenschaft genutzt. Initiativen wie GO-Fair haben die Prinzipien ausformuliert.\n\nFindable\nDie Kategorie Findable bezieht sich zunächst darauf, dass die Daten im Web eindeutig identifizierbar sein müssen. Ihre URL muss persistent, also unveränderlich sein, sodass in der Zukunft keine andere Ressource die gleiche URL bekommt. Es gibt mehrere Services, die diese Anforderungen erfüllen, zum Beispiel die DOI (Digital Object Identifier)-Organisation.\nIn der Numismatik haben moderne Münzdatenbanken einen eindeutigen und persistenten Permalink, so auch die Münzen der Heidelberger Sammlung (Beispiel). Die Daten sollen allerdings auch auffindbar sein, wenn der Identifier unbekannt ist. Dafür müssen die Daten mit gut beschriebenen Metadaten ausgezeichnet sein. Dazu gehören bei Münzdaten Informationen zur Prägestätte, Nominal oder Gewicht. Auch diese Informationen, sowie Publikationen, die auf Münzen verweisen, sollten mit einem Identifikator versehen sein.\n\n\nAccessible\nNeben der Auffindbarkeit ist entscheidend, dass Münzobjekte und die dazugehörigen Beschreibungen zugänglich sind. Ein Digitalisat einer Münze in einer Online-Datenbank muss über standardisierte Protokolle (z. B. HTTPS) erreichbar sein.\nIst ein direkter Zugriff auf hochauflösende Bilder aus urheberrechtlichen Gründen eingeschränkt, können zumindest die Metadaten frei zugänglich bleiben. So kann ein Forscher nachvollziehen, dass eine bestimmte Münze dokumentiert ist, selbst wenn er nicht sofort das Bildmaterial herunterladen darf.\n\n\nInteroperable\nForschungsdaten in der Numismatik sollen sich mit anderen Sammlungen und Fachdaten verknüpfen lassen. Dafür ist es wichtig, gemeinsame Standards und Vokabulare zu nutzen.\nEin Beispiel wäre die Verwendung von Normdaten wie GND-IDs für antike Herrscher oder Nomisma.org-Referenzen für Münztypen. Wenn eine römische Münze aus Trier mit „RIC“-Referenzen (Roman Imperial Coinage) ausgezeichnet und gleichzeitig mit Ontologien wie Nomisma.org verknüpft wird, lassen sich Informationen aus verschiedenen Museen und Publikationen problemlos kombinieren.\n\n\nReusable\nDie Wiederverwendbarkeit bezieht sich auf die Fähigkeit des Nutzenden, die Daten korrekt zu interpretieren. Dazu sollten so viele Kontextinformationen wie möglich gegeben werden, auch diejenigen, die auf den ersten Blick irrelevant erscheinen.\nDazu gehören: - Versionsnamen der Daten\n- Konkrete Informationen zur im Erhebungsprozess verwendeten Soft- und Hardware\n- Schritte im Datenerhebungsprozess (Formulierung des Ziels, Kennzeichnung von fremden Daten, Beschreibung der Datenverarbeitungsschritte)\nUm die Wiederverwendbarkeit zu erleichtern, sollten diese Metadaten nach einem standardisierten Muster angegeben werden.\n- Bei Publikationen: Dublin Core\n- Für archäologische Daten: Europeana-Datenmodell\nAls Teil der Wiederverwendbarkeit sollten auch klare Lizenzen vergeben werden, damit automatisierte Suchen nicht versehentlich urheberrechtlich geschütztes Material abgreifen.",
     "crumbs": [
-      "Hauptseite"
+      "🌐 II. Umgang mit vagen Daten",
+      "1. Was ist die NFDI?"
     ]
   },
   {
-    "objectID": "content/index.html#warum-dieser-kurs",
-    "href": "content/index.html#warum-dieser-kurs",
-    "title": "Digitale Numismatik",
-    "section": "",
-    "text": "In der Numismatik ist die Digitalisierung bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
+    "objectID": "content/vague_nfdi.html#transferaufgaben",
+    "href": "content/vague_nfdi.html#transferaufgaben",
+    "title": "Was ist NFDI?",
+    "section": "Transferaufgaben",
+    "text": "Transferaufgaben",
     "crumbs": [
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/index.html#aufbau-des-kurses",
-    "href": "content/index.html#aufbau-des-kurses",
-    "title": "Digitale Numismatik",
-    "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\n\n\n\n\n1. Münzen Digital\nInhalt Forschungsdaten und Portalrecherche\nWarum? Datenquellen verstehen\n\n\n\n\n\n\n2. Vage Münzdaten\nInhalt Umgang mit unsicheren Daten\nWarum? Transparenz\n\n\n\n\n\n\n\n\n\n\nTipp\n\n\n\nDie Module können in beliebiger Reihenfolge absolviert werden.\nSie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.",
-    "crumbs": [
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/index.html#so-funktioniert-dieser-kurs",
-    "href": "content/index.html#so-funktioniert-dieser-kurs",
-    "title": "Digitale Numismatik",
-    "section": "So funktioniert dieser Kurs",
-    "text": "So funktioniert dieser Kurs\nDieser Kurs wurde mit Quarto Live geschrieben, das interaktive Übungen erlaubt.\n\n\n\n\n\n\nHinweisMehr über den Kurs in Quarto Live\n\n\n\n\n\n\n\n\n\n\n\n\nWeb‑basiert\nDer Kurs läuft komplett im Browser (Chrome, Firefox, Edge …).\n\n\nSicher\nDer Code wird in einer isolierten Web‑Assembly‑Umgebung ausgeführt – keine Daten verlassen Ihren Rechner.\n\n\nInteraktiv\nSie können Code‑Zellen anpassen und sofort das Ergebnis sehen.\n\n\n\nMehr erfahren: https://quarto.org/docs/computations/quarto-live.html\n\n\n\nDie interaktiven Elemente des Kurses nutzen die Programmiersprache Python. Dieser Kurs erfordert keine Informatikkentnisse, wenn Sie aber mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt.\n\n\n\n\n\n\nHinweisWarum Python lernen?\n\n\n\n\n\n\n\n\n\n\n\n\nEinfach zu lesen\nDie Syntax ist fast wie ein Satz in natürlicher Sprache.\n\n\nGroße Community\nViele Beispiele und Tutorials, speziell für die Digital Humanities.\n\n\nFlexibilität\nMit Bibliotheken wie pandas, numpy und matplotlib können Daten einfach verarbeitet und visualisiert werden.\n\n\n\nEinsteiger‑Tutorial: https://www.python.org/about/gettingstarted/",
-    "crumbs": [
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/index.html#förderung",
-    "href": "content/index.html#förderung",
-    "title": "Digitale Numismatik",
-    "section": "Förderung",
-    "text": "Förderung\nDiese ELearning-Materialien sind in dem von der DFG geförderten Projekt NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte entstanden und wurden an der Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik) entwickelt.",
-    "crumbs": [
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html",
-    "href": "content/digital_index.html",
-    "title": "Digitale Numismatik",
-    "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.",
-    "crumbs": [
-      "🔍 I. Digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#motivation",
-    "href": "content/digital_index.html#motivation",
-    "title": "Digitale Numismatik",
-    "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen ganz verschiedene digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpfbar oder gar untereinander austauschbar. Unter anderem diese Herausforderungen und mögliche Lösungen präsentieren die folgenden Modulseiten.",
-    "crumbs": [
-      "🔍 I. Digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#lernziele",
-    "href": "content/digital_index.html#lernziele",
-    "title": "Digitale Numismatik",
-    "section": "Lernziele",
-    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken",
-    "crumbs": [
-      "🔍 I. Digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#aufbau-des-kurses",
-    "href": "content/digital_index.html#aufbau-des-kurses",
-    "title": "Digitale Numismatik",
-    "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\nDas Modul befindet sich derzeit im Aufbau und besteht aus drei Elementen.",
-    "crumbs": [
-      "🔍 I. Digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#interaktive-analysen",
-    "href": "content/digital_index.html#interaktive-analysen",
-    "title": "Digitale Numismatik",
-    "section": "Interaktive Analysen",
-    "text": "Interaktive Analysen\nZu jedem Modul gibt es einen begleitenden Python-Code der interaktiv ausgeführt werden kann. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. Um die Übung zu starten, klicken Sie auf Run Code. (Sollte der Button ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint)\nKeine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen.\n\nÜbung 1: Münzen von Hadrian identifizieren\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.\n\n\n\n\n\n\nHinweisWie finde ich die Links?\n\n\n\n\n\n\n\n\n1. Alle Münzen in den Datenbanken anzeigen\n\n\n\n\n\n2. Diesen Link kopieren (Rechtsklick -&gt; Link-Adresse kopieren)\n\n\n\n\n\nFühren Sie danach die folgende Codezelle mit “Run Code” aus und fügen Sie die URLs der Resultate zwischen die Anführungsstriche neben “url” ein. Führen Sie den Code nochnmal aus und überprüfen Sie den Output. Wie versteht der Code, ob der Link zu Münzen von Hadrian führt? Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?\nNach dieser Übung haben Sie sich ein Bild gemacht, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\n\n\n\n\n\n\n\n\n\n\nHinweis: Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten.\nWelches Kürzel in den URLs könnte auf Hadrian verweisen?\n\n\nLösung: Nur OCRE enthält Münzen von Hadrian. Diese können durch das “hdn” in der URL identifiziert werden. Hier ist ein Beispiel für eine gültige URL eines Hadrian-Typs:\nurl = \"http://numismatics.org/ocre/id/ric.2_3(2).hdn.744\"",
-    "crumbs": [
-      "🔍 I. Digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#quiz",
-    "href": "content/digital_index.html#quiz",
-    "title": "Digitale Numismatik",
-    "section": "Quiz",
-    "text": "Quiz\nHaben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
-    "crumbs": [
-      "🔍 I. Digitale Numismatik"
+      "🌐 II. Umgang mit vagen Daten",
+      "1. Was ist die NFDI?"
     ]
   },
   {

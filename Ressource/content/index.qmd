@@ -92,11 +92,11 @@ Finanziert wurde das Projekt in dem von der DFG geförderten Projekt NFDI4Object
 :::
 
 ::: {.column}
-![](/brand/logos/n4o_logo_verlauf_claim_lang.svg)
+![](../brand/logos/n4o_logo_verlauf_claim_lang.svg)
 :::
 
 ::: {.column}
-![](/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg)
+![](../assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg)
 :::
 
 ::::

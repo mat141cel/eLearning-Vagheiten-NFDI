@@ -13,7 +13,10 @@ css: /assets/css/collage.css
 
 
 Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0).
-Unsicherheiten haben in diesem [Binärsystem](https://de.wikipedia.org/wiki/Dualsystem) keinen Platz. Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System. 
+Unsicherheiten haben in diesem [Binärsystem](https://de.wikipedia.org/wiki/Dualsystem) keinen Platz. Unsicherheiten treten erst dann auf 
+
+
+Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System. 
 
 Münzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.  
 

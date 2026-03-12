@@ -72,7 +72,7 @@ plt.show()
 ```
 
 ::: {.callout-note}
-Dieses Bild wurde nicht händisch erstellt, sondern mithilfe der Daten aus bestehenden Münzdatenbanken programmiert. Am Ende dieses und des nächsten Moduls lernen Sie, Schaubilder wie dieses mit Münzen aus verschiedenen Datenbanken selbst erstellen. 
+Dieses Bild wurde nicht händisch erstellt, sondern programmiert. Am Ende dieses Moduls lernen Sie, Schaubilder wie dieses mit Münzen aus verschiedenen Datenbanken selbst zu erstellen. 
 :::
 
 Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.

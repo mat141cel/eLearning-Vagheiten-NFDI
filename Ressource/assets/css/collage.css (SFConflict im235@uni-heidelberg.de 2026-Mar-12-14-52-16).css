@@ -82,25 +82,20 @@
 .logo-row {
     display: flex;
     flex-wrap: nowrap;
-    /* single line */
+    /* one line */
     align-items: center;
-    justify-content: space-between;
-    /* spread logos evenly within container */
     width: 100%;
-    /* full width of container */
-    max-width: 100%;
-    /* prevent overflow */
     padding: 0.25rem 0;
-    /* vertical padding */
+    /* small vertical padding */
     margin: 0 auto;
-    /* center in container if smaller than page */
 }
 
 .logo-row img {
-    height: 60px;
-    /* same height for all logos */
-    width: auto;
-    /* maintain aspect ratio */
-    flex-shrink: 0;
-    /* don’t shrink below height */
+    flex: 1 1 0;
+    /* all logos share width evenly */
+    height: auto;
+    /* scale height proportionally */
+    max-height: 12vh;
+    /* optional: limit height */
+    object-fit: contain;
 }

@@ -27,17 +27,20 @@ Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu
 </div>
 
 ## Aufbau des Kurses
-Das Modul befindet sich derzeit im Aufbau und besteht aus drei Elementen.
+Das Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen. 
+
+1. [Forschungsdaten (veröffentlicht)](digital_scientific_data.qmd)
+2. [gute Forschungsdaten (veröffentlicht)](digital_fair_data.qmd)
+3. [Datenzugang (im Aufbau)](digital_data_access.qmd)
+4. [Datenverarbeitung (im Aufbau)](digital_data_aggregation.qmd)
+
+Diese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen.
 
 
-## Interaktive Analysen
+## Übung 1: Münzen von Hadrian identifizieren
 
-Zu jedem Modul gibt es einen begleitenden Python-Code der interaktiv ausgeführt werden kann. So können Sie den Kurs direkt mit Ihren eigenen Daten absolvieren und eigene Grafiken und Analysen erstellen. Um die Übung zu starten, klicken Sie auf Run Code. (Sollte der Button ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint)
+In dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.
 
-Keine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen. 
-
-
-### Übung 1: Münzen von Hadrian identifizieren
 
 Navigieren Sie in einem neuen Tab zu einem Referenzportal wie [CRRO](http://numismatics.org/crro), [OCRE](http://numismatics.org/ocre) oder [Pella](http://numismatics.org/pella). Klicken Sie anschließend auf den Reiter "Browse" und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.
 
@@ -50,9 +53,7 @@ Navigieren Sie in einem neuen Tab zu einem Referenzportal wie [CRRO](http://numi
 :::
 
 
-Führen Sie danach die folgende Codezelle mit "Run Code" aus und fügen Sie die URLs der Resultate zwischen die Anführungsstriche neben "url" ein. Führen Sie den Code nochnmal aus und überprüfen Sie den Output. Wie versteht der Code, ob der Link zu Münzen von Hadrian führt? Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?
-
-Nach dieser Übung haben Sie sich ein Bild gemacht, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.
+Führen Sie danach die folgende Codezelle mit Klick auf den Button "Run Code" aus (Sollte der Button leicht ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint) , um die erste Übung zu starten. Überprüfen Sie den Output mit Münzen aus jedem der Portale (CRRO, OCRE; PELLA). Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?
 
 
 <style>
@@ -71,45 +72,18 @@ Nach dieser Übung haben Sie sich ein Bild gemacht, wie Münzdatenbanken grunds�
 }
 </style>
 
-```{pyodide}
-#| exercise: ex_1
-url = "______"
-
-if "numismatics.org/ocre" not in url:
-    result = "not_ocre"
-elif "hdn" in url:
-    result = "hadrian"
-else:
-    result = "ocre_not_hadrian"
-```
 
 ```{pyodide}
 #| exercise: ex_1
-#| setup: true
-import micropip
-await micropip.install('urllib', keep_going=True)
-
-pyodide, micropip, ipython, setup
-from urllib.parse import urlparse
-
-def validate(url):
-    if not isinstance(url, str) or url.strip() == "______":
-        return "empty"
-    p = urlparse(url.strip())
-    if not p.scheme or not p.netloc:
-        return "invalid"
-    return "ok"
+url = ""
 ```
 
 ```{pyodide}
 #| exercise: ex_1
 #| check: true
-
-v = validate(url)
-
-if v == "empty":
-    result = {"correct": False, "message": "Bitte eine URL eingeben."}
-elif v == "invalid":
+if not isinstance(url, str) or url.strip() == "":
+    result = {"correct": False, "message": "Bitte eine URL eingeben. (Wichtig: zwischen die Anführungszeichen!)"}
+elif not url.startswith("http"):
     result = {"correct": False, "message": "Das ist keine gültige URL."}
 elif "pella" in url:
     result = {"correct": False, "message": "Pella enthält hellenistische Münzen, keine von Hadrian."}
@@ -121,7 +95,6 @@ elif "hdn" in url:
     result = {"correct": True, "message": f"Richtig: {url} ist ein Hadrian-Typ."}
 else:
     result = {"correct": False, "message": "Das ist eine Münze aus OCRE, aber nicht von Hadrian."}
-
 result
 ```
 
@@ -137,6 +110,28 @@ Nur OCRE enthält Münzen von Hadrian. Diese können durch das "hdn" in der URL 
 url = "http://numismatics.org/ocre/id/ric.2_3(2).hdn.744"
 ```
 :::
+
+::: {.callout-note collapse="true"}
+### Für Informatiker: Implementierung der URL-Validierung
+```python
+if not isinstance(url, str) or url.strip() == "":
+    result = {"correct": False, "message": "Bitte eine URL eingeben. (zwischen die Anführungszeichen!)"}
+elif not url.startswith("http"):
+    result = {"correct": False, "message": "Das ist keine gültige URL."}
+elif "pella" in url:
+    result = {"correct": False, "message": "Pella enthält hellenistische Münzen, keine von Hadrian."}
+elif "crro" in url:
+    result = {"correct": False, "message": "CRRO enthält republikanische Münzen, keine von Hadrian."}
+elif "numismatics.org/ocre" not in url:
+    result = {"correct": False, "message": "Das ist keine URL aus CRRO / PELLA / OCRE"}
+elif "hdn" in url:
+    result = {"correct": True, "message": f"Richtig: {url} ist ein Hadrian-Typ."}
+else:
+    result = {"correct": False, "message": "Das ist eine Münze aus OCRE, aber nicht von Hadrian."}
+result
+```
+:::
+
 
 
 ## Quiz

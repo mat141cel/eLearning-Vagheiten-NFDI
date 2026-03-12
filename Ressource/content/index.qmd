@@ -22,7 +22,9 @@ Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten,
 ::: {.card-body}
 ### 1. Basiswissen digitale Numismatik
 **Inhalt** Forschungsdaten und Portalrecherche  
-**Warum?** Datenquellen verstehen
+**Warum?** Datenquellen verstehen  
+
+[Zum Kurs](digital_index.qmd){.btn .btn-primary}
 :::
 :::
 ::::
@@ -34,15 +36,15 @@ Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten,
 **Inhalt** Umgang mit unsicheren und vagen Daten  
 **Warum?** Auswertungen transparent und reproduzierbar machen  
 
-[zum Kurs]()
+[zum Kurs](vague_index.qmd){.btn .btn-primary}
 :::
 :::
 ::::
 :::::
 
 
-::: {.callout-tip}
-Die Module können in beliebiger Reihenfolge absolviert werden.  
+::: {.callout-note}
+Die Module können in beliebiger Reihenfolge absolviert werden.   
 Sie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.
 :::
 
@@ -62,7 +64,7 @@ Dieser Kurs wurde mit **Quarto Live** geschrieben, das interaktive Übungen er
 :::
 
 
-Die interaktiven Elemente des Kurses nutzen die Programmiersprache **Python**. Wenn Sie mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt.  
+Die interaktiven Elemente des Kurses nutzen die Programmiersprache **Python**. Wenn Sie mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt. Keine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen.
 
 ::: {.callout-note collapse="true"}
 ## Warum Python lernen?
@@ -77,23 +79,24 @@ Die interaktiven Elemente des Kurses nutzen die Programmiersprache **Python**. W
 
 ## Förderung {.appendix}
 
-Diese ELearning-Materialien wurden in dem von der DFG geförderten Projekt [NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"} erstellt und wurden an der [Universität Heidelberg (Seminar für Alte Geschichte und Epigraphik, Zentrum für Antike Numismatik)](https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts) entwickelt.
+Diese ELearning-Materialien wurden am Zentrum für Antike Numismatik am Seminar für Alte Geschichte an der Universität Heidelberg entwickelt.[](https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts)
+
+Finanziert wurde das Projekt in dem von der DFG geförderten Projekt NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte.[](https://gepris.dfg.de/gepris/projekt/501836407){target="_blank"}
 
 
 
-<!-- ::: {.columns}
-::: {.column width="40%"}
-<img src="/brand/logos/n4o_logo_verlauf_claim_lang.svg"  style="max-width:100%; height:auto;">
+:::: {.columns .logo-row}
+
+::: {.column}
+![](../assets/img/SAGE_LOGO.svg)
 :::
 
-::: {.column width="60%"}
-<img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" style="max-width:100%; height:auto;">
+::: {.column}
+![](/brand/logos/n4o_logo_verlauf_claim_lang.svg)
 :::
-::: -->
 
-<img src="https://backend.sage.uni-heidelberg.de/sites/default/files/site_logo/WEB-Kopfgrafik_Alte-Geschichte-Epigraphik_DE.svg"  style="max-width:60%; height:auto;">
+::: {.column}
+![](/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg)
+:::
 
-<img src="/brand/logos/n4o_logo_verlauf_claim_lang.svg"  style="max-width:50%; height:auto;">
-
-
-<img src="/assets/img/dfg_logo_schriftzug_blau_foerderung_4c.jpeg" style="max-width:60%; height:auto;">
+::::

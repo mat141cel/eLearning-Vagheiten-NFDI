@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>Vagheiten – ELearning-Modul für Münzdaten</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -70,14 +73,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../content/digital_data_aggregation.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5a35fba529a40769c781ead7d6133a0a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e983c6bf891f409b1e2bacf9ba68bde8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -279,14 +281,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Veröffentlicht am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">12.03.2026</p>
+      <p class="date">13.04.2026</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Zuletzt geändert am</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">12.03.2026</p>
+      <p class="date-modified">13.04.2026</p>
     </div>
   </div>
     
@@ -299,20 +301,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="was-sind-unsicherheiten" class="level2">
 <h2 class="anchored" data-anchor-id="was-sind-unsicherheiten">Was sind Unsicherheiten?</h2>
-<p>Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem <a href="https://de.wikipedia.org/wiki/Dualsystem">Binärsystem</a> keinen Platz. Unsicherheiten treten erst dann auf</p>
-<p>Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System.</p>
-<p>Münzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.</p>
+<p>Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem <a href="https://de.wikipedia.org/wiki/Dualsystem">Binärsystem</a> keinen Platz. In der Archäologie und Geschichte sind Unsicherheiten allerdings omnipräsent. Diese in Daten darzustellen, ist nicht trivial.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Grundwissen Binärsystem
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<section id="binäre-zahlen-integer" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="binäre-zahlen-integer">Binäre Zahlen (Integer)</h3>
+<p>Jeder Computer arbeitet mit Bits (0 oder 1). Eine Gruppe von 8 Bits bildet ein Byte. Zahlen werden als Binärdarstellung gespeichert: 0000 0000 ist 0 im Dezimalsystem, 0000 0001 bedeutet 1, 0000 0010 bedeutet 2, 0000 0011 bedeutet 3 und so weiter. Für positive und negative Ganzzahlen wird meist das Zweier‑Komplement‑Verfahren verwendet – das erste Bit dient als Vorzeichen (0 = positiv, 1 = negativ). So kann ein 8‑Bit‑Byte Werte von –128 bis +127 darstellen. ### Texte (Strings) Ein Text wird nicht als ein einziger Wert, sondern als Sequenz von Zeichen gespeichert. Jedes Zeichen bekommt einen numerischen Code. Alle modernen Computer verwenden die gleiche numerische Entsprechung für Zeichen, Unicode genannt (UTF‑8, UTF‑16, …). Unicode ist ein universelles System, das fast alle Schriftsysteme der Welt abdeckt. In UTF‑8 wird jedes Zeichen in 1–4 Bytes codiert. Ein String wie “Hallo” wird also als Reihe von Bytes gespeichert: 48 (H) 61 (A) 6C (L) 6C (L) 6F (O).</p>
+</section>
+</div>
+</div>
+<p>Alle Darstellungsmöglichkeiten von Unsicherheiten haben gemeinsam, dass sie neben dem eigentlichen Wert einen bestimmten Unsicherheitswert anbieten. Wo sich diese Markierungen für Unsicherheit befinden, erschließt sich jedoch häufig nicht unmittelbar. Außerdem belibt häufig offen, wie Nutzende diese Unsicherheit interpretieren sollen. Der Umgang mit diesen zentralen Problemen wird in diesem Modul diskutiert.</p>
 <section id="übung-1-darstellungsmöglichkeiten-von-unsicheren-datierungen." class="level3">
 <h3 class="anchored" data-anchor-id="übung-1-darstellungsmöglichkeiten-von-unsicheren-datierungen.">Übung 1: Darstellungsmöglichkeiten von unsicheren Datierungen.</h3>
-<p>In diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.</p>
-<p>Für die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:</p>
+<p>Stellen Sie sich vor, sie wollen bei einem <a href="https://de.wikipedia.org/wiki/Depotfund">Hortfund</a> verstehen, in welchen Jahren diese geprägt wurden. Liegen diese nah beieinander, oder handelt es sich um größere Zeiträume. Diese Information erlaubt Rückschlüsse darüber, welche Münzen zu diesem Zeitpunkt in Umlauf waren.</p>
+<p>Quellen für diese Übung, sind alle Münzen, die sich zu einem römischen Kaiser Ihrer Wahl im Portal OCRE befinden. Von diesen Münzen wird die Datierungsangabe heruntergeladen, die als Zeitraum von Start- bis Enddatum (beides in Jahren) angegeben ist. Hierbei handelt es sich also um eine vage Angabe, die nicht ohne weiteres auf einem Zeitstrahl (Histogramm) dargestellt werden kann.</p>
+<p>Denkbar sind die folgenden Möglichkeiten, diese Daten zu interpretieren und zu visualisieren:</p>
 <ul>
-<li>Startjahr / Endjahr</li>
-<li>Mittelpunkt</li>
-<li>anteilig auf alle Jahre im Zeitraum verteilt</li>
+<li>Start‑ / Endjahr: jede Münze wird als Punkt des ersten / letzten möglichen Prägejahrs angezeigt.</li>
+<li>Mittelpunkt: jede Münze wird als Punkt im mittleren Jahr des angegebenen Zeitraums dargestellt.</li>
+<li>Gleichverteilte Gewichtung: der Zeitraum wird auf alle enthaltenen Jahre verteilt; jeder Jahr‑Anteil erhält einen Bruchteil (z. B. 1 / Länge des Zeitraums).</li>
 </ul>
-<p>Je nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.</p>
-<p>Bei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.</p>
 <p>Wählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?</p>
 <style>
 /* This targets the specific container you found */
@@ -330,10 +347,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="57" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 56;"><span id="cb1-57"><a href="#cb1-57"></a>viewof emperor <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb1-58"><a href="#cb1-58"></a>  [<span class="st">"galerius"</span><span class="op">,</span> <span class="st">"valerian"</span><span class="op">,</span> <span class="st">"commodus"</span><span class="op">,</span> <span class="st">"pertinax"</span>]<span class="op">,</span></span>
-<span id="cb1-59"><a href="#cb1-59"></a>  {<span class="dt">label</span><span class="op">:</span> <span class="st">"Emperor"</span>}</span>
-<span id="cb1-60"><a href="#cb1-60"></a>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="60" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 59;"><span id="cb1-60"><a href="#cb1-60"></a>viewof emperor <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb1-61"><a href="#cb1-61"></a>  [<span class="st">"galerius"</span><span class="op">,</span> <span class="st">"valerian"</span><span class="op">,</span> <span class="st">"commodus"</span><span class="op">,</span> <span class="st">"pertinax"</span>]<span class="op">,</span></span>
+<span id="cb1-62"><a href="#cb1-62"></a>  {<span class="dt">label</span><span class="op">:</span> <span class="st">"Emperor"</span>}</span>
+<span id="cb1-63"><a href="#cb1-63"></a>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -351,6 +368,8 @@ eyJhdHRyIjp7ImRlZmluZSI6WyJjaHJvbm9fcGxvdCJdLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJl
 eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsImV4ZXJjaXNlIjoiZXhfMTEiLCJpbnB1dCI6WyJlbXBlcm9yIl19LCJjb2RlIjoicXVlcnkgPSBmXCJcIlwiXG5QUkVGSVggbm06IDxodHRwOi8vbm9taXNtYS5vcmcvaWQvPlxuUFJFRklYIG5tbzogPGh0dHA6Ly9ub21pc21hLm9yZy9vbnRvbG9neSM+XG5cblNFTEVDVCA/Y29pbiA/ZW5kX2RhdGUgP3N0YXJ0X2RhdGUgV0hFUkUge3tcbj90eXBlIG5tbzpoYXNBdXRob3JpdHkgbm06e2VtcGVyb3J9IC5cbj90eXBlIG5tbzpoYXNFbmREYXRlID9lbmRfZGF0ZSAuXG4/dHlwZSBubW86aGFzU3RhcnREYXRlID9zdGFydF9kYXRlIC5cbj9jb2luIG5tbzpoYXNUeXBlU2VyaWVzSXRlbSA/dHlwZSAuXG59fVxuXCJcIlwiXG5cbmRhdGEgPSBhd2FpdCBmZXRjaF9jb2luX2RhdGEocXVlcnkpXG4jIEdlbmVyYXRlIHBsb3RcbmZpZyA9IGNocm9ub19wbG90KGRhdGEpXG5cbnBsdC5zaG93KCkifQ==
 </script>
 </div>
+<p>Wie Sie sehen, kann sich die Form des Histogramms je nach gewählter Visualisierungsmethode deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.</p>
+<p>Bei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.</p>
 <table class="table">
 <colgroup>
 <col style="width: 33%">

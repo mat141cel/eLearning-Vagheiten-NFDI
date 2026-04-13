@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://USERNAME.github.io/content/vague_index.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/vague_solving_vagueness.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/digital_data_aggregation.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/digital_index.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/index.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
-  </url>
-  <url>
     <loc>https://USERNAME.github.io/index.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/content/digital_data_access.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/content/digital_scientific_data.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
   </url>
   <url>
-    <loc>https://USERNAME.github.io/content/vague_definitions.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
+    <loc>https://USERNAME.github.io/content/index.html</loc>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/digital_data_access.html</loc>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/vague_solving_vagueness.html</loc>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/digital_index.html</loc>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/content/progress.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/vague_index.html</loc>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/digital_data_aggregation.html</loc>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/content/digital_fair_data.html</loc>
-    <lastmod>2026-03-12T14:23:19.300Z</lastmod>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/content/vague_definitions.html</loc>
+    <lastmod>2026-04-13T13:30:17.468Z</lastmod>
   </url>
 </urlset>

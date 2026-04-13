@@ -1,179 +1,5 @@
 [
   {
-    "objectID": "content/vague_index.html",
-    "href": "content/vague_index.html",
-    "title": "Vagheiten",
-    "section": "",
-    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Unsicherheiten treten erst dann auf\nAuch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System.\nMünzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.\n\n\nIn diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.\nFür die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:\n\nStartjahr / Endjahr\nMittelpunkt\nanteilig auf alle Jahre im Zeitraum verteilt\n\nJe nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr ist keine ganze Zahl ist schwerer interpretierbar\n\n\n\nWie Sie sehen, sind Auswertungen mit unsicheren Münzdaten schwerer generalisierbar. In den Folgenden Modulseiten lernen Sie, wie sie trotzdem ansprechende und belastbare Auswertungen erstellen können, selbst wenn die Datengrundlage noch unsicherer ist, wie im obigen Beispiel.",
-    "crumbs": [
-      "🌐 II. Vage Münzdaten"
-    ]
-  },
-  {
-    "objectID": "content/vague_index.html#was-sind-unsicherheiten",
-    "href": "content/vague_index.html#was-sind-unsicherheiten",
-    "title": "Vagheiten",
-    "section": "",
-    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. Unsicherheiten treten erst dann auf\nAuch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System.\nMünzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.\n\n\nIn diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.\nFür die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:\n\nStartjahr / Endjahr\nMittelpunkt\nanteilig auf alle Jahre im Zeitraum verteilt\n\nJe nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr ist keine ganze Zahl ist schwerer interpretierbar\n\n\n\nWie Sie sehen, sind Auswertungen mit unsicheren Münzdaten schwerer generalisierbar. In den Folgenden Modulseiten lernen Sie, wie sie trotzdem ansprechende und belastbare Auswertungen erstellen können, selbst wenn die Datengrundlage noch unsicherer ist, wie im obigen Beispiel.",
-    "crumbs": [
-      "🌐 II. Vage Münzdaten"
-    ]
-  },
-  {
-    "objectID": "content/vague_solving_vagueness.html",
-    "href": "content/vague_solving_vagueness.html",
-    "title": "Strategien zur Problemlösung von Vagheiten",
-    "section": "",
-    "text": "Verschiedene numismatische Datenbanken liefern neue Ansätze zur Darstellung von Vagheiten, die mehr Kontext liefern, und",
-    "crumbs": [
-      "🌐 II. Vage Münzdaten",
-      "3. Lösungen für Unsicherheiten und Vagheiten"
-    ]
-  },
-  {
-    "objectID": "content/vague_solving_vagueness.html#wie-können-vagheiten-gelöst-werden",
-    "href": "content/vague_solving_vagueness.html#wie-können-vagheiten-gelöst-werden",
-    "title": "Strategien zur Problemlösung von Vagheiten",
-    "section": "",
-    "text": "Verschiedene numismatische Datenbanken liefern neue Ansätze zur Darstellung von Vagheiten, die mehr Kontext liefern, und",
-    "crumbs": [
-      "🌐 II. Vage Münzdaten",
-      "3. Lösungen für Unsicherheiten und Vagheiten"
-    ]
-  },
-  {
-    "objectID": "content/digital_data_aggregation.html",
-    "href": "content/digital_data_aggregation.html",
-    "title": "Aggregating the Data",
-    "section": "",
-    "text": "Diese Seite befindet sich im Aufbau und wird bald veröffentlicht",
-    "crumbs": [
-      "🔍 I. Basiswissen digitale Numismatik",
-      "4. Datenverarbeitung"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html",
-    "href": "content/digital_index.html",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.",
-    "crumbs": [
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#motivation",
-    "href": "content/digital_index.html#motivation",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.",
-    "crumbs": [
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#lernziele",
-    "href": "content/digital_index.html#lernziele",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "Lernziele",
-    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken",
-    "crumbs": [
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#aufbau-des-kurses",
-    "href": "content/digital_index.html#aufbau-des-kurses",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\nDas Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen.\n\nForschungsdaten (veröffentlicht)\ngute Forschungsdaten (veröffentlicht)\nDatenzugang (im Aufbau)\nDatenverarbeitung (im Aufbau)\n\nDiese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen.",
-    "crumbs": [
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#übung-1-münzen-von-hadrian-identifizieren",
-    "href": "content/digital_index.html#übung-1-münzen-von-hadrian-identifizieren",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "Übung 1: Münzen von Hadrian identifizieren",
-    "text": "Übung 1: Münzen von Hadrian identifizieren\nIn dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.\n\n\n\n\n\n\nHinweisWie finde ich die Links?\n\n\n\n\n\n\n\n\n1. Alle Münzen in den Datenbanken anzeigen\n\n\n\n\n\n2. Diesen Link kopieren (Rechtsklick -&gt; Link-Adresse kopieren)\n\n\n\n\n\nFühren Sie danach die folgende Codezelle mit Klick auf den Button “Run Code” aus (Sollte der Button leicht ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint) , um die erste Übung zu starten. Überprüfen Sie den Output mit Münzen aus jedem der Portale (CRRO, OCRE; PELLA). Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?\n\n\n\n\n\n\n\n\n\nHinweis: Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten.\nWelches Kürzel in den URLs könnte auf Hadrian verweisen?\n\n\nLösung: Nur OCRE enthält Münzen von Hadrian. Diese können durch das “hdn” in der URL identifiziert werden. Hier ist ein Beispiel für eine gültige URL eines Hadrian-Typs:\nurl = \"http://numismatics.org/ocre/id/ric.2_3(2).hdn.744\"\n\n\n\n\n\n\n\nHinweisFür Informatiker: Implementierung der URL-Validierung\n\n\n\n\n\nif not isinstance(url, str) or url.strip() == \"\":\n    result = {\"correct\": False, \"message\": \"Bitte eine URL eingeben. (zwischen die Anführungszeichen!)\"}\nelif not url.startswith(\"http\"):\n    result = {\"correct\": False, \"message\": \"Das ist keine gültige URL.\"}\nelif \"pella\" in url:\n    result = {\"correct\": False, \"message\": \"Pella enthält hellenistische Münzen, keine von Hadrian.\"}\nelif \"crro\" in url:\n    result = {\"correct\": False, \"message\": \"CRRO enthält republikanische Münzen, keine von Hadrian.\"}\nelif \"numismatics.org/ocre\" not in url:\n    result = {\"correct\": False, \"message\": \"Das ist keine URL aus CRRO / PELLA / OCRE\"}\nelif \"hdn\" in url:\n    result = {\"correct\": True, \"message\": f\"Richtig: {url} ist ein Hadrian-Typ.\"}\nelse:\n    result = {\"correct\": False, \"message\": \"Das ist eine Münze aus OCRE, aber nicht von Hadrian.\"}\nresult",
-    "crumbs": [
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#quiz",
-    "href": "content/digital_index.html#quiz",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "Quiz",
-    "text": "Quiz\nHaben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
-    "crumbs": [
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/index.html",
-    "href": "content/index.html",
-    "title": "Digitale Numismatik",
-    "section": "",
-    "text": "Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
-    "crumbs": [
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/index.html#warum-dieser-kurs",
-    "href": "content/index.html#warum-dieser-kurs",
-    "title": "Digitale Numismatik",
-    "section": "",
-    "text": "Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
-    "crumbs": [
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/index.html#aufbau-des-kurses",
-    "href": "content/index.html#aufbau-des-kurses",
-    "title": "Digitale Numismatik",
-    "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\n\n\n\n\n1. Basiswissen digitale Numismatik\nInhalt Forschungsdaten und Portalrecherche\nWarum? Datenquellen verstehen\nZum Kurs\n\n\n\n\n\n\n2. Vage Münzdaten\nInhalt Umgang mit unsicheren und vagen Daten\nWarum? Auswertungen transparent und reproduzierbar machen\nzum Kurs\n\n\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nDie Module können in beliebiger Reihenfolge absolviert werden.\nSie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.",
-    "crumbs": [
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/index.html#technische-grundlage-des-kurses",
-    "href": "content/index.html#technische-grundlage-des-kurses",
-    "title": "Digitale Numismatik",
-    "section": "Technische Grundlage des Kurses",
-    "text": "Technische Grundlage des Kurses\nDieser Kurs wurde mit Quarto Live geschrieben, das interaktive Übungen erlaubt.\n\n\n\n\n\n\nHinweisMehr über den Kurs in Quarto Live\n\n\n\n\n\n\n\n\n\n\n\n\nWeb‑basiert\nDer Kurs läuft komplett im Browser (Chrome, Firefox, Edge …).\n\n\nSicher\nDer Code wird in einer isolierten Web‑Assembly‑Umgebung ausgeführt – keine Daten verlassen Ihren Rechner.\n\n\nInteraktiv\nSie können Code‑Zellen anpassen und sofort das Ergebnis sehen.\n\n\n\nMehr erfahren: https://quarto.org/docs/computations/quarto-live.html\n\n\n\nDie interaktiven Elemente des Kurses nutzen die Programmiersprache Python. Wenn Sie mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt. Keine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen.\n\n\n\n\n\n\nHinweisWarum Python lernen?\n\n\n\n\n\n\n\n\n\n\n\n\nEinfach zu lesen\nDie Syntax ist fast wie ein Satz in natürlicher Sprache.\n\n\nGroße Community\nViele Beispiele und Tutorials, speziell für die Digital Humanities.\n\n\nFlexibilität\nMit Bibliotheken wie pandas, numpy und matplotlib können Daten einfach verarbeitet und visualisiert werden.\n\n\n\nEinsteiger‑Tutorial: https://www.python.org/about/gettingstarted/",
-    "crumbs": [
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/index.html#förderung",
-    "href": "content/index.html#förderung",
-    "title": "Digitale Numismatik",
-    "section": "Förderung",
-    "text": "Förderung\nDiese ELearning-Materialien wurden am Zentrum für Antike Numismatik am Seminar für Alte Geschichte an der Universität Heidelberg entwickelt.\nFinanziert wurde das Projekt in dem von der DFG geförderten Projekt NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte.",
-    "crumbs": [
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/digital_data_access.html",
-    "href": "content/digital_data_access.html",
-    "title": "Daten herunterladen",
-    "section": "",
-    "text": "Diese Seite befindet sich im Aufbau und wird bald veröffentlicht",
-    "crumbs": [
-      "🔍 I. Basiswissen digitale Numismatik",
-      "3. Datenzugang"
-    ]
-  },
-  {
     "objectID": "content/digital_scientific_data.html",
     "href": "content/digital_scientific_data.html",
     "title": "Forschungsdaten",
@@ -240,36 +66,146 @@
     ]
   },
   {
-    "objectID": "content/vague_definitions.html",
-    "href": "content/vague_definitions.html",
-    "title": "Arten von Unsicherheiten / Vagheiten",
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Digitale Numismatik",
     "section": "",
-    "text": "Um Unsicherheiten und Vagheiten darzustellen, wird bisher meist auf Freitextfelder zurückgegriffen, in dem die Benutzer beliebige Aussagen eintragen können.",
+    "text": "Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
     "crumbs": [
-      "🌐 II. Vage Münzdaten",
-      "1. Formen von Unsicherheiten"
+      "Hauptseite"
     ]
   },
   {
-    "objectID": "content/vague_definitions.html#todo-unsicherheiten-in-normdaten",
-    "href": "content/vague_definitions.html#todo-unsicherheiten-in-normdaten",
-    "title": "Arten von Unsicherheiten / Vagheiten",
-    "section": "TODO Unsicherheiten in Normdaten",
-    "text": "TODO Unsicherheiten in Normdaten\nMit der Deutung dieser Daten beschäftigt sich das Projekt Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts an der Universität Heidelberg im Rahmen von NFDI4objects.\nBeispiele:\ndie Münze: https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099\nDie Datierung dieser Münze lautet nach 274 n. Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n. Chr. datiert wird. Es ist demnach nur ein (Terminus Post Quem)[https://en.wikipedia.org/wiki/Terminus_post_quem] angegeben, und es ist unsicher, bis wann diese Münzen noch geprägt wurden.\ndie Münze: https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID287\nDie Datierung dieser Münze lautet 550-456 (oder 480?) v. Chr.. Hier ist unklar, ob sich das Jahr 480 auf das Enddatum bezieht, oder ob es einen gänzlich neuen Zeitraum (von einem Jahr) bildet. Außerdem ist nicht klar, was mit dem Fragezeichen gemeint ist. Bedeutet es, dass es unsicher ist, dass es die alternative Datierung gibt, oder bedeutet es, dass es sicher eine zweite Datierung gibt, die aber zeitlich nicht sicher ist und deswegen auf den ungefähren Zeitpunkt 480 gesetzt wurde.\n\nBeispiel für die Nutzung von Freitextfeldern, wo es anders modelliert werden sollte\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID882 Literatur: RIC I² Nr. 94? 110?\nsie können also keine Unsicherheiten in Daten darstellen. Das bedeutet bei der Digitalisierung von Münzen eine Herausforderung, d. Denn Unsicherheiten und Vagheiten sind elementar, um Münzdaten richtig erfassen und später bewerten und deuten zu können.\nMit dieser Herausforderung befasst sich das Projekt XXXX im Rahmen von NFDI4objects. Projektbeteiligte, Zielsetzung (verständlich!!!) etc. Im Folgenden wird erklärt, was genau Unsicherheiten und Vagheiten sind, der Unterschied von beidem erläutert und die Herausforderungen hinsichtlich …..\nNach diesem Modul kennen Sie die relevantesten Münzdatenbanken, ihr Darstellungsschema und können Daten aus verschiedenen Quellen miteinander verknüpfen .\nWeiterführende Literatur mit link auf die Definitionspapers Was der Unterschied\n\n\nUnsicherheiten in Münzbeschreibungen, auch ausgelöst von Freitextfeldern\n\n? weil Deutung eines Objektes ist unsicher\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID53 Zwei Kaiserpaare stehen gerüstet beiderseits eines Dreifußes. Im Hintergrund ein Militärlager (?) mit Toranlage und sechs Türmen.\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID51 Claudius II. (?) n.r. mit Strahlenkrone.\n\n\n? als Bezeichnung eines nicht mehr sichtbaren Objekts\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID264 Thronender Zeus n. l. mit Adler auf der rechten Hand. Das Zepter hält er in der Linken. Links im Feld ein Kantharos, unter dem Thron eine Ähre (?)\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID280 Kopf der Pallas Athena n. l. mit korinthischem Helm. Rechts QM-Monogramm und eine kleine Herme. Unter dem Kinn der Buchstabe I (?).\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID150 Chimäre läuft nach rechts. Darüber ein Ruder?\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID282 Eule n. r. mit frontal ausgerichtetem Kopf auf Amphora (?) im Olivenkranz.\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID1206 Sitzende Sphinx n. l. [Davor eine Amphore?].\n\n\n? als vermutete Präzisierung eines allgemein benannten Objekts\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID977 Flussgott (Acheloos?) läuft als menschengesichtiger, bärtiger Stier nach rechts. Darüber fliegt eine Nike nach rechts, die ihn bekränzt.\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID319 Cupido reitet auf einer Ziege (Amaltheia?) nach r., darüber zwei Dioskurenmützen mit jeweils einem Stern. Im Abschnitt ein Thyrsosstab, das Ganze im Kranz.\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID194 Weiblicher Kopf mit Sakkos n. r. (Nymphe?).\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID353 Pferdekopf (Pegasos?) n. r.\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID42 Kopf der Roma mit phrygischem Helm nach r. Dahinter Kontrollzeichen (Füllhorn?).\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID4 Drapierte weibliche Büste (Roma?) mit Halskette, Diadem und Lorbeerkranz nach r. Dahinter XVI (ligiert).\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID365 Belorbeerter Kopf des Apollo mit einem geschultertem Zepter nach r., davor Kontrollzeichen (Öl-?)Zweig.\n\n\n? als unsichere Unsicherheit\nhttps://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID843 [ΠTOΛΕΜΑΙΟΥ ΒΑΣΙΛΕΥΣ]. Ein Adler steht mit geschlossenen Flügeln auf einem Blitzbündel n. l. Im l. Feld Beizeichen und Monogramm? unklarer Bezug: Beizeichen/Monogramm/beides unsicher?\n\n\n\nTODO: Auch in die AFE-HD und Graffiti nach (?) suchen",
+    "objectID": "content/index.html#warum-dieser-kurs",
+    "href": "content/index.html#warum-dieser-kurs",
+    "title": "Digitale Numismatik",
+    "section": "",
+    "text": "Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
     "crumbs": [
-      "🌐 II. Vage Münzdaten",
-      "1. Formen von Unsicherheiten"
+      "Hauptseite"
     ]
   },
   {
-    "objectID": "content/vague_definitions.html#mehrere-autoritäten-möglich",
-    "href": "content/vague_definitions.html#mehrere-autoritäten-möglich",
-    "title": "Arten von Unsicherheiten / Vagheiten",
-    "section": "Mehrere Autoritäten möglich",
-    "text": "Mehrere Autoritäten möglich",
+    "objectID": "content/index.html#aufbau-des-kurses",
+    "href": "content/index.html#aufbau-des-kurses",
+    "title": "Digitale Numismatik",
+    "section": "Aufbau des Kurses",
+    "text": "Aufbau des Kurses\n\n\n\n\n1. Basiswissen digitale Numismatik\nInhalt Forschungsdaten und Portalrecherche\nWarum? Datenquellen verstehen\nZum Kurs\n\n\n\n\n\n\n2. Vage Münzdaten\nInhalt Umgang mit unsicheren und vagen Daten\nWarum? Auswertungen transparent und reproduzierbar machen\nzum Kurs\n\n\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nDie Module können in beliebiger Reihenfolge absolviert werden.\nSie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.",
+    "crumbs": [
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#technische-grundlage-des-kurses",
+    "href": "content/index.html#technische-grundlage-des-kurses",
+    "title": "Digitale Numismatik",
+    "section": "Technische Grundlage des Kurses",
+    "text": "Technische Grundlage des Kurses\nDieser Kurs wurde mit Quarto Live geschrieben, das interaktive Übungen erlaubt.\n\n\n\n\n\n\nHinweisMehr über den Kurs in Quarto Live\n\n\n\n\n\n\n\n\n\n\n\n\nWeb‑basiert\nDer Kurs läuft komplett im Browser (Chrome, Firefox, Edge …).\n\n\nSicher\nDer Code wird in einer isolierten Web‑Assembly‑Umgebung ausgeführt – keine Daten verlassen Ihren Rechner.\n\n\nInteraktiv\nSie können Code‑Zellen anpassen und sofort das Ergebnis sehen.\n\n\n\nMehr erfahren: https://quarto.org/docs/computations/quarto-live.html\n\n\n\nDie interaktiven Elemente des Kurses nutzen die Programmiersprache Python. Wenn Sie mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt. Keine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen.\n\n\n\n\n\n\nHinweisWarum Python lernen?\n\n\n\n\n\n\n\n\n\n\n\n\nEinfach zu lesen\nDie Syntax ist fast wie ein Satz in natürlicher Sprache.\n\n\nGroße Community\nViele Beispiele und Tutorials, speziell für die Digital Humanities.\n\n\nFlexibilität\nMit Bibliotheken wie pandas, numpy und matplotlib können Daten einfach verarbeitet und visualisiert werden.\n\n\n\nEinsteiger‑Tutorial: https://www.python.org/about/gettingstarted/",
+    "crumbs": [
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#förderung",
+    "href": "content/index.html#förderung",
+    "title": "Digitale Numismatik",
+    "section": "Förderung",
+    "text": "Förderung\nDiese ELearning-Materialien wurden am Zentrum für Antike Numismatik am Seminar für Alte Geschichte an der Universität Heidelberg entwickelt.\nFinanziert wurde das Projekt in dem von der DFG geförderten Projekt NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte.",
+    "crumbs": [
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/digital_data_access.html",
+    "href": "content/digital_data_access.html",
+    "title": "Daten herunterladen",
+    "section": "",
+    "text": "Diese Seite befindet sich im Aufbau und wird bald veröffentlicht",
+    "crumbs": [
+      "🔍 I. Basiswissen digitale Numismatik",
+      "3. Datenzugang"
+    ]
+  },
+  {
+    "objectID": "content/vague_solving_vagueness.html",
+    "href": "content/vague_solving_vagueness.html",
+    "title": "Strategien zur Problemlösung von Vagheiten",
+    "section": "",
+    "text": "Verschiedene numismatische Datenbanken liefern neue Ansätze zur Darstellung von Vagheiten, die mehr Kontext liefern, und",
     "crumbs": [
       "🌐 II. Vage Münzdaten",
-      "1. Formen von Unsicherheiten"
+      "3. Lösungen für Unsicherheiten und Vagheiten"
+    ]
+  },
+  {
+    "objectID": "content/vague_solving_vagueness.html#wie-können-vagheiten-gelöst-werden",
+    "href": "content/vague_solving_vagueness.html#wie-können-vagheiten-gelöst-werden",
+    "title": "Strategien zur Problemlösung von Vagheiten",
+    "section": "",
+    "text": "Verschiedene numismatische Datenbanken liefern neue Ansätze zur Darstellung von Vagheiten, die mehr Kontext liefern, und",
+    "crumbs": [
+      "🌐 II. Vage Münzdaten",
+      "3. Lösungen für Unsicherheiten und Vagheiten"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html",
+    "href": "content/digital_index.html",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.",
+    "crumbs": [
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#motivation",
+    "href": "content/digital_index.html#motivation",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.",
+    "crumbs": [
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#lernziele",
+    "href": "content/digital_index.html#lernziele",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "Lernziele",
+    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken",
+    "crumbs": [
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#aufbau-des-kurses",
+    "href": "content/digital_index.html#aufbau-des-kurses",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "Aufbau des Kurses",
+    "text": "Aufbau des Kurses\nDas Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen.\n\nForschungsdaten (veröffentlicht)\ngute Forschungsdaten (veröffentlicht)\nDatenzugang (im Aufbau)\nDatenverarbeitung (im Aufbau)\n\nDiese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen.",
+    "crumbs": [
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#übung-1-münzen-von-hadrian-identifizieren",
+    "href": "content/digital_index.html#übung-1-münzen-von-hadrian-identifizieren",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "Übung 1: Münzen von Hadrian identifizieren",
+    "text": "Übung 1: Münzen von Hadrian identifizieren\nIn dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.\n\n\n\n\n\n\nHinweisWie finde ich die Links?\n\n\n\n\n\n\n\n\n1. Alle Münzen in den Datenbanken anzeigen\n\n\n\n\n\n2. Diesen Link kopieren (Rechtsklick -&gt; Link-Adresse kopieren)\n\n\n\n\n\nFühren Sie danach die folgende Codezelle mit Klick auf den Button “Run Code” aus (Sollte der Button leicht ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint) , um die erste Übung zu starten. Überprüfen Sie den Output mit Münzen aus jedem der Portale (CRRO, OCRE; PELLA). Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?\n\n\n\n\n\n\n\n\n\nHinweis: Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten.\nWelches Kürzel in den URLs könnte auf Hadrian verweisen?\n\n\nLösung: Nur OCRE enthält Münzen von Hadrian. Diese können durch das “hdn” in der URL identifiziert werden. Hier ist ein Beispiel für eine gültige URL eines Hadrian-Typs:\nurl = \"http://numismatics.org/ocre/id/ric.2_3(2).hdn.744\"\n\n\n\n\n\n\n\nHinweisFür Informatiker: Implementierung der URL-Validierung\n\n\n\n\n\nif not isinstance(url, str) or url.strip() == \"\":\n    result = {\"correct\": False, \"message\": \"Bitte eine URL eingeben. (zwischen die Anführungszeichen!)\"}\nelif not url.startswith(\"http\"):\n    result = {\"correct\": False, \"message\": \"Das ist keine gültige URL.\"}\nelif \"pella\" in url:\n    result = {\"correct\": False, \"message\": \"Pella enthält hellenistische Münzen, keine von Hadrian.\"}\nelif \"crro\" in url:\n    result = {\"correct\": False, \"message\": \"CRRO enthält republikanische Münzen, keine von Hadrian.\"}\nelif \"numismatics.org/ocre\" not in url:\n    result = {\"correct\": False, \"message\": \"Das ist keine URL aus CRRO / PELLA / OCRE\"}\nelif \"hdn\" in url:\n    result = {\"correct\": True, \"message\": f\"Richtig: {url} ist ein Hadrian-Typ.\"}\nelse:\n    result = {\"correct\": False, \"message\": \"Das ist eine Münze aus OCRE, aber nicht von Hadrian.\"}\nresult",
+    "crumbs": [
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#quiz",
+    "href": "content/digital_index.html#quiz",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "Quiz",
+    "text": "Quiz\nHaben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
+    "crumbs": [
+      "🔍 I. Basiswissen digitale Numismatik"
     ]
   },
   {
@@ -285,6 +221,37 @@
     "title": "Fortschritt",
     "section": "",
     "text": "Hier können Sie ihren Fortschritt des E-Learning Kurses einsehen. Jeder erfolgreiche Abschnitt wird mit einem Badge belohnt."
+  },
+  {
+    "objectID": "content/vague_index.html",
+    "href": "content/vague_index.html",
+    "title": "Vagheiten",
+    "section": "",
+    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. In der Archäologie und Geschichte sind Unsicherheiten allerdings omnipräsent. Diese in Daten darzustellen, ist nicht trivial.\n\n\n\n\n\n\nHinweisGrundwissen Binärsystem\n\n\n\n\n\n\nJeder Computer arbeitet mit Bits (0 oder 1). Eine Gruppe von 8 Bits bildet ein Byte. Zahlen werden als Binärdarstellung gespeichert: 0000 0000 ist 0 im Dezimalsystem, 0000 0001 bedeutet 1, 0000 0010 bedeutet 2, 0000 0011 bedeutet 3 und so weiter. Für positive und negative Ganzzahlen wird meist das Zweier‑Komplement‑Verfahren verwendet – das erste Bit dient als Vorzeichen (0 = positiv, 1 = negativ). So kann ein 8‑Bit‑Byte Werte von –128 bis +127 darstellen. ### Texte (Strings) Ein Text wird nicht als ein einziger Wert, sondern als Sequenz von Zeichen gespeichert. Jedes Zeichen bekommt einen numerischen Code. Alle modernen Computer verwenden die gleiche numerische Entsprechung für Zeichen, Unicode genannt (UTF‑8, UTF‑16, …). Unicode ist ein universelles System, das fast alle Schriftsysteme der Welt abdeckt. In UTF‑8 wird jedes Zeichen in 1–4 Bytes codiert. Ein String wie “Hallo” wird also als Reihe von Bytes gespeichert: 48 (H) 61 (A) 6C (L) 6C (L) 6F (O).\n\n\n\nAlle Darstellungsmöglichkeiten von Unsicherheiten haben gemeinsam, dass sie neben dem eigentlichen Wert einen bestimmten Unsicherheitswert anbieten. Wo sich diese Markierungen für Unsicherheit befinden, erschließt sich jedoch häufig nicht unmittelbar. Außerdem belibt häufig offen, wie Nutzende diese Unsicherheit interpretieren sollen. Der Umgang mit diesen zentralen Problemen wird in diesem Modul diskutiert.\n\n\nStellen Sie sich vor, sie wollen bei einem Hortfund verstehen, in welchen Jahren diese geprägt wurden. Liegen diese nah beieinander, oder handelt es sich um größere Zeiträume. Diese Information erlaubt Rückschlüsse darüber, welche Münzen zu diesem Zeitpunkt in Umlauf waren.\nQuellen für diese Übung, sind alle Münzen, die sich zu einem römischen Kaiser Ihrer Wahl im Portal OCRE befinden. Von diesen Münzen wird die Datierungsangabe heruntergeladen, die als Zeitraum von Start- bis Enddatum (beides in Jahren) angegeben ist. Hierbei handelt es sich also um eine vage Angabe, die nicht ohne weiteres auf einem Zeitstrahl (Histogramm) dargestellt werden kann.\nDenkbar sind die folgenden Möglichkeiten, diese Daten zu interpretieren und zu visualisieren:\n\nStart‑ / Endjahr: jede Münze wird als Punkt des ersten / letzten möglichen Prägejahrs angezeigt.\nMittelpunkt: jede Münze wird als Punkt im mittleren Jahr des angegebenen Zeitraums dargestellt.\nGleichverteilte Gewichtung: der Zeitraum wird auf alle enthaltenen Jahre verteilt; jeder Jahr‑Anteil erhält einen Bruchteil (z. B. 1 / Länge des Zeitraums).\n\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\nWie Sie sehen, kann sich die Form des Histogramms je nach gewählter Visualisierungsmethode deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr ist keine ganze Zahl ist schwerer interpretierbar\n\n\n\nWie Sie sehen, sind Auswertungen mit unsicheren Münzdaten schwerer generalisierbar. In den Folgenden Modulseiten lernen Sie, wie sie trotzdem ansprechende und belastbare Auswertungen erstellen können, selbst wenn die Datengrundlage noch unsicherer ist, wie im obigen Beispiel.",
+    "crumbs": [
+      "🌐 II. Vage Münzdaten"
+    ]
+  },
+  {
+    "objectID": "content/vague_index.html#was-sind-unsicherheiten",
+    "href": "content/vague_index.html#was-sind-unsicherheiten",
+    "title": "Vagheiten",
+    "section": "",
+    "text": "Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0). Unsicherheiten haben in diesem Binärsystem keinen Platz. In der Archäologie und Geschichte sind Unsicherheiten allerdings omnipräsent. Diese in Daten darzustellen, ist nicht trivial.\n\n\n\n\n\n\nHinweisGrundwissen Binärsystem\n\n\n\n\n\n\nJeder Computer arbeitet mit Bits (0 oder 1). Eine Gruppe von 8 Bits bildet ein Byte. Zahlen werden als Binärdarstellung gespeichert: 0000 0000 ist 0 im Dezimalsystem, 0000 0001 bedeutet 1, 0000 0010 bedeutet 2, 0000 0011 bedeutet 3 und so weiter. Für positive und negative Ganzzahlen wird meist das Zweier‑Komplement‑Verfahren verwendet – das erste Bit dient als Vorzeichen (0 = positiv, 1 = negativ). So kann ein 8‑Bit‑Byte Werte von –128 bis +127 darstellen. ### Texte (Strings) Ein Text wird nicht als ein einziger Wert, sondern als Sequenz von Zeichen gespeichert. Jedes Zeichen bekommt einen numerischen Code. Alle modernen Computer verwenden die gleiche numerische Entsprechung für Zeichen, Unicode genannt (UTF‑8, UTF‑16, …). Unicode ist ein universelles System, das fast alle Schriftsysteme der Welt abdeckt. In UTF‑8 wird jedes Zeichen in 1–4 Bytes codiert. Ein String wie “Hallo” wird also als Reihe von Bytes gespeichert: 48 (H) 61 (A) 6C (L) 6C (L) 6F (O).\n\n\n\nAlle Darstellungsmöglichkeiten von Unsicherheiten haben gemeinsam, dass sie neben dem eigentlichen Wert einen bestimmten Unsicherheitswert anbieten. Wo sich diese Markierungen für Unsicherheit befinden, erschließt sich jedoch häufig nicht unmittelbar. Außerdem belibt häufig offen, wie Nutzende diese Unsicherheit interpretieren sollen. Der Umgang mit diesen zentralen Problemen wird in diesem Modul diskutiert.\n\n\nStellen Sie sich vor, sie wollen bei einem Hortfund verstehen, in welchen Jahren diese geprägt wurden. Liegen diese nah beieinander, oder handelt es sich um größere Zeiträume. Diese Information erlaubt Rückschlüsse darüber, welche Münzen zu diesem Zeitpunkt in Umlauf waren.\nQuellen für diese Übung, sind alle Münzen, die sich zu einem römischen Kaiser Ihrer Wahl im Portal OCRE befinden. Von diesen Münzen wird die Datierungsangabe heruntergeladen, die als Zeitraum von Start- bis Enddatum (beides in Jahren) angegeben ist. Hierbei handelt es sich also um eine vage Angabe, die nicht ohne weiteres auf einem Zeitstrahl (Histogramm) dargestellt werden kann.\nDenkbar sind die folgenden Möglichkeiten, diese Daten zu interpretieren und zu visualisieren:\n\nStart‑ / Endjahr: jede Münze wird als Punkt des ersten / letzten möglichen Prägejahrs angezeigt.\nMittelpunkt: jede Münze wird als Punkt im mittleren Jahr des angegebenen Zeitraums dargestellt.\nGleichverteilte Gewichtung: der Zeitraum wird auf alle enthaltenen Jahre verteilt; jeder Jahr‑Anteil erhält einen Bruchteil (z. B. 1 / Länge des Zeitraums).\n\nWählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf “Run Code” Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?\n\n\nviewof emperor = Inputs.select(\n  [\"galerius\", \"valerian\", \"commodus\", \"pertinax\"],\n  {label: \"Emperor\"}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\nWie Sie sehen, kann sich die Form des Histogramms je nach gewählter Visualisierungsmethode deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.\nBei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.\n\n\n\n\n\n\n\n\nMethode\nVorteile\nNachteile\n\n\n\n\nStart- /Endjahr\n- leicht verständlich  - Klare Zuordnung\n- künstliche Häufungen am Beginn/Ende von Zeiträumen  - Ignoriert die Länge der Datierung  - künstliche Präzision\n\n\nMittelpunkt\n- Berücksichtigt die Länge des Intervalls  - Häufig eine pragmatische Annäherung\n- Bleibt eine künstliche Präzisierung  - Lange Zeiträume werden auf einen einzigen Punkt reduziert  - erzeugt künstliche Häufungen in der Mitte von Zeiträumen\n\n\nVerteilung über den gesamten Zeitraum\n- Spiegelt die Unsicherheit der Datierung besser wider  - Vermeidet künstliche Punktkonzentrationen \n- Methodisch komplexer  - Werte wirken künstlich „glatter“  - Anzahl der Münzen pro Jahr ist keine ganze Zahl ist schwerer interpretierbar\n\n\n\nWie Sie sehen, sind Auswertungen mit unsicheren Münzdaten schwerer generalisierbar. In den Folgenden Modulseiten lernen Sie, wie sie trotzdem ansprechende und belastbare Auswertungen erstellen können, selbst wenn die Datengrundlage noch unsicherer ist, wie im obigen Beispiel.",
+    "crumbs": [
+      "🌐 II. Vage Münzdaten"
+    ]
+  },
+  {
+    "objectID": "content/digital_data_aggregation.html",
+    "href": "content/digital_data_aggregation.html",
+    "title": "Aggregating the Data",
+    "section": "",
+    "text": "Diese Seite befindet sich im Aufbau und wird bald veröffentlicht",
+    "crumbs": [
+      "🔍 I. Basiswissen digitale Numismatik",
+      "4. Datenverarbeitung"
+    ]
   },
   {
     "objectID": "content/digital_fair_data.html",
@@ -339,6 +306,39 @@
     "crumbs": [
       "🔍 I. Basiswissen digitale Numismatik",
       "2. Regeln für gute Forschungsdaten"
+    ]
+  },
+  {
+    "objectID": "content/vague_definitions.html",
+    "href": "content/vague_definitions.html",
+    "title": "Arten von Unsicherheiten / Vagheiten",
+    "section": "",
+    "text": "Die Darstellung von Unsicherheiten ist ein zentrales und aktuell intensiv diskutiertes Thema in der archäologischen Forschung. Im Rahmen der NFDI4Objects beschäftigt sich eine Task Area unter dem Titel „Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts“ mit der Modellierung solcher Unsicherheiten, insbesondere in der Numismatik und Keramologie. Die Universität Heidelberg ist an diesem Projekt bei der Deutung von numismatischen Beispielen beteiligt.",
+    "crumbs": [
+      "🌐 II. Vage Münzdaten",
+      "1. Formen von Unsicherheiten"
+    ]
+  },
+  {
+    "objectID": "content/vague_definitions.html#konzepte",
+    "href": "content/vague_definitions.html#konzepte",
+    "title": "Arten von Unsicherheiten / Vagheiten",
+    "section": "Konzepte",
+    "text": "Konzepte\nUm sich der Frage konzeptionell zu nähern wurden zunächst drei Arten von Unsicherheiten definiert.\n\nVagheit (Vagueness)\nVagheit bezeichnet einen Mangel an Präzision in einer Aussage, der aus unscharfen Begriffen oder fehlenden klaren Grenzen resultiert. Sie ist besonders typisch für archäologische Daten, etwa wenn Datierungen nur in breiten Zeitintervallen wie „100–200 n. Chr.“ angegeben werden können, obwohl die tatsächliche Herstellungszeit deutlich kürzer war. Vagheit entsteht auch bei messbaren Eigenschaften, wenn diese nicht mit maximaler Genauigkeit erfasst werden, etwa wenn ein Gewicht nur mit einer Dezimalstelle dokumentiert wird, obwohl feinere Auflösung möglich wäre. Eine Angabe wie „5,5 g“ impliziert zwar feste Grenzen (z. B. 5,45–5,54 g), bleibt aber dennoch eine Vereinfachung gegenüber beliebig genauer Messbarkeit. Deutlich stärker vage sind sprachliche Formulierungen wie „ca. 5,5 g“, da hier keine klaren Ober- und Untergrenzen mehr erkennbar sind. Auch Klassifikationen können vage sein, etwa wenn ein Keramikfragment aufgrund identischer Merkmale mehreren Gefäßtypen zugeordnet werden kann (OR-Beziehungen). Grundsätzlich beschreibt Vagheit also die Abstufbarkeit und Kontextabhängigkeit von Aussagen und damit deren begrenzte begriffliche Schärfe.\n\n\n\n\n\n\nHinweis\n\n\n\nKurzdefinition: Vagheit = fehlende Präzision einer Aussage aufgrund unscharfer Begriffe oder gradueller Grenzen.\n\n\n\n\nUnsicherheit (Uncertainty)\nUnsicherheit bezeichnet den Grad an fehlender Gewissheit darüber, ob eine Aussage wahr oder falsch ist. Sie entsteht vor allem durch unvollständige, indirekte oder mehrdeutige Evidenz, etwa wenn ein archäologisches Objekt keiner eindeutigen Autorität oder keinem klaren Herstellungsort zugeordnet werden kann. Ein Beispiel ist die Zuschreibung einer Münze zu einem Herrscher, wenn Inschriften fehlen oder widersprüchliche Hinweise vorliegen. Unsicherheit kann explizit markiert werden, etwa durch Kennzeichnungen („unsicher“) oder durch die Angabe von Wahrscheinlichkeiten (z. B. 75 % Wahrscheinlichkeit für eine Datierung). Solche Wahrscheinlichkeiten können entweder subjektiv durch Expert:innen vergeben oder durch statistische Verfahren berechnet werden. Auch maschinelles Lernen erzeugt Unsicherheiten, indem es Klassifikationen mit Wahrscheinlichkeitswerten versieht, deren Aussagekraft jedoch vom Modell und den Trainingsdaten abhängt. Wichtig ist, dass Unsicherheit nicht die Präzision der Aussage betrifft, sondern deren Verlässlichkeit. Sie macht transparent, dass eine Entscheidung getroffen wurde, deren Richtigkeit jedoch nicht vollständig gesichert ist.\n\n\n\n\n\n\nHinweis\n\n\n\nKurzdefinition: Unsicherheit = fehlende Gewissheit über den Wahrheitsgehalt einer Aussage.\n\n\n\n\nFuzziness / Wobbliness\nFuzziness/Wobbliness dient als Sammelbegriff für Situationen, in denen Vagheit und Unsicherheit gemeinsam auftreten oder sich nicht eindeutig trennen lassen. Ein typisches Beispiel ist eine Angabe wie „ca. 5,5 g?“, die zugleich unpräzise (vage) und in ihrem Wahrheitsgehalt fraglich (unsicher) ist und damit kaum wissenschaftlich verwertbar wird. Komplexität entsteht auch, wenn Wertebereiche mit Unsicherheitsvermerken kombiniert werden, da unklar sein kann, ob sich die Unsicherheit auf die gesamte Angabe oder nur auf Teile davon bezieht. Zusätzlich können technische Systeme solche Probleme verstärken, etwa wenn Datenbanken nur einen einzigen „sicheren“ Wert zulassen und dadurch ursprünglich mehrdeutige oder unsichere Informationen verzerren. Auch Ontologie-Mappings oder LOD-Integrationen können Fuzziness/Wobbliness erzeugen, wenn Beziehungen zwischen Konzepten nur ungefähr oder mehrdeutig sind (z. B. verschiedene SKOS-Mappings ohne klare Semantik). Ebenso fallen darunter qualitative Abstufungen wie „vermutlich“, „möglich“ oder „umstritten“, die sich nur schwer eindeutig quantifizieren lassen. Insgesamt beschreibt Fuzziness/Wobbliness somit mehrdimensionale, oft systembedingt verstärkte Unschärfen, die aus der Überlagerung von Vagheit, Unsicherheit und Modellierungsentscheidungen entstehen.\n\n\n\n\n\n\nHinweis\n\n\n\nKurzdefinition: Fuzziness/Wobbliness = Überlagerung und schwer trennbare Kombination von Vagheit und Unsicherheit.",
+    "crumbs": [
+      "🌐 II. Vage Münzdaten",
+      "1. Formen von Unsicherheiten"
+    ]
+  },
+  {
+    "objectID": "content/vague_definitions.html#transferaufgaben",
+    "href": "content/vague_definitions.html#transferaufgaben",
+    "title": "Arten von Unsicherheiten / Vagheiten",
+    "section": "Transferaufgaben",
+    "text": "Transferaufgaben",
+    "crumbs": [
+      "🌐 II. Vage Münzdaten",
+      "1. Formen von Unsicherheiten"
     ]
   }
 ]

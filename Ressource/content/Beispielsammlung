@@ -1,0 +1,89 @@
+## TODO Unsicherheiten in Normdaten 
+
+
+Beispiele:
+
+die Münze: https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099
+
+Die Datierung dieser Münze lautet nach 274 n. Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n. Chr. datiert wird. Es ist demnach nur ein [Terminus Post Quem](https://en.wikipedia.org/wiki/Terminus_post_quem) angegeben, und es ist unsicher, bis wann diese Münzen noch geprägt wurden.
+
+die Münze: https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID287
+
+Die Datierung dieser Münze lautet 550-456 (oder 480?) v. Chr.. Hier ist unklar, ob sich das Jahr 480 auf das Enddatum bezieht, oder ob es einen gänzlich neuen Zeitraum (von einem Jahr) bildet.
+Außerdem ist nicht klar, was mit dem Fragezeichen gemeint ist. Bedeutet es, dass es unsicher ist, dass es die alternative Datierung gibt, oder bedeutet es, dass es sicher eine zweite Datierung gibt, die aber zeitlich nicht sicher ist und deswegen auf den ungefähren Zeitpunkt 480 gesetzt wurde.
+
+### Beispiel für die Nutzung von Freitextfeldern, wo es anders modelliert werden sollte
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID882
+Literatur: RIC I² Nr. 94? 110?
+
+sie können also keine Unsicherheiten in Daten darstellen. Das bedeutet bei der Digitalisierung von Münzen eine Herausforderung, d. Denn Unsicherheiten und Vagheiten sind elementar, um Münzdaten richtig erfassen und später bewerten und deuten zu können.
+
+ Mit dieser Herausforderung befasst sich das Projekt XXXX im Rahmen von NFDI4objects. Projektbeteiligte, Zielsetzung (verständlich!!!) etc.
+Im Folgenden wird erklärt, was genau Unsicherheiten und Vagheiten sind, der Unterschied von beidem erläutert und die Herausforderungen hinsichtlich  …..
+
+ Nach diesem Modul kennen Sie die relevantesten Münzdatenbanken, ihr Darstellungsschema und können Daten aus verschiedenen Quellen miteinander verknüpfen .
+
+Weiterführende Literatur mit link auf die Definitionspapers
+Was der Unterschied
+
+
+### Unsicherheiten in Münzbeschreibungen, auch ausgelöst von Freitextfeldern
+
+#### ? weil Deutung eines Objektes ist unsicher
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID53
+Zwei Kaiserpaare stehen gerüstet beiderseits eines Dreifußes. Im Hintergrund ein Militärlager (?) mit Toranlage und sechs Türmen.
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID51
+Claudius II. (?) n.r. mit Strahlenkrone.
+
+
+
+#### ? als Bezeichnung eines nicht mehr sichtbaren Objekts
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID264
+Thronender Zeus n. l. mit Adler auf der rechten Hand. Das Zepter hält er in der Linken. Links im Feld ein Kantharos, 
+unter dem Thron eine Ähre (?)
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID280 
+Kopf der Pallas Athena n. l. mit korinthischem Helm. Rechts QM-Monogramm und eine kleine Herme. Unter dem Kinn der Buchstabe I (?).
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID150
+Chimäre läuft nach rechts. Darüber ein Ruder?
+
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID282
+Eule n. r. mit frontal ausgerichtetem Kopf auf Amphora (?) im Olivenkranz.
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID1206
+Sitzende Sphinx n. l. [Davor eine Amphore?].
+
+
+
+
+#### ? als vermutete Präzisierung eines allgemein benannten Objekts
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID977
+Flussgott (Acheloos?) läuft als menschengesichtiger, bärtiger Stier nach rechts. Darüber fliegt eine Nike nach rechts, die ihn bekränzt.
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID319
+Cupido reitet auf einer Ziege (Amaltheia?) nach r., darüber zwei Dioskurenmützen mit jeweils einem Stern. Im Abschnitt ein Thyrsosstab, das Ganze im Kranz.
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID194
+Weiblicher Kopf mit Sakkos n. r. (Nymphe?).
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID353
+Pferdekopf (Pegasos?) n. r.
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID42
+Kopf der Roma mit phrygischem Helm nach r. Dahinter Kontrollzeichen (Füllhorn?).
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID4
+Drapierte weibliche Büste (Roma?) mit Halskette, Diadem und Lorbeerkranz nach r. Dahinter XVI (ligiert).
+
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID365
+Belorbeerter Kopf des Apollo mit einem geschultertem Zepter nach r., davor Kontrollzeichen (Öl-?)Zweig.
+
+
+#### ? als unsichere Unsicherheit
+https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID843
+[ΠTOΛΕΜΑΙΟΥ ΒΑΣΙΛΕΥΣ]. Ein Adler steht mit geschlossenen Flügeln auf einem Blitzbündel n. l. Im l. Feld Beizeichen und Monogramm?
+unklarer Bezug: Beizeichen/Monogramm/beides unsicher?

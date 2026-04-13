@@ -13,27 +13,30 @@ css: /assets/css/collage.css
 
 
 Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0).
-Unsicherheiten haben in diesem [Binärsystem](https://de.wikipedia.org/wiki/Dualsystem) keinen Platz. Unsicherheiten treten erst dann auf 
+Unsicherheiten haben in diesem [Binärsystem](https://de.wikipedia.org/wiki/Dualsystem) keinen Platz. In der Archäologie und Geschichte sind Unsicherheiten allerdings omnipräsent. Diese in Daten darzustellen, ist nicht trivial.
 
+::: {.callout-note collapse="true"}
+## Grundwissen Binärsystem
+### Binäre Zahlen (Integer)
+Jeder Computer arbeitet mit Bits (0 oder 1). Eine Gruppe von 8 Bits bildet ein Byte. Zahlen werden als Binärdarstellung gespeichert: 0000 0000 ist 0 im Dezimalsystem, 0000 0001 bedeutet 1, 0000 0010 bedeutet 2, 0000 0011 bedeutet 3 und so weiter. Für positive und negative Ganzzahlen wird meist das Zweier‑Komplement‑Verfahren verwendet – das erste Bit dient als Vorzeichen (0 = positiv, 1 = negativ). So kann ein 8‑Bit‑Byte Werte von –128 bis +127 darstellen.
+### Texte (Strings)
+Ein Text wird nicht als ein einziger Wert, sondern als Sequenz von Zeichen gespeichert. Jedes Zeichen bekommt einen numerischen Code. Alle modernen Computer verwenden die gleiche numerische Entsprechung für Zeichen, Unicode genannt (UTF‑8, UTF‑16, …). Unicode ist ein universelles System, das fast alle Schriftsysteme der Welt abdeckt. In UTF‑8 wird jedes Zeichen in 1–4 Bytes codiert. Ein String wie "Hallo" wird also als Reihe von Bytes gespeichert: 48 (H) 61 (A) 6C (L) 6C (L) 6F (O).
+:::
 
-Auch die im ersten Modul vorgestellten Auswertungen für Münzdaten funktionieren nach diesem System. 
-
-Münzdaten basieren allerdings häufig auf unsicheren Annahmen, die nur grobe oder unpräzise Aussagen zulassen. Ob Daten unsicher sind, erschließt sich häufig nicht unmittelbar, sodass Interpretationsfehler auftreten können.  
+Alle Darstellungsmöglichkeiten von Unsicherheiten haben gemeinsam, dass sie neben dem eigentlichen Wert einen bestimmten Unsicherheitswert anbieten. Wo sich diese Markierungen für Unsicherheit befinden, erschließt sich jedoch häufig nicht unmittelbar. Außerdem belibt häufig offen, wie Nutzende diese Unsicherheit interpretieren sollen. Der Umgang mit diesen zentralen Problemen wird in diesem Modul diskutiert. 
 
 
 ### Übung 1: Darstellungsmöglichkeiten von unsicheren Datierungen.
 
-In diesem interaktiven Element werden die in OCRE mit dem Kaiser, den Sie im Dropdown auswählen können, verknüpften Münzen heruntergeladen. Zusätzlich wird die Datierung heruntergeladen, die vage Zeitraum von Start- und Enddatum (beides in Jahren) angegeben ist.  
+Stellen Sie sich vor, sie wollen bei einem [Hortfund](https://de.wikipedia.org/wiki/Depotfund) verstehen, in welchen Jahren diese geprägt wurden. Liegen diese nah beieinander, oder handelt es sich um größere Zeiträume. Diese Information erlaubt Rückschlüsse darüber, welche Münzen zu diesem Zeitpunkt in Umlauf waren. 
 
-Für die Darstellung auf einem Zeitstrahl (Histogramm) muss dieser Zeitraum jedoch in einen einzelnen Wert oder mehrere Jahreswerte übersetzt werden. Hier gibt es mehrere Möglichkeiten, den Zeitraum zu interpretieren:  
+Quellen für diese Übung, sind alle Münzen, die sich zu einem römischen Kaiser Ihrer Wahl im Portal OCRE befinden. Von diesen Münzen wird die Datierungsangabe heruntergeladen, die als Zeitraum von Start- bis Enddatum (beides in Jahren) angegeben ist. Hierbei handelt es sich also um eine vage Angabe, die nicht ohne weiteres auf einem Zeitstrahl (Histogramm) dargestellt werden kann.
 
-* Startjahr / Endjahr
-* Mittelpunkt
-* anteilig auf alle Jahre im Zeitraum verteilt
+Denkbar sind die folgenden Möglichkeiten, diese Daten zu interpretieren und zu visualisieren:  
 
-Je nach gewählter Methode kann sich die Form des Histogramms deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.  
-
-Bei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.  
+* Start‑ / Endjahr: jede Münze wird als Punkt des ersten / letzten möglichen Prägejahrs angezeigt.
+* Mittelpunkt: jede Münze wird als Punkt im mittleren Jahr des angegebenen Zeitraums dargestellt.
+* Gleichverteilte Gewichtung: der Zeitraum wird auf alle enthaltenen Jahre verteilt; jeder Jahr‑Anteil erhält einen Bruchteil (z. B. 1 / Länge des Zeitraums).
 
 Wählen Sie einen Kaiser im Dropdown aus und klicken Sie anschließend auf "Run Code" Wie verändert sich die Zeitreihe seiner Münzen je nach gewählter Methode?
 
@@ -170,6 +173,9 @@ plt.show()
 ```
 
 
+Wie Sie sehen, kann sich die Form des Histogramms je nach gewählter Visualisierungsmethode deutlich verändern. Sichtbare Häufungen oder Lücken können daher auch durch die Interpretation der Datierungsintervalle entstehen und spiegeln nicht unbedingt tatsächliche Veränderungen in der Münzprägung wider.  
+
+Bei all diesen Darstellungsformen besteht das Problem, dass Sie künstlich Sicherheit suggeriert. Wir wissen aber nicht, wie häufig die Münzen im angenommenen Zeitraum geprägt wurden. Wenn zwei Jahre als Prägezeitpunkte angegeben sind, kann es sein, dass die Münze nur noch im Januar des zweiten Jahr geprägt wurde. Die Wahrscheinlichkeit, dass die Münze demnach im ersten Jahr geprägt wurde ist deutlich höher, als es die Grafik zeigt.  
 
 
 | Methode | Vorteile | Nachteile |

@@ -1,3 +1,14 @@
+---
+title: "Basiswissen digitale Numismatik"
+subtitle: "Ontologien"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+title-block: None 
+---
+
+
 ## Was ist eine Ontologie?
 
 Wenn Daten auf als Graphen dargestellt werden, zeigt sich unmittelbar, welche Elemente durch eine Ontologie standardisiert werden können. „Ontologie“ ist ursprünglich ein Begriff aus der Philosophie. Er stammt aus dem Griechischen und kann mit der „Lehre des Seins“ übersetzt werden. In der Informatik meint der Begriff aber eine solche Systematisierung von Begrifflichkeiten und deren Abhängigkeiten voneinander. Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die [Nomisma Ontology](http://www.nomisma.org/ontology). Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.  

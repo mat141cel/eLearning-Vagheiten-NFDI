@@ -1,12 +1,27 @@
+---
+title: "Basiswissen digitale Numismatik"
+subtitle: "Einführung"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+title-block: None 
+---
+
+
 ## Was sind numismatische Forschungsdaten?
+
 
 ```{python}
 #| echo: false
 #| label: fig-muenzdaten
 #| fig-cap: "**Münzen und ihre zugehörigen Datenfelder.**  
-#|   URLs zu den Originaldatensätzen von links nach rechts: /
-#|   https://ikmk.smb.museum/object?id=18214977, https://nat.museum-digital.de/object/73659, /
+#|   URLs zu den Originaldatensätzen von links nach rechts: \
+#|   https://ikmk.smb.museum/object?id=18214977, https://nat.museum-digital.de/object/73659, \
 #|   https://ikmk.smb.museum/object?id=18203837."
+#| fig-width: 10
+#| out-width: "100%"
+#| 
 import matplotlib.pyplot as plt
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from pathlib import Path
@@ -61,3 +76,15 @@ plt.ylim(0,4)
 plt.tight_layout()
 plt.show()
 ```
+
+::: {.callout-note}
+Dieses Bild wurde nicht händisch erstellt, sondern programmiert. Am Ende dieses Moduls lernen Sie, Schaubilder wie dieses mit Münzen aus verschiedenen Datenbanken selbst zu erstellen. 
+:::
+
+Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.
+
+Es gibt sehr viele numismatische Daten und mehrere Datenbanken, die über 100.000 Stücke enthalten. Für jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. Häufig gehören zu diesen Münzdaten auch Bilder der [Averse](https://de.wikipedia.org/wiki/Avers_(Numismatik)) und [Reverse](https://de.wikipedia.org/wiki/Revers_(Numismatik))  
+
+Alle der oben gezeigten Münzen aus unterschiedlichen Epochen geben Auskunft zu ihrem Material, ihren Prägestätten und den auf ihr dargestellte Personen. Das bedeutet nicht, dass diese Datenfelder einen Wert haben müssen. 
+Die Euromünze hat beispielsweise keine dargestellte Person und die Prägestätte der Münze von Napoleon III. ist unbekannt. Gerade auch das Nichtvorhandensein von Informationen ist für die Interpretation der Münzdaten wichtig. 
+

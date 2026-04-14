@@ -1,0 +1,16 @@
+---
+title: "Können Daten unfair sein?"
+subtitle: "Die Bedeutung der NFDI für die Numismatik"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+---
+
+
+{{< include digital_fair_data_nfdi.qmd >}}
+
+{{< include digital_fair_data_nfdi_ta.qmd >}}
+
+
+{{< include digital_fair_data_quiz.qmd >}}

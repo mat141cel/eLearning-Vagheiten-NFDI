@@ -1,6 +1,5 @@
 # _quarto-numiscience.yml
 project:
-  pre-render: python scripts/split_pages.py
   render:
     - content/**/*.qmd
     - "!content/**/*_gh.qmd"

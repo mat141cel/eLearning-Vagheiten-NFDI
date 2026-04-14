@@ -1,3 +1,13 @@
+---
+title: "Basiswissen digitale Numismatik"
+subtitle: "Münzdaten als Graphen"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+title-block: None 
+---
+
 ## Was sind Graphen?
 
 Wie Sie bemerkt haben, werden Tabellen schnell unübersichtlich und es wird nicht unmittelbar deutlich, wie die Tabellen von Münztyp und Münze miteinander verbunden sind. Hier bietet sich eine Visualisierung als Graph an.  
@@ -82,4 +92,9 @@ result
 Diese Darstellungsweise erleichtert die Beantwortung von komplexen Fragestellungen
 
 
-Man nehme die Fragestellung: In einem Münzfund wurden zahlreiche Münzen unterschiedlicher römischer Kaiser gefunden. Uns interessiert, ob diese Münzen eher am Anfang oder am Ende der Regierungszeit der jeweiligen Kaiser geprägt wurden.
+Man nehme die Fragestellung: In einem Münzfund wurden zahlreiche Münzen unterschiedlicher römischer Kaiser gefunden. Uns interessiert, ob diese Münzen eher am Anfang oder am Ende der Regierungszeit der jeweiligen Kaiser geprägt wurden. 
+
+:::{.callout-note}
+Teilweise haben besitzen auch bereits bestehende Datenbanken die Funktion, sich den Datensatz als Graphen anzeigen zu lassen Beispielsweise die Datenbank [Museum Digital](https://nat.museum-digital.de) Zur Nutzung dieser Funktion, navigieren Sie zu einem Datensatz, beispielsweise dem der [oben gezeigten Münze](https://nat.museum-digital.de/object/73659) und klicken Sie direkt unter dem Bild auf den Reiter Graphenansicht.
+:::
+

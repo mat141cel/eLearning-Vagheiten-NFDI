@@ -1,5 +1,136 @@
+---
+title: "Basiswissen digitale Numismatik"
+subtitle: "Münzdaten in Tabellen"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+title-block: None 
+---
+
+
 ## Wie können wir uns Münzdaten vorstellen
 
 Die einfachste Form, Münzdaten strukturiert zu speichern, ist als Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden. 
 
 Die folgende Tabelle zeigt einen Ausschnitt aus einem solchen Münzdatensatz. Das Feld Name identifiziert dabei eindeutig den Aureus des Postumus, der mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29.
+
+::: {.callout-note collapse="true"}
+## Was sind Typenkataloge?
+Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die [Münzbestimmung](https://pecunia.zaw.uni-heidelberg.de/NumiScience/muenzbestimmung) notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.
+:::
+
+
+| Name | Gewicht| Durchmesser | Webportal
+|---------|:-----|-----|-----|
+| https://ikmk.smb.museum/object?id=18201393      | 5,10mm     | 20g  | http://numismatics.org/ocre/id/ric.5.post.29 |
+
+: Münzdaten in tabellarischer Form {#tbl-muenzdaten tbl-colwidths="[15,10,10,15]"}
+
+
+Es ergibt Sinn, die Informationen, die die Münze mit anderen Münzen des gleichen Typs teilt, dem Münztyp zugeordnet in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.
+
+
+### Übung 2: Mit einer Typreferenz verknüpfte Daten herausfinden
+Navigieren Sie in einem neuen Tab zu einem Referenzportal wie [CRRO](http://numismatics.org/crro), [OCRE](http://numismatics.org/ocre) oder [Pella](http://numismatics.org/pella). Suchen Sie darin nach einem Münztyp und nach einer Münze. Geben sie beide in die folgende Python-Zelle ein und führen Sie sie aus.
+
+::: {.callout-note collapse="true"}
+## Wie finde ich Münzen und Münztypen in CRRO / OCRE / PELLA
+Klicken Sie auf Browse, um sich alle Münztypen anzeigen zu lassen oder auf Search um die Suche einzuschränken. Sie erhalten eine Liste von Ergebnissen, die die Münztypen darstellen. Dazu werden eine Reihe wichtiger verknüpfter Daten angezeigt sowie die mit diesem Typ verknüpften Münzen samt ihrer Bilder und Anzahl.  
+Klicken Sie auf einen Münztypen und Sie sehen zunächst eine ausführlichere Beschreibung der Attribute und darunter die einzelnen Münzen mit ihrer eindeutigen URL, sowie ihrer Sammlung und Inventarnummer.  
+Wird im Folgenden von Münzen und Münztypen gesprochen, ist die jeweilige URL gemeint, die sie eindeutig identifiziert
+:::
+
+Wie verändert sich die Tabelle, je nachdem ob Sie eine URL zu einem Münztyp oder zu einer Münze eingegeben haben? Prüfen Sie den jeweiligen Output und überlegen Sie, warum es Sinn ergibt, warum die Daten in den jeweiligen Tabellen gespeichert sind.
+
+<style>
+/* This targets the specific container you found */
+#exercise-loading-indicator,
+.exercise-loading-indicator,
+.exercise-loading-details {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Also hides the pulsing spinner accompanying the text */
+.spinner-grow {
+    display: none !important;
+}
+</style>
+
+
+```{pyodide}
+#| exercise: ex_2
+url = "______"
+
+from IPython.display import display, HTML
+html = await get_coin_html(url)
+display(HTML(html))
+```
+
+
+```{pyodide}
+#| exercise: ex_2
+#| setup: true
+#| hide-output: true
+
+from pyodide.http import pyfetch
+import pandas as pd
+import urllib.parse
+from IPython.display import HTML
+
+async def fetch_coin_data(url):
+    """Fetch SPARQL data from Nomisma and return as DataFrame."""
+    url = url.strip()
+    if not url:
+        return None, "Bitte eine URL eingeben."
+
+    url = url.replace("https://", "http://")
+    raw_query = f"SELECT ?predicate ?object WHERE {{ <{url}> ?predicate ?object . }}"
+
+    # Step 4: Encode the query for URL
+    encoded_query = urllib.parse.quote(raw_query)
+
+    # Step 5: Build the full Nomisma API URL
+    api_url = f"http://nomisma.org/query?query={encoded_query}&output=json"
+
+    res = await pyfetch(api_url, method="GET")
+    if res.status != 200:
+        return None, f"Fehler beim Abrufen der Daten: HTTP {res.status}"
+    
+    data = await res.json()
+    rows = []
+    for r in data['results']['bindings']:
+        p = r['predicate']['value'].split('/')[-1].split('#')[-1]
+        o = r['object']['value'].split('/')[-1].split('#')[-1]
+        rows.append({"Attribute": p, "Value": o})
+    
+    df = pd.DataFrame(rows)
+    pd.set_option('display.max_colwidth', None)
+    return df, None
+
+async def get_coin_html(url):
+    """Return HTML string for display in exercise block."""
+    df, error = await fetch_coin_data(url)
+    html = f"<h3>Source: <a href='{url}' target='_blank'>{url}</a></h3>"
+    if df is not None and not df.empty:
+        html += df.to_html(index=False)
+    return html
+```
+
+
+
+
+```{pyodide}
+#| exercise: ex_2
+#| check: true
+
+# Trim and basic empty check
+if not url.strip() or url.strip() == "______":
+    result = {"correct": False, "message": "Bitte eine URL eingeben."}
+elif "http" not in url:
+    result = {"correct": False, "message": "Für diese URL wurden keine Daten gefunden."}
+
+result
+```

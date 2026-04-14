@@ -1,7 +1,7 @@
 # _quarto-gh.yml
 project:
   render:
-    - content/**/*_gh.qmd
+    - content/**/*_combined.qmd
   output-dir: _site_gh
 
 website:
@@ -22,18 +22,18 @@ website:
         href: content/index.qmd
 
       - section: "🔍 I. Basiswissen digitale Numismatik"
-        href: content/digital_index.qmd
+        href: content/digital_index_combined.qmd
         contents:
-          - content/digital_scientific_data.qmd
-          - content/digital_fair_data.qmd
-          - content/digital_data_access.qmd
-          - content/digital_data_aggregation.qmd
+          - content/digital_scientific_data_combined.qmd
+          - content/digital_fair_data_combined.qmd
+          - content/digital_data_access_combined.qmd
+          - content/digital_data_aggregation_combined.qmd
 
       - section: "🌐 II. Vage Münzdaten"
-        href: content/vague_index.qmd
+        href: content/vague_index_combined.qmd
         contents:
           - content/vague_definitions.qmd
-          - content/vague_solving_vagueness.qmd
+          - content/vague_solving_vagueness_combined.qmd
 
   page-navigation: true
 

@@ -1,0 +1,23 @@
+---
+title: "Basiswissen digitale Numismatik"
+subtitle: "zentrale Konzepte"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+title-block: None 
+---
+
+{{< include digital_scientific_data_basic_knowledge.qmd >}}
+
+
+{{< include digital_scientific_data_tables.qmd >}}
+
+
+{{< include digital_scientific_data_graphs.qmd >}}
+
+
+{{< include digital_scientific_data_ontology.qmd >}}
+
+
+{{< include digital_scientific_data_authority_data.qmd >}}

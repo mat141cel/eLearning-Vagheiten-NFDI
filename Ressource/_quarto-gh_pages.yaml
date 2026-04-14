@@ -1,7 +1,13 @@
 # _quarto-gh.yml
+project:
+  render:
+    - content/**/*.qmd
+    - "!content/generated/**"
+
 website:
   site-url: https://USERNAME.github.io/eLearning-Vagheiten-NFDI/
   title: "ELearning-Modul für Münzdaten"
+  
 
   navbar:
     background: "#13294B"

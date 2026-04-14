@@ -2,6 +2,8 @@
 project:
   pre-render: py scripts/split_pages.py
   output-dir: _site/numiscience
+  render:
+    - content/generated/**
 
 website:
   site-url: https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/

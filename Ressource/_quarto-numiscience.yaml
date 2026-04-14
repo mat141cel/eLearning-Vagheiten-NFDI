@@ -1,6 +1,6 @@
 # _quarto-numiscience.yml
 project:
-  pre-render: py scripts/split_pages.py
+  pre-render: python scripts/split_pages.py
   output-dir: _site/numiscience
   render:
     - content/generated/**

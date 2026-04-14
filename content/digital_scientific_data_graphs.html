@@ -42,6 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-244ce1b9ec229af56bb6f90d24b3371d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,6 +71,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Suchen"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 </head>
@@ -122,71 +126,17 @@ ul.task-list li input[type="checkbox"] {
 <p>Bei Graphen gibt es nicht die Tabelle “Münzen” oder “Münztypen”, die verschiedene Einträge enthalten. Stattdessen steht die einzelne Münze (über einen eindeutigen Identifikator, siehe forlgender Abschnitt “Normdaten”) im Zentrum. Die Münze ist über beschriftete Pfeile mit den ihr zugeordneten Informationen verbunden. Die Beschriftungen der Pfeile entsprechen dabei den Namen der Tabellenspalten. Das können Sie im folgenden Codebeispiel überprüfen, indem Sie ihre URL aus dem vorigen Beispiel einfügen.</p>
 <section id="übung-3-darstellung-von-münzdaten-als-graph" class="level3">
 <h3 class="anchored" data-anchor-id="übung-3-darstellung-von-münzdaten-als-graph">Übung 3: Darstellung von Münzdaten als Graph</h3>
-<pre class="{pyodide}"><code>#| exercise: ex_3
-#| envir: coin_data
+<div>
+<div id="pyodide-1" class="exercise-cell">
 
-url = ""   # &lt;------ Hier URL zwischen die Anführungszeichen (!) einfügen
-depth = 1  # &lt;------ Zeigt die Anzahl der Ebenen im Graph an (akzeptiert Werte 1 und 2)
-
-# ----------------------------------------
-from pyodide.http import pyfetch
-import urllib.parse
-import networkx as nx
-import matplotlib.pyplot as plt
-root_id = url.split('/')[-1]
-raw_query = f"""
-SELECT ?s ?p ?o{' ?p1' if depth == 2 else ''} WHERE {{
-  {{ BIND(&lt;{url}&gt; AS ?s) . ?s ?p ?o . }}
-  {'UNION { &lt;' + url + '&gt; ?p1 ?s . FILTER(isIRI(?s)) . ?s ?p ?o . }' if depth == 2 else ''}
-}}
-"""
-
-safe_query = urllib.parse.quote(raw_query)
-api_url = f"https://nomisma.org/query?query={safe_query}&amp;output=json"
-
-res = await pyfetch(api_url)
-if res.status == 200:
-    data = await res.json()
-    G = nx.DiGraph()
-
-    clean = lambda x: x.split('/')[-1].split('#')[-1]
-
-    for r in data["results"]["bindings"]:
-        s = clean(r["s"]["value"])
-        p = clean(r["p"]["value"])
-        o = clean(r["o"]["value"])
-
-        if depth == 2 and "p1" in r:
-            p1 = clean(r["p1"]["value"])
-            if p1 in ["hasCollection", "inDataset"]:
-                continue
-
-        G.add_edge(s, o, label=p)
-
-    plt.figure(figsize=(14, 9))
-    pos = nx.spring_layout(G, k=0.6)
-    colors = ["orange" if n == root_id else "skyblue" for n in G.nodes()]
-
-    nx.draw(G, pos, with_labels=True,
-            node_color=colors, node_size=1800,
-            font_size=8, edge_color="silver", arrowsize=12)
-
-    nx.draw_networkx_edge_labels(
-        G, pos,
-        edge_labels=nx.get_edge_attributes(G, "label"),
-        font_size=7
-    )
-    plt.show()</code></pre>
-<pre class="{pyodide}"><code>#| exercise: ex_3
-#| check: true
-
-# Trim and basic empty check
-if not url.strip() or url.strip() == "______":
-    result = {"correct": False, "message": "Bitte eine URL eingeben."}
-elif "http" not in url:
-    result = {"correct": False, "message": "Für diese URL wurden keine Daten gefunden."}
-
-result</code></pre>
+</div>
+<script type="pyodide-1-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImVudmlyIjoiY29pbl9kYXRhIiwiZXZhbCI6dHJ1ZSwiZXhlcmNpc2UiOiJleF8zIn0sImNvZGUiOiJcbnVybCA9IFwiXCIgICAjIDwtLS0tLS0gSGllciBVUkwgendpc2NoZW4gZGllIEFuZsO8aHJ1bmdzemVpY2hlbiAoISkgZWluZsO8Z2VuXG5kZXB0aCA9IDEgICMgPC0tLS0tLSBaZWlndCBkaWUgQW56YWhsIGRlciBFYmVuZW4gaW0gR3JhcGggYW4gKGFremVwdGllcnQgV2VydGUgMSB1bmQgMilcblxuIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5mcm9tIHB5b2RpZGUuaHR0cCBpbXBvcnQgcHlmZXRjaFxuaW1wb3J0IHVybGxpYi5wYXJzZVxuaW1wb3J0IG5ldHdvcmt4IGFzIG54XG5pbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0XG5yb290X2lkID0gdXJsLnNwbGl0KCcvJylbLTFdXG5yYXdfcXVlcnkgPSBmXCJcIlwiXG5TRUxFQ1QgP3MgP3AgP297JyA/cDEnIGlmIGRlcHRoID09IDIgZWxzZSAnJ30gV0hFUkUge3tcbiAge3sgQklORCg8e3VybH0+IEFTID9zKSAuID9zID9wID9vIC4gfX1cbiAgeydVTklPTiB7IDwnICsgdXJsICsgJz4gP3AxID9zIC4gRklMVEVSKGlzSVJJKD9zKSkgLiA/cyA/cCA/byAuIH0nIGlmIGRlcHRoID09IDIgZWxzZSAnJ31cbn19XG5cIlwiXCJcblxuc2FmZV9xdWVyeSA9IHVybGxpYi5wYXJzZS5xdW90ZShyYXdfcXVlcnkpXG5hcGlfdXJsID0gZlwiaHR0cHM6Ly9ub21pc21hLm9yZy9xdWVyeT9xdWVyeT17c2FmZV9xdWVyeX0mb3V0cHV0PWpzb25cIlxuXG5yZXMgPSBhd2FpdCBweWZldGNoKGFwaV91cmwpXG5pZiByZXMuc3RhdHVzID09IDIwMDpcbiAgICBkYXRhID0gYXdhaXQgcmVzLmpzb24oKVxuICAgIEcgPSBueC5EaUdyYXBoKClcblxuICAgIGNsZWFuID0gbGFtYmRhIHg6IHguc3BsaXQoJy8nKVstMV0uc3BsaXQoJyMnKVstMV1cblxuICAgIGZvciByIGluIGRhdGFbXCJyZXN1bHRzXCJdW1wiYmluZGluZ3NcIl06XG4gICAgICAgIHMgPSBjbGVhbihyW1wic1wiXVtcInZhbHVlXCJdKVxuICAgICAgICBwID0gY2xlYW4ocltcInBcIl1bXCJ2YWx1ZVwiXSlcbiAgICAgICAgbyA9IGNsZWFuKHJbXCJvXCJdW1widmFsdWVcIl0pXG5cbiAgICAgICAgaWYgZGVwdGggPT0gMiBhbmQgXCJwMVwiIGluIHI6XG4gICAgICAgICAgICBwMSA9IGNsZWFuKHJbXCJwMVwiXVtcInZhbHVlXCJdKVxuICAgICAgICAgICAgaWYgcDEgaW4gW1wiaGFzQ29sbGVjdGlvblwiLCBcImluRGF0YXNldFwiXTpcbiAgICAgICAgICAgICAgICBjb250aW51ZVxuXG4gICAgICAgIEcuYWRkX2VkZ2UocywgbywgbGFiZWw9cClcblxuICAgIHBsdC5maWd1cmUoZmlnc2l6ZT0oMTQsIDkpKVxuICAgIHBvcyA9IG54LnNwcmluZ19sYXlvdXQoRywgaz0wLjYpXG4gICAgY29sb3JzID0gW1wib3JhbmdlXCIgaWYgbiA9PSByb290X2lkIGVsc2UgXCJza3libHVlXCIgZm9yIG4gaW4gRy5ub2RlcygpXVxuXG4gICAgbnguZHJhdyhHLCBwb3MsIHdpdGhfbGFiZWxzPVRydWUsXG4gICAgICAgICAgICBub2RlX2NvbG9yPWNvbG9ycywgbm9kZV9zaXplPTE4MDAsXG4gICAgICAgICAgICBmb250X3NpemU9OCwgZWRnZV9jb2xvcj1cInNpbHZlclwiLCBhcnJvd3NpemU9MTIpXG5cbiAgICBueC5kcmF3X25ldHdvcmt4X2VkZ2VfbGFiZWxzKFxuICAgICAgICBHLCBwb3MsXG4gICAgICAgIGVkZ2VfbGFiZWxzPW54LmdldF9lZGdlX2F0dHJpYnV0ZXMoRywgXCJsYWJlbFwiKSxcbiAgICAgICAgZm9udF9zaXplPTdcbiAgICApXG4gICAgcGx0LnNob3coKSJ9
+</script>
+</div>
+<script type="exercise-check-ex_3-contents">
+eyJhdHRyIjp7ImNoZWNrIjp0cnVlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJleGVyY2lzZSI6ImV4XzMifSwiY29kZSI6IlxuIyBUcmltIGFuZCBiYXNpYyBlbXB0eSBjaGVja1xuaWYgbm90IHVybC5zdHJpcCgpIG9yIHVybC5zdHJpcCgpID09IFwiX19fX19fXCI6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiQml0dGUgZWluZSBVUkwgZWluZ2ViZW4uXCJ9XG5lbGlmIFwiaHR0cFwiIG5vdCBpbiB1cmw6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiRsO8ciBkaWVzZSBVUkwgd3VyZGVuIGtlaW5lIERhdGVuIGdlZnVuZGVuLlwifVxuXG5yZXN1bHQifQ==
+</script>
 <p>Diese Darstellungsweise erleichtert die Beantwortung von komplexen Fragestellungen</p>
 <p>Man nehme die Fragestellung: In einem Münzfund wurden zahlreiche Münzen unterschiedlicher römischer Kaiser gefunden. Uns interessiert, ob diese Münzen eher am Anfang oder am Ende der Regierungszeit der jeweiligen Kaiser geprägt wurden.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -204,10 +154,38 @@ Hinweis
 </div>
 
 
+<script type="pyodide-data">
+eyJvcHRpb25zIjp7ImVudiI6eyJQTE9UTFlfUkVOREVSRVIiOiJwbG90bHlfbWltZXR5cGUifSwiaW5kZXhVUkwiOiJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvcHlvZGlkZS92MC4yOC4xL2Z1bGwvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsicHlvZGlkZV9odHRwIiwibWljcm9waXAiLCJpcHl0aG9uIl19fQ==
+</script>
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTEiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8xID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0xLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgLy8gRGVmYXVsdCBleGVyY2lzZSBjb25maWd1cmF0aW9uXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKFxuICAgIHtcbiAgICAgIGlkOiBcInB5b2RpZGUtMS1jb250ZW50c1wiLFxuICAgICAgZW52aXI6IGBleGVyY2lzZS1lbnYtJHtibG9jay5hdHRyLmV4ZXJjaXNlfWAsXG4gICAgICBlcnJvcjogZmFsc2UsXG4gICAgICBjYXB0aW9uOiAnRXhlcmNpc2UnLFxuICAgIH0sXG4gICAgYmxvY2suYXR0clxuICApO1xuXG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IocHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xufVxudmlld29mIF9weW9kaWRlX3ZhbHVlXzEgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzEsIHt9KTtcbl9weW9kaWRlX2ZlZWRiYWNrXzEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUdyYWRlciB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcbiAgY29uc3QgZW1wdHlGZWVkYmFjayA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xuXG4gIGNvbnN0IGdyYWRlciA9IG5ldyBQeW9kaWRlR3JhZGVyKF9weW9kaWRlX3ZhbHVlXzEuZXZhbHVhdG9yKTtcbiAgY29uc3QgZmVlZGJhY2sgPSBhd2FpdCBncmFkZXIuZ3JhZGVFeGVyY2lzZSgpO1xuICBpZiAoIWZlZWRiYWNrKSByZXR1cm4gZW1wdHlGZWVkYmFjaztcbiAgcmV0dXJuIGZlZWRiYWNrO1xufVxuIn0seyJjZWxsTmFtZSI6InB5b2RpZGUtcHJlbHVkZSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InB5b2RpZGVPanMgPSB7XG4gIGNvbnN0IHtcbiAgICBQeW9kaWRlRXZhbHVhdG9yLFxuICAgIFB5b2RpZGVFbnZpcm9ubWVudE1hbmFnZXIsXG4gICAgc2V0dXBQeXRob24sXG4gICAgc3RhcnRQeW9kaWRlV29ya2VyLFxuICAgIGI2NERlY29kZSxcbiAgICBjb2xsYXBzZVBhdGgsXG4gIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHN0YXR1c0NvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwiZXhlcmNpc2UtbG9hZGluZy1zdGF0dXNcIik7XG4gIGNvbnN0IGluZGljYXRvckNvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwiZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XG4gIGluZGljYXRvckNvbnRhaW5lci5jbGFzc0xpc3QucmVtb3ZlKFwiZC1ub25lXCIpO1xuXG4gIGxldCBzdGF0dXNUZXh0ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKVxuICBzdGF0dXNUZXh0LmNsYXNzTGlzdCA9IFwiZXhlcmNpc2UtbG9hZGluZy1kZXRhaWxzXCI7XG4gIHN0YXR1c1RleHQgPSBzdGF0dXNDb250YWluZXIuYXBwZW5kQ2hpbGQoc3RhdHVzVGV4dCk7XG4gIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgSW5pdGlhbGlzZWA7XG5cbiAgLy8gSG9pc3QgaW5kaWNhdG9yIG91dCBmcm9tIGZpbmFsIHNsaWRlIHdoZW4gcnVubmluZyB1bmRlciByZXZlYWxcbiAgY29uc3QgcmV2ZWFsU3RhdHVzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgLmV4ZXJjaXNlLWxvYWRpbmctaW5kaWNhdG9yXCIpO1xuICBpZiAocmV2ZWFsU3RhdHVzKSB7XG4gICAgcmV2ZWFsU3RhdHVzLnJlbW92ZSgpO1xuICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmV2ZWFsID4gLnNsaWRlc1wiKS5hcHBlbmRDaGlsZChyZXZlYWxTdGF0dXMpO1xuICB9XG5cbiAgLy8gTWFrZSBhbnkgcmV2ZWFsIHNsaWRlcyB3aXRoIGxpdmUgY2VsbHMgc2Nyb2xsYWJsZVxuICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKFwiLnJldmVhbCAuZXhlcmNpc2UtY2VsbFwiKS5mb3JFYWNoKChlbCkgPT4ge1xuICAgIGVsLmNsb3Nlc3QoJ3NlY3Rpb24uc2xpZGUnKS5jbGFzc0xpc3QuYWRkKFwic2Nyb2xsYWJsZVwiKTtcbiAgfSlcblxuICAvLyBQeW9kaWRlIHN1cHBsZW1lbnRhbCBkYXRhIGFuZCBvcHRpb25zXG4gIGNvbnN0IGRhdGFDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcInB5b2RpZGUtZGF0YVxcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGRhdGEgPSBKU09OLnBhcnNlKGI2NERlY29kZShkYXRhQ29udGVudCkpO1xuXG4gIC8vIEdyYWIgbGlzdCBvZiByZXNvdXJjZXMgdG8gYmUgZG93bmxvYWRlZFxuICBjb25zdCBmaWxlc0NvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwidmZzLWZpbGVcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBmaWxlcyA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKGZpbGVzQ29udGVudCkpO1xuXG4gIGxldCBweW9kaWRlUHJvbWlzZSA9IChhc3luYyAoKSA9PiB7XG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyBQeW9kaWRlYDtcbiAgICBjb25zdCBweW9kaWRlID0gYXdhaXQgc3RhcnRQeW9kaWRlV29ya2VyKGRhdGEub3B0aW9ucyk7XG5cbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHBhY2thZ2U6IG1pY3JvcGlwYDtcbiAgICBhd2FpdCBweW9kaWRlLmxvYWRQYWNrYWdlKFwibWljcm9waXBcIik7XG4gICAgY29uc3QgbWljcm9waXAgPSBhd2FpdCBweW9kaWRlLnB5aW1wb3J0KFwibWljcm9waXBcIik7XG4gICAgYXdhaXQgZGF0YS5wYWNrYWdlcy5wa2dzLm1hcCgocGtnKSA9PiAoKSA9PiB7XG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHBhY2thZ2U6ICR7cGtnfWA7XG4gICAgICByZXR1cm4gbWljcm9waXAuaW5zdGFsbChwa2cpO1xuICAgIH0pLnJlZHVjZSgoY3VyLCBuZXh0KSA9PiBjdXIudGhlbihuZXh0KSwgUHJvbWlzZS5yZXNvbHZlKCkpO1xuICAgIGF3YWl0IG1pY3JvcGlwLmRlc3Ryb3koKTtcblxuICAgIC8vIERvd25sb2FkIGFuZCBpbnN0YWxsIHJlc291cmNlc1xuICAgIGF3YWl0IGZpbGVzLm1hcCgoZmlsZSkgPT4gYXN5bmMgKCkgPT4ge1xuICAgICAgY29uc3QgbmFtZSA9IGZpbGUuc3Vic3RyaW5nKGZpbGUubGFzdEluZGV4T2YoJy8nKSArIDEpO1xuICAgICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyByZXNvdXJjZTogJHtuYW1lfWA7XG4gICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKGZpbGUpO1xuICAgICAgaWYgKCFyZXNwb25zZS5vaykge1xuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYENhbid0IGRvd25sb2FkIFxcYCR7ZmlsZX1cXGAuIEVycm9yICR7cmVzcG9uc2Uuc3RhdHVzfTogXCIke3Jlc3BvbnNlLnN0YXR1c1RleHR9XCIuYCk7XG4gICAgICB9XG4gICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuYXJyYXlCdWZmZXIoKTtcblxuICAgICAgLy8gU3RvcmUgVVJMcyBpbiB0aGUgY3dkIHdpdGhvdXQgYW55IHN1YmRpcmVjdG9yeSBzdHJ1Y3R1cmVcbiAgICAgIGlmIChmaWxlLmluY2x1ZGVzKFwiOi8vXCIpKSB7XG4gICAgICAgIGZpbGUgPSBuYW1lO1xuICAgICAgfVxuXG4gICAgICAvLyBDb2xsYXBzZSBoaWdoZXIgZGlyZWN0b3J5IHN0cnVjdHVyZVxuICAgICAgZmlsZSA9IGNvbGxhcHNlUGF0aChmaWxlKTtcblxuICAgICAgLy8gQ3JlYXRlIGRpcmVjdG9yeSB0cmVlLCBpZ25vcmluZyBcImRpcmVjdG9yeSBleGlzdHNcIiBWRlMgZXJyb3JzXG4gICAgICBjb25zdCBwYXJ0cyA9IGZpbGUuc3BsaXQoJy8nKS5zbGljZSgwLCAtMSk7XG4gICAgICBsZXQgcGF0aCA9ICcnO1xuICAgICAgd2hpbGUgKHBhcnRzLmxlbmd0aCA+IDApIHtcbiAgICAgICAgcGF0aCArPSBwYXJ0cy5zaGlmdCgpICsgJy8nO1xuICAgICAgICB0cnkge1xuICAgICAgICAgIGF3YWl0IHB5b2RpZGUuRlMubWtkaXIocGF0aCk7XG4gICAgICAgIH0gY2F0Y2ggKGUpIHtcbiAgICAgICAgICBpZiAoZS5uYW1lICE9PSBcIkVycm5vRXJyb3JcIikgdGhyb3cgZTtcbiAgICAgICAgICBpZiAoZS5lcnJubyAhPT0gMjApIHtcbiAgICAgICAgICAgIGNvbnN0IGVycm9yVGV4dFB0ciA9IGF3YWl0IHB5b2RpZGUuX21vZHVsZS5fc3RyZXJyb3IoZS5lcnJubyk7XG4gICAgICAgICAgICBjb25zdCBlcnJvclRleHQgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuVVRGOFRvU3RyaW5nKGVycm9yVGV4dFB0cik7XG4gICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYEZpbGVzeXN0ZW0gRXJyb3IgJHtlLmVycm5vfSBcIiR7ZXJyb3JUZXh0fVwiLmApO1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgfVxuXG4gICAgICAvLyBXcml0ZSB0aGlzIGZpbGUgdG8gdGhlIFZGU1xuICAgICAgdHJ5IHtcbiAgICAgICAgcmV0dXJuIGF3YWl0IHB5b2RpZGUuRlMud3JpdGVGaWxlKGZpbGUsIG5ldyBVaW50OEFycmF5KGRhdGEpKTtcbiAgICAgIH0gY2F0Y2ggKGUpIHtcbiAgICAgICAgaWYgKGUubmFtZSAhPT0gXCJFcnJub0Vycm9yXCIpIHRocm93IGU7XG4gICAgICAgIGNvbnN0IGVycm9yVGV4dFB0ciA9IGF3YWl0IHB5b2RpZGUuX21vZHVsZS5fc3RyZXJyb3IoZS5lcnJubyk7XG4gICAgICAgIGNvbnN0IGVycm9yVGV4dCA9IGF3YWl0IHB5b2RpZGUuX21vZHVsZS5VVEY4VG9TdHJpbmcoZXJyb3JUZXh0UHRyKTtcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBGaWxlc3lzdGVtIEVycm9yICR7ZS5lcnJub30gXCIke2Vycm9yVGV4dH1cIi5gKTtcbiAgICAgIH1cbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcblxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgUHlvZGlkZSBlbnZpcm9ubWVudCBzZXR1cGA7XG4gICAgYXdhaXQgc2V0dXBQeXRob24ocHlvZGlkZSk7XG5cbiAgICBzdGF0dXNUZXh0LnJlbW92ZSgpO1xuICAgIGlmIChzdGF0dXNDb250YWluZXIuY2hpbGRyZW4ubGVuZ3RoID09IDApIHtcbiAgICAgIHN0YXR1c0NvbnRhaW5lci5wYXJlbnROb2RlLnJlbW92ZSgpO1xuICAgIH1cbiAgICByZXR1cm4gcHlvZGlkZTtcbiAgfSkoKS5jYXRjaCgoZXJyKSA9PiB7XG4gICAgc3RhdHVzVGV4dC5zdHlsZS5jb2xvciA9IFwidmFyKC0tZXhlcmNpc2UtZWRpdG9yLWhsLWVyLCAjQUQwMDAwKVwiO1xuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBlcnIubWVzc2FnZTtcbiAgICAvL2luZGljYXRvckNvbnRhaW5lci5xdWVyeVNlbGVjdG9yKFwiLnNwaW5uZXItZ3Jvd1wiKS5jbGFzc0xpc3QuYWRkKFwiZC1ub25lXCIpO1xuICAgIHRocm93IGVycjtcbiAgfSk7XG5cbiAgLy8gS2VlcCB0cmFjayBvZiBpbml0aWFsIE9KUyBibG9jayByZW5kZXJcbiAgY29uc3QgcmVuZGVyZWRPanMgPSB7fTtcblxuICBjb25zdCBwcm9jZXNzID0gYXN5bmMgKGNvbnRleHQsIGlucHV0cykgPT4ge1xuICAgIGNvbnN0IHB5b2RpZGUgPSBhd2FpdCBweW9kaWRlUHJvbWlzZTtcbiAgICBjb25zdCBldmFsdWF0b3IgPSBuZXcgUHlvZGlkZUV2YWx1YXRvcihweW9kaWRlLCBjb250ZXh0KTtcbiAgICBhd2FpdCBldmFsdWF0b3IucHJvY2VzcyhpbnB1dHMpO1xuICAgIHJldHVybiBldmFsdWF0b3IuY29udGFpbmVyO1xuICB9XG5cbiAgcmV0dXJuIHtcbiAgICBweW9kaWRlUHJvbWlzZSxcbiAgICByZW5kZXJlZE9qcyxcbiAgICBwcm9jZXNzLFxuICB9O1xufVxuIn1dfQ==
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
 </section>
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../content";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

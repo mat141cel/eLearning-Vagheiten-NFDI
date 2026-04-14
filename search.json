@@ -48,209 +48,46 @@
     ]
   },
   {
-    "objectID": "content/index.html",
-    "href": "content/index.html",
-    "title": "Digitale Numismatik",
+    "objectID": "content/numiscience/digital_index/intro_quiz.html",
+    "href": "content/numiscience/digital_index/intro_quiz.html",
+    "title": "Intro Quiz",
     "section": "",
-    "text": "Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
-    "crumbs": [
-      "Mein Fortschritt",
-      "Hauptseite"
-    ]
+    "text": "Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
   },
   {
-    "objectID": "content/index.html#warum-dieser-kurs",
-    "href": "content/index.html#warum-dieser-kurs",
-    "title": "Digitale Numismatik",
+    "objectID": "content/numiscience/digital_index/intro_quiz.html#quiz",
+    "href": "content/numiscience/digital_index/intro_quiz.html#quiz",
+    "title": "Intro Quiz",
     "section": "",
-    "text": "Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
-    "crumbs": [
-      "Mein Fortschritt",
-      "Hauptseite"
-    ]
+    "text": "Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
   },
   {
-    "objectID": "content/index.html#aufbau-des-kurses",
-    "href": "content/index.html#aufbau-des-kurses",
-    "title": "Digitale Numismatik",
+    "objectID": "content/numiscience/digital_index/intro.html",
+    "href": "content/numiscience/digital_index/intro.html",
+    "title": "Intro",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen."
+  },
+  {
+    "objectID": "content/numiscience/digital_index/intro.html#motivation",
+    "href": "content/numiscience/digital_index/intro.html#motivation",
+    "title": "Intro",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen."
+  },
+  {
+    "objectID": "content/numiscience/digital_index/intro.html#lernziele",
+    "href": "content/numiscience/digital_index/intro.html#lernziele",
+    "title": "Intro",
+    "section": "Lernziele",
+    "text": "Lernziele\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken"
+  },
+  {
+    "objectID": "content/numiscience/digital_index/intro.html#aufbau-des-kurses",
+    "href": "content/numiscience/digital_index/intro.html#aufbau-des-kurses",
+    "title": "Intro",
     "section": "Aufbau des Kurses",
-    "text": "Aufbau des Kurses\n\n\n\n\n1. Basiswissen digitale Numismatik\nInhalt Forschungsdaten und Portalrecherche\nWarum? Datenquellen verstehen\nZum Kurs\n\n\n\n\n\n\n2. Vage Münzdaten\nInhalt Umgang mit unsicheren und vagen Daten\nWarum? Auswertungen transparent und reproduzierbar machen\nzum Kurs\n\n\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nDie Module können in beliebiger Reihenfolge absolviert werden.\nSie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.",
-    "crumbs": [
-      "Mein Fortschritt",
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/index.html#technische-grundlage-des-kurses",
-    "href": "content/index.html#technische-grundlage-des-kurses",
-    "title": "Digitale Numismatik",
-    "section": "Technische Grundlage des Kurses",
-    "text": "Technische Grundlage des Kurses\nDieser Kurs wurde mit Quarto Live geschrieben, das interaktive Übungen erlaubt.\n\n\n\n\n\n\nHinweisMehr über den Kurs in Quarto Live\n\n\n\n\n\n\n\n\n\n\n\n\nWeb‑basiert\nDer Kurs läuft komplett im Browser (Chrome, Firefox, Edge …).\n\n\nSicher\nDer Code wird in einer isolierten Web‑Assembly‑Umgebung ausgeführt – keine Daten verlassen Ihren Rechner.\n\n\nInteraktiv\nSie können Code‑Zellen anpassen und sofort das Ergebnis sehen.\n\n\n\nMehr erfahren: https://quarto.org/docs/computations/quarto-live.html\n\n\n\nDie interaktiven Elemente des Kurses nutzen die Programmiersprache Python. Wenn Sie mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt. Keine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen.\n\n\n\n\n\n\nHinweisWarum Python lernen?\n\n\n\n\n\n\n\n\n\n\n\n\nEinfach zu lesen\nDie Syntax ist fast wie ein Satz in natürlicher Sprache.\n\n\nGroße Community\nViele Beispiele und Tutorials, speziell für die Digital Humanities.\n\n\nFlexibilität\nMit Bibliotheken wie pandas, numpy und matplotlib können Daten einfach verarbeitet und visualisiert werden.\n\n\n\nEinsteiger‑Tutorial: https://www.python.org/about/gettingstarted/",
-    "crumbs": [
-      "Mein Fortschritt",
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/index.html#förderung",
-    "href": "content/index.html#förderung",
-    "title": "Digitale Numismatik",
-    "section": "Förderung",
-    "text": "Förderung\n\nDiese ELearning-Materialien wurden am Zentrum für Antike Numismatik am Seminar für Alte Geschichte an der Universität Heidelberg entwickelt.\nFinanziert wurde das Projekt in dem von der DFG geförderten Projekt NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte.",
-    "crumbs": [
-      "Mein Fortschritt",
-      "Hauptseite"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html",
-    "href": "content/digital_index.html",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.\n\n\n\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken\n\n\n\n\nDas Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen.\n\nForschungsdaten (veröffentlicht)\ngute Forschungsdaten (veröffentlicht)\nDatenzugang (im Aufbau)\nDatenverarbeitung (im Aufbau)\n\nDiese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen.",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#motivation",
-    "href": "content/digital_index.html#motivation",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "",
-    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#lernziele",
-    "href": "content/digital_index.html#lernziele",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "",
-    "text": "Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#aufbau-des-kurses",
-    "href": "content/digital_index.html#aufbau-des-kurses",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "",
-    "text": "Das Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen.\n\nForschungsdaten (veröffentlicht)\ngute Forschungsdaten (veröffentlicht)\nDatenzugang (im Aufbau)\nDatenverarbeitung (im Aufbau)\n\nDiese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen.",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#übung-1-münzen-von-hadrian-identifizieren",
-    "href": "content/digital_index.html#übung-1-münzen-von-hadrian-identifizieren",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "Übung 1: Münzen von Hadrian identifizieren",
-    "text": "Übung 1: Münzen von Hadrian identifizieren\nIn dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.\n\n\n\n\n\n\nHinweisWie finde ich die Links?\n\n\n\n\n\n\n\n\n1. Alle Münzen in den Datenbanken anzeigen\n\n\n\n\n\n2. Diesen Link kopieren (Rechtsklick -&gt; Link-Adresse kopieren)\n\n\n\n\n\nFühren Sie danach die folgende Codezelle mit Klick auf den Button “Run Code” aus (Sollte der Button leicht ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint) , um die erste Übung zu starten. Überprüfen Sie den Output mit Münzen aus jedem der Portale (CRRO, OCRE; PELLA). Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?\n\n\n\n\n\n\n\n\n\nHinweis: Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten.\nWelches Kürzel in den URLs könnte auf Hadrian verweisen?\n\n\nLösung: Nur OCRE enthält Münzen von Hadrian. Diese können durch das “hdn” in der URL identifiziert werden. Hier ist ein Beispiel für eine gültige URL eines Hadrian-Typs:\nurl = \"http://numismatics.org/ocre/id/ric.2_3(2).hdn.744\"\n\n\n\n\n\n\n\nHinweisFür Informatiker: Implementierung der URL-Validierung\n\n\n\n\n\nif not isinstance(url, str) or url.strip() == \"\":\n    result = {\"correct\": False, \"message\": \"Bitte eine URL eingeben. (zwischen die Anführungszeichen!)\"}\nelif not url.startswith(\"http\"):\n    result = {\"correct\": False, \"message\": \"Das ist keine gültige URL.\"}\nelif \"pella\" in url:\n    result = {\"correct\": False, \"message\": \"Pella enthält hellenistische Münzen, keine von Hadrian.\"}\nelif \"crro\" in url:\n    result = {\"correct\": False, \"message\": \"CRRO enthält republikanische Münzen, keine von Hadrian.\"}\nelif \"numismatics.org/ocre\" not in url:\n    result = {\"correct\": False, \"message\": \"Das ist keine URL aus CRRO / PELLA / OCRE\"}\nelif \"hdn\" in url:\n    result = {\"correct\": True, \"message\": f\"Richtig: {url} ist ein Hadrian-Typ.\"}\nelse:\n    result = {\"correct\": False, \"message\": \"Das ist eine Münze aus OCRE, aber nicht von Hadrian.\"}\nresult",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_index.html#quiz",
-    "href": "content/digital_index.html#quiz",
-    "title": "Basiswissen digitale Numismatik",
-    "section": "Quiz",
-    "text": "Quiz\nHaben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik"
-    ]
-  },
-  {
-    "objectID": "content/digital_data_aggregation.html",
-    "href": "content/digital_data_aggregation.html",
-    "title": "Aggregating the Data",
-    "section": "",
-    "text": "Diese Seite befindet sich im Aufbau und wird bald veröffentlicht",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik",
-      "Aggregating the Data"
-    ]
-  },
-  {
-    "objectID": "content/digital_data_access.html",
-    "href": "content/digital_data_access.html",
-    "title": "Daten herunterladen",
-    "section": "",
-    "text": "Diese Seite befindet sich im Aufbau und wird bald veröffentlicht",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik",
-      "Daten herunterladen"
-    ]
-  },
-  {
-    "objectID": "content/digital_fair_data.html",
-    "href": "content/digital_fair_data.html",
-    "title": "Was ist NFDI?",
-    "section": "",
-    "text": "Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (NFDI4Objects).\n\n\n\n\n\n\nHinweis\n\n\n\nHier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. Mehr erfahren",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik",
-      "Was ist NFDI?"
-    ]
-  },
-  {
-    "objectID": "content/digital_fair_data.html#vorbereitung-was-sind-forschungsdaten",
-    "href": "content/digital_fair_data.html#vorbereitung-was-sind-forschungsdaten",
-    "title": "Was ist NFDI?",
-    "section": "",
-    "text": "Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (NFDI4Objects).\n\n\n\n\n\n\nHinweis\n\n\n\nHier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. Mehr erfahren",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik",
-      "Was ist NFDI?"
-    ]
-  },
-  {
-    "objectID": "content/digital_fair_data.html#was-ist-nfdi",
-    "href": "content/digital_fair_data.html#was-ist-nfdi",
-    "title": "Was ist NFDI?",
-    "section": "Was ist NFDI?",
-    "text": "Was ist NFDI?\nDie Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.\n\n\n\nGrafik Aufbau der NFDI\n\n\nDie Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik",
-      "Was ist NFDI?"
-    ]
-  },
-  {
-    "objectID": "content/digital_fair_data.html#was-ist-nfdi-1",
-    "href": "content/digital_fair_data.html#was-ist-nfdi-1",
-    "title": "Was ist NFDI?",
-    "section": "Was ist NFDI?",
-    "text": "Was ist NFDI?\nDie Aufarbeitung der Daten soll dabei anhand der FAIR-Kriterien erfolgen. Das Akronym steht für die Kategorien Findable, Accessible, Interoperable, Reusable, also auffindbar, zugänglich, interoperabel und wiederverwendbar. FAIR-Kriterien werden in etwa seit zehn Jahren in der Wissenschaft genutzt. Initiativen wie GO-Fair haben die Prinzipien ausformuliert.\n\nFindable\nDie Kategorie Findable bezieht sich zunächst darauf, dass die Daten im Web eindeutig identifizierbar sein müssen. Ihre URL muss persistent, also unveränderlich sein, sodass in der Zukunft keine andere Ressource die gleiche URL bekommt. Es gibt mehrere Services, die diese Anforderungen erfüllen, zum Beispiel die DOI (Digital Object Identifier)-Organisation.\nIn der Numismatik haben moderne Münzdatenbanken einen eindeutigen und persistenten Permalink, so auch die Münzen der Heidelberger Sammlung (Beispiel). Die Daten sollen allerdings auch auffindbar sein, wenn der Identifier unbekannt ist. Dafür müssen die Daten mit gut beschriebenen Metadaten ausgezeichnet sein. Dazu gehören bei Münzdaten Informationen zur Prägestätte, Nominal oder Gewicht. Auch diese Informationen, sowie Publikationen, die auf Münzen verweisen, sollten mit einem Identifikator versehen sein.\n\n\nAccessible\nNeben der Auffindbarkeit ist entscheidend, dass Münzobjekte und die dazugehörigen Beschreibungen zugänglich sind. Ein Digitalisat einer Münze in einer Online-Datenbank muss über standardisierte Protokolle (z. B. HTTPS) erreichbar sein.\nIst ein direkter Zugriff auf hochauflösende Bilder aus urheberrechtlichen Gründen eingeschränkt, können zumindest die Metadaten frei zugänglich bleiben. So kann ein Forscher nachvollziehen, dass eine bestimmte Münze dokumentiert ist, selbst wenn er nicht sofort das Bildmaterial herunterladen darf.\n\n\nInteroperable\nForschungsdaten in der Numismatik sollen sich mit anderen Sammlungen und Fachdaten verknüpfen lassen. Dafür ist es wichtig, gemeinsame Standards und Vokabulare zu nutzen.\nEin Beispiel wäre die Verwendung von Normdaten wie GND-IDs für antike Herrscher oder Nomisma.org-Referenzen für Münztypen. Wenn eine römische Münze aus Trier mit „RIC“-Referenzen (Roman Imperial Coinage) ausgezeichnet und gleichzeitig mit Ontologien wie Nomisma.org verknüpft wird, lassen sich Informationen aus verschiedenen Museen und Publikationen problemlos kombinieren.\n\n\nReusable\nDie Wiederverwendbarkeit bezieht sich auf die Fähigkeit des Nutzenden, die Daten korrekt zu interpretieren. Dazu sollten so viele Kontextinformationen wie möglich gegeben werden, auch diejenigen, die auf den ersten Blick irrelevant erscheinen.\nDazu gehören: - Versionsnamen der Daten\n- Konkrete Informationen zur im Erhebungsprozess verwendeten Soft- und Hardware\n- Schritte im Datenerhebungsprozess (Formulierung des Ziels, Kennzeichnung von fremden Daten, Beschreibung der Datenverarbeitungsschritte)\nUm die Wiederverwendbarkeit zu erleichtern, sollten diese Metadaten nach einem standardisierten Muster angegeben werden.\n- Bei Publikationen: Dublin Core\n- Für archäologische Daten: Europeana-Datenmodell\nAls Teil der Wiederverwendbarkeit sollten auch klare Lizenzen vergeben werden, damit automatisierte Suchen nicht versehentlich urheberrechtlich geschütztes Material abgreifen.",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik",
-      "Was ist NFDI?"
-    ]
-  },
-  {
-    "objectID": "content/digital_fair_data.html#transferaufgaben",
-    "href": "content/digital_fair_data.html#transferaufgaben",
-    "title": "Was ist NFDI?",
-    "section": "Transferaufgaben",
-    "text": "Transferaufgaben",
-    "crumbs": [
-      "Mein Fortschritt",
-      "🔍 I. Basiswissen digitale Numismatik",
-      "Was ist NFDI?"
-    ]
+    "text": "Aufbau des Kurses\nDas Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen.\n\nForschungsdaten (veröffentlicht)\ngute Forschungsdaten (veröffentlicht)\nDatenzugang (im Aufbau)\nDatenverarbeitung (im Aufbau)\n\nDiese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen."
   },
   {
     "objectID": "content/digital_scientific_data.html",
@@ -323,6 +160,225 @@
       "🔍 I. Basiswissen digitale Numismatik",
       "Forschungsdaten"
     ]
+  },
+  {
+    "objectID": "content/digital_fair_data.html",
+    "href": "content/digital_fair_data.html",
+    "title": "Was ist NFDI?",
+    "section": "",
+    "text": "Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (NFDI4Objects).\n\n\n\n\n\n\nHinweis\n\n\n\nHier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. Mehr erfahren",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik",
+      "Was ist NFDI?"
+    ]
+  },
+  {
+    "objectID": "content/digital_fair_data.html#vorbereitung-was-sind-forschungsdaten",
+    "href": "content/digital_fair_data.html#vorbereitung-was-sind-forschungsdaten",
+    "title": "Was ist NFDI?",
+    "section": "",
+    "text": "Um den Umgang mit Forschungsdaten zu vereinfachen und zu vereinheitlichen, haben sich die jeweiligen Disziplinen eigene Standards gegeben. Im Bereich der Numismatik und Archäologie allgemein, ist für Deutschland die Nationale Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte relevant (NFDI4Objects).\n\n\n\n\n\n\nHinweis\n\n\n\nHier können Sie genaueres zu Aufgaben und Aufbau der NFDI erfahren. Mehr erfahren",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik",
+      "Was ist NFDI?"
+    ]
+  },
+  {
+    "objectID": "content/digital_fair_data.html#was-ist-nfdi",
+    "href": "content/digital_fair_data.html#was-ist-nfdi",
+    "title": "Was ist NFDI?",
+    "section": "Was ist NFDI?",
+    "text": "Was ist NFDI?\nDie Nationale Forschungsdateninfrastruktur (NFDI) ist ein gemeinnütziger Verein, der Forschungsdaten systematisch digitalisiert und vernetzt. Ziel der NFDI ist es, Datenkompetenz zu fördern und einen zentralen Wissensspeicher aufzubauen, um damit künftige Innovationen zu fördern. Dadurch versteht sich die NFDI als strategisches Instrument zur Stärkung des Wissenschaftsstandorts Deutschland. Um den unterschiedlichen Anforderungen der einzelnen Fachdisziplinen gerecht zu werden, ist die NFDI in Konsortien gegliedert, die voneinander weitgehend unabhängig agieren. Diese fachspezifischen Zusammenschlüsse widmen sich jeweils den Bedürfnissen und Methoden ihres Bereichs. Für die Numismatik ist beispielsweise das Konsortium NFDI4Objects von Bedeutung, das sich mit der Digitalisierung des materiellen Erbes der Menschheit beschäftigt. Darüber hinaus sind für die Geisteswissenschaften insgesamt insbesondere NFDI4Culture und NFDI4Memory relevant. Neben der Arbeit in den einzelnen Konsortien bearbeitet die NFDI zentrale Querschnittsthemen in sogenannten Sektionen (vgl. folgende Abbildung innerer Kreis). Hier entwickeln Vertreter:innen der Konsortien gemeinsame Standards, Formate und Infrastrukturen, die allen Fachbereichen zugutekommen. Dazu gehört der Aufbau einer gemeinsam nutzbaren Infrastruktur und die Schaffung von Weiterbildungsangeboten über die Grenzen der einzelnen Fachbereiche hinaus.\n\n\n\nGrafik Aufbau der NFDI\n\n\nDie Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik",
+      "Was ist NFDI?"
+    ]
+  },
+  {
+    "objectID": "content/digital_fair_data.html#was-ist-nfdi-1",
+    "href": "content/digital_fair_data.html#was-ist-nfdi-1",
+    "title": "Was ist NFDI?",
+    "section": "Was ist NFDI?",
+    "text": "Was ist NFDI?\nDie Aufarbeitung der Daten soll dabei anhand der FAIR-Kriterien erfolgen. Das Akronym steht für die Kategorien Findable, Accessible, Interoperable, Reusable, also auffindbar, zugänglich, interoperabel und wiederverwendbar. FAIR-Kriterien werden in etwa seit zehn Jahren in der Wissenschaft genutzt. Initiativen wie GO-Fair haben die Prinzipien ausformuliert.\n\nFindable\nDie Kategorie Findable bezieht sich zunächst darauf, dass die Daten im Web eindeutig identifizierbar sein müssen. Ihre URL muss persistent, also unveränderlich sein, sodass in der Zukunft keine andere Ressource die gleiche URL bekommt. Es gibt mehrere Services, die diese Anforderungen erfüllen, zum Beispiel die DOI (Digital Object Identifier)-Organisation.\nIn der Numismatik haben moderne Münzdatenbanken einen eindeutigen und persistenten Permalink, so auch die Münzen der Heidelberger Sammlung (Beispiel). Die Daten sollen allerdings auch auffindbar sein, wenn der Identifier unbekannt ist. Dafür müssen die Daten mit gut beschriebenen Metadaten ausgezeichnet sein. Dazu gehören bei Münzdaten Informationen zur Prägestätte, Nominal oder Gewicht. Auch diese Informationen, sowie Publikationen, die auf Münzen verweisen, sollten mit einem Identifikator versehen sein.\n\n\nAccessible\nNeben der Auffindbarkeit ist entscheidend, dass Münzobjekte und die dazugehörigen Beschreibungen zugänglich sind. Ein Digitalisat einer Münze in einer Online-Datenbank muss über standardisierte Protokolle (z. B. HTTPS) erreichbar sein.\nIst ein direkter Zugriff auf hochauflösende Bilder aus urheberrechtlichen Gründen eingeschränkt, können zumindest die Metadaten frei zugänglich bleiben. So kann ein Forscher nachvollziehen, dass eine bestimmte Münze dokumentiert ist, selbst wenn er nicht sofort das Bildmaterial herunterladen darf.\n\n\nInteroperable\nForschungsdaten in der Numismatik sollen sich mit anderen Sammlungen und Fachdaten verknüpfen lassen. Dafür ist es wichtig, gemeinsame Standards und Vokabulare zu nutzen.\nEin Beispiel wäre die Verwendung von Normdaten wie GND-IDs für antike Herrscher oder Nomisma.org-Referenzen für Münztypen. Wenn eine römische Münze aus Trier mit „RIC“-Referenzen (Roman Imperial Coinage) ausgezeichnet und gleichzeitig mit Ontologien wie Nomisma.org verknüpft wird, lassen sich Informationen aus verschiedenen Museen und Publikationen problemlos kombinieren.\n\n\nReusable\nDie Wiederverwendbarkeit bezieht sich auf die Fähigkeit des Nutzenden, die Daten korrekt zu interpretieren. Dazu sollten so viele Kontextinformationen wie möglich gegeben werden, auch diejenigen, die auf den ersten Blick irrelevant erscheinen.\nDazu gehören: - Versionsnamen der Daten\n- Konkrete Informationen zur im Erhebungsprozess verwendeten Soft- und Hardware\n- Schritte im Datenerhebungsprozess (Formulierung des Ziels, Kennzeichnung von fremden Daten, Beschreibung der Datenverarbeitungsschritte)\nUm die Wiederverwendbarkeit zu erleichtern, sollten diese Metadaten nach einem standardisierten Muster angegeben werden.\n- Bei Publikationen: Dublin Core\n- Für archäologische Daten: Europeana-Datenmodell\nAls Teil der Wiederverwendbarkeit sollten auch klare Lizenzen vergeben werden, damit automatisierte Suchen nicht versehentlich urheberrechtlich geschütztes Material abgreifen.",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik",
+      "Was ist NFDI?"
+    ]
+  },
+  {
+    "objectID": "content/digital_fair_data.html#transferaufgaben",
+    "href": "content/digital_fair_data.html#transferaufgaben",
+    "title": "Was ist NFDI?",
+    "section": "Transferaufgaben",
+    "text": "Transferaufgaben",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik",
+      "Was ist NFDI?"
+    ]
+  },
+  {
+    "objectID": "content/digital_data_access.html",
+    "href": "content/digital_data_access.html",
+    "title": "Daten herunterladen",
+    "section": "",
+    "text": "Diese Seite befindet sich im Aufbau und wird bald veröffentlicht",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik",
+      "Daten herunterladen"
+    ]
+  },
+  {
+    "objectID": "content/digital_data_aggregation.html",
+    "href": "content/digital_data_aggregation.html",
+    "title": "Aggregating the Data",
+    "section": "",
+    "text": "Diese Seite befindet sich im Aufbau und wird bald veröffentlicht",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik",
+      "Aggregating the Data"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html",
+    "href": "content/digital_index.html",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.\n\n\n\nZiel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken\n\n\n\n\nDas Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen.\n\nForschungsdaten (veröffentlicht)\ngute Forschungsdaten (veröffentlicht)\nDatenzugang (im Aufbau)\nDatenverarbeitung (im Aufbau)\n\nDiese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen.",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#motivation",
+    "href": "content/digital_index.html#motivation",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "",
+    "text": "In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen Grundwissenschaften bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals Numiscience.de.\nTrotzdem verwenden viele Museen, Denkmalämter und universitäre Einrichtungen völlig unterschiedliche digitale Erfassungssysteme zur Aufarbeitung ihrer Bestände. Diese Bestände sind nicht ohne weiteres miteinander verknüpf- oder gar untereinander austauschbar. Die folgenden Modulseiten präsentieren unter anderem mögliche Lösungen für diese Herausforderungen.",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#lernziele",
+    "href": "content/digital_index.html#lernziele",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "",
+    "text": "Ziel des Moduls ist es, spannende Forschungsoptionen der Digitalen Numismatik zu vermitteln, wie numismatische Projekte in NFDI, 3D Modellage von Münzen oder deren automatisierte Erkennung durch KI. Nach Abschluss dieses Moduls haben Sie das nötige Handwerkszeug, eigene Fragestellungen mit Münzdaten zu beantworten.\n\nGeoinformationen 3D-Modelle KI-Objekterkennung Statistiken",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#aufbau-des-kurses",
+    "href": "content/digital_index.html#aufbau-des-kurses",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "",
+    "text": "Das Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen.\n\nForschungsdaten (veröffentlicht)\ngute Forschungsdaten (veröffentlicht)\nDatenzugang (im Aufbau)\nDatenverarbeitung (im Aufbau)\n\nDiese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen.",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#übung-1-münzen-von-hadrian-identifizieren",
+    "href": "content/digital_index.html#übung-1-münzen-von-hadrian-identifizieren",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "Übung 1: Münzen von Hadrian identifizieren",
+    "text": "Übung 1: Münzen von Hadrian identifizieren\nIn dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.\n\n\n\n\n\n\nHinweisWie finde ich die Links?\n\n\n\n\n\n\n\n\n1. Alle Münzen in den Datenbanken anzeigen\n\n\n\n\n\n2. Diesen Link kopieren (Rechtsklick -&gt; Link-Adresse kopieren)\n\n\n\n\n\nFühren Sie danach die folgende Codezelle mit Klick auf den Button “Run Code” aus (Sollte der Button leicht ausgegraut sein, warten Sie einige Sekunden, bis er in kräftigem Blau erscheint) , um die erste Übung zu starten. Überprüfen Sie den Output mit Münzen aus jedem der Portale (CRRO, OCRE; PELLA). Was passiert, wenn Sie URLs von Portalen einfügen, die keine Münzen von Hadrian enthalten?\n\n\n\n\n\n\n\n\n\nHinweis: Überprüfen Sie, welche Zeiträume die angegebenen Datenbanken enthalten.\nWelches Kürzel in den URLs könnte auf Hadrian verweisen?\n\n\nLösung: Nur OCRE enthält Münzen von Hadrian. Diese können durch das “hdn” in der URL identifiziert werden. Hier ist ein Beispiel für eine gültige URL eines Hadrian-Typs:\nurl = \"http://numismatics.org/ocre/id/ric.2_3(2).hdn.744\"\n\n\n\n\n\n\n\nHinweisFür Informatiker: Implementierung der URL-Validierung\n\n\n\n\n\nif not isinstance(url, str) or url.strip() == \"\":\n    result = {\"correct\": False, \"message\": \"Bitte eine URL eingeben. (zwischen die Anführungszeichen!)\"}\nelif not url.startswith(\"http\"):\n    result = {\"correct\": False, \"message\": \"Das ist keine gültige URL.\"}\nelif \"pella\" in url:\n    result = {\"correct\": False, \"message\": \"Pella enthält hellenistische Münzen, keine von Hadrian.\"}\nelif \"crro\" in url:\n    result = {\"correct\": False, \"message\": \"CRRO enthält republikanische Münzen, keine von Hadrian.\"}\nelif \"numismatics.org/ocre\" not in url:\n    result = {\"correct\": False, \"message\": \"Das ist keine URL aus CRRO / PELLA / OCRE\"}\nelif \"hdn\" in url:\n    result = {\"correct\": True, \"message\": f\"Richtig: {url} ist ein Hadrian-Typ.\"}\nelse:\n    result = {\"correct\": False, \"message\": \"Das ist eine Münze aus OCRE, aber nicht von Hadrian.\"}\nresult",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/digital_index.html#quiz",
+    "href": "content/digital_index.html#quiz",
+    "title": "Basiswissen digitale Numismatik",
+    "section": "Quiz",
+    "text": "Quiz\nHaben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul",
+    "crumbs": [
+      "Mein Fortschritt",
+      "🔍 I. Basiswissen digitale Numismatik"
+    ]
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Digitale Numismatik",
+    "section": "",
+    "text": "Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
+    "crumbs": [
+      "Mein Fortschritt",
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#warum-dieser-kurs",
+    "href": "content/index.html#warum-dieser-kurs",
+    "title": "Digitale Numismatik",
+    "section": "",
+    "text": "Die Digitalisierung in der numismatischen Welt ist bereits weit fortgeschritten, doch die Verknüpfung heterogener Bestände bleibt eine Herausforderung. Dieser Kurs gibt Ihnen das Handwerkszeug, um in dieser digitalen Landschaft sicher zu navigieren, ohne dass informatische Vorkenntnisse nötig sind.",
+    "crumbs": [
+      "Mein Fortschritt",
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#aufbau-des-kurses",
+    "href": "content/index.html#aufbau-des-kurses",
+    "title": "Digitale Numismatik",
+    "section": "Aufbau des Kurses",
+    "text": "Aufbau des Kurses\n\n\n\n\n1. Basiswissen digitale Numismatik\nInhalt Forschungsdaten und Portalrecherche\nWarum? Datenquellen verstehen\nZum Kurs\n\n\n\n\n\n\n2. Vage Münzdaten\nInhalt Umgang mit unsicheren und vagen Daten\nWarum? Auswertungen transparent und reproduzierbar machen\nzum Kurs\n\n\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nDie Module können in beliebiger Reihenfolge absolviert werden.\nSie können jederzeit zurückspringen, ohne Ihren Fortschritt zu verlieren.",
+    "crumbs": [
+      "Mein Fortschritt",
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#technische-grundlage-des-kurses",
+    "href": "content/index.html#technische-grundlage-des-kurses",
+    "title": "Digitale Numismatik",
+    "section": "Technische Grundlage des Kurses",
+    "text": "Technische Grundlage des Kurses\nDieser Kurs wurde mit Quarto Live geschrieben, das interaktive Übungen erlaubt.\n\n\n\n\n\n\nHinweisMehr über den Kurs in Quarto Live\n\n\n\n\n\n\n\n\n\n\n\n\nWeb‑basiert\nDer Kurs läuft komplett im Browser (Chrome, Firefox, Edge …).\n\n\nSicher\nDer Code wird in einer isolierten Web‑Assembly‑Umgebung ausgeführt – keine Daten verlassen Ihren Rechner.\n\n\nInteraktiv\nSie können Code‑Zellen anpassen und sofort das Ergebnis sehen.\n\n\n\nMehr erfahren: https://quarto.org/docs/computations/quarto-live.html\n\n\n\nDie interaktiven Elemente des Kurses nutzen die Programmiersprache Python. Wenn Sie mit eigenen numismatischen Daten arbeiten möchten, ist Python ein guter Einstiegspunkt. Keine Angst, die Codezeilen sind sehr kurz und ausführlich erklärt, sodass Sie sich auch ohne Informatikkentnisse gut orientieren können. Python ist eine sprechende Programmiersprache und relativ einfach zu verstehen.\n\n\n\n\n\n\nHinweisWarum Python lernen?\n\n\n\n\n\n\n\n\n\n\n\n\nEinfach zu lesen\nDie Syntax ist fast wie ein Satz in natürlicher Sprache.\n\n\nGroße Community\nViele Beispiele und Tutorials, speziell für die Digital Humanities.\n\n\nFlexibilität\nMit Bibliotheken wie pandas, numpy und matplotlib können Daten einfach verarbeitet und visualisiert werden.\n\n\n\nEinsteiger‑Tutorial: https://www.python.org/about/gettingstarted/",
+    "crumbs": [
+      "Mein Fortschritt",
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/index.html#förderung",
+    "href": "content/index.html#förderung",
+    "title": "Digitale Numismatik",
+    "section": "Förderung",
+    "text": "Förderung\n\nDiese ELearning-Materialien wurden am Zentrum für Antike Numismatik am Seminar für Alte Geschichte an der Universität Heidelberg entwickelt.\nFinanziert wurde das Projekt in dem von der DFG geförderten Projekt NFDI4Objects - Forschungsdateninfrastruktur für die materiellen Hinterlassenschaften der Menschheitsgeschichte.",
+    "crumbs": [
+      "Mein Fortschritt",
+      "Hauptseite"
+    ]
+  },
+  {
+    "objectID": "content/numiscience/digital_index/intro_exercise.html",
+    "href": "content/numiscience/digital_index/intro_exercise.html",
+    "title": "Intro Exercise",
+    "section": "",
+    "text": "In dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate."
+  },
+  {
+    "objectID": "content/numiscience/digital_index/intro_exercise.html#übung-1-münzen-von-hadrian-identifizieren",
+    "href": "content/numiscience/digital_index/intro_exercise.html#übung-1-münzen-von-hadrian-identifizieren",
+    "title": "Intro Exercise",
+    "section": "",
+    "text": "In dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate."
   },
   {
     "objectID": "content/progress.html",

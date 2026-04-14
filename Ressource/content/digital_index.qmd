@@ -9,6 +9,8 @@ date-format: "DD.MM.YYYY"
 css: /assets/css/collage.css
 ---
 
+:::page{id="intro.qmd"}
+
 
 ## Motivation
 In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen [Grundwissenschaften](https://de.wikipedia.org/wiki/Historische_Hilfswissenschaften) bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals [Numiscience.de](https://pecunia.zaw.uni-heidelberg.de/NumiScience/numismatische-toolbox).
@@ -35,6 +37,10 @@ Das Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen.
 4. [Datenverarbeitung (im Aufbau)](digital_data_aggregation.qmd)
 
 Diese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen.
+
+:::
+
+:::page{id="intro_exercise.qmd"}
 
 
 ## Übung 1: Münzen von Hadrian identifizieren
@@ -132,8 +138,9 @@ result
 ```
 :::
 
+:::
 
-
+:::page{id="intro_quiz.qmd"}
 ## Quiz
 Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.
 
@@ -176,3 +183,5 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter [mein Fortschritt](progress.html) ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul
+
+:::

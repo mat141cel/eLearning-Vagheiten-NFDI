@@ -1,48 +1,67 @@
-# scripts/split_pages.py
-
 from pathlib import Path
 import re
 
 INPUT_DIR = Path("content")
 OUTPUT_DIR = Path("content/generated")
 
-# matches :::page{id="filename.qmd"} ... :::
+# :::page{id="filename.qmd"} ... :::
 PAGE_RE = re.compile(
-    r":::page\{id=\"(.*?)\"\}\s*(.*?)\s*:::",
+    r":::page\{id=\"(?P<id>[^\"]+)\"\}\s*(?P<body>.*?)\s*:::",
     re.DOTALL
 )
+
+def normalize_filename(name: str) -> str:
+    name = name.strip()
+
+    if not name.endswith(".qmd"):
+        name += ".qmd"
+
+    return name
+
+
+def extract_pages(text: str):
+    return [
+        (m.group("id"), m.group("body").strip())
+        for m in PAGE_RE.finditer(text)
+    ]
+
+
+def wrap_qmd(content: str, title: str) -> str:
+    return f"""---
+title: {title}
+---
+
+{content}
+"""
+
 
 def split_file(path: Path):
     text = path.read_text(encoding="utf-8")
 
-    matches = PAGE_RE.findall(text)
+    pages = extract_pages(text)
 
-    if not matches:
+    if not pages:
         return
 
     out_dir = OUTPUT_DIR / path.stem
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    for filename, body in matches:
-        # ensure .qmd extension
-        if not filename.endswith(".qmd"):
-            filename += ".qmd"
+    for raw_filename, body in pages:
 
-        content = body.strip()
+        filename = normalize_filename(raw_filename)
+
+        # derive a stable title
+        title = Path(filename).stem.replace("_", " ").title()
 
         out_file = out_dir / filename
 
         out_file.write_text(
-            f"""---
-title: {filename.replace('.qmd','')}
----
-
-{content}
-""",
+            wrap_qmd(body, title),
             encoding="utf-8"
         )
 
         print(f"[split] {path.name} -> {out_file}")
+
 
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -51,6 +70,7 @@ def main():
         if "generated" in qmd.parts:
             continue
         split_file(qmd)
+
 
 if __name__ == "__main__":
     main()

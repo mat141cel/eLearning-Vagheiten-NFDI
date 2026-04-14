@@ -1,5 +1,5 @@
 ---
-title: intro_exercise
+title: Intro Exercise
 ---
 
 ## Übung 1: Münzen von Hadrian identifizieren

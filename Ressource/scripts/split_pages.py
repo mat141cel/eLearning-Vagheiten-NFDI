@@ -67,9 +67,6 @@ def split_file(path: Path):
     if not pages:
         return
 
-    out_dir = OUTPUT_DIR / path.stem
-    out_dir.mkdir(parents=True, exist_ok=True)
-
     for name, body in pages:
 
         filename = normalize(name)
@@ -78,7 +75,7 @@ def split_file(path: Path):
         # IMPORTANT FIX
         body = rewrite_links(body)
 
-        out_file = out_dir / filename
+        out_file = OUTPUT_DIR / f"{path.stem}_{filename}"
 
         out_file.write_text(
             wrap(body),

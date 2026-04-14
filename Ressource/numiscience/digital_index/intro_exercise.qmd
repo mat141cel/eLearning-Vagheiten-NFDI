@@ -1,6 +1,0 @@
-## Übung 1: Münzen von Hadrian identifizieren
-
-In dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.
-
-
-Navigieren Sie in einem neuen Tab zu einem Referenzportal wie [CRRO](http://numismatics.org/crro), [OCRE](http://numismatics.org/ocre) oder [Pella](http://numismatics.org/pella). Klicken Sie anschließend auf den Reiter "Browse" und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate.

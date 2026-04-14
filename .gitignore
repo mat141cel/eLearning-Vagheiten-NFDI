@@ -2,6 +2,7 @@ Ressource/.luarc.json
 *.html
 Ressource/index_files/
 Ressource/_site*
+Ressource/numiscience
 
 Ressource/.quarto/
 **/*.quarto_ipynb

@@ -2,7 +2,6 @@
 project:
   render:
     - content/**/*.qmd
-    - "!content/numiscience/**"
   output-dir: _site_gh
 
 website:

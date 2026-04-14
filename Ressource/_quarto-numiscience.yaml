@@ -3,7 +3,7 @@ project:
   output-dir: _site/numiscience
 
 website:
-  site-url: https://USERNAME.github.io/numiscience/
+  site-url: https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/
 
   # strip navigation
   sidebar: false

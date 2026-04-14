@@ -6,7 +6,7 @@ project:
     - assets/
 
 profile:
-  default: gh
+  default: gh-pages
 
 metadata-files:
   - metadata/layout.yml

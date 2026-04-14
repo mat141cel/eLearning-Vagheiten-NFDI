@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Arten von Unsicherheiten / Vagheiten</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-244ce1b9ec229af56bb6f90d24b3371d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../assets/css/collage.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#konzepte" id="toc-konzepte" class="nav-link active" data-scroll-target="#konzepte">Konzepte</a>
+  <ul class="collapse">
+  <li><a href="#vagheit-vagueness" id="toc-vagheit-vagueness" class="nav-link" data-scroll-target="#vagheit-vagueness">Vagheit (Vagueness)</a></li>
+  <li><a href="#unsicherheit-uncertainty" id="toc-unsicherheit-uncertainty" class="nav-link" data-scroll-target="#unsicherheit-uncertainty">Unsicherheit (Uncertainty)</a></li>
+  <li><a href="#fuzziness-wobbliness" id="toc-fuzziness-wobbliness" class="nav-link" data-scroll-target="#fuzziness-wobbliness">Fuzziness / Wobbliness</a></li>
+  </ul></li>
+  <li><a href="#transferaufgaben" id="toc-transferaufgaben" class="nav-link" data-scroll-target="#transferaufgaben">Transferaufgaben</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Arten von Unsicherheiten / Vagheiten</h1>
+<p class="subtitle lead">Welche Herausforderungen liegen in unsicheren Forschungsdaten für die Numismatik?</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">14.04.2026</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Geändert</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">14.04.2026</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Die Darstellung von Unsicherheiten ist ein zentrales und aktuell intensiv diskutiertes Thema in der archäologischen Forschung. Im Rahmen der NFDI4Objects beschäftigt sich eine Task Area unter dem Titel <a href="https://www.nfdi4objects.net/en/trails/solving_vagueness_modelling_issues_in_numismatics_and_ceramology/">„Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts“</a> mit der Modellierung solcher Unsicherheiten, insbesondere in der Numismatik und Keramologie. Die Universität Heidelberg ist an diesem Projekt bei der Deutung von numismatischen Beispielen beteiligt.<a href="https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts"></a></p>
+<section id="konzepte" class="level2">
+<h2 class="anchored" data-anchor-id="konzepte">Konzepte</h2>
+<p>Um sich der Frage konzeptionell zu nähern wurden zunächst drei Arten von Unsicherheiten definiert.</p>
+<section id="vagheit-vagueness" class="level3">
+<h3 class="anchored" data-anchor-id="vagheit-vagueness">Vagheit (Vagueness)</h3>
+<p>Vagheit bezeichnet einen Mangel an Präzision in einer Aussage, der aus unscharfen Begriffen oder fehlenden klaren Grenzen resultiert. Sie ist besonders typisch für archäologische Daten, etwa wenn Datierungen nur in breiten Zeitintervallen wie „100–200 n.&nbsp;Chr.“ angegeben werden können, obwohl die tatsächliche Herstellungszeit deutlich kürzer war. Vagheit entsteht auch bei messbaren Eigenschaften, wenn diese nicht mit maximaler Genauigkeit erfasst werden, etwa wenn ein Gewicht nur mit einer Dezimalstelle dokumentiert wird, obwohl feinere Auflösung möglich wäre. Eine Angabe wie „5,5 g“ impliziert zwar feste Grenzen (z. B. 5,45–5,54 g), bleibt aber dennoch eine Vereinfachung gegenüber beliebig genauer Messbarkeit. Deutlich stärker vage sind sprachliche Formulierungen wie „ca. 5,5 g“, da hier keine klaren Ober- und Untergrenzen mehr erkennbar sind. Auch Klassifikationen können vage sein, etwa wenn ein Keramikfragment aufgrund identischer Merkmale mehreren Gefäßtypen zugeordnet werden kann (OR-Beziehungen). Grundsätzlich beschreibt Vagheit also die Abstufbarkeit und Kontextabhängigkeit von Aussagen und damit deren begrenzte begriffliche Schärfe.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Kurzdefinition:</strong> Vagheit = fehlende Präzision einer Aussage aufgrund unscharfer Begriffe oder gradueller Grenzen.</p>
+</div>
+</div>
+</section>
+<section id="unsicherheit-uncertainty" class="level3">
+<h3 class="anchored" data-anchor-id="unsicherheit-uncertainty">Unsicherheit (Uncertainty)</h3>
+<p>Unsicherheit bezeichnet den Grad an fehlender Gewissheit darüber, ob eine Aussage wahr oder falsch ist. Sie entsteht vor allem durch unvollständige, indirekte oder mehrdeutige Evidenz, etwa wenn ein archäologisches Objekt keiner eindeutigen Autorität oder keinem klaren Herstellungsort zugeordnet werden kann. Ein Beispiel ist die Zuschreibung einer Münze zu einem Herrscher, wenn Inschriften fehlen oder widersprüchliche Hinweise vorliegen. Unsicherheit kann explizit markiert werden, etwa durch Kennzeichnungen („unsicher“) oder durch die Angabe von Wahrscheinlichkeiten (z. B. 75 % Wahrscheinlichkeit für eine Datierung). Solche Wahrscheinlichkeiten können entweder subjektiv durch Expert:innen vergeben oder durch statistische Verfahren berechnet werden. Auch maschinelles Lernen erzeugt Unsicherheiten, indem es Klassifikationen mit Wahrscheinlichkeitswerten versieht, deren Aussagekraft jedoch vom Modell und den Trainingsdaten abhängt. Wichtig ist, dass Unsicherheit nicht die Präzision der Aussage betrifft, sondern deren Verlässlichkeit. Sie macht transparent, dass eine Entscheidung getroffen wurde, deren Richtigkeit jedoch nicht vollständig gesichert ist.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Kurzdefinition:</strong> Unsicherheit = fehlende Gewissheit über den Wahrheitsgehalt einer Aussage.</p>
+</div>
+</div>
+</section>
+<section id="fuzziness-wobbliness" class="level3">
+<h3 class="anchored" data-anchor-id="fuzziness-wobbliness">Fuzziness / Wobbliness</h3>
+<p>Fuzziness/Wobbliness dient als Sammelbegriff für Situationen, in denen Vagheit und Unsicherheit gemeinsam auftreten oder sich nicht eindeutig trennen lassen. Ein typisches Beispiel ist eine Angabe wie „ca. 5,5 g?“, die zugleich unpräzise (vage) und in ihrem Wahrheitsgehalt fraglich (unsicher) ist und damit kaum wissenschaftlich verwertbar wird. Komplexität entsteht auch, wenn Wertebereiche mit Unsicherheitsvermerken kombiniert werden, da unklar sein kann, ob sich die Unsicherheit auf die gesamte Angabe oder nur auf Teile davon bezieht. Zusätzlich können technische Systeme solche Probleme verstärken, etwa wenn Datenbanken nur einen einzigen „sicheren“ Wert zulassen und dadurch ursprünglich mehrdeutige oder unsichere Informationen verzerren. Auch Ontologie-Mappings oder LOD-Integrationen können Fuzziness/Wobbliness erzeugen, wenn Beziehungen zwischen Konzepten nur ungefähr oder mehrdeutig sind (z. B. verschiedene SKOS-Mappings ohne klare Semantik). Ebenso fallen darunter qualitative Abstufungen wie „vermutlich“, „möglich“ oder „umstritten“, die sich nur schwer eindeutig quantifizieren lassen. Insgesamt beschreibt Fuzziness/Wobbliness somit mehrdimensionale, oft systembedingt verstärkte Unschärfen, die aus der Überlagerung von Vagheit, Unsicherheit und Modellierungsentscheidungen entstehen.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Kurzdefinition:</strong> Fuzziness/Wobbliness = Überlagerung und schwer trennbare Kombination von Vagheit und Unsicherheit.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="transferaufgaben" class="level2">
+<h2 class="anchored" data-anchor-id="transferaufgaben">Transferaufgaben</h2>
+<div id="vague_definitions_quiz">
+
+</div>
+<script src="../assets/js/quiz.js"></script>
+<p><link rel="stylesheet" href="../assets/css/quiz.css"></p>
+<script>
+window["vague_definitions_quiz_data"] = [
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099' target='_blank'>Zur Münze</a><br><br>Datierung: „nach 274 n. Chr.“ <br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Nicht ganz. Die Angabe ist nicht unpräzise formuliert, sondern unvollständig." },
+      { text: "Unsicherheit", feedback: "✅ Richtig! Der Wahrheitsgehalt ist begrenzt, da das Enddatum unsicher ist. Die Datierung dieser Münze lautet nach 274 n. Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n. Chr. datiert wird." },
+      { text: "Fuzziness/Wobbliness", feedback: "❌ Hier liegt primär Unsicherheit vor, keine Überlagerung mehrerer Unschärfen." }
+    ]
+  },
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID287' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/287/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/287/rs_opt.jpg' width='200'><br><br>Datierung: „550–456 (oder 480?) v. Chr.“<br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Die Angabe ist nicht nur unpräzise, sondern auch widersprüchlich." },
+      { text: "Unsicherheit", feedback: "❌ Es geht nicht nur um Unsicherheit, sondern auch um strukturelle Mehrdeutigkeit." },
+      { text: "Fuzziness/Wobbliness", feedback: "✅ Richtig! Mehrere widersprüchliche und unklare Angaben überlagern sich. Hier ist unklar, ob sich das Jahr 480 auf das Enddatum bezieht, oder ob es einen gänzlich neuen Zeitraum (von einem Jahr) bildet. Es ist nicht klar, was mit dem Fragezeichen gemeint ist. Bedeutet es, dass es unsicher ist, dass es die alternative Datierung gibt, oder bedeutet es, dass es sicher eine zweite Datierung gibt, die aber zeitlich nicht sicher ist und deswegen auf den ungefähren Zeitpunkt 480 gesetzt wurde." }
+    ]
+  },
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID264' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/264/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/264/rs_opt.jpg' width='200'><br><br>Beschreibung: „unter dem Thron eine Ähre (?)“<br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Der Begriff ist nicht ungenau, sondern die Identifikation ist unsicher." },
+      { text: "Unsicherheit", feedback: "✅ Richtig! Es ist unklar, ob das Objekt tatsächlich eine Ähre ist." },
+      { text: "Fuzziness/Wobbliness", feedback: "❌ Es liegt eine klare Unsicherheit vor, keine Kombination mehrerer Probleme." }
+    ]
+  },
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID194' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/194/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/194/rs_opt.jpg' width='200'><br><br>Beschreibung: „Weiblicher Kopf (Nymphe?)“<br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Die Kategorie ist nicht unscharf, sondern die Zuschreibung unsicher." },
+      { text: "Unsicherheit", feedback: "✅ Richtig! Die Identifikation als Nymphe ist nicht gesichert." },
+      { text: "Fuzziness/Wobbliness", feedback: "❌ Keine Überlagerung mehrerer Unsicherheitsformen." }
+    ]
+  },
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID843' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/843/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/843/rs_opt.jpg' width='200'><br><br>Rückseitenbeschreibung: „[...] Im l[inken] Feld Beizeichen und Monogramm?“<br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Es geht nicht um ungenaue Begriffe, sondern um strukturelle Unklarheit." },
+      { text: "Unsicherheit", feedback: "❌ Es ist mehr als nur Unsicherheit, es ist selbst unklar, worauf sich Beizeichen und Monogramm bezieht." },
+      { text: "Fuzziness/Wobbliness", feedback: "✅ Richtig! Mehrdeutige Struktur und Unsicherheit überlagern sich." }
+    ]
+  }
+
+];
+
+if (!localStorage.getItem("progress")) {
+    localStorage.setItem("progress", "0");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderQuiz("vague_definitions_quiz", window["vague_definitions_quiz_data"], {
+        quizKey: "vague_definitions_quiz_completed",
+        onComplete: () => console.log("Quiz completed!")
+    });
+});
+</script>
+
+
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../content";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/USERNAME\.github\.io\/eLearning-Vagheiten-NFDI\/numiscience\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

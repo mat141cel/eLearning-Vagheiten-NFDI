@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Forschungsdaten</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-244ce1b9ec229af56bb6f90d24b3371d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#was-sind-numismatische-forschungsdaten" id="toc-was-sind-numismatische-forschungsdaten" class="nav-link active" data-scroll-target="#was-sind-numismatische-forschungsdaten">Was sind numismatische Forschungsdaten?</a></li>
+  <li><a href="#wie-können-wir-uns-münzdaten-vorstellen" id="toc-wie-können-wir-uns-münzdaten-vorstellen" class="nav-link" data-scroll-target="#wie-können-wir-uns-münzdaten-vorstellen">Wie können wir uns Münzdaten vorstellen</a>
+  <ul class="collapse">
+  <li><a href="#übung-2-mit-einer-typreferenz-verknüpfte-daten-herausfinden" id="toc-übung-2-mit-einer-typreferenz-verknüpfte-daten-herausfinden" class="nav-link" data-scroll-target="#übung-2-mit-einer-typreferenz-verknüpfte-daten-herausfinden">Übung 2: Mit einer Typreferenz verknüpfte Daten herausfinden</a></li>
+  </ul></li>
+  <li><a href="#was-sind-graphen" id="toc-was-sind-graphen" class="nav-link" data-scroll-target="#was-sind-graphen">Was sind Graphen?</a>
+  <ul class="collapse">
+  <li><a href="#übung-3-darstellung-von-münzdaten-als-graph" id="toc-übung-3-darstellung-von-münzdaten-als-graph" class="nav-link" data-scroll-target="#übung-3-darstellung-von-münzdaten-als-graph">Übung 3: Darstellung von Münzdaten als Graph</a></li>
+  </ul></li>
+  <li><a href="#was-ist-eine-ontologie" id="toc-was-ist-eine-ontologie" class="nav-link" data-scroll-target="#was-ist-eine-ontologie">Was ist eine Ontologie?</a></li>
+  <li><a href="#was-sind-normdaten" id="toc-was-sind-normdaten" class="nav-link" data-scroll-target="#was-sind-normdaten">Was sind Normdaten?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Forschungsdaten</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">14.04.2026</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Geändert</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">14.04.2026</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="was-sind-numismatische-forschungsdaten" class="level2">
+<h2 class="anchored" data-anchor-id="was-sind-numismatische-forschungsdaten">Was sind numismatische Forschungsdaten?</h2>
+<div id="cell-fig-muenzdaten" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div id="fig-muenzdaten" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-muenzdaten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="digital_scientific_data_files/figure-html/fig-muenzdaten-output-1.png" width="746" height="374" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-muenzdaten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1: <strong>Münzen und ihre zugehörigen Datenfelder.</strong> URLs zu den Originaldatensätzen von links nach rechts: https://ikmk.smb.museum/object?id=18214977, https://nat.museum-digital.de/object/73659, https://ikmk.smb.museum/object?id=18203837.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dieses Bild wurde nicht händisch erstellt, sondern programmiert. Am Ende dieses Moduls lernen Sie, Schaubilder wie dieses mit Münzen aus verschiedenen Datenbanken selbst zu erstellen.</p>
+</div>
+</div>
+<p>Forschungsdaten sind zunächst jede Art von digitalen Daten, die wissenschaftlich ausgewertet werden. Sie bilden die Grundlage wissenschaftlicher Arbeit und dokumentieren deren Ergebnisse.</p>
+<p>Es gibt sehr viele numismatische Daten und mehrere Datenbanken, die über 100.000 Stücke enthalten. Für jede Münze, egal aus welcher Zeit oder Region, gibt es eine fixe Anzahl relevanter Datenfelder. Häufig gehören zu diesen Münzdaten auch Bilder der <a href="https://de.wikipedia.org/wiki/Avers_(Numismatik)">Averse</a> und <a href="https://de.wikipedia.org/wiki/Revers_(Numismatik)">Reverse</a></p>
+<p>Alle der oben gezeigten Münzen aus unterschiedlichen Epochen geben Auskunft zu ihrem Material, ihren Prägestätten und den auf ihr dargestellte Personen. Das bedeutet nicht, dass diese Datenfelder einen Wert haben müssen. Die Euromünze hat beispielsweise keine dargestellte Person und die Prägestätte der Münze von Napoleon III. ist unbekannt. Gerade auch das Nichtvorhandensein von Informationen ist für die Interpretation der Münzdaten wichtig.</p>
+</section>
+<section id="wie-können-wir-uns-münzdaten-vorstellen" class="level2">
+<h2 class="anchored" data-anchor-id="wie-können-wir-uns-münzdaten-vorstellen">Wie können wir uns Münzdaten vorstellen</h2>
+<p>Die einfachste Form, Münzdaten strukturiert zu speichern, ist als Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden.</p>
+<p>Die folgende Tabelle zeigt einen Ausschnitt aus einem solchen Münzdatensatz. Das Feld Name identifiziert dabei eindeutig den Aureus des Postumus, der mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Was sind Typenkataloge?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Typenkataloge sind in der Numismatik seit dem 19. Jahrhundert die bevorzugte Art, Münzen zu ordnen. Maßstäbe setzten die British Museum Coinage (BMC) und darauf aufbauend Roman Imperial Coinage (RIC). Diese Bände enthalten alle bekannten Münzen der Zeit und alle für die <a href="https://pecunia.zaw.uni-heidelberg.de/NumiScience/muenzbestimmung">Münzbestimmung</a> notwendigen Felder. Bei der digitalisierung der Kataloge wurden die Bilder und technischen Daten von Münzen direkt mit dem Eintrag verknüpft, was die Bestimmung erleichtert.</p>
+</div>
+</div>
+</div>
+<div id="tbl-muenzdaten" class="quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[15,10,10,15]">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-muenzdaten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;1: Münzdaten in tabellarischer Form
+</figcaption>
+<div aria-describedby="tbl-muenzdaten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th style="text-align: left;">Gewicht</th>
+<th>Durchmesser</th>
+<th>Webportal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>https://ikmk.smb.museum/object?id=18201393</td>
+<td style="text-align: left;">5,10mm</td>
+<td>20g</td>
+<td>http://numismatics.org/ocre/id/ric.5.post.29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Es ergibt Sinn, die Informationen, die die Münze mit anderen Münzen des gleichen Typs teilt, dem Münztyp zugeordnet in einer eigenen Tabelle zu speichern. Einerseits kann so die Herkunft der Daten verstanden werden, andererseits können Anpassungen zentral vorgenommen werden. Häufig sind Nutzer einer Datenbank auch an weiterführenden Informationen zu mit den Münzen verknüpften Orten oder Personen interessiert. Auch für diese Informationen sollten eigene Tabellen erstellt werden, damit die Daten zentralisiert verändert werden können. So erhalten die Münzdaten komplexe Vernetzungen.</p>
+<section id="übung-2-mit-einer-typreferenz-verknüpfte-daten-herausfinden" class="level3">
+<h3 class="anchored" data-anchor-id="übung-2-mit-einer-typreferenz-verknüpfte-daten-herausfinden">Übung 2: Mit einer Typreferenz verknüpfte Daten herausfinden</h3>
+<p>Navigieren Sie in einem neuen Tab zu einem Referenzportal wie <a href="http://numismatics.org/crro">CRRO</a>, <a href="http://numismatics.org/ocre">OCRE</a> oder <a href="http://numismatics.org/pella">Pella</a>. Suchen Sie darin nach einem Münztyp und nach einer Münze. Geben sie beide in die folgende Python-Zelle ein und führen Sie sie aus.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Wie finde ich Münzen und Münztypen in CRRO / OCRE / PELLA
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Klicken Sie auf Browse, um sich alle Münztypen anzeigen zu lassen oder auf Search um die Suche einzuschränken. Sie erhalten eine Liste von Ergebnissen, die die Münztypen darstellen. Dazu werden eine Reihe wichtiger verknüpfter Daten angezeigt sowie die mit diesem Typ verknüpften Münzen samt ihrer Bilder und Anzahl.<br>
+Klicken Sie auf einen Münztypen und Sie sehen zunächst eine ausführlichere Beschreibung der Attribute und darunter die einzelnen Münzen mit ihrer eindeutigen URL, sowie ihrer Sammlung und Inventarnummer.<br>
+Wird im Folgenden von Münzen und Münztypen gesprochen, ist die jeweilige URL gemeint, die sie eindeutig identifiziert</p>
+</div>
+</div>
+</div>
+<p>Wie verändert sich die Tabelle, je nachdem ob Sie eine URL zu einem Münztyp oder zu einer Münze eingegeben haben? Prüfen Sie den jeweiligen Output und überlegen Sie, warum es Sinn ergibt, warum die Daten in den jeweiligen Tabellen gespeichert sind.</p>
+<style>
+/* This targets the specific container you found */
+#exercise-loading-indicator,
+.exercise-loading-indicator,
+.exercise-loading-details {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Also hides the pulsing spinner accompanying the text */
+.spinner-grow {
+    display: none !important;
+}
+</style>
+<div>
+<div id="pyodide-1" class="exercise-cell">
+
+</div>
+<script type="pyodide-1-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsImV4ZXJjaXNlIjoiZXhfMiJ9LCJjb2RlIjoidXJsID0gXCJfX19fX19cIlxuXG5mcm9tIElQeXRob24uZGlzcGxheSBpbXBvcnQgZGlzcGxheSwgSFRNTFxuaHRtbCA9IGF3YWl0IGdldF9jb2luX2h0bWwodXJsKVxuZGlzcGxheShIVE1MKGh0bWwpKSJ9
+</script>
+</div>
+<script type="exercise-setup-ex_2-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsImV4ZXJjaXNlIjoiZXhfMiIsImhpZGUtb3V0cHV0Ijp0cnVlLCJzZXR1cCI6dHJ1ZX0sImNvZGUiOiJcbmZyb20gcHlvZGlkZS5odHRwIGltcG9ydCBweWZldGNoXG5pbXBvcnQgcGFuZGFzIGFzIHBkXG5pbXBvcnQgdXJsbGliLnBhcnNlXG5mcm9tIElQeXRob24uZGlzcGxheSBpbXBvcnQgSFRNTFxuXG5hc3luYyBkZWYgZmV0Y2hfY29pbl9kYXRhKHVybCk6XG4gICAgXCJcIlwiRmV0Y2ggU1BBUlFMIGRhdGEgZnJvbSBOb21pc21hIGFuZCByZXR1cm4gYXMgRGF0YUZyYW1lLlwiXCJcIlxuICAgIHVybCA9IHVybC5zdHJpcCgpXG4gICAgaWYgbm90IHVybDpcbiAgICAgICAgcmV0dXJuIE5vbmUsIFwiQml0dGUgZWluZSBVUkwgZWluZ2ViZW4uXCJcblxuICAgIHVybCA9IHVybC5yZXBsYWNlKFwiaHR0cHM6Ly9cIiwgXCJodHRwOi8vXCIpXG4gICAgcmF3X3F1ZXJ5ID0gZlwiU0VMRUNUID9wcmVkaWNhdGUgP29iamVjdCBXSEVSRSB7eyA8e3VybH0+ID9wcmVkaWNhdGUgP29iamVjdCAuIH19XCJcblxuICAgICMgU3RlcCA0OiBFbmNvZGUgdGhlIHF1ZXJ5IGZvciBVUkxcbiAgICBlbmNvZGVkX3F1ZXJ5ID0gdXJsbGliLnBhcnNlLnF1b3RlKHJhd19xdWVyeSlcblxuICAgICMgU3RlcCA1OiBCdWlsZCB0aGUgZnVsbCBOb21pc21hIEFQSSBVUkxcbiAgICBhcGlfdXJsID0gZlwiaHR0cDovL25vbWlzbWEub3JnL3F1ZXJ5P3F1ZXJ5PXtlbmNvZGVkX3F1ZXJ5fSZvdXRwdXQ9anNvblwiXG5cbiAgICByZXMgPSBhd2FpdCBweWZldGNoKGFwaV91cmwsIG1ldGhvZD1cIkdFVFwiKVxuICAgIGlmIHJlcy5zdGF0dXMgIT0gMjAwOlxuICAgICAgICByZXR1cm4gTm9uZSwgZlwiRmVobGVyIGJlaW0gQWJydWZlbiBkZXIgRGF0ZW46IEhUVFAge3Jlcy5zdGF0dXN9XCJcbiAgICBcbiAgICBkYXRhID0gYXdhaXQgcmVzLmpzb24oKVxuICAgIHJvd3MgPSBbXVxuICAgIGZvciByIGluIGRhdGFbJ3Jlc3VsdHMnXVsnYmluZGluZ3MnXTpcbiAgICAgICAgcCA9IHJbJ3ByZWRpY2F0ZSddWyd2YWx1ZSddLnNwbGl0KCcvJylbLTFdLnNwbGl0KCcjJylbLTFdXG4gICAgICAgIG8gPSByWydvYmplY3QnXVsndmFsdWUnXS5zcGxpdCgnLycpWy0xXS5zcGxpdCgnIycpWy0xXVxuICAgICAgICByb3dzLmFwcGVuZCh7XCJBdHRyaWJ1dGVcIjogcCwgXCJWYWx1ZVwiOiBvfSlcbiAgICBcbiAgICBkZiA9IHBkLkRhdGFGcmFtZShyb3dzKVxuICAgIHBkLnNldF9vcHRpb24oJ2Rpc3BsYXkubWF4X2NvbHdpZHRoJywgTm9uZSlcbiAgICByZXR1cm4gZGYsIE5vbmVcblxuYXN5bmMgZGVmIGdldF9jb2luX2h0bWwodXJsKTpcbiAgICBcIlwiXCJSZXR1cm4gSFRNTCBzdHJpbmcgZm9yIGRpc3BsYXkgaW4gZXhlcmNpc2UgYmxvY2suXCJcIlwiXG4gICAgZGYsIGVycm9yID0gYXdhaXQgZmV0Y2hfY29pbl9kYXRhKHVybClcbiAgICBodG1sID0gZlwiPGgzPlNvdXJjZTogPGEgaHJlZj0ne3VybH0nIHRhcmdldD0nX2JsYW5rJz57dXJsfTwvYT48L2gzPlwiXG4gICAgaWYgZGYgaXMgbm90IE5vbmUgYW5kIG5vdCBkZi5lbXB0eTpcbiAgICAgICAgaHRtbCArPSBkZi50b19odG1sKGluZGV4PUZhbHNlKVxuICAgIHJldHVybiBodG1sIn0=
+</script>
+<script type="exercise-check-ex_2-contents">
+eyJhdHRyIjp7ImNoZWNrIjp0cnVlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJleGVyY2lzZSI6ImV4XzIifSwiY29kZSI6IlxuIyBUcmltIGFuZCBiYXNpYyBlbXB0eSBjaGVja1xuaWYgbm90IHVybC5zdHJpcCgpIG9yIHVybC5zdHJpcCgpID09IFwiX19fX19fXCI6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiQml0dGUgZWluZSBVUkwgZWluZ2ViZW4uXCJ9XG5lbGlmIFwiaHR0cFwiIG5vdCBpbiB1cmw6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiRsO8ciBkaWVzZSBVUkwgd3VyZGVuIGtlaW5lIERhdGVuIGdlZnVuZGVuLlwifVxuXG5yZXN1bHQifQ==
+</script>
+</section>
+</section>
+<section id="was-sind-graphen" class="level2">
+<h2 class="anchored" data-anchor-id="was-sind-graphen">Was sind Graphen?</h2>
+<p>Wie Sie bemerkt haben, werden Tabellen schnell unübersichtlich und es wird nicht unmittelbar deutlich, wie die Tabellen von Münztyp und Münze miteinander verbunden sind. Hier bietet sich eine Visualisierung als Graph an.</p>
+<p>Bei Graphen gibt es nicht die Tabelle “Münzen” oder “Münztypen”, die verschiedene Einträge enthalten. Stattdessen steht die einzelne Münze (über einen eindeutigen Identifikator, siehe forlgender Abschnitt “Normdaten”) im Zentrum. Die Münze ist über beschriftete Pfeile mit den ihr zugeordneten Informationen verbunden. Die Beschriftungen der Pfeile entsprechen dabei den Namen der Tabellenspalten. Das können Sie im folgenden Codebeispiel überprüfen, indem Sie ihre URL aus dem vorigen Beispiel einfügen.</p>
+<section id="übung-3-darstellung-von-münzdaten-als-graph" class="level3">
+<h3 class="anchored" data-anchor-id="übung-3-darstellung-von-münzdaten-als-graph">Übung 3: Darstellung von Münzdaten als Graph</h3>
+<div>
+<div id="pyodide-4" class="exercise-cell">
+
+</div>
+<script type="pyodide-4-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImVudmlyIjoiY29pbl9kYXRhIiwiZXZhbCI6dHJ1ZSwiZXhlcmNpc2UiOiJleF8zIn0sImNvZGUiOiJcbnVybCA9IFwiXCIgICAjIDwtLS0tLS0gSGllciBVUkwgendpc2NoZW4gZGllIEFuZsO8aHJ1bmdzemVpY2hlbiAoISkgZWluZsO8Z2VuXG5kZXB0aCA9IDEgICMgPC0tLS0tLSBaZWlndCBkaWUgQW56YWhsIGRlciBFYmVuZW4gaW0gR3JhcGggYW4gKGFremVwdGllcnQgV2VydGUgMSB1bmQgMilcblxuIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5mcm9tIHB5b2RpZGUuaHR0cCBpbXBvcnQgcHlmZXRjaFxuaW1wb3J0IHVybGxpYi5wYXJzZVxuaW1wb3J0IG5ldHdvcmt4IGFzIG54XG5pbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0XG5yb290X2lkID0gdXJsLnNwbGl0KCcvJylbLTFdXG5yYXdfcXVlcnkgPSBmXCJcIlwiXG5TRUxFQ1QgP3MgP3AgP297JyA/cDEnIGlmIGRlcHRoID09IDIgZWxzZSAnJ30gV0hFUkUge3tcbiAge3sgQklORCg8e3VybH0+IEFTID9zKSAuID9zID9wID9vIC4gfX1cbiAgeydVTklPTiB7IDwnICsgdXJsICsgJz4gP3AxID9zIC4gRklMVEVSKGlzSVJJKD9zKSkgLiA/cyA/cCA/byAuIH0nIGlmIGRlcHRoID09IDIgZWxzZSAnJ31cbn19XG5cIlwiXCJcblxuc2FmZV9xdWVyeSA9IHVybGxpYi5wYXJzZS5xdW90ZShyYXdfcXVlcnkpXG5hcGlfdXJsID0gZlwiaHR0cHM6Ly9ub21pc21hLm9yZy9xdWVyeT9xdWVyeT17c2FmZV9xdWVyeX0mb3V0cHV0PWpzb25cIlxuXG5yZXMgPSBhd2FpdCBweWZldGNoKGFwaV91cmwpXG5pZiByZXMuc3RhdHVzID09IDIwMDpcbiAgICBkYXRhID0gYXdhaXQgcmVzLmpzb24oKVxuICAgIEcgPSBueC5EaUdyYXBoKClcblxuICAgIGNsZWFuID0gbGFtYmRhIHg6IHguc3BsaXQoJy8nKVstMV0uc3BsaXQoJyMnKVstMV1cblxuICAgIGZvciByIGluIGRhdGFbXCJyZXN1bHRzXCJdW1wiYmluZGluZ3NcIl06XG4gICAgICAgIHMgPSBjbGVhbihyW1wic1wiXVtcInZhbHVlXCJdKVxuICAgICAgICBwID0gY2xlYW4ocltcInBcIl1bXCJ2YWx1ZVwiXSlcbiAgICAgICAgbyA9IGNsZWFuKHJbXCJvXCJdW1widmFsdWVcIl0pXG5cbiAgICAgICAgaWYgZGVwdGggPT0gMiBhbmQgXCJwMVwiIGluIHI6XG4gICAgICAgICAgICBwMSA9IGNsZWFuKHJbXCJwMVwiXVtcInZhbHVlXCJdKVxuICAgICAgICAgICAgaWYgcDEgaW4gW1wiaGFzQ29sbGVjdGlvblwiLCBcImluRGF0YXNldFwiXTpcbiAgICAgICAgICAgICAgICBjb250aW51ZVxuXG4gICAgICAgIEcuYWRkX2VkZ2UocywgbywgbGFiZWw9cClcblxuICAgIHBsdC5maWd1cmUoZmlnc2l6ZT0oMTQsIDkpKVxuICAgIHBvcyA9IG54LnNwcmluZ19sYXlvdXQoRywgaz0wLjYpXG4gICAgY29sb3JzID0gW1wib3JhbmdlXCIgaWYgbiA9PSByb290X2lkIGVsc2UgXCJza3libHVlXCIgZm9yIG4gaW4gRy5ub2RlcygpXVxuXG4gICAgbnguZHJhdyhHLCBwb3MsIHdpdGhfbGFiZWxzPVRydWUsXG4gICAgICAgICAgICBub2RlX2NvbG9yPWNvbG9ycywgbm9kZV9zaXplPTE4MDAsXG4gICAgICAgICAgICBmb250X3NpemU9OCwgZWRnZV9jb2xvcj1cInNpbHZlclwiLCBhcnJvd3NpemU9MTIpXG5cbiAgICBueC5kcmF3X25ldHdvcmt4X2VkZ2VfbGFiZWxzKFxuICAgICAgICBHLCBwb3MsXG4gICAgICAgIGVkZ2VfbGFiZWxzPW54LmdldF9lZGdlX2F0dHJpYnV0ZXMoRywgXCJsYWJlbFwiKSxcbiAgICAgICAgZm9udF9zaXplPTdcbiAgICApXG4gICAgcGx0LnNob3coKSJ9
+</script>
+</div>
+<script type="exercise-check-ex_3-contents">
+eyJhdHRyIjp7ImNoZWNrIjp0cnVlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJleGVyY2lzZSI6ImV4XzMifSwiY29kZSI6IlxuIyBUcmltIGFuZCBiYXNpYyBlbXB0eSBjaGVja1xuaWYgbm90IHVybC5zdHJpcCgpIG9yIHVybC5zdHJpcCgpID09IFwiX19fX19fXCI6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiQml0dGUgZWluZSBVUkwgZWluZ2ViZW4uXCJ9XG5lbGlmIFwiaHR0cFwiIG5vdCBpbiB1cmw6XG4gICAgcmVzdWx0ID0ge1wiY29ycmVjdFwiOiBGYWxzZSwgXCJtZXNzYWdlXCI6IFwiRsO8ciBkaWVzZSBVUkwgd3VyZGVuIGtlaW5lIERhdGVuIGdlZnVuZGVuLlwifVxuXG5yZXN1bHQifQ==
+</script>
+<p>Diese Darstellungsweise erleichtert die Beantwortung von komplexen Fragestellungen</p>
+<p>Man nehme die Fragestellung: In einem Münzfund wurden zahlreiche Münzen unterschiedlicher römischer Kaiser gefunden. Uns interessiert, ob diese Münzen eher am Anfang oder am Ende der Regierungszeit der jeweiligen Kaiser geprägt wurden.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Teilweise haben besitzen auch bereits bestehende Datenbanken die Funktion, sich den Datensatz als Graphen anzeigen zu lassen Beispielsweise die Datenbank <a href="https://nat.museum-digital.de">Museum Digital</a> Zur Nutzung dieser Funktion, navigieren Sie zu einem Datensatz, beispielsweise dem der <a href="https://nat.museum-digital.de/object/73659">oben gezeigten Münze</a> und klicken Sie direkt unter dem Bild auf den Reiter Graphenansicht.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="was-ist-eine-ontologie" class="level2">
+<h2 class="anchored" data-anchor-id="was-ist-eine-ontologie">Was ist eine Ontologie?</h2>
+<p>Wenn Daten auf als Graphen dargestellt werden, zeigt sich unmittelbar, welche Elemente durch eine Ontologie standardisiert werden können. „Ontologie“ ist ursprünglich ein Begriff aus der Philosophie. Er stammt aus dem Griechischen und kann mit der „Lehre des Seins“ übersetzt werden. In der Informatik meint der Begriff aber eine solche Systematisierung von Begrifflichkeiten und deren Abhängigkeiten voneinander. Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die <a href="http://www.nomisma.org/ontology">Nomisma Ontology</a>. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.<br>
+Kommen Ihnen die Namen in der Ontologie von Nomisma bekannt vor? Es sind die gleichen Variablennamen, die in der Tabelle und im Graph angezeigt werden.</p>
+<p>Die Nomisma Ontology differenziert nach Objekten und Typen, die jeweils andere Datenfelder haben. So werden die Informationen effektiv nur dort gespeichert, wo sie dazu gehören. Die Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph.</p>
+</section>
+<section id="was-sind-normdaten" class="level2">
+<h2 class="anchored" data-anchor-id="was-sind-normdaten">Was sind Normdaten?</h2>
+<p>Bei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text.</p>
+
+
+<script type="pyodide-data">
+eyJvcHRpb25zIjp7ImVudiI6eyJQTE9UTFlfUkVOREVSRVIiOiJwbG90bHlfbWltZXR5cGUifSwiaW5kZXhVUkwiOiJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvcHlvZGlkZS92MC4yOC4xL2Z1bGwvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsicHlvZGlkZV9odHRwIiwibWljcm9waXAiLCJpcHl0aG9uIl19fQ==
+</script>
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTQiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl80ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS00LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgLy8gRGVmYXVsdCBleGVyY2lzZSBjb25maWd1cmF0aW9uXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKFxuICAgIHtcbiAgICAgIGlkOiBcInB5b2RpZGUtNC1jb250ZW50c1wiLFxuICAgICAgZW52aXI6IGBleGVyY2lzZS1lbnYtJHtibG9jay5hdHRyLmV4ZXJjaXNlfWAsXG4gICAgICBlcnJvcjogZmFsc2UsXG4gICAgICBjYXB0aW9uOiAnRXhlcmNpc2UnLFxuICAgIH0sXG4gICAgYmxvY2suYXR0clxuICApO1xuXG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IocHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xufVxudmlld29mIF9weW9kaWRlX3ZhbHVlXzQgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzQsIHt9KTtcbl9weW9kaWRlX2ZlZWRiYWNrXzQgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUdyYWRlciB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcbiAgY29uc3QgZW1wdHlGZWVkYmFjayA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xuXG4gIGNvbnN0IGdyYWRlciA9IG5ldyBQeW9kaWRlR3JhZGVyKF9weW9kaWRlX3ZhbHVlXzQuZXZhbHVhdG9yKTtcbiAgY29uc3QgZmVlZGJhY2sgPSBhd2FpdCBncmFkZXIuZ3JhZGVFeGVyY2lzZSgpO1xuICBpZiAoIWZlZWRiYWNrKSByZXR1cm4gZW1wdHlGZWVkYmFjaztcbiAgcmV0dXJuIGZlZWRiYWNrO1xufVxuIn0seyJjZWxsTmFtZSI6InB5b2RpZGUtMSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3B5b2RpZGVfZWRpdG9yXzEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTEtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICAvLyBEZWZhdWx0IGV4ZXJjaXNlIGNvbmZpZ3VyYXRpb25cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oXG4gICAge1xuICAgICAgaWQ6IFwicHlvZGlkZS0xLWNvbnRlbnRzXCIsXG4gICAgICBlbnZpcjogYGV4ZXJjaXNlLWVudi0ke2Jsb2NrLmF0dHIuZXhlcmNpc2V9YCxcbiAgICAgIGVycm9yOiBmYWxzZSxcbiAgICAgIGNhcHRpb246ICdFeGVyY2lzZScsXG4gICAgfSxcbiAgICBibG9jay5hdHRyXG4gICk7XG5cbiAgY29uc3QgZWRpdG9yID0gbmV3IFB5b2RpZGVFeGVyY2lzZUVkaXRvcihweW9kaWRlT2pzLnB5b2RpZGVQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG52aWV3b2YgX3B5b2RpZGVfdmFsdWVfMSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMSwge30pO1xuX3B5b2RpZGVfZmVlZGJhY2tfMSA9IHtcbiAgY29uc3QgeyBQeW9kaWRlR3JhZGVyIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuICBjb25zdCBlbXB0eUZlZWRiYWNrID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnZGl2Jyk7XG5cbiAgY29uc3QgZ3JhZGVyID0gbmV3IFB5b2RpZGVHcmFkZXIoX3B5b2RpZGVfdmFsdWVfMS5ldmFsdWF0b3IpO1xuICBjb25zdCBmZWVkYmFjayA9IGF3YWl0IGdyYWRlci5ncmFkZUV4ZXJjaXNlKCk7XG4gIGlmICghZmVlZGJhY2spIHJldHVybiBlbXB0eUZlZWRiYWNrO1xuICByZXR1cm4gZmVlZGJhY2s7XG59XG4ifSx7ImNlbGxOYW1lIjoicHlvZGlkZS1wcmVsdWRlIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoicHlvZGlkZU9qcyA9IHtcbiAgY29uc3Qge1xuICAgIFB5b2RpZGVFdmFsdWF0b3IsXG4gICAgUHlvZGlkZUVudmlyb25tZW50TWFuYWdlcixcbiAgICBzZXR1cFB5dGhvbixcbiAgICBzdGFydFB5b2RpZGVXb3JrZXIsXG4gICAgYjY0RGVjb2RlLFxuICAgIGNvbGxhcHNlUGF0aCxcbiAgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc3RhdHVzQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLXN0YXR1c1wiKTtcbiAgY29uc3QgaW5kaWNhdG9yQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaW5kaWNhdG9yQ29udGFpbmVyLmNsYXNzTGlzdC5yZW1vdmUoXCJkLW5vbmVcIik7XG5cbiAgbGV0IHN0YXR1c1RleHQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpXG4gIHN0YXR1c1RleHQuY2xhc3NMaXN0ID0gXCJleGVyY2lzZS1sb2FkaW5nLWRldGFpbHNcIjtcbiAgc3RhdHVzVGV4dCA9IHN0YXR1c0NvbnRhaW5lci5hcHBlbmRDaGlsZChzdGF0dXNUZXh0KTtcbiAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBJbml0aWFsaXNlYDtcblxuICAvLyBIb2lzdCBpbmRpY2F0b3Igb3V0IGZyb20gZmluYWwgc2xpZGUgd2hlbiBydW5uaW5nIHVuZGVyIHJldmVhbFxuICBjb25zdCByZXZlYWxTdGF0dXMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCAuZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XG4gIGlmIChyZXZlYWxTdGF0dXMpIHtcbiAgICByZXZlYWxTdGF0dXMucmVtb3ZlKCk7XG4gICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgPiAuc2xpZGVzXCIpLmFwcGVuZENoaWxkKHJldmVhbFN0YXR1cyk7XG4gIH1cblxuICAvLyBNYWtlIGFueSByZXZlYWwgc2xpZGVzIHdpdGggbGl2ZSBjZWxscyBzY3JvbGxhYmxlXG4gIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoXCIucmV2ZWFsIC5leGVyY2lzZS1jZWxsXCIpLmZvckVhY2goKGVsKSA9PiB7XG4gICAgZWwuY2xvc2VzdCgnc2VjdGlvbi5zbGlkZScpLmNsYXNzTGlzdC5hZGQoXCJzY3JvbGxhYmxlXCIpO1xuICB9KVxuXG4gIC8vIFB5b2RpZGUgc3VwcGxlbWVudGFsIGRhdGEgYW5kIG9wdGlvbnNcbiAgY29uc3QgZGF0YUNvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS1kYXRhXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZGF0YSA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKGRhdGFDb250ZW50KSk7XG5cbiAgLy8gR3JhYiBsaXN0IG9mIHJlc291cmNlcyB0byBiZSBkb3dubG9hZGVkXG4gIGNvbnN0IGZpbGVzQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ2ZnMtZmlsZVxcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGZpbGVzID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZmlsZXNDb250ZW50KSk7XG5cbiAgbGV0IHB5b2RpZGVQcm9taXNlID0gKGFzeW5jICgpID0+IHtcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIFB5b2RpZGVgO1xuICAgIGNvbnN0IHB5b2RpZGUgPSBhd2FpdCBzdGFydFB5b2RpZGVXb3JrZXIoZGF0YS5vcHRpb25zKTtcblxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogbWljcm9waXBgO1xuICAgIGF3YWl0IHB5b2RpZGUubG9hZFBhY2thZ2UoXCJtaWNyb3BpcFwiKTtcbiAgICBjb25zdCBtaWNyb3BpcCA9IGF3YWl0IHB5b2RpZGUucHlpbXBvcnQoXCJtaWNyb3BpcFwiKTtcbiAgICBhd2FpdCBkYXRhLnBhY2thZ2VzLnBrZ3MubWFwKChwa2cpID0+ICgpID0+IHtcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogJHtwa2d9YDtcbiAgICAgIHJldHVybiBtaWNyb3BpcC5pbnN0YWxsKHBrZyk7XG4gICAgfSkucmVkdWNlKChjdXIsIG5leHQpID0+IGN1ci50aGVuKG5leHQpLCBQcm9taXNlLnJlc29sdmUoKSk7XG4gICAgYXdhaXQgbWljcm9waXAuZGVzdHJveSgpO1xuXG4gICAgLy8gRG93bmxvYWQgYW5kIGluc3RhbGwgcmVzb3VyY2VzXG4gICAgYXdhaXQgZmlsZXMubWFwKChmaWxlKSA9PiBhc3luYyAoKSA9PiB7XG4gICAgICBjb25zdCBuYW1lID0gZmlsZS5zdWJzdHJpbmcoZmlsZS5sYXN0SW5kZXhPZignLycpICsgMSk7XG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHJlc291cmNlOiAke25hbWV9YDtcbiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goZmlsZSk7XG4gICAgICBpZiAoIXJlc3BvbnNlLm9rKSB7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgQ2FuJ3QgZG93bmxvYWQgXFxgJHtmaWxlfVxcYC4gRXJyb3IgJHtyZXNwb25zZS5zdGF0dXN9OiBcIiR7cmVzcG9uc2Uuc3RhdHVzVGV4dH1cIi5gKTtcbiAgICAgIH1cbiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5hcnJheUJ1ZmZlcigpO1xuXG4gICAgICAvLyBTdG9yZSBVUkxzIGluIHRoZSBjd2Qgd2l0aG91dCBhbnkgc3ViZGlyZWN0b3J5IHN0cnVjdHVyZVxuICAgICAgaWYgKGZpbGUuaW5jbHVkZXMoXCI6Ly9cIikpIHtcbiAgICAgICAgZmlsZSA9IG5hbWU7XG4gICAgICB9XG5cbiAgICAgIC8vIENvbGxhcHNlIGhpZ2hlciBkaXJlY3Rvcnkgc3RydWN0dXJlXG4gICAgICBmaWxlID0gY29sbGFwc2VQYXRoKGZpbGUpO1xuXG4gICAgICAvLyBDcmVhdGUgZGlyZWN0b3J5IHRyZWUsIGlnbm9yaW5nIFwiZGlyZWN0b3J5IGV4aXN0c1wiIFZGUyBlcnJvcnNcbiAgICAgIGNvbnN0IHBhcnRzID0gZmlsZS5zcGxpdCgnLycpLnNsaWNlKDAsIC0xKTtcbiAgICAgIGxldCBwYXRoID0gJyc7XG4gICAgICB3aGlsZSAocGFydHMubGVuZ3RoID4gMCkge1xuICAgICAgICBwYXRoICs9IHBhcnRzLnNoaWZ0KCkgKyAnLyc7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgYXdhaXQgcHlvZGlkZS5GUy5ta2RpcihwYXRoKTtcbiAgICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICAgIGlmIChlLm5hbWUgIT09IFwiRXJybm9FcnJvclwiKSB0aHJvdyBlO1xuICAgICAgICAgIGlmIChlLmVycm5vICE9PSAyMCkge1xuICAgICAgICAgICAgY29uc3QgZXJyb3JUZXh0UHRyID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLl9zdHJlcnJvcihlLmVycm5vKTtcbiAgICAgICAgICAgIGNvbnN0IGVycm9yVGV4dCA9IGF3YWl0IHB5b2RpZGUuX21vZHVsZS5VVEY4VG9TdHJpbmcoZXJyb3JUZXh0UHRyKTtcbiAgICAgICAgICAgIHRocm93IG5ldyBFcnJvcihgRmlsZXN5c3RlbSBFcnJvciAke2UuZXJybm99IFwiJHtlcnJvclRleHR9XCIuYCk7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIC8vIFdyaXRlIHRoaXMgZmlsZSB0byB0aGUgVkZTXG4gICAgICB0cnkge1xuICAgICAgICByZXR1cm4gYXdhaXQgcHlvZGlkZS5GUy53cml0ZUZpbGUoZmlsZSwgbmV3IFVpbnQ4QXJyYXkoZGF0YSkpO1xuICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICBpZiAoZS5uYW1lICE9PSBcIkVycm5vRXJyb3JcIikgdGhyb3cgZTtcbiAgICAgICAgY29uc3QgZXJyb3JUZXh0UHRyID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLl9zdHJlcnJvcihlLmVycm5vKTtcbiAgICAgICAgY29uc3QgZXJyb3JUZXh0ID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLlVURjhUb1N0cmluZyhlcnJvclRleHRQdHIpO1xuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYEZpbGVzeXN0ZW0gRXJyb3IgJHtlLmVycm5vfSBcIiR7ZXJyb3JUZXh0fVwiLmApO1xuICAgICAgfVxuICAgIH0pLnJlZHVjZSgoY3VyLCBuZXh0KSA9PiBjdXIudGhlbihuZXh0KSwgUHJvbWlzZS5yZXNvbHZlKCkpO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBQeW9kaWRlIGVudmlyb25tZW50IHNldHVwYDtcbiAgICBhd2FpdCBzZXR1cFB5dGhvbihweW9kaWRlKTtcblxuICAgIHN0YXR1c1RleHQucmVtb3ZlKCk7XG4gICAgaWYgKHN0YXR1c0NvbnRhaW5lci5jaGlsZHJlbi5sZW5ndGggPT0gMCkge1xuICAgICAgc3RhdHVzQ29udGFpbmVyLnBhcmVudE5vZGUucmVtb3ZlKCk7XG4gICAgfVxuICAgIHJldHVybiBweW9kaWRlO1xuICB9KSgpLmNhdGNoKChlcnIpID0+IHtcbiAgICBzdGF0dXNUZXh0LnN0eWxlLmNvbG9yID0gXCJ2YXIoLS1leGVyY2lzZS1lZGl0b3ItaGwtZXIsICNBRDAwMDApXCI7XG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGVyci5tZXNzYWdlO1xuICAgIC8vaW5kaWNhdG9yQ29udGFpbmVyLnF1ZXJ5U2VsZWN0b3IoXCIuc3Bpbm5lci1ncm93XCIpLmNsYXNzTGlzdC5hZGQoXCJkLW5vbmVcIik7XG4gICAgdGhyb3cgZXJyO1xuICB9KTtcblxuICAvLyBLZWVwIHRyYWNrIG9mIGluaXRpYWwgT0pTIGJsb2NrIHJlbmRlclxuICBjb25zdCByZW5kZXJlZE9qcyA9IHt9O1xuXG4gIGNvbnN0IHByb2Nlc3MgPSBhc3luYyAoY29udGV4dCwgaW5wdXRzKSA9PiB7XG4gICAgY29uc3QgcHlvZGlkZSA9IGF3YWl0IHB5b2RpZGVQcm9taXNlO1xuICAgIGNvbnN0IGV2YWx1YXRvciA9IG5ldyBQeW9kaWRlRXZhbHVhdG9yKHB5b2RpZGUsIGNvbnRleHQpO1xuICAgIGF3YWl0IGV2YWx1YXRvci5wcm9jZXNzKGlucHV0cyk7XG4gICAgcmV0dXJuIGV2YWx1YXRvci5jb250YWluZXI7XG4gIH1cblxuICByZXR1cm4ge1xuICAgIHB5b2RpZGVQcm9taXNlLFxuICAgIHJlbmRlcmVkT2pzLFxuICAgIHByb2Nlc3MsXG4gIH07XG59XG4ifV19
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../content";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/USERNAME\.github\.io\/eLearning-Vagheiten-NFDI\/numiscience\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -3,8 +3,6 @@ project:
   pre-render: python scripts/split_pages.py
   render:
     - content/generated/**/*.qmd
-
-project:
   output-dir: _site/numiscience
 
 website:

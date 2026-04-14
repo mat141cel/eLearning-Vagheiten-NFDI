@@ -6,7 +6,7 @@ date-modified: last-modified
 date-format: "DD.MM.YYYY"
 title-block: None 
 ---
-
+:::page{id="basic_knowledge.qmd"}
 ## Was sind numismatische Forschungsdaten?
 
 ```{python}
@@ -81,8 +81,10 @@ Es gibt sehr viele numismatische Daten und mehrere Datenbanken, die über 100.00
 
 Alle der oben gezeigten Münzen aus unterschiedlichen Epochen geben Auskunft zu ihrem Material, ihren Prägestätten und den auf ihr dargestellte Personen. Das bedeutet nicht, dass diese Datenfelder einen Wert haben müssen. 
 Die Euromünze hat beispielsweise keine dargestellte Person und die Prägestätte der Münze von Napoleon III. ist unbekannt. Gerade auch das Nichtvorhandensein von Informationen ist für die Interpretation der Münzdaten wichtig. 
+:::
 
 
+:::page{id="tables.qmd"}
 ## Wie können wir uns Münzdaten vorstellen
 
 Die einfachste Form, Münzdaten strukturiert zu speichern, ist als Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden. 
@@ -209,6 +211,9 @@ elif "http" not in url:
 result
 ```
 
+:::
+
+:::page{id="graphs.qmd"}
 
 ## Was sind Graphen?
 
@@ -300,6 +305,10 @@ Man nehme die Fragestellung: In einem Münzfund wurden zahlreiche Münzen unters
 Teilweise haben besitzen auch bereits bestehende Datenbanken die Funktion, sich den Datensatz als Graphen anzeigen zu lassen Beispielsweise die Datenbank [Museum Digital](https://nat.museum-digital.de) Zur Nutzung dieser Funktion, navigieren Sie zu einem Datensatz, beispielsweise dem der [oben gezeigten Münze](https://nat.museum-digital.de/object/73659) und klicken Sie direkt unter dem Bild auf den Reiter Graphenansicht.
 :::
 
+:::
+
+
+:::page{id="ontology.qmd"}
 ## Was ist eine Ontologie?
 
 Wenn Daten auf als Graphen dargestellt werden, zeigt sich unmittelbar, welche Elemente durch eine Ontologie standardisiert werden können. „Ontologie“ ist ursprünglich ein Begriff aus der Philosophie. Er stammt aus dem Griechischen und kann mit der „Lehre des Seins“ übersetzt werden. In der Informatik meint der Begriff aber eine solche Systematisierung von Begrifflichkeiten und deren Abhängigkeiten voneinander. Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die [Nomisma Ontology](http://www.nomisma.org/ontology). Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.  
@@ -308,7 +317,13 @@ Kommen Ihnen die Namen in der Ontologie von Nomisma bekannt vor? Es sind die gle
 Die Nomisma Ontology differenziert nach Objekten und Typen, die jeweils andere Datenfelder haben. So werden die Informationen effektiv nur dort gespeichert, wo sie dazu gehören. 
 Die Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph.
 
+:::
+
+:::page{id="authority_data.qmd"}
 ## Was sind Normdaten?
 
 
 Bei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text. 
+
+
+:::

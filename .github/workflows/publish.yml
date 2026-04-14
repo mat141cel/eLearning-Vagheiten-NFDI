@@ -35,10 +35,10 @@ jobs:
           pip install jupyter nbformat ipykernel matplotlib
 
       - name: Render GH version
-        run: quarto render Ressource/ --profile gh
+        run: quarto render Ressource/ --profile gh-pages
 
-      - name: Render corp version
-        run: quarto render Ressource/ --profile corp
+      - name: Render numiscience version
+        run: quarto render Ressource/ --profile numiscience
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

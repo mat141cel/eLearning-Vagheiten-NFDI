@@ -2,7 +2,7 @@
 project:
   render:
     - content/**/*.qmd
-    - "!content/generated/**"
+    - "!content/numiscience/**"
 
 website:
   site-url: https://USERNAME.github.io/eLearning-Vagheiten-NFDI/

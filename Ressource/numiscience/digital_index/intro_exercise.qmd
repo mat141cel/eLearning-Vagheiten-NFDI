@@ -1,7 +1,3 @@
----
-title: Intro Exercise
----
-
 ## Übung 1: Münzen von Hadrian identifizieren
 
 In dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.

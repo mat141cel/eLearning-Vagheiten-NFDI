@@ -1,7 +1,3 @@
----
-title: Intro Quiz
----
-
 ## Quiz
 Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.
 

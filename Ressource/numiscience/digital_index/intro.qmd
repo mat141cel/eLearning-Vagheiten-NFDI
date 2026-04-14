@@ -1,7 +1,3 @@
----
-title: Intro
----
-
 ## Motivation
 In der Numismatik gehört die Erfassung von Münzdaten zur alltäglichen Arbeit. Oft sind digitalisierte Münzbestände aus Onlineportalen der erste Ausgangspunkt für die Bestimmung einer Münze. Die Arbeit mit Münzdaten wird möglich, weil die Numismatik in der Digitalisierung ihrer Bestände im Vergleich zu anderen [Grundwissenschaften](https://de.wikipedia.org/wiki/Historische_Hilfswissenschaften) bereits sehr weit fortgeschritten ist. Es gibt bereits einige E-Learning Module für die Arbeit mit Münzdaten, zum Beispiel die Numismatische Toolbox des Portals [Numiscience.de](https://pecunia.zaw.uni-heidelberg.de/NumiScience/numismatische-toolbox).
 

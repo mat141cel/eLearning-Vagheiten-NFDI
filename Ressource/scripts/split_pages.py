@@ -55,13 +55,8 @@ def rewrite_links(text: str) -> str:
 
     return text
 
-def wrap(body: str, title: str) -> str:
-    return f"""---
-title: {title}
----
-
-{body}
-"""
+def wrap(body: str) -> str:
+    return body
 
 
 def split_file(path: Path):
@@ -86,7 +81,7 @@ def split_file(path: Path):
         out_file = out_dir / filename
 
         out_file.write_text(
-            wrap(body, title),
+            wrap(body),
             encoding="utf-8"
         )
 

@@ -7,6 +7,7 @@ date-format: "DD.MM.YYYY"
 title-block: None 
 ---
 :::page{id="basic_knowledge.qmd"}
+
 ## Was sind numismatische Forschungsdaten?
 
 ```{python}
@@ -81,6 +82,7 @@ Es gibt sehr viele numismatische Daten und mehrere Datenbanken, die über 100.00
 
 Alle der oben gezeigten Münzen aus unterschiedlichen Epochen geben Auskunft zu ihrem Material, ihren Prägestätten und den auf ihr dargestellte Personen. Das bedeutet nicht, dass diese Datenfelder einen Wert haben müssen. 
 Die Euromünze hat beispielsweise keine dargestellte Person und die Prägestätte der Münze von Napoleon III. ist unbekannt. Gerade auch das Nichtvorhandensein von Informationen ist für die Interpretation der Münzdaten wichtig. 
+
 :::
 
 

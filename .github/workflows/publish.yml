@@ -12,13 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # <-- needed for quarto to correctly set last-modified
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.12
-          cache: 'pip' # <-- built-in caching of pip deps (simplest way)
+          cache: 'pip'
       
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -34,8 +34,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install jupyter nbformat ipykernel matplotlib
 
-      - name: Render site
-        run: quarto render Ressource/
+      - name: Render GH version
+        run: quarto render Ressource/ --profile gh
+
+      - name: Render corp version
+        run: quarto render Ressource/ --profile corp
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

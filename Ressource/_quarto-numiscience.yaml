@@ -1,0 +1,21 @@
+# _quarto-numiscience.yml
+project:
+  output-dir: _site/numiscience
+
+website:
+  site-url: https://USERNAME.github.io/numiscience/
+
+  # strip navigation
+  sidebar: false
+  navbar: false
+  page-navigation: false
+
+  # optional: still define pages for build order
+  sidebar:
+    contents:
+      - content/digital_scientific_data.qmd
+      - content/digital_fair_data.qmd
+      - content/digital_data_access.qmd
+      - content/digital_data_aggregation.qmd
+      - content/vague_definitions.qmd
+      - content/vague_solving_vagueness.qmd

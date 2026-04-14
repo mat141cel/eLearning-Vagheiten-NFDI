@@ -1,87 +1,22 @@
+# _quarto.yml
 project:
   type: website
   output-dir: _site
   resources: 
     - assets/
 
+profile:
+  default: gh
+
 metadata-files:
-  - layout.yml
-  - autor_innen.yml
-  - oer_metadata.yml
+  - metadata/layout.yml
+  - metadata/autor_innen.yml
+  - metadata/oer_metadata.yml
 
-website:
-  site-url: https://USERNAME.github.io/
-  title:  "ELearning-Modul für Münzdaten"
-  navbar:
-    background: "#13294B"
-    left:
-      - text: Mein Fortschritt
-        href: content/progress.qmd
-
-  sidebar:
-    style: "docked"
-    search: true
-    title: "Alle Kursseiten" # doesnt work, why
-    contents:
-      - text: "Hauptseite"
-        href: content/index.qmd
-      - section: "🔍 I. Basiswissen digitale Numismatik"
-        href: content/digital_index.qmd
-        contents:
-          - text: "1. Forschungsdaten"
-            href: content/digital_scientific_data.qmd
-          - text: "2. Regeln für gute Forschungsdaten"
-            href: content/digital_fair_data.qmd
-          - text: "3. Datenzugang"
-            href: content/digital_data_access.qmd
-          - text: "4. Datenverarbeitung"
-            href: content/digital_data_aggregation.qmd
-      - section: "🌐 II. Vage Münzdaten"
-        href: content/vague_index.qmd
-        contents:
-          - text: "1. Formen von Unsicherheiten"
-            href: content/vague_definitions.qmd
-          - text: "3. Lösungen für Unsicherheiten und Vagheiten"
-            href: content/vague_solving_vagueness.qmd
-          
-
-  page-navigation: true
-
-
-# Formatierung
 format: 
   live-html:
-    # Inhaltsverzeichnis
     toc: true
-    toc-title: "Auf Dieser Seite"
     toc-location: right
-    toc_float: true    
-
-    # Python Module Styles
-    highlight-style: flatly
-
     embed-resources: false
     brand: brand/_n4o_brand.yml
     theme: brand/n4o_html.scss
-    number-sections: false
-    anchor-sections: true
-    code-overflow: scroll
-
-    code-line-numbers: true
-    respect-user-color-scheme: true
-    cap-location: bottom
-    page-layout: article
-    collapsible-header: true 
-    appendix-style: none
-    appendix-cite-as: true
-    lightbox: true
-    reference-location: document
-    citation-location: document
-    preview-links: true # Bei Klick auf einen Link eine Vorschau anzeigen
-    link-external-icon: true # Icon für externe Links anzeigen
-    link-external-newwindow: true # Links in einem neuen Tab/Fenster anzeigen
-    title-block-style: default
-    title-block-categories: true
-    # image: Link # Link zu Vorschaugraphik
-    # image-alt: # Alt-Text für Vorschaugraphik
-    repo-actions: [edit, source]

@@ -7,8 +7,6 @@ date-modified: last-modified
 date-format: "DD.MM.YYYY"
 ---
 
-## Wie können Vagheiten gelöst werden
+<!-- ## Wie können Vagheiten gelöst werden -->
 
-### zusätzlicher Kontext
-
-Verschiedene numismatische Datenbanken liefern neue Ansätze zur Darstellung von Vagheiten, die mehr Kontext liefern, und 
+Diese Seite befindet sich im Aufbau und wird bald veröffentlicht

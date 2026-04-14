@@ -1,0 +1,7 @@
+Ressource/.luarc.json
+*.html
+Ressource/index_files/
+Ressource/_site
+
+Ressource/.quarto/
+**/*.quarto_ipynb

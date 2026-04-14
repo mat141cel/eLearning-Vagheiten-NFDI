@@ -40,8 +40,14 @@ jobs:
       - name: Render numiscience version
         run: quarto render Ressource/ --profile numiscience
 
+      - name: Prepare deploy folder
+        run: |
+          mkdir site
+          cp -r Ressource/_site_gh/* site/
+          cp -r Ressource/_site_numiscience/* site/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: Ressource/_site
+          publish_dir: site

@@ -3,11 +3,11 @@ project:
   render:
     - content/**/*.qmd
     - "!content/numiscience/**"
+  output-dir: _site_gh
 
 website:
   site-url: https://USERNAME.github.io/eLearning-Vagheiten-NFDI/
   title: "ELearning-Modul für Münzdaten"
-  
 
   navbar:
     background: "#13294B"

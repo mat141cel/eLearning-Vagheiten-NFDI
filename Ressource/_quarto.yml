@@ -1,9 +1,9 @@
 # _quarto.yml
 project:
   type: website
-  output-dir: _site
   resources: 
     - assets/
+  
 
 metadata-files:
   - metadata/layout.yml

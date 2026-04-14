@@ -1,0 +1,5 @@
+## Wie können wir uns Münzdaten vorstellen
+
+Die einfachste Form, Münzdaten strukturiert zu speichern, ist als Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden. 
+
+Die folgende Tabelle zeigt einen Ausschnitt aus einem solchen Münzdatensatz. Das Feld Name identifiziert dabei eindeutig den Aureus des Postumus, der mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29.

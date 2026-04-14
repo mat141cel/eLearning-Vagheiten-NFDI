@@ -1,0 +1,53 @@
+---
+title: "Basiswissen digitale Numismatik"
+filename: index
+subtitle: "Quiz"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+## Quiz
+Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.
+
+<div id="intro_quiz"></div>
+
+<script src="/assets/js/quiz.js"></script>
+<link rel="stylesheet" href="/assets/css/quiz.css">
+
+<script>
+// Define quiz questions
+window["intro_quiz_data"] = [
+  {
+    question: "Welche Herausforderung wird in der Numismatik bei digitalisierten Beständen beschrieben?",
+    choices: [
+      { text: "Alle Daten sind automatisch miteinander verknüpft", feedback: "❌ Falsch! Die Bestände sind heterogen und schwer kombinierbar." },
+      { text: "Verschiedene Museen haben unterschiedliche Softwaresysteme", feedback: "✅ Richtig! Unterschiedliche Systeme erschweren den Austausch." },
+      { text: "Digitale Münzen ersetzen physische Münzen", feedback: "❌ Falsch! Digitalisierung ergänzt nur die Forschung." },
+      { text: "Es gibt keine Herausforderung, alles ist standardisiert", feedback: "❌ Falsch! Standardisierung ist gerade eine Herausforderung." }
+    ]
+  },
+  {
+    question: "Wie kann überprüft werden, ob ein Link zu einem Typenportal eine Reichsprägung von Hadrian ist?",
+    choices: [
+      { text: "OCRE enthält ausschließlich Münzen von Hadrian", feedback: "❌ Falsch! OCRE enthält Münzen aus der gesamten römischen Kaiserzeit: von Augustus bis Zenon." },
+      { text: "Die URL enthält 'https://numismatics.org/ocre/hadrian'", feedback: "❌ Falsch! OCRE hat ordnet die Münzen zuerst nach der Bandnummer des RIC." },
+      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hadrian'", feedback: "❌ Falsch! Jeder Kaiser hat ein eigenes Kürzel." },
+      { text: "Die URL enthält 'numismatics.org/ocre/' und 'hdn'", feedback: "✅ Richtig" }
+    ]
+  }
+];
+if (!localStorage.getItem("progress")) {
+    localStorage.setItem("progress", "0");
+}
+document.addEventListener("DOMContentLoaded", () => {
+    renderQuiz("intro_quiz", window["intro_quiz_data"], {
+        quizKey: "intro_quiz_completed",
+        onComplete: () => console.log("Quiz completed!")
+    });
+});
+</script>
+
+Haben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter [mein Fortschritt](progress.html) ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul

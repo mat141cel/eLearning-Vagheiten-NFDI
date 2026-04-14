@@ -2,7 +2,8 @@
 project:
   pre-render: python scripts/split_pages.py
   render:
-    - numiscience/**/*.qmd
+    - content/**/*.qmd
+    - "!content/**/*_gh.qmd"
   output-dir: _site_numiscience
 
 website:

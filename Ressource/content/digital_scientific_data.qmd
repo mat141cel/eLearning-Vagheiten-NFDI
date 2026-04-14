@@ -6,9 +6,10 @@ date-modified: last-modified
 date-format: "DD.MM.YYYY"
 title-block: None 
 ---
-:::page{id="basic_knowledge.qmd"}
+
 
 ## Was sind numismatische Forschungsdaten?
+:::page{id="basic_knowledge.qmd"}
 
 ```{python}
 #| echo: false
@@ -17,6 +18,9 @@ title-block: None
 #|   URLs zu den Originaldatensätzen von links nach rechts: \
 #|   https://ikmk.smb.museum/object?id=18214977, https://nat.museum-digital.de/object/73659, \
 #|   https://ikmk.smb.museum/object?id=18203837."
+#| fig-width: 10
+#| out-width: "100%"
+#| 
 import matplotlib.pyplot as plt
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from pathlib import Path

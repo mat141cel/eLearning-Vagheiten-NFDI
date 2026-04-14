@@ -1,75 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/vague_solving_vagueness.html</loc>
-    <lastmod>2026-04-14T18:46:04.416Z</lastmod>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/vague_solving_vagueness_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.190Z</lastmod>
   </url>
   <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/vague_definitions.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/vague_definitions_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.190Z</lastmod>
   </url>
   <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/index.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/index_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_scientific_data_ontology.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
   </url>
   <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_scientific_data_basic_knowledge.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_scientific_data.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_index_intro.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_index_combined.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_data_aggregation.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_data_access.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_fair_data.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_index_exercise.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_index_quiz.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_scientific_data_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_scientific_data_authority_data.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_index_intro.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_index_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_fair_data_nfdi_ta.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_fair_data_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_data_access_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_data_aggregation_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_fair_data_nfdi.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_fair_data_quiz.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_index_exercise.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_index_quiz.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_scientific_data_basic_knowledge.html</loc>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_scientific_data_graphs.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/digital_scientific_data_tables.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
+    <lastmod>2026-04-14T19:10:20.189Z</lastmod>
   </url>
   <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/progress.html</loc>
-    <lastmod>2026-04-14T18:46:04.415Z</lastmod>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/progress_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.190Z</lastmod>
   </url>
   <url>
-    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/vague_index.html</loc>
-    <lastmod>2026-04-14T18:46:04.416Z</lastmod>
+    <loc>https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/content/vague_index_combined.html</loc>
+    <lastmod>2026-04-14T19:10:20.190Z</lastmod>
   </url>
 </urlset>

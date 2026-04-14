@@ -1,9 +1,11 @@
 # _quarto-numiscience.yml
 project:
   pre-render: python scripts/split_pages.py
-  output-dir: _site/numiscience
   render:
-    - content/generated/**
+    - content/generated/**/*.qmd
+
+project:
+  output-dir: _site/numiscience
 
 website:
   site-url: https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/

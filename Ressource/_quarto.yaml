@@ -5,18 +5,7 @@ project:
   resources: 
     - assets/
 
-profile:
-  default: gh-pages
-
 metadata-files:
   - metadata/layout.yml
   - metadata/autor_innen.yml
   - metadata/oer_metadata.yml
-
-format: 
-  live-html:
-    toc: true
-    toc-location: right
-    embed-resources: false
-    brand: brand/_n4o_brand.yml
-    theme: brand/n4o_html.scss

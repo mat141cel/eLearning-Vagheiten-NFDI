@@ -37,3 +37,11 @@ website:
           - content/vague_solving_vagueness.qmd
 
   page-navigation: true
+
+format: 
+  live-html:
+    toc: true
+    toc-location: right
+    embed-resources: false
+    brand: brand/_n4o_brand.yml
+    theme: brand/n4o_html.scss

@@ -1,17 +1,52 @@
 [
   {
-    "objectID": "numiscience/digital_index_intro_quiz.html",
-    "href": "numiscience/digital_index_intro_quiz.html",
+    "objectID": "numiscience/digital_scientific_data_tables.html",
+    "href": "numiscience/digital_scientific_data_tables.html",
     "title": "",
     "section": "",
-    "text": "Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
+    "text": "Die einfachste Form, Münzdaten strukturiert zu speichern, ist als Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden.\nDie folgende Tabelle zeigt einen Ausschnitt aus einem solchen Münzdatensatz. Das Feld Name identifiziert dabei eindeutig den Aureus des Postumus, der mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29."
   },
   {
-    "objectID": "numiscience/digital_index_intro_quiz.html#quiz",
-    "href": "numiscience/digital_index_intro_quiz.html#quiz",
+    "objectID": "numiscience/digital_scientific_data_tables.html#wie-können-wir-uns-münzdaten-vorstellen",
+    "href": "numiscience/digital_scientific_data_tables.html#wie-können-wir-uns-münzdaten-vorstellen",
     "title": "",
     "section": "",
-    "text": "Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
+    "text": "Die einfachste Form, Münzdaten strukturiert zu speichern, ist als Tabelle. Die Reihen stehen für die einzelne Münze, die Spalten für bestimmte Kategorien, die für die Münze erfasst werden.\nDie folgende Tabelle zeigt einen Ausschnitt aus einem solchen Münzdatensatz. Das Feld Name identifiziert dabei eindeutig den Aureus des Postumus, der mit der Objektnummer: 18201393 beim Münzkabinett der Staatlichen Museen Berlin liegt. Diese Münze hat unter anderem ein spezifisches Gewicht und einen spezifischen Durchmesser. Außerdem gibt häufig Literatur zu einzelnen Münzen, so genannte Typenkataloge, die einzelnen Münzserien (Typen) beschreiben. Im vorliegenden Fall ist das der Typ Roman Imperial Coinage Band 5, Postumus, Nummer 29."
+  },
+  {
+    "objectID": "numiscience/digital_scientific_data_graphs.html",
+    "href": "numiscience/digital_scientific_data_graphs.html",
+    "title": "Was sind Graphen?",
+    "section": "",
+    "text": "Wie Sie bemerkt haben, werden Tabellen schnell unübersichtlich und es wird nicht unmittelbar deutlich, wie die Tabellen von Münztyp und Münze miteinander verbunden sind. Hier bietet sich eine Visualisierung als Graph an.\nBei Graphen gibt es nicht die Tabelle “Münzen” oder “Münztypen”, die verschiedene Einträge enthalten. Stattdessen steht die einzelne Münze (über einen eindeutigen Identifikator, siehe forlgender Abschnitt “Normdaten”) im Zentrum. Die Münze ist über beschriftete Pfeile mit den ihr zugeordneten Informationen verbunden. Die Beschriftungen der Pfeile entsprechen dabei den Namen der Tabellenspalten. Das können Sie im folgenden Codebeispiel überprüfen, indem Sie ihre URL aus dem vorigen Beispiel einfügen.\n\nÜbung 3: Darstellung von Münzdaten als Graph\n#| exercise: ex_3\n#| envir: coin_data\n\nurl = \"\"   # &lt;------ Hier URL zwischen die Anführungszeichen (!) einfügen\ndepth = 1  # &lt;------ Zeigt die Anzahl der Ebenen im Graph an (akzeptiert Werte 1 und 2)\n\n# ----------------------------------------\nfrom pyodide.http import pyfetch\nimport urllib.parse\nimport networkx as nx\nimport matplotlib.pyplot as plt\nroot_id = url.split('/')[-1]\nraw_query = f\"\"\"\nSELECT ?s ?p ?o{' ?p1' if depth == 2 else ''} WHERE {{\n  {{ BIND(&lt;{url}&gt; AS ?s) . ?s ?p ?o . }}\n  {'UNION { &lt;' + url + '&gt; ?p1 ?s . FILTER(isIRI(?s)) . ?s ?p ?o . }' if depth == 2 else ''}\n}}\n\"\"\"\n\nsafe_query = urllib.parse.quote(raw_query)\napi_url = f\"https://nomisma.org/query?query={safe_query}&output=json\"\n\nres = await pyfetch(api_url)\nif res.status == 200:\n    data = await res.json()\n    G = nx.DiGraph()\n\n    clean = lambda x: x.split('/')[-1].split('#')[-1]\n\n    for r in data[\"results\"][\"bindings\"]:\n        s = clean(r[\"s\"][\"value\"])\n        p = clean(r[\"p\"][\"value\"])\n        o = clean(r[\"o\"][\"value\"])\n\n        if depth == 2 and \"p1\" in r:\n            p1 = clean(r[\"p1\"][\"value\"])\n            if p1 in [\"hasCollection\", \"inDataset\"]:\n                continue\n\n        G.add_edge(s, o, label=p)\n\n    plt.figure(figsize=(14, 9))\n    pos = nx.spring_layout(G, k=0.6)\n    colors = [\"orange\" if n == root_id else \"skyblue\" for n in G.nodes()]\n\n    nx.draw(G, pos, with_labels=True,\n            node_color=colors, node_size=1800,\n            font_size=8, edge_color=\"silver\", arrowsize=12)\n\n    nx.draw_networkx_edge_labels(\n        G, pos,\n        edge_labels=nx.get_edge_attributes(G, \"label\"),\n        font_size=7\n    )\n    plt.show()\n#| exercise: ex_3\n#| check: true\n\n# Trim and basic empty check\nif not url.strip() or url.strip() == \"______\":\n    result = {\"correct\": False, \"message\": \"Bitte eine URL eingeben.\"}\nelif \"http\" not in url:\n    result = {\"correct\": False, \"message\": \"Für diese URL wurden keine Daten gefunden.\"}\n\nresult\nDiese Darstellungsweise erleichtert die Beantwortung von komplexen Fragestellungen\nMan nehme die Fragestellung: In einem Münzfund wurden zahlreiche Münzen unterschiedlicher römischer Kaiser gefunden. Uns interessiert, ob diese Münzen eher am Anfang oder am Ende der Regierungszeit der jeweiligen Kaiser geprägt wurden."
+  },
+  {
+    "objectID": "numiscience/digital_scientific_data_authority_data.html",
+    "href": "numiscience/digital_scientific_data_authority_data.html",
+    "title": "",
+    "section": "",
+    "text": "Bei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text."
+  },
+  {
+    "objectID": "numiscience/digital_scientific_data_authority_data.html#was-sind-normdaten",
+    "href": "numiscience/digital_scientific_data_authority_data.html#was-sind-normdaten",
+    "title": "",
+    "section": "",
+    "text": "Bei Münzen gibt es also eine Liste an Datenfeldern, die immer vorhanden sind. In den meisten Datenbanken werden diese Datenfelder normiert erfasst. (LINK oder Erklärfenster Normierung / Normdaten) Auch diese sind in der Ontologie von Nomisma hinterlegt. Sie haben den Typ Class, die Prädikate haben den Typ Property und haben immer ein has vor dem Text."
+  },
+  {
+    "objectID": "numiscience/digital_index_intro_exercise.html",
+    "href": "numiscience/digital_index_intro_exercise.html",
+    "title": "",
+    "section": "",
+    "text": "In dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate."
+  },
+  {
+    "objectID": "numiscience/digital_index_intro_exercise.html#übung-1-münzen-von-hadrian-identifizieren",
+    "href": "numiscience/digital_index_intro_exercise.html#übung-1-münzen-von-hadrian-identifizieren",
+    "title": "",
+    "section": "",
+    "text": "In dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate."
   },
   {
     "objectID": "numiscience/digital_index_intro.html",
@@ -42,17 +77,38 @@
     "text": "Aufbau des Kurses\nDas Modul befindet sich derzeit im Aufbau und besteht aus vier Elementen.\n\nForschungsdaten (veröffentlicht)\ngute Forschungsdaten (veröffentlicht)\nDatenzugang (im Aufbau)\nDatenverarbeitung (im Aufbau)\n\nDiese Elemente begleiten Sie Schritt für Schritt, ein Verständnis für numismatische Daten zu entwickeln. Alle Übungen können Sie mit Ihren eigenen Münzen absolvieren und eigene Grafiken und Analysen erstellen."
   },
   {
-    "objectID": "numiscience/digital_index_intro_exercise.html",
-    "href": "numiscience/digital_index_intro_exercise.html",
+    "objectID": "numiscience/digital_index_intro_quiz.html",
+    "href": "numiscience/digital_index_intro_quiz.html",
     "title": "",
     "section": "",
-    "text": "In dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate."
+    "text": "Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
   },
   {
-    "objectID": "numiscience/digital_index_intro_exercise.html#übung-1-münzen-von-hadrian-identifizieren",
-    "href": "numiscience/digital_index_intro_exercise.html#übung-1-münzen-von-hadrian-identifizieren",
+    "objectID": "numiscience/digital_index_intro_quiz.html#quiz",
+    "href": "numiscience/digital_index_intro_quiz.html#quiz",
     "title": "",
     "section": "",
-    "text": "In dieser Übung verstehen Sie, wie Münzdatenbanken grundsätzlich aufgebaut sind, und wie die jeweiligen URLs aussehen. Diese Informationen brauchen Sie, um im folgenden Kapitel die passenden Informationen aus den jeweiligen URLs zu extrahieren.\nNavigieren Sie in einem neuen Tab zu einem Referenzportal wie CRRO, OCRE oder Pella. Klicken Sie anschließend auf den Reiter “Browse” und machen Sie sich ein Bild der Münzen in den Datenbanken. Können Sie eine Münze von Hadrian ausfindig machen? Kopieren Sie einige der Links, der Resultate."
+    "text": "Haben Sie Sich die interaktiven Kurselemente ausgeführt? Dann können Sie die folgenden Quizfragen zum Kurs beantworten.\n\n\n\n\n\n\nHaben Sie alle Fragen richtig beantwortet? Dann können Sie ihren Fortschritt im Reiter mein Fortschritt ansehen. Am Ende der Seite geht es weiter mit dem nächsten Modul"
+  },
+  {
+    "objectID": "numiscience/digital_scientific_data_basic_knowledge.html",
+    "href": "numiscience/digital_scientific_data_basic_knowledge.html",
+    "title": "Was sind numismatische Forschungsdaten?",
+    "section": "",
+    "text": "Figure 1: Münzen und ihre zugehörigen Datenfelder. URLs zu den Originaldatensätzen von links nach rechts: / https://ikmk.smb.museum/object?id=18214977, https://nat.museum-digital.de/object/73659, / https://ikmk.smb.museum/object?id=18203837."
+  },
+  {
+    "objectID": "numiscience/digital_scientific_data_ontology.html",
+    "href": "numiscience/digital_scientific_data_ontology.html",
+    "title": "",
+    "section": "",
+    "text": "Wenn Daten auf als Graphen dargestellt werden, zeigt sich unmittelbar, welche Elemente durch eine Ontologie standardisiert werden können. „Ontologie“ ist ursprünglich ein Begriff aus der Philosophie. Er stammt aus dem Griechischen und kann mit der „Lehre des Seins“ übersetzt werden. In der Informatik meint der Begriff aber eine solche Systematisierung von Begrifflichkeiten und deren Abhängigkeiten voneinander. Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die Nomisma Ontology. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.\nKommen Ihnen die Namen in der Ontologie von Nomisma bekannt vor? Es sind die gleichen Variablennamen, die in der Tabelle und im Graph angezeigt werden.\nDie Nomisma Ontology differenziert nach Objekten und Typen, die jeweils andere Datenfelder haben. So werden die Informationen effektiv nur dort gespeichert, wo sie dazu gehören. Die Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph."
+  },
+  {
+    "objectID": "numiscience/digital_scientific_data_ontology.html#was-ist-eine-ontologie",
+    "href": "numiscience/digital_scientific_data_ontology.html#was-ist-eine-ontologie",
+    "title": "",
+    "section": "",
+    "text": "Wenn Daten auf als Graphen dargestellt werden, zeigt sich unmittelbar, welche Elemente durch eine Ontologie standardisiert werden können. „Ontologie“ ist ursprünglich ein Begriff aus der Philosophie. Er stammt aus dem Griechischen und kann mit der „Lehre des Seins“ übersetzt werden. In der Informatik meint der Begriff aber eine solche Systematisierung von Begrifflichkeiten und deren Abhängigkeiten voneinander. Diese Standardisierung ist in der Numismatik bereits weitgehend abgeschlossen. International gültig ist die Nomisma Ontology. Auf diese Weise hat jede Münze unabhängig von der Sprache der Erfasser eine standardisiertes Datenfeld.\nKommen Ihnen die Namen in der Ontologie von Nomisma bekannt vor? Es sind die gleichen Variablennamen, die in der Tabelle und im Graph angezeigt werden.\nDie Nomisma Ontology differenziert nach Objekten und Typen, die jeweils andere Datenfelder haben. So werden die Informationen effektiv nur dort gespeichert, wo sie dazu gehören. Die Graphdarstellung hilft auch, die Informationen aus Typenportalen separat zu speichern und mit dem Datensatz zu verknüpfen. die mit der Münze verknüpfte OCRE-ID hat beispielsweise ebenfalls einen Graph."
   }
 ]

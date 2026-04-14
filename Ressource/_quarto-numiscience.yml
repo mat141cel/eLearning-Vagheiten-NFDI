@@ -12,3 +12,10 @@ website:
   sidebar: false
   navbar: false
   page-navigation: false
+
+format:
+  live-html:
+    toc: false
+    brand: brand/_numiscience_brand.yml
+    theme: brand/_numiscience_html.scss
+    

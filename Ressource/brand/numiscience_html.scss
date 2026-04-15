@@ -6,6 +6,7 @@
 --------------------------- */
 
 body {
+    margin-top: 0 !important;
     font-family: "Roboto", sans-serif;
     color: #565656;
     line-height: 1.6;
@@ -30,9 +31,15 @@ p {
    LAYOUT (iframe-safe)
 --------------------------- */
 
+.quarto-title-block {
+    display: none !important;
+}
+
 main {
     max-width: 900px;
     margin: 0 auto;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
     padding: 1.5rem;
 }
 
@@ -108,12 +115,4 @@ td {
 iframe,
 canvas {
     max-width: 100%;
-}
-
-/* ---------------------------
-   REMOVE QUARTO TITLE BLOCK STYLE
---------------------------- */
-
-.quarto-title-block {
-    margin-bottom: 1.5rem;
 }

@@ -106,7 +106,7 @@ def compare(site, local):
 
 def add_iframe(session, node_id, iframe_url):
     page_id = f"node_{node_id}"
-
+ 
     iframe_html = f"""
 <div class="iframe-wrapper">
   <iframe

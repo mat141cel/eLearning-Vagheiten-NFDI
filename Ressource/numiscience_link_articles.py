@@ -107,10 +107,26 @@ def compare(site, local):
 def add_iframe(session, node_id, iframe_url):
     page_id = f"node_{node_id}"
 
-    iframe_html = (
-        f'<p><iframe frameborder="0" height="800" '
-        f'src="{iframe_url}" width="100%"></iframe></p>'
-    )
+    iframe_html = f"""
+<div class="iframe-wrapper">
+  <iframe
+    id="qmdFrame"
+    src="{iframe_url}"
+    scrolling="no">
+  </iframe>
+</div>
+
+<script>
+window.addEventListener("message", function(event) {{
+  if (event.data?.type === "iframe-height") {{
+    const frame = document.getElementById("qmdFrame");
+    if (frame) {{
+      frame.style.height = event.data.height + "px";
+    }}
+  }}
+}});
+</script>
+"""
 
     r = session.post(
         DESIGNER_URL,

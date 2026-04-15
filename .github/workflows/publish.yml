@@ -34,6 +34,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install jupyter nbformat ipykernel matplotlib
 
+      - name: Build fragments
+        run: bash build-fragments.sh
+
       - name: Render GH version
         run: quarto render Ressource/ --profile gh-pages --clean
 

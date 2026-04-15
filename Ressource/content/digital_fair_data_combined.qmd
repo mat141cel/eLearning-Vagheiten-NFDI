@@ -8,9 +8,9 @@ date-format: "DD.MM.YYYY"
 ---
 
 
-{{< include digital_fair_data_nfdi.qmd >}}
+{{< include fragments/digital_fair_data_nfdi.inc.qmd >}}
 
-{{< include digital_fair_data_nfdi_ta.qmd >}}
+{{< include fragments/digital_fair_data_nfdi_ta.inc.qmd >}}
 
 
-{{< include digital_fair_data_quiz.qmd >}}
+{{< include fragments/digital_fair_data_quiz.inc.qmd >}}

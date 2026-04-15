@@ -1,0 +1,91 @@
+
+## Was sind Graphen?
+
+Wie Sie bemerkt haben, werden Tabellen schnell unübersichtlich und es wird nicht unmittelbar deutlich, wie die Tabellen von Münztyp und Münze miteinander verbunden sind. Hier bietet sich eine Visualisierung als Graph an.  
+
+Bei Graphen gibt es nicht die Tabelle "Münzen" oder "Münztypen", die verschiedene Einträge enthalten. Stattdessen steht die einzelne Münze (über einen eindeutigen Identifikator, siehe forlgender Abschnitt "Normdaten") im Zentrum. Die Münze ist über beschriftete Pfeile mit den ihr zugeordneten Informationen verbunden. Die Beschriftungen der Pfeile entsprechen dabei den Namen der Tabellenspalten. Das können Sie im folgenden Codebeispiel überprüfen, indem Sie ihre URL aus dem vorigen Beispiel einfügen.  
+
+### Übung 3: Darstellung von Münzdaten als Graph
+
+```{pyodide}
+#| exercise: ex_3
+#| envir: coin_data
+
+url = ""   # <------ Hier URL zwischen die Anführungszeichen (!) einfügen
+depth = 1  # <------ Zeigt die Anzahl der Ebenen im Graph an (akzeptiert Werte 1 und 2)
+
+# ----------------------------------------
+from pyodide.http import pyfetch
+import urllib.parse
+import networkx as nx
+import matplotlib.pyplot as plt
+root_id = url.split('/')[-1]
+raw_query = f"""
+SELECT ?s ?p ?o{' ?p1' if depth == 2 else ''} WHERE {{
+  {{ BIND(<{url}> AS ?s) . ?s ?p ?o . }}
+  {'UNION { <' + url + '> ?p1 ?s . FILTER(isIRI(?s)) . ?s ?p ?o . }' if depth == 2 else ''}
+}}
+"""
+
+safe_query = urllib.parse.quote(raw_query)
+api_url = f"https://nomisma.org/query?query={safe_query}&output=json"
+
+res = await pyfetch(api_url)
+if res.status == 200:
+    data = await res.json()
+    G = nx.DiGraph()
+
+    clean = lambda x: x.split('/')[-1].split('#')[-1]
+
+    for r in data["results"]["bindings"]:
+        s = clean(r["s"]["value"])
+        p = clean(r["p"]["value"])
+        o = clean(r["o"]["value"])
+
+        if depth == 2 and "p1" in r:
+            p1 = clean(r["p1"]["value"])
+            if p1 in ["hasCollection", "inDataset"]:
+                continue
+
+        G.add_edge(s, o, label=p)
+
+    plt.figure(figsize=(14, 9))
+    pos = nx.spring_layout(G, k=0.6)
+    colors = ["orange" if n == root_id else "skyblue" for n in G.nodes()]
+
+    nx.draw(G, pos, with_labels=True,
+            node_color=colors, node_size=1800,
+            font_size=8, edge_color="silver", arrowsize=12)
+
+    nx.draw_networkx_edge_labels(
+        G, pos,
+        edge_labels=nx.get_edge_attributes(G, "label"),
+        font_size=7
+    )
+    plt.show()
+```
+
+
+```{pyodide}
+#| exercise: ex_3
+#| check: true
+
+# Trim and basic empty check
+if not url.strip() or url.strip() == "______":
+    result = {"correct": False, "message": "Bitte eine URL eingeben."}
+elif "http" not in url:
+    result = {"correct": False, "message": "Für diese URL wurden keine Daten gefunden."}
+
+result
+```
+
+
+Diese Darstellungsweise erleichtert die Beantwortung von komplexen Fragestellungen
+
+
+Man nehme die Fragestellung: In einem Münzfund wurden zahlreiche Münzen unterschiedlicher römischer Kaiser gefunden. Uns interessiert, ob diese Münzen eher am Anfang oder am Ende der Regierungszeit der jeweiligen Kaiser geprägt wurden. 
+
+:::{.callout-note}
+Teilweise haben besitzen auch bereits bestehende Datenbanken die Funktion, sich den Datensatz als Graphen anzeigen zu lassen Beispielsweise die Datenbank [Museum Digital](https://nat.museum-digital.de) Zur Nutzung dieser Funktion, navigieren Sie zu einem Datensatz, beispielsweise dem der [oben gezeigten Münze](https://nat.museum-digital.de/object/73659) und klicken Sie direkt unter dem Bild auf den Reiter Graphenansicht.
+:::
+

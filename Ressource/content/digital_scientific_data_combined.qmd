@@ -8,16 +8,16 @@ date-format: "DD.MM.YYYY"
 title-block: None 
 ---
 
-{{< include digital_scientific_data_basic_knowledge.qmd >}}
+{{< include fragments/digital_scientific_data_basic_knowledge.inc.qmd >}}
 
 
-{{< include digital_scientific_data_tables.qmd >}}
+{{< include fragments/digital_scientific_data_tables.inc.qmd >}}
 
 
-{{< include digital_scientific_data_graphs.qmd >}}
+{{< include fragments/digital_scientific_data_graphs.inc.qmd >}}
 
 
-{{< include digital_scientific_data_ontology.qmd >}}
+{{< include fragments/digital_scientific_data_ontology.inc.qmd >}}
 
 
-{{< include digital_scientific_data_authority_data.qmd >}}
+{{< include fragments/digital_scientific_data_authority_data.inc.qmd >}}

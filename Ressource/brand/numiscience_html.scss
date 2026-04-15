@@ -2,6 +2,15 @@
 
 
 /* ---------------------------
+   GLOBAL BOX MODEL (CRITICAL)
+--------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------
    GLOBAL OVERFLOW CONTROL
 --------------------------- */
 
@@ -39,7 +48,7 @@ p {
 
 
 /* ---------------------------
-   LAYOUT (Quarto containment)
+   LAYOUT (Quarto containment FIXED)
 --------------------------- */
 
 .quarto-title-block {
@@ -48,8 +57,15 @@ p {
 
 main {
     max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     padding: 1.5rem;
+}
+
+
+/* prevent Quarto grid overflow issues */
+.page-columns {
+    max-width: 100%;
 }
 
 
@@ -100,40 +116,36 @@ button:hover,
    MEDIA (iframe-safe)
 --------------------------- */
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
+img,
 iframe,
 canvas {
     max-width: 100%;
+    width: 100%;
     display: block;
     border: 0;
 }
 
 
 /* ---------------------------
-   TABLES (critical overflow fix)
+   TABLES (FIXED - DO NOT BREAK LAYOUT)
 --------------------------- */
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1rem;
-    display: block;
-    overflow-x: auto;
 }
 
 th,
 td {
     border: 1px solid #ddd;
     padding: 0.5rem;
+    word-break: break-word;
 }
 
 
 /* ---------------------------
-   CODE / PREVENT HIDDEN OVERFLOW
+   CODE / PREVENT OVERFLOW
 --------------------------- */
 
 pre,

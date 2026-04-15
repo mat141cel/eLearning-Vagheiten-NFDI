@@ -106,27 +106,21 @@ def compare(site, local):
 
 def add_iframe(session, node_id, iframe_url):
     page_id = f"node_{node_id}"
- 
+
     iframe_html = f"""
 <div class="iframe-wrapper">
-  <iframe
-    id="qmdFrame"
+    <iframe
     src="{iframe_url}"
-    scrolling="no">
-  </iframe>
+    style="
+        width: 100%;
+        height: 90vh;
+        display: block;
+        border: 0;
+    ">
+    </iframe>
 </div>
-
-<script>
-window.addEventListener("message", function(event) {{
-  if (event.data?.type === "iframe-height") {{
-    const frame = document.getElementById("qmdFrame");
-    if (frame) {{
-      frame.style.height = event.data.height + "px";
-    }}
-  }}
-}});
-</script>
 """
+
 
     r = session.post(
         DESIGNER_URL,
@@ -140,6 +134,7 @@ window.addEventListener("message", function(event) {{
 
     if r.status_code != 200:
         raise RuntimeError(f"update failed for {page_id} ({r.status_code})")
+
 
 
 def main():

@@ -1,6 +1,6 @@
 ---
-title: "Können Daten unfair sein?"
-subtitle: "Struktur der NFDI4Objects"
+title: "Die Bedeutung der NFDI für die Numismatik"
+subtitle: "Task Areas der NFDI4Objects"
 lang: de
 date: today
 date-modified: last-modified

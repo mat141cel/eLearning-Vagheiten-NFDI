@@ -1,7 +1,7 @@
 ---
 title: "Basiswissen digitale Numismatik"
 filename: index
-subtitle: "Transferaufgaben"
+subtitle: "Transferaufgabe: Ist das eine Münze Hadrians?"
 lang: de
 date: today
 date-modified: last-modified

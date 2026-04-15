@@ -1,7 +1,7 @@
 ---
-title: "Basiswissen digitale Numismatik"
+title: "digitale Numismatik"
 filename: index
-subtitle: "Quiz"
+subtitle: "Quiz: Was sind faire Forschungsdaten?"
 lang: de
 date: today
 date-modified: last-modified

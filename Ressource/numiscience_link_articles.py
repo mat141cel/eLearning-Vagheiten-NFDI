@@ -9,17 +9,18 @@ load_dotenv()
 BASE = "https://pecunia.zaw.uni-heidelberg.de/NumiScience"
 LOGIN_URL = f"{BASE}/login/?log_him_in"
 TREE_URL = f"{BASE}/admin-managepages/"
+DESIGNER_URL = f"{BASE}/admin-managepages/designer"
 
 USER = (os.getenv("NUMISCIENCE_USER") or "").strip()
 PWD = (os.getenv("PASSWORD") or "").strip()
 
+IFRAME_URL = "https://mat141cel.github.io/eLearning-Vagheiten-NFDI/content/digital_scientific_data_tables"
 
-# ---------- UTILS ----------
+
 def norm(s):
     return (s or "").strip().lower()
 
 
-# ---------- LOGIN ----------
 def login(s):
     r = s.post(
         LOGIN_URL,
@@ -34,7 +35,6 @@ def login(s):
     print("login OK")
 
 
-# ---------- TREE ----------
 def fetch_tree_map(s):
     html = s.get(TREE_URL).text
 
@@ -54,20 +54,15 @@ def fetch_tree_map(s):
         raise RuntimeError("tree not found")
 
     data = json.loads(raw.replace("'", '"'))
-
     out = {}
 
     def walk(n):
         if isinstance(n, dict):
-            t = n.get("text", "")
-            t = t.split("[")[0].strip()
-
+            t = n.get("text", "").split("[")[0].strip()
             if t:
                 out[norm(t)] = int(n["id"].replace("node_", "")) if "id" in n else None
-
             for c in n.get("children", []):
                 walk(c)
-
         elif isinstance(n, list):
             for x in n:
                 walk(x)
@@ -76,8 +71,7 @@ def fetch_tree_map(s):
     return out
 
 
-# ---------- LOCAL FILES ----------
-def extract_subtitles(path="Ressource/content"):
+def extract_subtitles(path="content"):
     out = {}
 
     for f in Path(path).rglob("*.qmd"):
@@ -94,7 +88,6 @@ def extract_subtitles(path="Ressource/content"):
     return out
 
 
-# ---------- COMPARE ----------
 def compare(site, local):
     matches, only_local, only_site = [], [], []
 
@@ -111,13 +104,33 @@ def compare(site, local):
     return matches, only_local, only_site
 
 
-# ---------- MAIN ----------
+def add_iframe(session, node_id, iframe_url):
+    page_id = f"node_{node_id}"
+
+    iframe_html = (
+        f'<p><iframe frameborder="0" height="800" '
+        f'src="{iframe_url}" width="100%"></iframe></p>'
+    )
+
+    r = session.post(
+        DESIGNER_URL,
+        params={"save": "", "page_id": page_id},
+        data={"page_content": iframe_html},
+        headers={
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Referer": f"{DESIGNER_URL}?save&page_id={page_id}",
+        },
+    )
+
+    if r.status_code != 200:
+        raise RuntimeError(f"update failed for {page_id} ({r.status_code})")
+
+
 def main():
     if not USER or not PWD:
         raise RuntimeError("missing env vars")
 
     s = requests.Session()
-
     login(s)
 
     site = fetch_tree_map(s)
@@ -128,6 +141,10 @@ def main():
     print("\nMATCHES")
     for f, t, sid in matches:
         print(f, "→", t, "→", sid)
+
+        # only update when we have a valid node id
+        if sid is not None:
+            add_iframe(s, sid, IFRAME_URL)
 
     print("\nONLY LOCAL")
     for f, t in only_local:

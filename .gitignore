@@ -5,5 +5,5 @@ Ressource/_site*
 Ressource/numiscience
 Ressource/.quarto/
 **/*.quarto_ipynb
-Ressource/content/fragments
+Ressource/content/fragments/
 .env

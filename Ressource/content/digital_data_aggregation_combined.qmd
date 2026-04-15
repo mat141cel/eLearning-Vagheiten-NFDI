@@ -1,6 +1,6 @@
 ---
 title: "Aggregating the Data"
-subtitle: "neuer Untertitel"
+subtitle: "Wie werden Numismatische Daten verarbeitet"
 lang: de
 date: today
 date-modified: last-modified

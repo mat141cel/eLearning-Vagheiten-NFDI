@@ -1,7 +1,8 @@
 # _quarto-numiscience.yml
 project:
   render:
-    - content/**/*.qmd
+    - content/*.qmd
+    - "!content/**/*.inc.qmd"
     - "!content/**/*_combined.qmd"
     - "!_site_**"
     - "!_site_gh/**"

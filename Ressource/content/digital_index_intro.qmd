@@ -1,6 +1,5 @@
 ---
-title: "Basiswissen digitale Numismatik"
-filename: index
+title: "digitale Numismatik"
 subtitle: "Einführung in das Lernmodul"
 lang: de
 date: today

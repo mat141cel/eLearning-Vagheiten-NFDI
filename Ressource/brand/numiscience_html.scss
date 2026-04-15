@@ -1,0 +1,119 @@
+/*-- scss:rules --*/
+
+
+/* ---------------------------
+   BASE TYPOGRAPHY
+--------------------------- */
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ---------------------------
+   LAYOUT (iframe-safe)
+--------------------------- */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* remove Quarto-specific UI remnants */
+.navbar,
+.sidebar,
+.toc,
+.page-navigation {
+    display: none !important;
+}
+
+/* ---------------------------
+   LINKS
+--------------------------- */
+
+a {
+    color: #2E7D32;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------
+   BUTTONS (bootstrap-like)
+--------------------------- */
+
+button,
+.btn {
+    background-color: #2E7D32;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #256628;
+}
+
+/* ---------------------------
+   IMAGES
+--------------------------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------------------------
+   TABLES
+--------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+/* ---------------------------
+   QUIZ / INTERACTIVE SAFE
+--------------------------- */
+
+iframe,
+canvas {
+    max-width: 100%;
+}
+
+/* ---------------------------
+   REMOVE QUARTO TITLE BLOCK STYLE
+--------------------------- */
+
+.quarto-title-block {
+    margin-bottom: 1.5rem;
+}

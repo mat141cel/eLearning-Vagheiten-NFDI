@@ -12,14 +12,14 @@ website:
     background: "#13294B"
     left:
       - text: Mein Fortschritt
-        href: content/progress.qmd
+        href: content/progress_combined.qmd
 
   sidebar:
     style: docked
     search: true
     contents:
       - text: "Hauptseite"
-        href: content/index.qmd
+        href: content/index_combined.qmd
 
       - section: "🔍 I. Basiswissen digitale Numismatik"
         href: content/digital_index_combined.qmd

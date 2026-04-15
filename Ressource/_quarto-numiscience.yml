@@ -3,6 +3,10 @@ project:
   render:
     - content/**/*.qmd
     - "!content/**/*_combined.qmd"
+    - "!_site_**"
+    - "!_site-gh/**"
+    - "!_site_gh/**"
+    - "!_site_numiscience/**"
   output-dir: _site_numiscience
 
 website:
@@ -17,5 +21,5 @@ format:
   live-html:
     toc: false
     brand: brand/_numiscience_brand.yml
-    theme: brand/_numiscience_html.scss
+    theme: brand/numiscience_html.scss
     

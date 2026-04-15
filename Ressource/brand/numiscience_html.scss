@@ -2,11 +2,28 @@
 
 
 /* ---------------------------
-   GLOBAL BOX MODEL (CRITICAL)
+   GLOBAL RESET / BOX MODEL
 --------------------------- */
 
 * {
     box-sizing: border-box;
+}
+
+
+/* ---------------------------
+   ROOT TYPOGRAPHY STABILITY (CRITICAL)
+--------------------------- */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(86, 86, 86);
+    line-height: 1.6;
+    margin: 0;
 }
 
 
@@ -21,17 +38,9 @@ body {
 
 
 /* ---------------------------
-   BASE TYPOGRAPHY
+   HEADINGS
 --------------------------- */
 
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: rgb(86, 86, 86);
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* HEADINGS */
 h1,
 h2,
 h3,
@@ -43,13 +52,16 @@ h4 {
     margin-bottom: 10px;
 }
 
-/* H2 EXACT MATCH */
 h2 {
     font-size: 22px;
     line-height: 30.8px;
 }
 
-/* PARAGRAPHS */
+
+/* ---------------------------
+   TEXT
+--------------------------- */
+
 p {
     font-size: 16px;
     color: rgb(139, 139, 139);
@@ -59,7 +71,7 @@ p {
 
 
 /* ---------------------------
-   LAYOUT (Quarto containment FIXED)
+   LAYOUT (Quarto containment)
 --------------------------- */
 
 .quarto-title-block {
@@ -73,14 +85,15 @@ main {
     padding: 1.5rem;
 }
 
-
-/* prevent Quarto grid overflow issues */
 .page-columns {
     max-width: 100%;
 }
 
 
-/* Remove navigation/UI chrome */
+/* ---------------------------
+   NAV / UI REMOVAL
+--------------------------- */
+
 .navbar,
 .sidebar,
 .toc,
@@ -124,21 +137,20 @@ button:hover,
 
 
 /* ---------------------------
-   MEDIA (iframe-safe)
+   MEDIA (SAFE FOR IFRAME)
 --------------------------- */
 
 img,
 iframe,
 canvas {
     max-width: 100%;
-    width: 100%;
     display: block;
     border: 0;
 }
 
 
 /* ---------------------------
-   TABLES (FIXED - DO NOT BREAK LAYOUT)
+   TABLES
 --------------------------- */
 
 table {
@@ -156,7 +168,7 @@ td {
 
 
 /* ---------------------------
-   CODE / PREVENT OVERFLOW
+   CODE
 --------------------------- */
 
 pre,

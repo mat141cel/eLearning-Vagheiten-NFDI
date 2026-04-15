@@ -1,6 +1,6 @@
 ---
 title: "Daten herunterladen"
-subtitle: "hier geht es darum, das Schema von Münzdaten zu verstehen und die richtigen Daten herunterzuladen"
+subtitle: ""
 lang: de
 date: today
 date-modified: last-modified

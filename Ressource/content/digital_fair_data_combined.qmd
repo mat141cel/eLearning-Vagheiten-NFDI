@@ -1,6 +1,6 @@
 ---
-title: "Können Daten unfair sein?"
-subtitle: "Die Bedeutung der NFDI für die Numismatik"
+title: "Die Bedeutung der NFDI für die Numismatik"
+subtitle: "Können Daten unfair sein?"
 lang: de
 date: today
 date-modified: last-modified

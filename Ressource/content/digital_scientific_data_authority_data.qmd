@@ -1,6 +1,6 @@
 ---
-title: "Basiswissen digitale Numismatik"
-subtitle: "Normdaten"
+title: "digitale Numismatik"
+subtitle: "Normdaten - was ist das?"
 lang: de
 date: today
 date-modified: last-modified

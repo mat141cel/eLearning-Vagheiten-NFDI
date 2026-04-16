@@ -1,111 +1,22 @@
 ---
 title: "Arten von Unsicherheiten / Vagheiten"
-filename: index
-subtitle: "Welche Herausforderungen liegen in unsicheren Forschungsdaten für die Numismatik?"
+subtitle: "Vagheiten"
 lang: de
 date: today
 date-modified: last-modified
 date-format: "DD.MM.YYYY"
 css: /assets/css/collage.css
 ---
-
-Die Darstellung von Unsicherheiten ist ein zentrales und aktuell intensiv diskutiertes Thema in der archäologischen Forschung. Im Rahmen der NFDI4Objects beschäftigt sich eine Task Area unter dem Titel [„Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts“](https://www.nfdi4objects.net/en/trails/solving_vagueness_modelling_issues_in_numismatics_and_ceramology/) mit der Modellierung solcher Unsicherheiten, insbesondere in der Numismatik und Keramologie. Die Universität Heidelberg ist an diesem Projekt bei der Deutung von numismatischen Beispielen beteiligt.[](https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts)
-
-## Konzepte
-
-Um sich der Frage konzeptionell zu nähern wurden zunächst drei Arten von Unsicherheiten definiert.
-
-### Vagheit (Vagueness)
-
-Vagheit bezeichnet einen Mangel an Präzision in einer Aussage, der aus unscharfen Begriffen oder fehlenden klaren Grenzen resultiert. Sie ist besonders typisch für archäologische Daten, etwa wenn Datierungen nur in breiten Zeitintervallen wie „100–200 n. Chr.“ angegeben werden können, obwohl die tatsächliche Herstellungszeit deutlich kürzer war. Vagheit entsteht auch bei messbaren Eigenschaften, wenn diese nicht mit maximaler Genauigkeit erfasst werden, etwa wenn ein Gewicht nur mit einer Dezimalstelle dokumentiert wird, obwohl feinere Auflösung möglich wäre. Eine Angabe wie „5,5 g“ impliziert zwar feste Grenzen (z. B. 5,45–5,54 g), bleibt aber dennoch eine Vereinfachung gegenüber beliebig genauer Messbarkeit. Deutlich stärker vage sind sprachliche Formulierungen wie „ca. 5,5 g“, da hier keine klaren Ober- und Untergrenzen mehr erkennbar sind. Auch Klassifikationen können vage sein, etwa wenn ein Keramikfragment aufgrund identischer Merkmale mehreren Gefäßtypen zugeordnet werden kann (OR-Beziehungen). Grundsätzlich beschreibt Vagheit also die Abstufbarkeit und Kontextabhängigkeit von Aussagen und damit deren begrenzte begriffliche Schärfe.  
-
-::: {.callout-note}
-**Kurzdefinition:** Vagheit = fehlende Präzision einer Aussage aufgrund unscharfer Begriffe oder gradueller Grenzen.
-:::
-
-### Unsicherheit (Uncertainty)
-
-Unsicherheit bezeichnet den Grad an fehlender Gewissheit darüber, ob eine Aussage wahr oder falsch ist. Sie entsteht vor allem durch unvollständige, indirekte oder mehrdeutige Evidenz, etwa wenn ein archäologisches Objekt keiner eindeutigen Autorität oder keinem klaren Herstellungsort zugeordnet werden kann. Ein Beispiel ist die Zuschreibung einer Münze zu einem Herrscher, wenn Inschriften fehlen oder widersprüchliche Hinweise vorliegen. Unsicherheit kann explizit markiert werden, etwa durch Kennzeichnungen („unsicher“) oder durch die Angabe von Wahrscheinlichkeiten (z. B. 75 % Wahrscheinlichkeit für eine Datierung). Solche Wahrscheinlichkeiten können entweder subjektiv durch Expert:innen vergeben oder durch statistische Verfahren berechnet werden. Auch maschinelles Lernen erzeugt Unsicherheiten, indem es Klassifikationen mit Wahrscheinlichkeitswerten versieht, deren Aussagekraft jedoch vom Modell und den Trainingsdaten abhängt. Wichtig ist, dass Unsicherheit nicht die Präzision der Aussage betrifft, sondern deren Verlässlichkeit. Sie macht transparent, dass eine Entscheidung getroffen wurde, deren Richtigkeit jedoch nicht vollständig gesichert ist.  
-
-::: {.callout-note}
-**Kurzdefinition:** Unsicherheit = fehlende Gewissheit über den Wahrheitsgehalt einer Aussage.
-:::
-
-### Fuzziness / Wobbliness
-
-Fuzziness/Wobbliness dient als Sammelbegriff für Situationen, in denen Vagheit und Unsicherheit gemeinsam auftreten oder sich nicht eindeutig trennen lassen. Ein typisches Beispiel ist eine Angabe wie „ca. 5,5 g?“, die zugleich unpräzise (vage) und in ihrem Wahrheitsgehalt fraglich (unsicher) ist und damit kaum wissenschaftlich verwertbar wird. Komplexität entsteht auch, wenn Wertebereiche mit Unsicherheitsvermerken kombiniert werden, da unklar sein kann, ob sich die Unsicherheit auf die gesamte Angabe oder nur auf Teile davon bezieht. Zusätzlich können technische Systeme solche Probleme verstärken, etwa wenn Datenbanken nur einen einzigen „sicheren“ Wert zulassen und dadurch ursprünglich mehrdeutige oder unsichere Informationen verzerren. Auch Ontologie-Mappings oder LOD-Integrationen können Fuzziness/Wobbliness erzeugen, wenn Beziehungen zwischen Konzepten nur ungefähr oder mehrdeutig sind (z. B. verschiedene SKOS-Mappings ohne klare Semantik). Ebenso fallen darunter qualitative Abstufungen wie „vermutlich“, „möglich“ oder „umstritten“, die sich nur schwer eindeutig quantifizieren lassen. Insgesamt beschreibt Fuzziness/Wobbliness somit mehrdimensionale, oft systembedingt verstärkte Unschärfen, die aus der Überlagerung von Vagheit, Unsicherheit und Modellierungsentscheidungen entstehen.  
-
-::: {.callout-note}
-**Kurzdefinition:** Fuzziness/Wobbliness = Überlagerung und schwer trennbare Kombination von Vagheit und Unsicherheit.
-:::
+{{< include fragments/vague_definitions_intro.inc.qmd >}}
 
 
-## Transferaufgaben
+{{< include fragments/vague_definitions_vagueness.inc.qmd >}}
 
 
-<div id="vague_definitions_quiz"></div>
+{{< include fragments/vague_definitions_uncertainty.inc.qmd >}}
 
-<script src="/assets/js/quiz.js"></script>
-<link rel="stylesheet" href="/assets/css/quiz.css">
 
-<script>
-window["vague_definitions_quiz_data"] = [
+{{< include fragments/vague_definitions_fuzzywobbly.inc.qmd >}}
 
-  {
-    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099' target='_blank'>Zur Münze</a><br><br>Datierung: „nach 274 n. Chr.“ <br><br>",
-    choices: [
-      { text: "Vagheit", feedback: "❌ Nicht ganz. Die Angabe ist nicht unpräzise formuliert, sondern unvollständig." },
-      { text: "Unsicherheit", feedback: "✅ Richtig! Der Wahrheitsgehalt ist begrenzt, da das Enddatum unsicher ist. Die Datierung dieser Münze lautet nach 274 n. Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n. Chr. datiert wird." },
-      { text: "Fuzziness/Wobbliness", feedback: "❌ Hier liegt primär Unsicherheit vor, keine Überlagerung mehrerer Unschärfen." }
-    ]
-  },
 
-  {
-    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID287' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/287/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/287/rs_opt.jpg' width='200'><br><br>Datierung: „550–456 (oder 480?) v. Chr.“<br><br>",
-    choices: [
-      { text: "Vagheit", feedback: "❌ Die Angabe ist nicht nur unpräzise, sondern auch widersprüchlich." },
-      { text: "Unsicherheit", feedback: "❌ Es geht nicht nur um Unsicherheit, sondern auch um strukturelle Mehrdeutigkeit." },
-      { text: "Fuzziness/Wobbliness", feedback: "✅ Richtig! Mehrere widersprüchliche und unklare Angaben überlagern sich. Hier ist unklar, ob sich das Jahr 480 auf das Enddatum bezieht, oder ob es einen gänzlich neuen Zeitraum (von einem Jahr) bildet. Es ist nicht klar, was mit dem Fragezeichen gemeint ist. Bedeutet es, dass es unsicher ist, dass es die alternative Datierung gibt, oder bedeutet es, dass es sicher eine zweite Datierung gibt, die aber zeitlich nicht sicher ist und deswegen auf den ungefähren Zeitpunkt 480 gesetzt wurde." }
-    ]
-  },
-
-  {
-    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID264' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/264/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/264/rs_opt.jpg' width='200'><br><br>Beschreibung: „unter dem Thron eine Ähre (?)“<br><br>",
-    choices: [
-      { text: "Vagheit", feedback: "❌ Der Begriff ist nicht ungenau, sondern die Identifikation ist unsicher." },
-      { text: "Unsicherheit", feedback: "✅ Richtig! Es ist unklar, ob das Objekt tatsächlich eine Ähre ist." },
-      { text: "Fuzziness/Wobbliness", feedback: "❌ Es liegt eine klare Unsicherheit vor, keine Kombination mehrerer Probleme." }
-    ]
-  },
-
-  {
-    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID194' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/194/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/194/rs_opt.jpg' width='200'><br><br>Beschreibung: „Weiblicher Kopf (Nymphe?)“<br><br>",
-    choices: [
-      { text: "Vagheit", feedback: "❌ Die Kategorie ist nicht unscharf, sondern die Zuschreibung unsicher." },
-      { text: "Unsicherheit", feedback: "✅ Richtig! Die Identifikation als Nymphe ist nicht gesichert." },
-      { text: "Fuzziness/Wobbliness", feedback: "❌ Keine Überlagerung mehrerer Unsicherheitsformen." }
-    ]
-  },
-
-  {
-    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID843' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/843/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/843/rs_opt.jpg' width='200'><br><br>Rückseitenbeschreibung: „[...] Im l[inken] Feld Beizeichen und Monogramm?“<br><br>",
-    choices: [
-      { text: "Vagheit", feedback: "❌ Es geht nicht um ungenaue Begriffe, sondern um strukturelle Unklarheit." },
-      { text: "Unsicherheit", feedback: "❌ Es ist mehr als nur Unsicherheit, es ist selbst unklar, worauf sich Beizeichen und Monogramm bezieht." },
-      { text: "Fuzziness/Wobbliness", feedback: "✅ Richtig! Mehrdeutige Struktur und Unsicherheit überlagern sich." }
-    ]
-  }
-
-];
-
-if (!localStorage.getItem("progress")) {
-    localStorage.setItem("progress", "0");
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    renderQuiz("vague_definitions_quiz", window["vague_definitions_quiz_data"], {
-        quizKey: "vague_definitions_quiz_completed",
-        onComplete: () => console.log("Quiz completed!")
-    });
-});
-</script>
+{{< include fragments/vague_definitions_quiz.inc.qmd >}}

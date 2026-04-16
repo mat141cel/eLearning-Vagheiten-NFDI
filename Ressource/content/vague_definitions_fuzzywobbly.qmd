@@ -1,0 +1,19 @@
+---
+title: "Arten von Unsicherheiten / Vagheiten"
+subtitle: "Fuzzyness / Wobblyness"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+
+### Fuzziness / Wobbliness
+
+Fuzziness/Wobbliness dient als Sammelbegriff für Situationen, in denen Vagheit und Unsicherheit gemeinsam auftreten oder sich nicht eindeutig trennen lassen. Ein typisches Beispiel ist eine Angabe wie „ca. 5,5 g?“, die zugleich unpräzise (vage) und in ihrem Wahrheitsgehalt fraglich (unsicher) ist und damit kaum wissenschaftlich verwertbar wird. Komplexität entsteht auch, wenn Wertebereiche mit Unsicherheitsvermerken kombiniert werden, da unklar sein kann, ob sich die Unsicherheit auf die gesamte Angabe oder nur auf Teile davon bezieht. Zusätzlich können technische Systeme solche Probleme verstärken, etwa wenn Datenbanken nur einen einzigen „sicheren“ Wert zulassen und dadurch ursprünglich mehrdeutige oder unsichere Informationen verzerren. Auch Ontologie-Mappings oder LOD-Integrationen können Fuzziness/Wobbliness erzeugen, wenn Beziehungen zwischen Konzepten nur ungefähr oder mehrdeutig sind (z. B. verschiedene SKOS-Mappings ohne klare Semantik). Ebenso fallen darunter qualitative Abstufungen wie „vermutlich“, „möglich“ oder „umstritten“, die sich nur schwer eindeutig quantifizieren lassen. Insgesamt beschreibt Fuzziness/Wobbliness somit mehrdimensionale, oft systembedingt verstärkte Unschärfen, die aus der Überlagerung von Vagheit, Unsicherheit und Modellierungsentscheidungen entstehen.  
+
+::: {.callout-note}
+**Kurzdefinition:** Fuzziness/Wobbliness = Überlagerung und schwer trennbare Kombination von Vagheit und Unsicherheit.
+:::
+

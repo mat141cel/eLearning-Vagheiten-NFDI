@@ -1,0 +1,17 @@
+---
+title: "Arten von Unsicherheiten / Vagheiten"
+subtitle: "Unsicherheit"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+### Unsicherheit (Uncertainty)
+
+Unsicherheit bezeichnet den Grad an fehlender Gewissheit darüber, ob eine Aussage wahr oder falsch ist. Sie entsteht vor allem durch unvollständige, indirekte oder mehrdeutige Evidenz, etwa wenn ein archäologisches Objekt keiner eindeutigen Autorität oder keinem klaren Herstellungsort zugeordnet werden kann. Ein Beispiel ist die Zuschreibung einer Münze zu einem Herrscher, wenn Inschriften fehlen oder widersprüchliche Hinweise vorliegen. Unsicherheit kann explizit markiert werden, etwa durch Kennzeichnungen („unsicher“) oder durch die Angabe von Wahrscheinlichkeiten (z. B. 75 % Wahrscheinlichkeit für eine Datierung). Solche Wahrscheinlichkeiten können entweder subjektiv durch Expert:innen vergeben oder durch statistische Verfahren berechnet werden. Auch maschinelles Lernen erzeugt Unsicherheiten, indem es Klassifikationen mit Wahrscheinlichkeitswerten versieht, deren Aussagekraft jedoch vom Modell und den Trainingsdaten abhängt. Wichtig ist, dass Unsicherheit nicht die Präzision der Aussage betrifft, sondern deren Verlässlichkeit. Sie macht transparent, dass eine Entscheidung getroffen wurde, deren Richtigkeit jedoch nicht vollständig gesichert ist.  
+
+::: {.callout-note}
+**Kurzdefinition:** Unsicherheit = fehlende Gewissheit über den Wahrheitsgehalt einer Aussage.
+:::

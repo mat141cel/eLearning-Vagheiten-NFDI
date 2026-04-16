@@ -32,7 +32,7 @@ website:
       - section: "🌐 II. Vage Münzdaten"
         href: content/vague_index_combined.qmd
         contents:
-          - content/vague_definitions.qmd
+          - content/vague_definitions_combined.qmd
           - content/vague_solving_vagueness_combined.qmd
 
   page-navigation: true

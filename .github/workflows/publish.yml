@@ -10,13 +10,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.12
-          cache: 'pip' # <-- built-in caching of pip deps (simplest way)
+          cache: 'pip'
       
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -32,11 +34,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install jupyter nbformat ipykernel matplotlib
 
-      - name: Render site
-        run: quarto render Ressource/
+      - name: Build fragments
+        run: bash Ressource/build-fragments.sh
+
+      - name: Render GH version
+        run: quarto render Ressource/ --profile gh-pages --clean
+
+      - name: Render numiscience version
+        run: quarto render Ressource/ --profile numiscience --clean
+
+      - name: Prepare deploy folder
+        run: |
+          mkdir site
+          cp -r Ressource/_site_gh/* site/
+          cp -r Ressource/_site_numiscience/* site/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: Ressource/_site
+          publish_dir: site

@@ -1,0 +1,25 @@
+---
+title: "Vagheiten"
+subtitle: "Welche Herausforderungen liegen in unsicheren Forschungsdaten für die Numismatik?"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+## Was sind Unsicherheiten?
+
+
+Computersysteme basieren auf Nullen und Einsen und verarbeiten Informationen als Richtig (1) und Falsch (0).
+Unsicherheiten haben in diesem [Binärsystem](https://de.wikipedia.org/wiki/Dualsystem) keinen Platz. In der Archäologie und Geschichte sind Unsicherheiten allerdings omnipräsent. Diese in Daten darzustellen, ist nicht trivial.
+
+::: {.callout-note collapse="true"}
+## Grundwissen Binärsystem
+### Binäre Zahlen (Integer)
+Jeder Computer arbeitet mit Bits (0 oder 1). Eine Gruppe von 8 Bits bildet ein Byte. Zahlen werden als Binärdarstellung gespeichert: 0000 0000 ist 0 im Dezimalsystem, 0000 0001 bedeutet 1, 0000 0010 bedeutet 2, 0000 0011 bedeutet 3 und so weiter. Für positive und negative Ganzzahlen wird meist das Zweier‑Komplement‑Verfahren verwendet – das erste Bit dient als Vorzeichen (0 = positiv, 1 = negativ). So kann ein 8‑Bit‑Byte Werte von –128 bis +127 darstellen.
+### Texte (Strings)
+Ein Text wird nicht als ein einziger Wert, sondern als Sequenz von Zeichen gespeichert. Jedes Zeichen bekommt einen numerischen Code. Alle modernen Computer verwenden die gleiche numerische Entsprechung für Zeichen, Unicode genannt (UTF‑8, UTF‑16, …). Unicode ist ein universelles System, das fast alle Schriftsysteme der Welt abdeckt. In UTF‑8 wird jedes Zeichen in 1–4 Bytes codiert. Ein String wie "Hallo" wird also als Reihe von Bytes gespeichert: 48 (H) 61 (A) 6C (L) 6C (L) 6F (O).
+:::
+
+Alle Darstellungsmöglichkeiten von Unsicherheiten haben gemeinsam, dass sie neben dem eigentlichen Wert einen bestimmten Unsicherheitswert anbieten. Wo sich diese Markierungen für Unsicherheit befinden, erschließt sich jedoch häufig nicht unmittelbar. Außerdem belibt häufig offen, wie Nutzende diese Unsicherheit interpretieren sollen. Der Umgang mit diesen zentralen Problemen wird in diesem Modul diskutiert. 

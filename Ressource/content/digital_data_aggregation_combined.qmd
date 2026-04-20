@@ -1,0 +1,27 @@
+---
+title: "Aggregating the Data"
+subtitle: "Wie werden Numismatische Daten verarbeitet"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+---
+
+<!-- ## Praktische Bezüge/Anwendungsbeispiel/Motivation
+
+
+
+## Datengrundlage
+
+Erläutern und verlinken sie die Datengrundlage für die Übung.
+
+## Vorbereitung
+
+## Durchführung
+
+Hier ist der Link zu OCRE, finde zu einer Münze die Münze im RDF Format, kopiere dann die URL aus der Adresszeile und füge sie hier ein.
+
+Dann werden wir das RDF anzeigen und überprüfen, welche Elemente wir extrahieren können
+ -->
+
+Diese Seite befindet sich im Aufbau und wird bald veröffentlicht

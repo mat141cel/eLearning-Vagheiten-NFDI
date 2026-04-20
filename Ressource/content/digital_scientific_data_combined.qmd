@@ -1,0 +1,23 @@
+---
+title: "digitale Numismatik"
+subtitle: ""
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+title-block: None 
+---
+
+{{< include fragments/digital_scientific_data_basic_knowledge.inc.qmd >}}
+
+
+{{< include fragments/digital_scientific_data_tables.inc.qmd >}}
+
+
+{{< include fragments/digital_scientific_data_graphs.inc.qmd >}}
+
+
+{{< include fragments/digital_scientific_data_ontology.inc.qmd >}}
+
+
+{{< include fragments/digital_scientific_data_authority_data.inc.qmd >}}

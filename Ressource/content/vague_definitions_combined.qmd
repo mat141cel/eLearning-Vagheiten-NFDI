@@ -1,0 +1,22 @@
+---
+title: "Arten von Unsicherheiten / Vagheiten"
+subtitle: "Vagheiten"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+{{< include fragments/vague_definitions_intro.inc.qmd >}}
+
+
+{{< include fragments/vague_definitions_vagueness.inc.qmd >}}
+
+
+{{< include fragments/vague_definitions_uncertainty.inc.qmd >}}
+
+
+{{< include fragments/vague_definitions_fuzzywobbly.inc.qmd >}}
+
+
+{{< include fragments/vague_definitions_quiz.inc.qmd >}}

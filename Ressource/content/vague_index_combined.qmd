@@ -1,0 +1,13 @@
+---
+title: "Vagheiten"
+subtitle: "Welche Herausforderungen liegen in unsicheren Forschungsdaten für die Numismatik?"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+{{< include fragments/vague_index_intro.inc.qmd >}}
+
+{{< include fragments/vague_index_exercise.inc.qmd >}}

@@ -1,0 +1,15 @@
+---
+title: "Arten von Unsicherheiten / Vagheiten"
+subtitle: "Einführung in Unsicherheiten / Vagheiten"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+Die Darstellung von Unsicherheiten ist ein zentrales und aktuell intensiv diskutiertes Thema in der archäologischen Forschung. Im Rahmen der NFDI4Objects beschäftigt sich eine Task Area unter dem Titel [„Fuzziness and Wobbliness in Practice: How to FAIRify Cultural Heritage Artefacts“](https://www.nfdi4objects.net/en/trails/solving_vagueness_modelling_issues_in_numismatics_and_ceramology/) mit der Modellierung solcher Unsicherheiten, insbesondere in der Numismatik und Keramologie. Die Universität Heidelberg ist an diesem Projekt bei der Deutung von numismatischen Beispielen beteiligt.[](https://www.sage.uni-heidelberg.de/de/fuzziness-and-wobbliness-in-practice-how-to-fairify-cultural-heritage-artefacts)
+
+## Konzepte
+
+Um sich der Frage konzeptionell zu nähern wurden zunächst drei Arten von Unsicherheiten definiert. Ihre Kenntnisse können SIe anschließend in einem Quiz testen.

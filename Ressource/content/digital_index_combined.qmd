@@ -1,0 +1,18 @@
+---
+title: "Basiswissen digitale Numismatik"
+subtitle: "Welche Relevanz haben Forschungsdaten für die Numismatik?"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+
+{{< include fragments/digital_index_intro.inc.qmd >}}
+
+
+{{< include fragments/digital_index_exercise.inc.qmd >}}
+
+
+{{< include fragments/digital_index_quiz.inc.qmd >}}

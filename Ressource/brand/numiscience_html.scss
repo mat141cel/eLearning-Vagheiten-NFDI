@@ -1,0 +1,180 @@
+/*-- scss:rules --*/
+
+
+/* ---------------------------
+   GLOBAL RESET / BOX MODEL
+--------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------
+   ROOT TYPOGRAPHY STABILITY (CRITICAL)
+--------------------------- */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(86, 86, 86);
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* ---------------------------
+   GLOBAL OVERFLOW CONTROL
+--------------------------- */
+
+html,
+body {
+    overflow-x: hidden;
+    background: #f4f4f4;
+}
+
+
+/* ---------------------------
+   HEADINGS
+--------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: rgb(86, 86, 86);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 30.8px;
+}
+
+
+/* ---------------------------
+   TEXT
+--------------------------- */
+
+p {
+    font-size: 16px;
+    color: rgb(139, 139, 139);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+
+/* ---------------------------
+   LAYOUT (Quarto containment)
+--------------------------- */
+
+.quarto-title-block {
+    display: none !important;
+}
+
+main {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.page-columns {
+    max-width: 100%;
+}
+
+
+/* ---------------------------
+   NAV / UI REMOVAL
+--------------------------- */
+
+.navbar,
+.sidebar,
+.toc,
+.page-navigation {
+    display: none !important;
+}
+
+
+/* ---------------------------
+   LINKS
+--------------------------- */
+
+a {
+    color: #2E7D32;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------
+   BUTTONS
+--------------------------- */
+
+button,
+.btn {
+    background-color: #2E7D32;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #256628;
+}
+
+
+/* ---------------------------
+   MEDIA (SAFE FOR IFRAME)
+--------------------------- */
+
+img,
+iframe,
+canvas {
+    max-width: 100%;
+    display: block;
+    border: 0;
+}
+
+
+/* ---------------------------
+   TABLES
+--------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    word-break: break-word;
+}
+
+
+/* ---------------------------
+   CODE
+--------------------------- */
+
+pre,
+code {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre;
+}

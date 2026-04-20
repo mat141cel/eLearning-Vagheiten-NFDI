@@ -1,0 +1,79 @@
+---
+title: "Arten von Unsicherheiten / Vagheiten"
+subtitle: "Quiz: Formen von Unsicherheiten / Vagheiten "
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+## Transferaufgaben
+
+
+<div id="vague_definitions_quiz"></div>
+
+<script src="/assets/js/quiz.js"></script>
+<link rel="stylesheet" href="/assets/css/quiz.css">
+
+<script>
+window["vague_definitions_quiz_data"] = [
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia2.zaw.uni-heidelberg.de/AFE_HD/show_coin_admin?coin_id=2099' target='_blank'>Zur Münze</a><br><br>Datierung: „nach 274 n. Chr.“ <br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Nicht ganz. Die Angabe ist nicht unpräzise formuliert, sondern unvollständig." },
+      { text: "Unsicherheit", feedback: "✅ Richtig! Der Wahrheitsgehalt ist begrenzt, da das Enddatum unsicher ist. Die Datierung dieser Münze lautet nach 274 n. Chr., da es sich um eine Imitation eines Tetricus handelt, dessen Vorbild mit Strahlenkrone auf 273. n. Chr. datiert wird." },
+      { text: "Fuzziness/Wobbliness", feedback: "❌ Hier liegt primär Unsicherheit vor, keine Überlagerung mehrerer Unschärfen." }
+    ]
+  },
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID287' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/287/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/287/rs_opt.jpg' width='200'><br><br>Datierung: „550–456 (oder 480?) v. Chr.“<br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Die Angabe ist nicht nur unpräzise, sondern auch widersprüchlich." },
+      { text: "Unsicherheit", feedback: "❌ Es geht nicht nur um Unsicherheit, sondern auch um strukturelle Mehrdeutigkeit." },
+      { text: "Fuzziness/Wobbliness", feedback: "✅ Richtig! Mehrere widersprüchliche und unklare Angaben überlagern sich. Hier ist unklar, ob sich das Jahr 480 auf das Enddatum bezieht, oder ob es einen gänzlich neuen Zeitraum (von einem Jahr) bildet. Es ist nicht klar, was mit dem Fragezeichen gemeint ist. Bedeutet es, dass es unsicher ist, dass es die alternative Datierung gibt, oder bedeutet es, dass es sicher eine zweite Datierung gibt, die aber zeitlich nicht sicher ist und deswegen auf den ungefähren Zeitpunkt 480 gesetzt wurde." }
+    ]
+  },
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID264' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/264/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/264/rs_opt.jpg' width='200'><br><br>Beschreibung: „unter dem Thron eine Ähre (?)“<br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Der Begriff ist nicht ungenau, sondern die Identifikation ist unsicher." },
+      { text: "Unsicherheit", feedback: "✅ Richtig! Es ist unklar, ob das Objekt tatsächlich eine Ähre ist." },
+      { text: "Fuzziness/Wobbliness", feedback: "❌ Es liegt eine klare Unsicherheit vor, keine Kombination mehrerer Probleme." }
+    ]
+  },
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID194' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/194/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/194/rs_opt.jpg' width='200'><br><br>Beschreibung: „Weiblicher Kopf (Nymphe?)“<br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Die Kategorie ist nicht unscharf, sondern die Zuschreibung unsicher." },
+      { text: "Unsicherheit", feedback: "✅ Richtig! Die Identifikation als Nymphe ist nicht gesichert." },
+      { text: "Fuzziness/Wobbliness", feedback: "❌ Keine Überlagerung mehrerer Unsicherheitsformen." }
+    ]
+  },
+
+  {
+    question: "Um welche Art von Unsicherheit handelt es sich bei der folgenden Münze? <a href='https://pecunia.zaw.uni-heidelberg.de/ikmk/object?lang=de&id=ID843' target='_blank'>Zur Münze</a><br><br><img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/843/vs_opt.jpg' width='200'> <img src='https://pecunia.zaw.uni-heidelberg.de/ikmk/images/n0/843/rs_opt.jpg' width='200'><br><br>Rückseitenbeschreibung: „[...] Im l[inken] Feld Beizeichen und Monogramm?“<br><br>",
+    choices: [
+      { text: "Vagheit", feedback: "❌ Es geht nicht um ungenaue Begriffe, sondern um strukturelle Unklarheit." },
+      { text: "Unsicherheit", feedback: "❌ Es ist mehr als nur Unsicherheit, es ist selbst unklar, worauf sich Beizeichen und Monogramm bezieht." },
+      { text: "Fuzziness/Wobbliness", feedback: "✅ Richtig! Mehrdeutige Struktur und Unsicherheit überlagern sich." }
+    ]
+  }
+
+];
+
+if (!localStorage.getItem("progress")) {
+    localStorage.setItem("progress", "0");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderQuiz("vague_definitions_quiz", window["vague_definitions_quiz_data"], {
+        quizKey: "vague_definitions_quiz_completed",
+        onComplete: () => console.log("Quiz completed!")
+    });
+});
+</script>

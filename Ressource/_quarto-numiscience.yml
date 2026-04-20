@@ -1,0 +1,25 @@
+# _quarto-numiscience.yml
+project:
+  render:
+    - content/*.qmd
+    - "!content/**/*.inc.qmd"
+    - "!content/**/*_combined.qmd"
+    - "!_site_**"
+    - "!_site_gh/**"
+    - "!_site_numiscience/**"
+  output-dir: _site_numiscience
+
+website:
+  site-url: https://USERNAME.github.io/eLearning-Vagheiten-NFDI/numiscience/
+
+  # strip navigation
+  sidebar: false
+  navbar: false
+  page-navigation: false
+
+format:
+  live-html:
+    toc: false
+    brand: brand/_numiscience_brand.yml
+    theme: brand/numiscience_html.scss
+    

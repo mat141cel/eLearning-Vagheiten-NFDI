@@ -1,0 +1,11 @@
+# _quarto.yml
+project:
+  type: website
+  resources: 
+    - assets/
+  
+
+metadata-files:
+  - metadata/layout.yml
+  - metadata/autor_innen.yml
+  - metadata/oer_metadata.yml

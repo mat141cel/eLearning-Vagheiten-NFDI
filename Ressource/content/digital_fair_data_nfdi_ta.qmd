@@ -1,0 +1,15 @@
+---
+title: "Die Bedeutung der NFDI für die Numismatik"
+subtitle: "Task Areas der NFDI4Objects"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+---
+
+## Struktur der NFDI4Objects
+
+Die Herausforderung bei geisteswissenschaftlichen Daten, aber auch bei NFDI4Objects insbesondere ist die Heterogenität der Daten. Die Daten können Zeichnungen, Fotografien Katierungen oder biologische oder chemische Analysen sein. Die Hauptherausforderung bei NFDI4Objects ist demnach der Aufbau eines Langzeitarchivs für diese Daten und die Schaffung eines Normdatenvokabulars (Wo Normdaten erklären) mit dem diese unterschiedlichen Daten vernetzt werden können. Konkret hat sich NFDI4Objects die folgenden Aufgabenbereiche (en Task Area, Abk. TA) gegeben:
+
+
+![Task Areas bei NFDI4Objects](https://www.nfdi.de/wp-content/uploads/2023/12/TAs-Bildmarke.png){fig-alt="https://www.nfdi.de/konsortien/nfdi4objects"}

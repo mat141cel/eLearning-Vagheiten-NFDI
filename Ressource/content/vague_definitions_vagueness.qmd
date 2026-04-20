@@ -1,0 +1,17 @@
+---
+title: "Arten von Unsicherheiten / Vagheiten"
+subtitle: "Welche Herausforderungen liegen in unsicheren Forschungsdaten für die Numismatik?"
+lang: de
+date: today
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+css: /assets/css/collage.css
+---
+
+### Vagheit (Vagueness)
+
+Vagheit bezeichnet einen Mangel an Präzision in einer Aussage, der aus unscharfen Begriffen oder fehlenden klaren Grenzen resultiert. Sie ist besonders typisch für archäologische Daten, etwa wenn Datierungen nur in breiten Zeitintervallen wie „100–200 n. Chr.“ angegeben werden können, obwohl die tatsächliche Herstellungszeit deutlich kürzer war. Vagheit entsteht auch bei messbaren Eigenschaften, wenn diese nicht mit maximaler Genauigkeit erfasst werden, etwa wenn ein Gewicht nur mit einer Dezimalstelle dokumentiert wird, obwohl feinere Auflösung möglich wäre. Eine Angabe wie „5,5 g“ impliziert zwar feste Grenzen (z. B. 5,45–5,54 g), bleibt aber dennoch eine Vereinfachung gegenüber beliebig genauer Messbarkeit. Deutlich stärker vage sind sprachliche Formulierungen wie „ca. 5,5 g“, da hier keine klaren Ober- und Untergrenzen mehr erkennbar sind. Auch Klassifikationen können vage sein, etwa wenn ein Keramikfragment aufgrund identischer Merkmale mehreren Gefäßtypen zugeordnet werden kann (OR-Beziehungen). Grundsätzlich beschreibt Vagheit also die Abstufbarkeit und Kontextabhängigkeit von Aussagen und damit deren begrenzte begriffliche Schärfe.  
+
+::: {.callout-note}
+**Kurzdefinition:** Vagheit = fehlende Präzision einer Aussage aufgrund unscharfer Begriffe oder gradueller Grenzen.
+:::

@@ -1,0 +1,31 @@
+meta:
+  name: Numiscience
+  link: https://pecunia.zaw.uni-heidelberg.de
+
+color:
+  primary: "#2E7D32"     # inferred from bootstrap success green
+  secondary: "#13294B"   # fallback from your existing setup
+  background: "#ffffff"
+  foreground: "#222222"
+  link: "#2E7D32"
+
+typography:
+  fonts:
+    - family: Roboto
+      source: google
+    - family: Lato
+      source: google
+    - family: "Source Sans Pro"
+      source: google
+
+  base:
+    family: Roboto
+    size: 16px
+    line-height: 1.6
+
+  headings:
+    family: Lato
+    weight: 700
+
+  monospace:
+    family: "Source Code Pro"

@@ -1,6 +1,6 @@
 ---
 title: "digitale Numismatik"
-subtitle: "Basiswissen digitale Numismatik"
+subtitle: "Was sind numismatische Forschungsdaten"
 lang: de
 date: today
 date-modified: last-modified

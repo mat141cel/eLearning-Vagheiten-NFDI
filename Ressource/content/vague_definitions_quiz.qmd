@@ -1,6 +1,6 @@
 ---
 title: "Arten von Unsicherheiten / Vagheiten"
-subtitle: "Quiz: Formen von Unsicherheiten / Vagheiten "
+subtitle: "Quiz: Formen von Unsicherheiten / Vagheiten"
 lang: de
 date: today
 date-modified: last-modified

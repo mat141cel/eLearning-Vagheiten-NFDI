@@ -1,6 +1,6 @@
 ---
 title: "Vagheiten"
-subtitle: "Welche Herausforderungen liegen in unsicheren Forschungsdaten für die Numismatik?"
+subtitle: "NFDI - ein unsicherer Kaiser?"
 lang: de
 date: today
 date-modified: last-modified

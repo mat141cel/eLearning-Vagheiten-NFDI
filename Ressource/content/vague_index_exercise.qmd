@@ -1,6 +1,6 @@
 ---
 title: "Vagheiten"
-subtitle: "Welche Herausforderungen liegen in unsicheren Forschungsdaten für die Numismatik?"
+subtitle: "Transferaufgabe: Darstellung von unsicheren Datierungen"
 lang: de
 date: today
 date-modified: last-modified
@@ -8,7 +8,11 @@ date-format: "DD.MM.YYYY"
 css: /assets/css/collage.css
 ---
 
+<<<<<<< HEAD
 ### Übung 1: Darstellungsmöglichkeiten von unsicheren Datierungen.
+=======
+### Transferaufgabe: Darstellungsmöglichkeiten von unsicheren Datierungen.
+>>>>>>> 5e971ec5db39c17830fd3694392ade61856be464
 
 Stellen Sie sich vor, sie wollen bei einem [Hortfund](https://de.wikipedia.org/wiki/Depotfund) verstehen, in welchen Jahren diese geprägt wurden. Liegen diese nah beieinander, oder handelt es sich um größere Zeiträume. Diese Information erlaubt Rückschlüsse darüber, welche Münzen zu diesem Zeitpunkt in Umlauf waren. 
 
